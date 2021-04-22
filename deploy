@@ -1,0 +1,24 @@
+#! /bin/bash
+
+# Ugh. I copied and pasted this from my Players' Manual and The Business.
+# It's ugly to duplicate code.  It's a sin to triplicate code :-(
+
+set -o errexit
+set -o pipefail
+
+tmp_dir='/tmp/person_book'
+github_io_dir="$(echo ~/ctm.github.io/docs/the_person)"
+
+function add_and_push() {
+    git add -A
+    git commit -m '' --allow-empty-message
+    git push
+}
+
+rm -rf "$tmp_dir"
+git worktree add -f "$tmp_dir" gh-pages
+mdbook build
+rm -rf "$tmp_dir/*"
+cp -rp book/* "$tmp_dir/"
+( cd "$tmp_dir" && add_and_push )
+( cd "$github_io_dir" && git pull && cd .. && add_and_push )
