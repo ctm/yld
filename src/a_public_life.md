@@ -1,7 +1,8 @@
 # A Public Life
 
 Greetings. I'm [Cliff Matthews](https://www.builtinnm.org/people/20)
-([Team RWB](https://members.teamrwb.org/profile/9056), ), aka Clifford
+([Team RWB](https://members.teamrwb.org/profile/9056),
+[Strava](https://www.strava.com/athletes/58696205)), aka Clifford
 Matthews
 ([UltraSignup](https://ultrasignup.com/results_participant.aspx?fname=Clifford&lname=Matthews)),
 aka deadhead ([BARGE](https://www.barge.org/),
@@ -9,8 +10,8 @@ aka deadhead ([BARGE](https://www.barge.org/),
 Maniacs](https://www.marathonmaniacsdb.com/Maniacs/MyRaces?ManiacId=4395)),
 aka ctm ([GitHub](https://github.com/ctm), [Albuquerque Game
 Developers Guild](https://agdg.co/)). Although I don't wear a tinfoil
-hat, I _am_ concerned with privacy, albeit I'm more concerned with yours
-than mine.
+hat, I _am_ concerned with privacy, albeit I'm more concerned with
+yours than mine.
 
 I don't participate in traditional social media. I do have a [LinkedIn
 account](https://www.linkedin.com/in/clifford-matthews-4a44231/),
