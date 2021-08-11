@@ -1,6 +1,13 @@
 # Summary
 
 [Welcome](./welcome.md)
+- [Running](./running.md)
+  - [Events I Direct](./running/direct.md)
+    - [Chimney Melon 50k](./running/direct/chimney_melon_50k.md)
+    - [Baldy 50k](./running/direct/baldy_50k.md)
+  - [Events I've Participated In](./running/past.md)
+    - [Hardrock 2021](./running/past/hardrock_2021.md)
+  - [Upcoming Events I'll Participate In](./running/upcoming.md)
 - [A Public Life](./a_public_life.md)
 - [Thanks](./thanks.md)
   - [AGDG](./thanks/agdg.md)
