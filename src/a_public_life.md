@@ -38,9 +38,12 @@ with doing post-running brain dumps that are kind of like a blog, but
 done in mdbook (the format that this document is in).
 
 Currently, on a typical week I run for a couple hours or more on
-Mondays through Saturdays and ride my bike for a several hours on
+Mondays through Saturdays and ride my bike for several hours on
 Sunday.  This gives me a lot of time to think and record voice notes.
 I'm planning to dump some of my thoughts into this "book".  It's kind
 of like me writing up thoughts for a younger version of myself and
 probably equally pointless.  I don't (yet!) have a time machine and
 younger deadhead listened to nobody.
+
+So far, I've mostly used this as a place to dump GPX files since free
+Wordpress won't host them.

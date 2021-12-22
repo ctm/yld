@@ -6,6 +6,8 @@
   - [Events I Direct](./running/direct.md)
     - [Chimney Melon 50k](./running/direct/chimney_melon_50k.md)
     - [Baldy 50k](./running/direct/baldy_50k.md)
+  - [Other GPX Files](./running/other_gpx_files.md)
+    - [Foothills 50k](./running/other_gpx_files/foothills_50k.md)
   - [Events I've Participated In](./running/past.md)
     - [Hardrock 2021](./running/past/hardrock_2021.md)
   - [Upcoming Events I'll Participate In](./running/upcoming.md)

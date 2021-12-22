@@ -1,6 +1,6 @@
 # Mt. Baldy 50k
 
-This page compliments the official [Mt. Baldy 50k](https://newmexicofa50k.wordpress.com/baldy_50k/) page by
+This page complements the official [Mt. Baldy 50k](https://newmexicofa50k.wordpress.com/baldy_50k/) page by
 providing the GPX files (that I can't serve from wordpress.com) from
 previous runnings of the Baldy 50k.
 
