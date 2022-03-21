@@ -9,16 +9,15 @@ aka deadhead ([BARGE](https://www.barge.org/),
 [devctm](https://devctm.com/), [Marathon
 Maniacs](https://www.marathonmaniacsdb.com/Maniacs/MyRaces?ManiacId=4395)),
 aka ctm ([GitHub](https://github.com/ctm), [Albuquerque Game
-Developers Guild](https://agdg.co/)). Although I don't wear a tinfoil
-hat, I _am_ concerned with privacy, albeit I'm more concerned with
-yours than mine.
+Developers Guild](https://agdg.co/)) aka nmdeadhead
+([Freesound](https://freesound.org/people/nmdeadhead/)). Although I
+don't wear a tinfoil hat, I _am_ concerned with privacy, albeit I'm
+more concerned with yours than mine.
 
 I don't participate in traditional social media. I do have a [LinkedIn
 account](https://www.linkedin.com/in/clifford-matthews-4a44231/),
-although I haven't done a good job of keeping it up to date.  Hell, I
-don't even have long hair and a beard in my picture.  I'm not trying
-to mislead people; I'm just terminally lazy. I don't have a Facebook
-or Instagram account.
+although I haven't done a good job of keeping it up to date. I don't
+have a Facebook or Instagram account.
 
 Anyway, I've tossed various random stuff into [public
 repositories](https://github.com/ctm?tab=repositories) in my GitHub
