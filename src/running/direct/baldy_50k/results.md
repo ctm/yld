@@ -18,14 +18,9 @@ The weather was very nice.  No thunder or lightning or even rain. It
 was mostly overcast.  My truck claims it was 42F at about 7:30am and
 51F at 8:20pm.
 
-The timings below are from each of the participant's Strava tracks.  I'll
-ask James and Spencer if they'd prefer to tie for 3rd since they both
-came in together.
-
-
-|Rank|Time|Name|
-|----|----|----|
-|1|12:14:02|George Sefzik|
-|2|12:17:06|Cliff Matthews|
-|3|14:30:23|James DuPlain|
-|4|14:30:36|Spencer Briggs|.
+|Rank|Time|Name|Notes|
+|----|----|----|-----|
+|1|12:14:02|George Sefzik|did a bonked bonus hike|
+|2|12:17:06|Cliff Matthews|held George back|
+|3|14:30:36|Spencer Briggs|.
+|4|14:30:37|James DuPlain|It was my light that wasn't working that resulted in us going so slow for the last two hours.|
