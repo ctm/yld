@@ -22,5 +22,5 @@ was mostly overcast.  My truck claims it was 42F at about 7:30am and
 |----|----|----|-----|
 |1|12:14:02|George Sefzik|did a bonked bonus hike|
 |2|12:17:06|Cliff Matthews|held George back|
-|3|14:30:36|Spencer Briggs|.
+|3|14:30:36|Spencer Briggs||
 |4|14:30:37|James DuPlain|It was my light that wasn't working that resulted in us going so slow for the last two hours.|
