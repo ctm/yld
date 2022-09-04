@@ -43,6 +43,3 @@ I'm planning to dump some of my thoughts into this "book".  It's kind
 of like me writing up thoughts for a younger version of myself and
 probably equally pointless.  I don't (yet!) have a time machine and
 younger deadhead listened to nobody.
-
-So far, I've mostly used this as a place to dump GPX files since free
-Wordpress won't host them.
