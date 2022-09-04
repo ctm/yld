@@ -19,9 +19,9 @@ account](https://www.linkedin.com/in/clifford-matthews-4a44231/),
 although I haven't done a good job of keeping it up to date. I don't
 have a Facebook or Instagram account.
 
-Anyway, I've tossed various random stuff into [public
+Over the years, I've tossed various random stuff into [public
 repositories](https://github.com/ctm?tab=repositories) in my GitHub
-account over the years. In 2016 I chose to publicly document [the
+account. In 2016 I chose to publicly document [the
 training](https://github.com/ctm/Bataan-Memorial-Death-March/blob/master/2017.md)
 I was planning on doing for the 2017 Bataan Memorial Death March. It
 felt weird having so much info out there, but I did hear from others
