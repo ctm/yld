@@ -1,4 +1,4 @@
-#! /bin/bash
+! /bin/bash
 
 # Ugh. I copied and pasted this from my Players' Manual and The Business.
 # It's ugly to duplicate code.  It's a sin to triplicate code :-(
@@ -6,8 +6,8 @@
 set -o errexit
 set -o pipefail
 
-tmp_dir='/tmp/person_book'
-github_io_dir="$(echo ~/ctm.github.io/docs/the_person)"
+tmp_dir='/tmp/yld_book'
+github_io_dir="$(echo ~/ctm.github.io/docs/yld)"
 
 function add_and_push() {
     git add -A

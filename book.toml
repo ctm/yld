@@ -1,5 +1,5 @@
 [book]
-title = "The Person"
+title = "Young Lazy deadhead"
 description = "Way more than anyone wants to know about Cliff Matthews"
 authors = ["Clifford T. Matthews"]
 language = "en"
@@ -7,7 +7,7 @@ multilingual = false
 src = "src"
 
 [rust]
-edition = "2018"
+edition = "2021"
 
 [output.html]
 no-section-label = true
