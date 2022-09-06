@@ -66,6 +66,7 @@ seem to help me at work.
 |Jun 24|[San Juan Solstice](https://www.sjs50.com/)|50 miles|No||
 |Jul 7|[Ehunmilak](https://www.ehunmilak.com/en/ehunmilak-ultra-trail/)|100 miles|No|May do Hardrock instead|
 |Jul 14|[Hardrock](https://www.hardrock100.com/)|100 miles|No|May not get in|
+|Jul 21|[BARGE](https://www.barge.org/) Fun Run|2 miles|No|The event that started it all|
 |Aug 5|[Mt. Baldy](https://newmexicofa50k.wordpress.com/baldy_50k/)|50k|No||
 |Aug 11|[Bigfoot](https://www.destinationtrailrun.com/bigfoot)|200 miles|No|May not get in|
 
