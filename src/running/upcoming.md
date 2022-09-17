@@ -38,8 +38,6 @@ seem to help me at work.
 
 |Date|Event|Distance|Racing?|Notes|
 |----|-----|--------|-------|-----|
-|Sep 10|[Big Cottonwood](https://www.runrevel.com/bcm)|Marathon|Yes|Goal: 3:35|
-|Sep 17|[Crest Trail Hike](https://members.teamrwb.org/events/51648)|~27 miles|No|50 pound pack|
 |Sep 23|[Albuquerque Academy](https://newmexicofa50k.wordpress.com/aa50k/)|50k|No|Night event: 8pm start|
 |Sep 25|[Tour of Rio Grande](https://www.torgbc.com/)|100 miles|No|Bike ride|
 |Oct 1|[Mount Taylor](http://www.mttaylor50k.com/)|50k|No|Will be my tenth|

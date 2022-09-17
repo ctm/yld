@@ -1,4 +1,4 @@
 # Welcome
 
-Congratulations for stumbling upon this. I haven't publicly announced
-the link to this document, because it's a placeholder.
+If you find anything useful here, great&mdash;I'm glad I took the time to write
+it!

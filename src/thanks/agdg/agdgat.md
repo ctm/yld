@@ -9,7 +9,4 @@ that member makes a prediction for the following week.  The predictions
 are tracked on a spreadsheet.
 
 I'm enjoying this process, even though I've fallen short more times
-than I've exceeded my goals. I miss many meetings because [Team
-RWB](../team_rwb.html) meets for Taco Tuesdays twice a month,
-but that's one nice thing about weekly meetings, there's another one
-next week.
+than I've exceeded my goals.
