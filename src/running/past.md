@@ -15,6 +15,5 @@ email](mailto:clifford.t.matthews@gmail.com).  Most of my longer
 events are listed on my [UltraSignup
 page](https://ultrasignup.com/results_participant.aspx?fname=Clifford&lname=Matthews). I'm
 also a member of [Marathon
-Maniacs](https://www.marathonmaniacs.com/). It used to be possible for
-me to link to my MM page, but they appear to have removed that
-functionality.
+Maniacs](https://www.marathonmaniacs.com/); which [lists my marathon or longer events](https://db.marathonmaniacs.com/Maniacs/myraces/4395).
+
