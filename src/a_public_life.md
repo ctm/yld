@@ -10,7 +10,7 @@ aka deadhead ([BARGE](https://www.barge.org/),
 Maniacs](https://db.marathonmaniacs.com/Maniacs/myraces/4395)),
 aka ctm ([GitHub](https://github.com/ctm), [Albuquerque Game
 Developers Guild](https://agdg.co/)) aka nmdeadhead
-([Freesound](https://freesound.org/people/nmdeadhead/)). Although I
+([Freesound](https://freesound.org/people/nmdeadhead/), [reddit](https://www.reddit.com/user/nmdeadhead), [Hacker News](https://news.ycombinator.com/user?id=nmdeadhead)). Although I
 don't wear a tinfoil hat, I _am_ concerned with privacy, albeit I'm
 more concerned with yours than mine.
 
