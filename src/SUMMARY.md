@@ -12,6 +12,7 @@
   - [Events I've Participated In](./running/past.md)
     - [Hardrock 2021](./running/past/hardrock_2021.md)
     - [Big Cottonwood Marathon 2022](./running/past/big_cottonwood_marathon_2022.md)
+    - [AA 50k 2022](./running/past/aa_50k_2022.md)
   - [Upcoming Events I'll Participate In](./running/upcoming.md)
 - [Thanks](./thanks.md)
   - [AGDG](./thanks/agdg.md)
