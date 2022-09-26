@@ -38,8 +38,6 @@ seem to help me at work.
 
 |Date|Event|Distance|Racing?|Notes|
 |----|-----|--------|-------|-----|
-|Sep 23|[Albuquerque Academy](https://newmexicofa50k.wordpress.com/aa50k/)|50k|No|Night event: 7pm start|
-|Sep 25|[Tour of Rio Grande](https://www.torgbc.com/)|100 miles|No|Bike ride|
 |Oct 1|[Mount Taylor](http://www.mttaylor50k.com/)|50k|No|Will be my tenth|
 |Oct 8|[Feral Hog](http://www.feraladventures.com/challenges/feral-hog-50k/)|50k|Yes|20 pound pack|
 |Oct 14|[Tortugas Mountain](https://ultrasignup.com/register.aspx?did=93468)|24 hr|No|Won't drink this year|
