@@ -52,21 +52,63 @@ Sunday, I was able to make sure that the timing worked.
 
 ## Notes
 
+### Off course briefly
+
+Before the tour started, I ran into my friend Bill Dyea from search
+and rescue.  We chatted a bit which was nice, but perhaps I should
+have used a little of that time to review the cue sheet, because I did
+miss one turn, the one going back east on Rio Bravo.
+
+When I got to that intersection, I thought I was supposed to turn, but
+I looked carefully and didn't see any signs.  Perhaps there was no
+sign, because the turn is "obvious", but I wasn't sure if there was a
+"backdoor" route that avoided Rio Bravo in the early afternoon when it
+was really busy.  It's also possible that there had been a sign and it
+was removed or that it was still there and I just didn't look in the
+right place.
+
+So, without seeing a sign and having a green light, I crossed Rio
+Bravo. But shortly after getting to the other side I stopped, got my
+bicycle out of traffic, turned on my phone, brought the course up on
+Gaia, saw that I made a mistake, then backtracked back to Rio Bravo
+and got back on course.
+
+### Trains weren't bad this year
+
 Unlike three years ago, I only had to wait briefly at a train track crossing.
 There was indeed a train on the rails when I got to the infamous crossing,
 but it was a relatively short train and half of it had already passed.
+
+### Roadkill was
 
 There was a ton of roadkill out.  I must have seen at least a half
 dozen dead raccoons, two or three skunks, a couple of dead porcupines
 and even a coyote.  Although I don't recall seeing as much roadkill
 three years ago, two data points isn't enough to draw any conclusions.
 
-I didn't miss any of the signs that marked the course, but many people
-did miss the turn for the first aid station.  That aid station is at
-the Las Lunas Railrunner (the local "commuter" train) station, but you
-have to take a left turn (on the way out) to get there.  It's at about
-mile nineteen, but luckily (for the people who missed it), the second
-aid station is at about mile 31/
+### Signs definitely could be overlooked
+
+Other than perhaps a sign marking the Rio Bravo turn, I didn't miss
+any signs that marked the course, but many people did miss the turn
+for the first aid station.  That aid station is at the Las Lunas
+Railrunner (the local "commuter" train) station, but you have to take
+a left turn (on the way out) to get there.  It's at about mile
+nineteen, but luckily (for the people who missed it), the second aid
+station is at about mile 31.
+
+### Bad (drunk?) Driver
+
+As I was north riding on Isleta and approaching Gun Club, I saw a driver
+turn left from Gun Club and swing so far into the bike lane that his tires
+were inches from hitting the curb.  The driver then overcompensated and
+swung past the left boundary of the lane before eventually settling into
+the middle.  I was in no danger of being hit, because I was well behind,
+and I doubt that the driver would have swung that wide had I been in the
+way, because a bicyclist is larger than a curb, but &hellip; drivers still
+scare me.
+
+
+### Too much caffeine
 
 Knowing that I was going to be stopping at all the aid stations and
 that traffic (potentially including a train) might also slow me down,
@@ -76,8 +118,18 @@ before starting and another quad espresso at mile 50.  Perhaps that
 was not a good choice, because I'm going to have a fair amount of
 trouble sleeping at my normal time tonight.
 
+### Knee held up nicely
+
 I had injured my left knee when I fell at the Big Cottonwood Marathon
 fifteen days ago.  My knee didn't give me any trouble at the AA 50k
 Friday evening and it didn't give me any trouble on this century.
 However, _right now_ about seven hours after finishing, my knee is
 complaining.
+
+### Music as a crutch
+
+ToRG doesn't allow people to ride with earbuds.  I don't think I'd
+have used them even if I were allowed, because there's enough traffic
+that I _really_ want to be able to hear the cars behind me.  However,
+this ride did suggest to me that I rely on the beat of music to speed
+me up.  In the future, I should take that into consideration.
