@@ -19,9 +19,11 @@ Bataan Memorial Death March (BMDM).  I have relatively few events
 during my BMDM block and do serious ruck training two and a half days
 a week.
 
-My final block leads up to Hardrock (if I get in) or a qualifier (for
-2023, Ehunmilak) if I don't.  After that, I'm back to a "fun around"
-block.
+My final block leads up to Hardrock (if I get in) or a qualifier or
+two if I don't get in. Actually, even if I do get in to Hardrock, I'll be
+running the Bigfoot 200, but if my finances are secure, and I don't
+get in to Hardrock, I'll also run Ehunmilak.  After that, I'm back to
+a "fun around" block.
 
 ## Events I'll Probably Participate In
 
@@ -65,6 +67,6 @@ seem to help me at work.
 |Jul 14|[Hardrock](https://www.hardrock100.com/)|100 miles|No|May not get in|
 |Jul 21|[BARGE](https://www.barge.org/) Fun Run|2 miles|No|The event that started it all|
 |Aug 5|[Mt. Baldy](https://newmexicofa50k.wordpress.com/baldy_50k/)|50k|No||
-|Aug 11|[Bigfoot](https://www.destinationtrailrun.com/bigfoot)|200 miles|No|May not get in|
+|Aug 11|[Bigfoot](https://www.destinationtrailrun.com/bigfoot)|200 miles|No|Registered!|
 
 
