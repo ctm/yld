@@ -44,7 +44,7 @@ seem to help me at work.
 |Oct 8|[Feral Hog](http://www.feraladventures.com/challenges/feral-hog-50k/)|50k|Yes|20 pound pack|
 |Oct 14|[Tortugas Mountain](https://ultrasignup.com/register.aspx?did=93468)|24 hr|No|Won't drink this year|
 |Oct 16|[Duke City Marathon](https://www.dukecitymarathon.com/)|Marathon|No|5 hour pace group leader|
-|Oct 23|[Forever Young](https://www.abqroadrunners.com/forever-young-run.html)|5 miles|No|Run hard as training|
+|Oct 23|[Forever Young](https://www.abqroadrunners.com/forever-young-run.html)|5 miles|Yes|Run hard as training|
 |Oct 29|[Javelina Jundred](https://aravaiparunning.com/network/javelinajundred/)|100 miles|No|Goal: not blow up|
 |Nov 5|[Deadman Peaks](https://deadmanpeaks.com/)|100 miles|No|Goal: beat my 2022|
 |Nov 12|[White Mesa](https://newmexicofa50k.wordpress.com/white_mesa_50k/)|50k|No|Keep this race alive|
