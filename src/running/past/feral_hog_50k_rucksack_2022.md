@@ -135,40 +135,6 @@ something I would have been concerned with if were only a quarter of
 the way done with my race when my hands were as big as they were.
 It's definitely something for me to watch in the future.
 
-## Eight Hours?
-
-Please note, this section is not a complaint, only an observation.  I
-feel bad even mentioning it, but I have no idea who my audience for
-this race report is.  If someone else is doing the Feral Pig 50k ruck
-in the future, the time difference may matter.
-
-We passed through the Cowboy Shack start/finish area many times
-during the race.  Due to the rain-reroute, the final time through was
-about twenty-six miles into the race, just before heading out on a
-five mile loop.  At that point, I believe Mike mentioned that I'd get
-a flask if I finished in under eight hours.  I didn't say anything at
-the time, but my (often faulty!) memory told me that I had longer to
-finish it as a rucker and indeed the web site says:
-
-> Everyone needs a challenge. With that in mind there will be an over-achievers award on-top of the “just wanna finish under cut-off” medal. If you are attempting to earn the Feral Flask the rules are simple:
->
-> 1. You must be completing the 50k race.
-> 2. Runners must finish in under 6.5 hours (by 2:00 pm)
-> 3. Ruckers must finish in under 9 hours (by 4:30 pm)
-
-Now, I don't actually think of myself as an over-achiever; I actually
-consider myself a slacker ("Lazy" is my middle name).  However, I am
-an [accomplished
-rucker](https://bataanmemorialdeathmarch.itsyourrace.com/Results/6574/2016/35464/1524),
-so I thought I could do this in under nine hours without much trouble.
-Turns out, due to the weather, and the rain re-route it was harder
-than I thought.  So, when I was told I needed to finish the final five
-miles in the next eighty minutes, it lit a candle under my butt and
-indeed I sped up and got 'er done with a nice buffer.
-
-If you choose to ruck the 50k, you may want to double-check what the
-flask requirement is before you start so you're not surprised.
-
 ## An Excellent Event in Trying Circumstances
 
 My hat is off to Mary and Mike.  They put on an excellent event with
