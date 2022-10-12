@@ -42,13 +42,13 @@ seem to help me at work.
 |----|-----|--------|-------|-----|
 |Oct 14|[Tortugas Mountain](https://ultrasignup.com/register.aspx?did=93468)|24 hr|No|Won't drink this year|
 |Oct 16|[Duke City Marathon](https://www.dukecitymarathon.com/)|Marathon|No|5 hour pace group leader|
-|Oct 23|[Forever Young](https://www.abqroadrunners.com/forever-young-run.html)|5 miles|Yes|Run hard as training|
+|Oct 23|[Forever Young](https://www.abqroadrunners.com/forever-young-run.html)|6 miles|Yes|Run hard as training|
 |Oct 29|[Javelina Jundred](https://aravaiparunning.com/network/javelinajundred/)|100 miles|No|Goal: not blow up|
 |Nov 5|[Deadman Peaks](https://deadmanpeaks.com/)|100 miles|No|Goal: beat my 2022|
 |Nov 12|[White Mesa](https://newmexicofa50k.wordpress.com/white_mesa_50k/)|50k|No|Keep this race alive|
 |Nov 25|[Black Friday Turkey Trots](https://www.facebook.com/Burque-Brewery-Tour-563485270788124/)|4 miles|Yes|Whee!|
-|Nov 26|[Bosque Bigfoot Boogie](https://www.racenm.com/)|50k|No|May not be held|
-|Dec 10|[Tucson](https://www.tucsonmarathon.com/)|Marathon|Yes|Goal: 3:35|
+|Nov 26|[Bosque Bigfoot Boogie](https://www.racenm.com/)|50k|No||
+|Dec 10|[Tucson](https://www.tucsonmarathon.com/)|Marathon|No|Goal: 3:35|
 |Jan 1|[Foothills Fatass](https://newmexicofa50k.wordpress.com/foothills-50k/)|50k|No|May not be held|
 |Feb 18|[Mt. Taylor Winter Quadrathlon](http://www.mttaylorquad.org/)|Quad|No||
 |Mar 4|[King of the Hill](https://www.loslunasnm.gov/721/King-of-the-Hill)|10k|Yes|Rucksack|
