@@ -143,3 +143,18 @@ for them to simply cancel than to do the reroute.  I am glad that they
 didn't.  Race Directing is a hard work.  Putting on a race in New
 Mexico immediately adjacent to the Mt. Taylor 50k has to be tough.  I
 applaud the addition of this race to our locale.
+
+## Previous Years
+
+I was able to find links to the three previous Feral Hog 50k rucks that
+were held in Ohio: 
+* [2016](https://ultrasignup.com/results_event.aspx?did=41824)
+* [2017](https://ultrasignup.com/results_event.aspx?did=44351)
+* [2018](https://ultrasignup.com/results_event.aspx?did=54837)
+
+I do not know the area, but Wikipedia shows Batavia's elevation as 594
+feet, but a [race report from
+2018](https://ccie5851.blogspot.com/2018/) mentions hills, creek and
+river crossings, and 1,618 feet of gain in the first 20.31 miles, so
+the Ohio course _appears_ to be comparable to the New Mexico one (Ohio
+having more water crosings, New Mexico being at a higher altitude).
