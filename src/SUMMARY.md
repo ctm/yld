@@ -16,6 +16,8 @@
     - [Tour of the Rio Grande 2022](./running/past/torgbc_2022.md)
     - [Mt. Taylor 50k 2022](./running/past/mt_taylor_50k_2022.md)
     - [Feral Hog 50k Rucksack 2022](./running/past/feral_hog_50k_rucksack_2022.md)
+    - [Tortugas Mountain 24 Hour Challenge 2022](./running/past/tortugas_mountain_2022.md)
+    - [Duke City Marathon 2022](./running/past/duke_city_marathon_2022.md)
 - [Future Events](./running/upcoming.md)
 - [Thanks](./thanks.md)
   - [AGDG](./thanks/agdg.md)
