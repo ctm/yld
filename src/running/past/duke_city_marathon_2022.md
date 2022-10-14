@@ -23,7 +23,7 @@ by getting close to the timing mat and completely stopping.  So, my
 worst was nineteen seconds too late and my best was three seconds
 late.
 
-In 2017, I hadn't run anything since the Mt. Taylor 50k 6:three weeks and a day
+In 2017, I hadn't run anything since the Mt. Taylor 50k three weeks and a day
 prior.  However, in 2018 I ran the White Mesa 50k the day before and in
 2019 I ran the Sandia Crossing Marathon 7:24:30 the day before.  It's not that
 I deliberately look for events to do the day before the Duke City Marathon, it's
