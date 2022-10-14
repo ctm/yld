@@ -271,10 +271,9 @@ have given me 3rd AG. I think 2nd or 1st AG would have been a coin-flip.
 The injury to my left knee was minor, but sufficiently uncomfortable
 that I used ibuprofen for several days after the fall.  I fell on
 September 10th and the last time I used ibuprofen for my knee was
-midnight between the 16th and 17th.  The scab on my knee still wasn't
-completely gone by October 13th (the date I'm adding this aftermath
-section), almost five weeks after the fall.  Normally my scabs go away
-in two weeks.
+midnight between the 16th and 17th.  The scab on my knee finally came
+off on October 13th, almost five weeks after the fall.  Normally my
+scabs go away in two weeks.
 
 Luckily, it was an injury to the outside of my knee and not anything
 internal to my knee itself.  Although I didn't do a big hike a week
