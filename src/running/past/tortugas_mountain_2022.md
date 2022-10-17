@@ -57,7 +57,8 @@ Rob's son Justin better than Rob, although it's been a few years since I've
 seen Justin and I probably couldn't pick him out of crowd either.  In addition
 to Rob, who lives in Las Cruces, Kathy had driven down from Albuquerque.
 Kathy had done the Feral Hog 25k six days prior, so she and I were the only
-Feral Hog participants who were also doing the 24 Hour Challenge.
+Feral Hog participants who were also doing the 24 Hour Challenge.  That
+makes us Feral Tortugas!
 
 In some sense, however, the two most important people I ran into were
 Perky and Prince Charming.  They had ponied up for the two porta
