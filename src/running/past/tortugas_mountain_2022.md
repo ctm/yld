@@ -102,7 +102,7 @@ about four hours later.
 
 Before my second loop I had a 12 oz. 7% ABV [Social
 Hour](https://santafebrewing.com/beer/social-hour/) and before my
-third loop I had a 12 oz. 7% ABV [Sunst Hazy
+third loop I had a 12 oz. 7% ABV [Sunset Hazy
 IPA](https://tumblerootbreweryanddistillery.com/beer/sunset-hazy-ipa/).
 On my fourth lap I fell from grace and did not drink a beer.  This was
 according to plan.  I had already had the equivalent of five beers due
