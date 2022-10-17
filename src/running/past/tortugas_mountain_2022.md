@@ -90,7 +90,10 @@ evenings at 6pm, which was the starting time for Tortugas Mountain.
 They knew I was a crazy person who liked to run in circles, now I got
 a chance to show them.
 
-## [Loops Before Bed](https://www.strava.com/activities/7964427510)
+## Loops Before Bed
+
+I finished [four loops](https://www.strava.com/activities/7964427510)
+before heading into my tent to sleep.
 
 So, I used my phone to join the Zoom meeting, explained to the people
 on the meeting what I was doing, then switched to the forward facing
@@ -140,7 +143,10 @@ back on (those are what I was using the night before) putzed around a bit
 hoping for the caffeine to allow me to take a dump, got impatient and
 finally started my next loops at 5:36am.
 
-## [Loops After Bed](https://www.strava.com/activities/7969011612)
+## Loops After Bed
+
+I completed [ten loops](https://www.strava.com/activities/7969011612)
+after sleeping.
 
 Although I had much less sleep and a lower quality of sleep than normal,
 I felt great.  My lighting was excellent and it was a bit cooler. I ran
