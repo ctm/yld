@@ -270,6 +270,94 @@ around 11pm.  Tomorrow would be fun (and I'm not being sarcastic).
 
 Whee!
 
+## "Food"
+
+I brought some food from Albuquerque and think I might have had enough
+calories to squeak by, but there was yummy junk food at the aid stations
+so I ate a ton of that during the race.
+
+Sophie had made a bunch of potato slices roasted in spiced oil.  I had a few
+in Albuquerque for lunch, then stuffed a lot more in a baggie for the
+drive down.  Sure enough, I ate them all.
+
+Before the race I ate a bag of lentils (2/3rds cup when they were
+dry).  I had made an entire package of spaghetti (approximately 2,000
+calories), but only ate a little of that during the race.  Most came
+back to Albuquerque with me and I ate it on the Monday and Tuesday
+after the race.
+
+Sophie had made some homemade hummus and I took half of it with me in a
+baggie.  With the baggie sitting on top of the ice in the cooler, the hummus
+took on a Play-Doh consistency, which was great, because I could tear off a
+piece and eat it without utensils.  I also brought a baggie of steamed
+broccoli and cauliflower that I ate mid-day Saturday.
+
+I ate a huge amount of aid station "orange slice" candies and pretzels
+on both days.  Thanks!
+
+On Saturday, I additionally snacked on salt & vinegar potato chips,
+some vegan cookies that were kind of like cream colored Oreos and some
+vegan Dijon mustard crisps.  I had a Mountain Dew after each of my first
+two Saturday laps.
+
+At the remote aid station, after I had eaten all the orange slice candies,
+I had a big handful of M&Ms and eight tiny Twix bites.  Neither of those
+are vegan; they both have milk in them.  I believe those were the only two
+non-vegan things I consumed.
+
+## Minor Setbacks
+
+### Chafing
+
+I did not bring Body Glide and my running shorts irritated me a little
+bit.  I also was wearing an ultra-vest without a shirt when I was using
+my Kogolla light bar because I wanted something to hold the battery
+and (when not Zooming) my iPod touch.  However, at one point I also
+added tube filled with water and that extra pressure was enough to
+chafe my right nipple.  Eventually I realized what was going on and
+moved the water to the other side and everything was fine.
+
+### Sunburn
+
+I didn't wear any sunscreen, so I got a minor sunburn.  I definitely didn't
+feel it at the time, so I don't think it slowed me down appreciably.  I felt
+it slightly after getting home. Over the next couple of days the red turned
+to tan, so I'm happy.
+
+### Falling
+
+I fell and hit the ground a few times.  The first two or three times were,
+IIRC, Saturday, i.e., after I had slept, before I was drinking beer again.
+I tore some skin here and there but none were bad enough to introduce a
+limp or cause trouble post race.
+
+### Heat
+
+I had meant to bring my ice hat and use it, both because I think it speeds
+me up, but also to get a little practice with it before Javelina Jundred.
+I even had it in the file that I created that had the
+list of things to bring, but I forgot to look at that file.
+
+## Music Driven Legs
+
+I easily get the runner's high.  While I have it, music often hits me
+emotionally.  I feel like I'm a bull being led by a nose-ring and when
+the music is upbeat or perhaps just emotionally satisfying, I
+sometimes use it to drive my legs.  One song that touched me while I
+was out there was City of New Orleans.  City of New Orleans was
+written by [Steve
+Goodman](https://en.wikipedia.org/wiki/Steve_Goodman) but made famous
+by Arlo Guthrie.  Neither of those two were singing it, but since it
+came off my iPod library, I might eventually figure out whose version
+it was.
+
+Listening to anything Steve Goodman had to do with always brings out a mix
+of emotions in me.  The guy died of cancer when he was 36 but penned and
+performed many a classic.  City of New Orleans isn't particularly fast,
+and I find it melancholy, but it was definitely driving my legs hard as I
+finished up one of my daylight even laps.  I can't remember the other
+songs that wound me up, although one of them was by Jesus Jones.
+
 ## Historical
 
 The Tortuga Mountain 24 Hour Challenge started out as a drinking event, where
@@ -284,9 +372,3 @@ recognized at the event itself, but are not made in the UltraSignup
 results. So, you can either take my word or ask a race director, but
 in 2021, I set a new course record of 14 beers and [56
 miles](https://ultrasignup.com/results_event.aspx?did=83711#id220546).
-
-This year, I am the Duke City Marathon five hour pace group leader, so
-I'm not entering the drinking division and will have no alcohol after
-I go to bed.
-
-
