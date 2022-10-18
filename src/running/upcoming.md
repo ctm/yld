@@ -40,6 +40,7 @@ seem to help me at work.
 
 |Date|Event|Distance|Racing?|Notes|
 |----|-----|--------|-------|-----|
+|Oct 22|[Tatonka 5k](https://www.core-crew.com/tatonka-5-10k-run)|3.1 miles|Semi|I'll be rucking even though there's no ruck division|
 |Oct 23|[Forever Young](https://www.abqroadrunners.com/forever-young-run.html)|6 miles|Yes|Run hard as training|
 |Oct 29|[Javelina Jundred](https://aravaiparunning.com/network/javelinajundred/)|100 miles|No|Goal: not blow up|
 |Nov 5|[Deadman Peaks](https://deadmanpeaks.com/)|100 miles|No|Goal: beat my 2022|
