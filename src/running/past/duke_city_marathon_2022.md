@@ -3,7 +3,7 @@
 ## Overview
 
 I ran
-[5:59:51](https://www.athlinks.com/event/35398/results/Event/1032202/Course/2296576/Bib/1458),
+[4:59:51](https://www.athlinks.com/event/35398/results/Event/1032202/Course/2296576/Bib/1458),
 _much_ (i.e., nine seconds) too quickly.  My
 [miles](https://www.strava.com/activities/7974024108) weren't
 particularly consistent, either, with my fastest complete mile being
@@ -52,14 +52,15 @@ future.
 
 ## Weather
 
-Before I left for Las Cruces I had already checked the DCM race-day
-weather and saw that it was going to be low fifties, winds around
-twenty five miles per hour and rain.  Wind (except when it's a
-tailwind) is always annoying, especially when carrying a sign, but my
-big worry was that I am used to dressing lightly and speeding up to
-keep my body warm.  As a pacer, it's my duty to keep a steady pace.
-So I set aside a long sleeve shirt, a fleece hat, light rain jacket,
-gloves and hand warmers for race day morning.
+On Friday morning, before I left for Las Cruces (returning Saturday
+evening), I had already checked the DCM race-day weather and saw that
+it was going to be low fifties, winds around twenty five miles per
+hour and rain.  Wind (except when it's a tailwind) is always annoying,
+especially when carrying a sign, but my big worry was that I am used
+to dressing lightly and speeding up to keep my body warm.  As a pacer,
+it's my duty to keep a steady pace.  So I set aside a long sleeve
+shirt, a fleece hat, light rain jacket, gloves and hand warmers for
+race day morning.
 
 ## Pre-Race
 
