@@ -6,6 +6,13 @@ occasional event report and mailed it to a few friends.  Unless asked,
 I don't plan on digging up any of that old information, but I will
 take a stab at documenting my experiences here.
 
+
+So, now I'm trying to write up "brief" (yeah, right) summaries of the
+various events I participate in as a way to (very slightly) eventually
+give back to the community. I really wanted to do this after Hardrock
+in preparation for my ARR presentation, but I did not allocate the
+time to do so and just gave a drunken rant instead.
+
 Although these reports are for me, if you have a question about
 anything I've written here, [send me
 email](mailto:clifford.t.matthews@gmail.com). Similarly, if you have a
