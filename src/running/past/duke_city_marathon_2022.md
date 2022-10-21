@@ -303,4 +303,28 @@ I'd sleep or how fit I would feel in the morning.  Turns out, I got to
 bed late, slept poorly, felt great and had no trouble performing my
 pacing duties.
 
+## More to Add, Later
 
+All told, I took 800mg of ibuprofen: 400mg around 4:45am, with my
+fortified oatmeal and another 400mg soon after having my gels, just past
+the turnaround.
+
+The first amount of ibuprofen was to counter any minor discomfort that
+might show up due to my participation in the Tortugas Mountain 24-Hour
+Challenge.  The latter was due to minor discomfort that I was feeling
+in my knees, that I _think_ was due to the way carrying a sign altered
+my gait.
+
+Ibuprofen is a tricky subject, so my plan is to eventually create a
+section of this book that explains when I use it and why and also
+mentions some of the risks.  I've had at least two good friends of
+mine go to the hospital for kidney failure due, in part, to overuse
+of ibuprofen. So, rather than mentioning that in this race report,
+I'll eventually take the time to mention it in the upcoming `Ibuprofen`
+section of my upcoming `Drugs` section of my upcoming `Practices` section.
+
+I don't know when I'll get to the above. I do have a [Day
+Job](https://www.youtube.com/watch?v=Gz0EdL8TyT4)[^1].
+
+[^1]: Yeah, I'll add a `Grateful Dead` section too; I was lucky enough
+to go to many shows back in the day, including this one.
