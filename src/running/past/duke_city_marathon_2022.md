@@ -303,6 +303,14 @@ I'd sleep or how fit I would feel in the morning.  Turns out, I got to
 bed late, slept poorly, felt great and had no trouble performing my
 pacing duties.
 
+## Pix
+
+I participate in so many events that it's exceedingly rare that I buy
+photos (especially since some events provide photos for free), but
+Foggy Bay Photos was out taking pictures and
+[here](https://thefoggybay.shootproof.com/gallery/19549154/search?q=1458)
+are the ones they took of me.
+
 ## More to Add, Later
 
 All told, I took 800mg of ibuprofen: 400mg around 4:45am, with my
