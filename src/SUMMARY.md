@@ -18,6 +18,8 @@
     - [Feral Hog 50k Rucksack 2022](./running/past/feral_hog_50k_rucksack_2022.md)
     - [Tortugas Mountain 24 Hour Challenge 2022](./running/past/tortugas_mountain_2022.md)
     - [Duke City Marathon 2022](./running/past/duke_city_marathon_2022.md)
+    - [Tatonka 5k 2022](./running/past/tatonka_5k_2022.md)
+    - [Forever Young 6 miler 2022](./running/past/forever_young_six_miler_2022.md)
   - [Future Events](./running/upcoming.md)
 - [Thanks](./thanks.md)
   - [AGDG](./thanks/agdg.md)
