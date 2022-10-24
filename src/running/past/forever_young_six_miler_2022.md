@@ -9,8 +9,9 @@ a pretty big difference from
 my GPS watch recorded.  In 2019, my official time was 48:05, which is just a few
 seconds different from what my GPS watch said.
 
-Looking at my splits, my guess is my GPS watch is closer to the truth than
-the official time, which would give me an 8:17 min/mile average pace.
+Looking at my splits, my guess is my GPS watch is closer to the truth
+than the official time. Using my GPS watch time gives me an 8:17
+min/mile average pace.
 
 I chose to race&mdash;not merely run&mdash;this event, meaning I went
 as hard as I could, at least until the final mile or so when it was
