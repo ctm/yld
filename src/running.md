@@ -21,7 +21,8 @@ I have to get into Hardrock again so I can do it right next time.
 In my early ultra running years I benefited greatly from various
 blogs, including, but by no means limited to, [Studies in
 Clydeology](https://clydeologist.blogspot.com/), [The Athena
-Diaries](https://athenadiaries.blogspot.com/), and [the Pink
+Diaries](https://athenadiaries.blogspot.com/), [Club
+Dread](https://dreadpiraterackham.blogspot.com/), and [the Pink
 Corker's](https://pinkcorker.blogspot.com/).  Often these blog writers
 had done events that I was contemplating entering and their insights
 helped prepare me.
