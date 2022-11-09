@@ -40,12 +40,11 @@ work.
 
 |Date|Event|Distance|Racing?|Notes|
 |----|-----|--------|-------|-----|
-|Oct 29|[Javelina Jundred](https://aravaiparunning.com/network/javelinajundred/)|100 miles|No|Goal: not blow up|
-|Nov 5|[Deadman Peaks](https://deadmanpeaks.com/)|100 miles|No|Goal: beat my 2022|
 |Nov 12|[White Mesa](https://newmexicofa50k.wordpress.com/white_mesa_50k/)|50k|No|Keep this race alive|
 |Nov 25|[Black Friday Turkey Trots](https://www.facebook.com/Burque-Brewery-Tour-563485270788124/)|4 miles|Yes|Whee!|
 |Nov 26|[Bosque Bigfoot Boogie](https://www.racenm.com/)|50k|No||
 |Dec 10|[Tucson](https://www.tucsonmarathon.com/)|Marathon|No|Goal: 3:35|
+|Dec 31|[Grinch Lunch](https://www.facebook.com/events/587035643112558)|3.1 miles|Yes||
 |Feb 18|[Mt. Taylor Winter Quadrathlon](http://www.mttaylorquad.org/)|Quad|No||
 |Mar 4|[King of the Hill](https://www.loslunasnm.gov/721/King-of-the-Hill)|10k|Yes|Rucksack|
 |Mar 19|[Bataan Memorial Death March](https://bataanmarch.com/register/civilian-individual/)|Marathon|Yes|Civilian Heavy|
@@ -62,5 +61,13 @@ work.
 |Jul 21|[BARGE](https://www.barge.org/) Fun Run|2 miles|No|The event that started it all|
 |Aug 5|[Mt. Baldy](https://newmexicofa50k.wordpress.com/baldy_50k/)|50k|No||
 |Aug 11|[Bigfoot](https://www.destinationtrailrun.com/bigfoot)|200 miles|No|Registered!|
-
-
+|Sep 24|[Tour of Rio Grande](https://www.torgbc.com/)|100 miles|No|Bike ride: _not announced yet_|
+|Sep 30|[Mount Taylor](http://www.mttaylor50k.com/)|50k|No|_not announced yet_|
+|Oct 23|[Forever Young](https://www.abqroadrunners.com/forever-young-run.html)|5 miles|Yes|_not announced yet_|
+|Oct 28|[Javelina Jundred](https://aravaiparunning.com/network/javelinajundred/)|100 miles|Yes|Goal: sub-20|
+|Nov 4|[Deadman Peaks](https://deadmanpeaks.com/)|100 miles|No|_not announced yet_|
+|Nov 11|[White Mesa](https://newmexicofa50k.wordpress.com/white_mesa_50k/)|50k|No|_not announced yet_|
+|Nov 24|[Black Friday Turkey Trots](https://www.facebook.com/Burque-Brewery-Tour-563485270788124/)|4 miles|Yes|_not announced yet_|
+|Nov 25|[Bosque Bigfoot Boogie](https://www.racenm.com/)|50k|No|_not announced yet_|
+|Dec 9|[Tucson](https://www.tucsonmarathon.com/)|Marathon|No|_not announced yet_|
+|Dec 30|[Grinch Lunch](https://www.facebook.com/events/587035643112558)|3.1 miles|Yes|_not announced yet_|
