@@ -12,6 +12,7 @@
       - [Results](./running/direct/baldy_50k/results.md)
   - [Other GPX Files](./running/other_gpx_files.md)
     - [Foothills 50k](./running/other_gpx_files/foothills_50k.md)
+    - [White Mesa Fat Ass 50k](./running/other_gpx_files/wmfa_50k.md)
   - [Events Past](./running/past.md)
     - [Hardrock 2021](./running/past/hardrock_2021.md)
     - [Big Cottonwood Marathon 2022](./running/past/big_cottonwood_marathon_2022.md)
