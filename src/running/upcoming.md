@@ -63,7 +63,7 @@ work.
 |Aug 11|[Bigfoot](https://www.destinationtrailrun.com/bigfoot)|200 miles|No|Registered!|
 |Sep 24|[Tour of Rio Grande](https://www.torgbc.com/)|100 miles|No|Bike ride: _not announced yet_|
 |Sep 30|[Mount Taylor](http://www.mttaylor50k.com/)|50k|No|_not announced yet_|
-|Oct 23|[Forever Young](https://www.abqroadrunners.com/forever-young-run.html)|5 miles|Yes|_not announced yet_|
+|Oct 23|[Forever Young](https://www.abqroadrunners.com/forever-young-run.html)|6 miles|Yes|_not announced yet_|
 |Oct 28|[Javelina Jundred](https://aravaiparunning.com/network/javelinajundred/)|100 miles|Yes|Goal: sub-20|
 |Nov 4|[Deadman Peaks](https://deadmanpeaks.com/)|100 miles|No|_not announced yet_|
 |Nov 11|[White Mesa](https://newmexicofa50k.wordpress.com/white_mesa_50k/)|50k|No|_not announced yet_|
