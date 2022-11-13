@@ -40,7 +40,6 @@ work.
 
 |Date|Event|Distance|Racing?|Notes|
 |----|-----|--------|-------|-----|
-|Nov 12|[White Mesa](https://newmexicofa50k.wordpress.com/white_mesa_50k/)|50k|No|Keep this race alive|
 |Nov 25|[Black Friday Turkey Trots](https://www.facebook.com/Burque-Brewery-Tour-563485270788124/)|4 miles|Yes|Whee!|
 |Nov 26|[Bosque Bigfoot Boogie](https://www.racenm.com/)|50k|No||
 |Dec 10|[Tucson](https://www.tucsonmarathon.com/)|Marathon|No|Goal: 3:35|

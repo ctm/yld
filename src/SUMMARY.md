@@ -26,6 +26,7 @@
     - [Forever Young 6 miler 2022](./running/past/forever_young_six_miler_2022.md)
     - [Javelina Jundred 2022](./running/past/jj100_2022.md)
     - [Deadman Peaks 106 miler 2022](./running/past/dptr_106m_2022.md)
+    - [White Mesa Fat Ass 50k 2022](./running/past/wmfa50k_2022.md)
   - [Future Events](./running/upcoming.md)
 - [Thanks](./thanks.md)
   - [AGDG](./thanks/agdg.md)
