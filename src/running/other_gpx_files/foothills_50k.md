@@ -6,9 +6,9 @@ providing the GPX file (that can't be served from wordpress.com).
 
 The same file is available, with more information, via the [Foothills
 50k page hosted on
-trailrunproject.com](https://www.trailrunproject.com/widget/trail?v=3&map=1&id=7066757).
+alltrails.com](https://www.alltrails.com/explore/map/map-november-22-2022-2f3c6a4).
 If you're so inclined create an account and download it from there.
 
 On the other hand, since you're here, feel free to
 
-*  Download the [GPX File](./foothills-fa-50k.gpx)
+*  Download the [GPX File](./foothills-fa-50k-2023.gpx)
