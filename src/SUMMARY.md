@@ -27,6 +27,8 @@
     - [Javelina Jundred 2022](./running/past/jj100_2022.md)
     - [Deadman Peaks 106 miler 2022](./running/past/dptr_106m_2022.md)
     - [White Mesa Fat Ass 50k 2022](./running/past/wmfa50k_2022.md)
+    - [Black Friday Turkey Trots 2022](./running/past/black_friday_2022.md)
+    - [Bosque Bigfoot 50k 2022](./running/past/bbf50k_2022.md)
   - [Future Events](./running/upcoming.md)
 - [Thanks](./thanks.md)
   - [AGDG](./thanks/agdg.md)
