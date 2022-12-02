@@ -40,8 +40,6 @@ work.
 
 |Date|Event|Distance|Racing?|Notes|
 |----|-----|--------|-------|-----|
-|Nov 25|[Black Friday Turkey Trots](https://www.facebook.com/Burque-Brewery-Tour-563485270788124/)|4 miles|Yes|Whee!|
-|Nov 26|[Bosque Bigfoot Boogie](https://www.racenm.com/)|50k|No||
 |Dec 10|[Tucson](https://www.tucsonmarathon.com/)|Marathon|No|Goal: 3:35|
 |Dec 31|[Grinch Lunch](https://www.facebook.com/events/587035643112558)|3.1 miles|Yes||
 |Feb 18|[Mt. Taylor Winter Quadrathlon](http://www.mttaylorquad.org/)|Quad|No||
