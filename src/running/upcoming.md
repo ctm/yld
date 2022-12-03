@@ -5,66 +5,68 @@
 For the last several years, I've had three distinct training blocks
 per year.
 
-1. Fun Around
-2. Bataan Memorial Death March
-3. Hardrock (or qualifier)
+1. Bataan Memorial Death March
+2. Hardrock (or qualifier)
+3. Fun Around
 
-I'm currently in my "fun around" training block; it ends in mid
-November.  During this block I participate in a lot of events, but
-actually race in very few.
-
-After that I am in a [serious training
+I'm currently in my [serious training
 block](https://github.com/ctm/Bataan-Memorial-Death-March) for the
 Bataan Memorial Death March (BMDM).  I have relatively few events
 during my BMDM block and do serious ruck training two and a half days
-a week.
+a week.  If finances permit, I'll also race the Tough Ruck on April
+16th, 2023.
 
-My final block leads up to Hardrock (if I get in) or a qualifier or
-two if I don't get in. Actually, even if I do get in to Hardrock, I'll be
-running the Bigfoot 200, but if my finances are secure, and I don't
-get in to Hardrock, I'll also run Ehunmilak.  After that, I'm back to
-a "fun around" block.
+My next block leads up to Hardrock (the next time I get in) or a
+qualifier or two in the years I don't get in. This year, I did not get
+in to Hardrock, although I did get in to Western States.  So the
+Bigfoot 200 will be my Hardrock Qualifier, and I won't be attempting
+the Grand Slam.  After Bigfoot, I'm back to a "fun around" block.
 
-## Events I'll Probably Participate In
+My "fun around" block ends in mid November.  During this block I
+"participate" (i.e., try to finish) in a lot of events, but actually
+"race" (i.e., try to _win_ or at least run quickly for my age) in very
+few.
 
-Here's what I think I'll be running in the remainder of 2022 and in 2023.
-I'm signed up for everything (other than King of the Hill which isn't
-taking registrations yet) through the Bataan Memorial Death March
-and a few events after that.  My participation in the Tough Ruck and
-Cocodona 250 is predicated on me successfully launching
-[craftpoker.com](https://craftpoker.com), which looks promising, but
-is certainly not a given.  Craftpoker.com's shareholders are my
-highest priority. However, my running and rucking seem to help me at
-work.
+## Events I'd Like to Enter
+
+Here's what I'd like to run in the remainder of 2022 and in 2023.  My
+participation in the Tough Ruck and Cocodona 250 is predicated on me
+successfully financing [craftpoker.com](https://craftpoker.com), which
+looks promising, but is certainly not a given.  Craftpoker.com's
+shareholders are my highest priority. However, my running and rucking
+seem to help me at work.
+
+The "Racing" column is only yes when I plan to run very hard (e.g., to win
+or to try to do well for my age).  Racing is hard and annoying and lazy
+is my middle name.
 
 
-|Date|Event|Distance|Racing?|Notes|
+|Date|Event|Flavor|Racing?|Notes|
 |----|-----|--------|-------|-----|
-|Dec 10|[Tucson](https://www.tucsonmarathon.com/)|Marathon|No|Goal: 3:35|
-|Dec 31|[Grinch Lunch](https://www.facebook.com/events/587035643112558)|3.1 miles|Yes||
-|Feb 18|[Mt. Taylor Winter Quadrathlon](http://www.mttaylorquad.org/)|Quad|No||
-|Mar 4|[King of the Hill](https://www.loslunasnm.gov/721/King-of-the-Hill)|10k|Yes|Rucksack|
-|Mar 19|[Bataan Memorial Death March](https://bataanmarch.com/register/civilian-individual/)|Marathon|Yes|Civilian Heavy|
-|Apr 16|[Tough Ruck](https://www.toughruck.org/)|Marathon|Yes||
+|Dec 10|[Tucson](https://www.tucsonmarathon.com/)|Marathon|No|Goal: 3:35, _will not run if Jeanne, my late father's wife, needs care_|
+|Dec 31|[Grinch Lunch](https://www.facebook.com/events/587035643112558)|5k|Yes||
+|Jan 1|[Foothills Fat Ass](https://newmexicofa50k.wordpress.com/foothills-50k/)|50k|No|I'll be RDing and will only run if I have enough volunteers|
+|Jan 21|[Sandia Snowshoe Race](https://friendsofthesandias.org/snowshoe-race/)|5k|Yes|_haven't registered yet_|
+|Feb 18|[Mt. Taylor Winter Quadrathlon](http://www.mttaylorquad.org/)|Quadrathlon|No||
+|Mar 4|[King of the Hill](https://www.loslunasnm.gov/721/King-of-the-Hill)|10k Ruck|Yes|_have not registered yet_|
+|Mar 19|[Bataan Memorial Death March](https://bataanmarch.com/register/civilian-individual/)|Marathon Ruck|Yes|Civilian Heavy|
+|Apr 16|[Tough Ruck](https://www.toughruck.org/)|Marathon Ruck|Yes|_have not registered yet_|
 |Apr 17|[Boston](https://www.baa.org/races/boston-marathon)|Marathon|No||
-|May 1|[Cocodona 250](https://cocodona.com/)|250 miles|No||
-|May 20|[Jemez Mountain Trail Run](https://www.jemezmountaintrailruns.org/)|50 miles|No||
-|May 21|[Santa Fe Century](https://www.santafecentury.com/)|100 miles|No|Bike ride|
-|Jun 3|[Eagle Up](https://urultra.com/races/eagle-up-ultra/)|24 hour|Yes|May do Believe in Heroes instead|
-|Jun 3|[Believe in Heroes](https://loslunasvet.com/)|5k|Yes|Ruck (may not do)|
-|Jun 24|[San Juan Solstice](https://www.sjs50.com/)|50 miles|No||
-|Jul 7|[Ehunmilak](https://www.ehunmilak.com/en/ehunmilak-ultra-trail/)|100 miles|No|May do Hardrock instead|
-|Jul 14|[Hardrock](https://www.hardrock100.com/)|100 miles|No|May not get in|
+|May 1|[Cocodona 250](https://cocodona.com/)|250 miles|No|_have not registered yet_|
+|May 20|[Jemez Mountain Trail Run](https://www.jemezmountaintrailruns.org/)|50 miles|No|_have not registered yet_|
+|May 21|[Santa Fe Century](https://www.santafecentury.com/)|100 mile bike|No|_have not registered yet_|
+|Jun 3|[Believe in Heroes](https://loslunasvet.com/)|5k Ruck|Yes|_have not registered yet_|
+|Jun 24|[Western States](https://www.wser.org/)|100 miles|No|_won the lottery, but have not paid yet_|
 |Jul 21|[BARGE](https://www.barge.org/) Fun Run|2 miles|No|The event that started it all|
 |Aug 5|[Mt. Baldy](https://newmexicofa50k.wordpress.com/baldy_50k/)|50k|No||
 |Aug 11|[Bigfoot](https://www.destinationtrailrun.com/bigfoot)|200 miles|No|Registered!|
 |Sep 24|[Tour of Rio Grande](https://www.torgbc.com/)|100 miles|No|Bike ride: _not announced yet_|
 |Sep 30|[Mount Taylor](http://www.mttaylor50k.com/)|50k|No|_not announced yet_|
 |Oct 23|[Forever Young](https://www.abqroadrunners.com/forever-young-run.html)|6 miles|Yes|_not announced yet_|
-|Oct 28|[Javelina Jundred](https://aravaiparunning.com/network/javelinajundred/)|100 miles|Yes|Goal: sub-20|
+|Oct 28|[Javelina Jundred](https://aravaiparunning.com/network/javelinajundred/)|100 miles|Yes|Goal: sub-20, _have not registered yet_|
 |Nov 4|[Deadman Peaks](https://deadmanpeaks.com/)|100 miles|No|_not announced yet_|
 |Nov 11|[White Mesa](https://newmexicofa50k.wordpress.com/white_mesa_50k/)|50k|No|_not announced yet_|
 |Nov 24|[Black Friday Turkey Trots](https://www.facebook.com/Burque-Brewery-Tour-563485270788124/)|4 miles|Yes|_not announced yet_|
 |Nov 25|[Bosque Bigfoot Boogie](https://www.racenm.com/)|50k|No|_not announced yet_|
 |Dec 9|[Tucson](https://www.tucsonmarathon.com/)|Marathon|No|_not announced yet_|
-|Dec 30|[Grinch Lunch](https://www.facebook.com/events/587035643112558)|3.1 miles|Yes|_not announced yet_|
+|Dec 30|[Grinch Lunch](https://www.facebook.com/events/587035643112558)|5k|Yes|_not announced yet_|
