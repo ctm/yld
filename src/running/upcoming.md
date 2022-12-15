@@ -43,7 +43,6 @@ is my middle name.
 
 |Date|Event|Flavor|Racing?|Notes|
 |----|-----|--------|-------|-----|
-|Dec 10|[Tucson](https://www.tucsonmarathon.com/)|Marathon|No|Goal: 3:35, _will not run if Jeanne, my late father's wife, needs care_|
 |Dec 31|[Grinch Lunch](https://www.facebook.com/events/587035643112558)|5k|Yes||
 |Jan 1|[Foothills Fat Ass](https://newmexicofa50k.wordpress.com/foothills-50k/)|50k|No|I'll be RDing and will only run if I have enough volunteers|
 |Jan 21|[Sandia Snowshoe Race](https://friendsofthesandias.org/snowshoe-race/)|5k|Yes|_haven't registered yet_|

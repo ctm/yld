@@ -29,6 +29,7 @@
     - [White Mesa Fat Ass 50k 2022](./running/past/wmfa50k_2022.md)
     - [Black Friday Turkey Trots 2022](./running/past/black_friday_2022.md)
     - [Bosque Bigfoot 50k 2022](./running/past/bbf50k_2022.md)
+    - [Tucson Marathon 2022](./running/past/tucson_marathon_2022.md)
   - [Future Events](./running/upcoming.md)
 - [Thanks](./thanks.md)
   - [AGDG](./thanks/agdg.md)
