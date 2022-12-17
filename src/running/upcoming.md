@@ -45,17 +45,17 @@ is my middle name.
 |----|-----|--------|-------|-----|
 |Dec 31|[Grinch Lunch](https://www.facebook.com/events/587035643112558)|5k|Yes||
 |Jan 1|[Foothills Fat Ass](https://newmexicofa50k.wordpress.com/foothills-50k/)|50k|No|I'll be RDing and will only run if I have enough volunteers|
-|Jan 21|[Sandia Snowshoe Race](https://friendsofthesandias.org/snowshoe-race/)|5k|Yes||
-|Feb 18|[Mt. Taylor Winter Quadrathlon](http://www.mttaylorquad.org/)|Quadrathlon|No||
-|Mar 4|[King of the Hill](https://www.loslunasnm.gov/721/King-of-the-Hill)|10k Ruck|Yes|_have not registered yet_|
-|Mar 19|[Bataan Memorial Death March](https://bataanmarch.com/register/civilian-individual/)|Marathon Ruck|Yes|Civilian Heavy|
+|Jan 21|[Sandia Snowshoe Race](https://friendsofthesandias.org/snowshoe-race/)|5k|Yes|Registered!|
+|Feb 18|[Mt. Taylor Winter Quadrathlon](http://www.mttaylorquad.org/)|Quadrathlon|No|Registered!|
+|Mar 4|[King of the Hill](https://www.loslunasnm.gov/721/King-of-the-Hill)|10k Ruck|Yes|Registered!|
+|Mar 19|[Bataan Memorial Death March](https://bataanmarch.com/register/civilian-individual/)|Marathon Ruck|Yes|Registered!: Civilian Heavy|
 |Apr 16|[Tough Ruck](https://www.toughruck.org/)|Marathon Ruck|Yes|_have not registered yet_|
-|Apr 17|[Boston](https://www.baa.org/races/boston-marathon)|Marathon|No||
+|Apr 17|[Boston](https://www.baa.org/races/boston-marathon)|Marathon|No|Registered!|
 |May 1|[Cocodona 250](https://cocodona.com/)|250 miles|No|_have not registered yet_|
 |May 20|[Jemez Mountain Trail Run](https://www.jemezmountaintrailruns.org/)|50 miles|No|_have not registered yet_|
-|May 21|[Santa Fe Century](https://www.santafecentury.com/)|100 mile bike|No|_have not registered yet_|
+|May 21|[Santa Fe Century](https://www.santafecentury.com/)|100 mile bike|No|Registered!|
 |Jun 3|[Believe in Heroes](https://loslunasvet.com/)|5k Ruck|Yes|_have not registered yet_|
-|Jun 24|[Western States](https://www.wser.org/)|100 miles|No||
+|Jun 24|[Western States](https://www.wser.org/)|100 miles|No|Registered!|
 |Jul 21|[BARGE](https://www.barge.org/) Fun Run|2 miles|No|The event that started it all|
 |Aug 5|[Mt. Baldy](https://newmexicofa50k.wordpress.com/baldy_50k/)|50k|No||
 |Aug 11|[Bigfoot](https://www.destinationtrailrun.com/bigfoot)|200 miles|No|Registered!|
@@ -67,5 +67,5 @@ is my middle name.
 |Nov 11|[White Mesa](https://newmexicofa50k.wordpress.com/white_mesa_50k/)|50k|No|_not announced yet_|
 |Nov 24|[Black Friday Turkey Trots](https://www.facebook.com/Burque-Brewery-Tour-563485270788124/)|4 miles|Yes|_not announced yet_|
 |Nov 25|[Bosque Bigfoot Boogie](https://www.racenm.com/)|50k|No|_not announced yet_|
-|Dec 9|[Tucson](https://www.tucsonmarathon.com/)|Marathon|No|_not announced yet_|
+|Dec 9|[Tucson](https://www.tucsonmarathon.com/)|Marathon|No|_not announced yet_, may not do, due to BMDM training|
 |Dec 30|[Grinch Lunch](https://www.facebook.com/events/587035643112558)|5k|Yes|_not announced yet_|
