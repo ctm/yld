@@ -266,6 +266,10 @@ seconds to have taken 2nd AG and another six seconds after that to have
 been first in my age group this year. No truck problems probably would
 have given me 3rd AG. I think 2nd or 1st AG would have been a coin-flip.
 
+On the other hand, nobody my age or older finished before I did, which
+is what I call&mdash;tongue in cheek&mdash;[beating
+the old people](https://www.runrevel.com/bcm/video/view/16381).  Whee!
+
 ## Aftermath
 
 The injury to my left knee was minor, but sufficiently uncomfortable
