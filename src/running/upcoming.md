@@ -59,6 +59,7 @@ is my middle name.
 |Jul 21|[BARGE](https://www.barge.org/) Fun Run|2 miles|No|The event that started it all|
 |Aug 5|[Mt. Baldy](https://newmexicofa50k.wordpress.com/baldy_50k/)|50k|No||
 |Aug 11|[Bigfoot](https://www.destinationtrailrun.com/bigfoot)|200 miles|No|Registered!|
+|Sep 22|[AA50k](https://newmexicofa50k.wordpress.com/aa50k/)|50k|No||
 |Sep 24|[Tour of Rio Grande](https://www.torgbc.com/)|100 miles|No|Bike ride: _not announced yet_|
 |Sep 30|[Mount Taylor](http://www.mttaylor50k.com/)|50k|No|_not announced yet_|
 |Oct 23|[Forever Young](https://www.abqroadrunners.com/forever-young-run.html)|6 miles|Yes|_not announced yet_|
