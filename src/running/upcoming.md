@@ -47,7 +47,8 @@ is my middle name.
 |Jan 1|[Foothills Fat Ass](https://newmexicofa50k.wordpress.com/foothills-50k/)|50k|No|RDing and participating|
 |Jan 21|[Sandia Snowshoe Race](https://friendsofthesandias.org/snowshoe-race/)|5k|Yes|Registered!|
 |Feb 18|[Mt. Taylor Winter Quadrathlon](http://www.mttaylorquad.org/)|Quadrathlon|No|Registered!|
-|Mar 4|[King of the Hill](https://www.loslunasnm.gov/721/King-of-the-Hill)|10k Ruck|Yes|Registered!|
+|Mar 11|[King of the Hill](https://www.loslunasnm.gov/721/King-of-the-Hill)|10k Ruck|Yes|Registered!|
+|Mar 11|[Shenanigains](https://ultrasignup.com/register.aspx?did=100045)|Timed|No|Registered! (I'll miss the first few hours due to King of the Hill)|
 |Mar 19|[Bataan Memorial Death March](https://bataanmarch.com/register/civilian-individual/)|Marathon Ruck|Yes|Registered!: Civilian Heavy|
 |Apr 16|[Tough Ruck](https://www.toughruck.org/)|Marathon Ruck|Yes|_have not registered yet_|
 |Apr 17|[Boston](https://www.baa.org/races/boston-marathon)|Marathon|No|Registered!|
