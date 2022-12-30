@@ -44,7 +44,7 @@ is my middle name.
 |Date|Event|Flavor|Racing?|Notes|
 |----|-----|--------|-------|-----|
 |Dec 31|[Grinch Lunch](https://www.facebook.com/events/587035643112558)|5k|Yes||
-|Jan 1|[Foothills Fat Ass](https://newmexicofa50k.wordpress.com/foothills-50k/)|50k|No|I'll be RDing and will only run if I have enough volunteers|
+|Jan 1|[Foothills Fat Ass](https://newmexicofa50k.wordpress.com/foothills-50k/)|50k|No|RDing and participating|
 |Jan 21|[Sandia Snowshoe Race](https://friendsofthesandias.org/snowshoe-race/)|5k|Yes|Registered!|
 |Feb 18|[Mt. Taylor Winter Quadrathlon](http://www.mttaylorquad.org/)|Quadrathlon|No|Registered!|
 |Mar 4|[King of the Hill](https://www.loslunasnm.gov/721/King-of-the-Hill)|10k Ruck|Yes|Registered!|
@@ -65,7 +65,7 @@ is my middle name.
 |Oct 23|[Forever Young](https://www.abqroadrunners.com/forever-young-run.html)|6 miles|Yes|_not announced yet_|
 |Oct 28|[Javelina Jundred](https://aravaiparunning.com/network/javelinajundred/)|100 miles|Yes|Goal: sub-20, _have not registered yet_|
 |Nov 4|[Deadman Peaks](https://deadmanpeaks.com/)|100 miles|No|_not announced yet_|
-|Nov 11|[White Mesa](https://newmexicofa50k.wordpress.com/white_mesa_50k/)|50k|No|_not announced yet_|
+|Nov 11|[White Mesa](https://newmexicofa50k.wordpress.com/white_mesa_50k/)|50k|No||
 |Nov 24|[Black Friday Turkey Trots](https://www.facebook.com/Burque-Brewery-Tour-563485270788124/)|4 miles|Yes|_not announced yet_|
 |Nov 25|[Bosque Bigfoot Boogie](https://www.racenm.com/)|50k|No|_not announced yet_|
 |Dec 9|[Tucson](https://www.tucsonmarathon.com/)|Marathon|No|_not announced yet_, may not do, due to BMDM training|
