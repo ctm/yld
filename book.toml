@@ -11,3 +11,21 @@ edition = "2021"
 
 [output.html]
 no-section-label = true
+
+[output.html.redirect]
+"/running/past/hardrock_2021.html" = "2021/hardrock.html"
+"/running/past/aa_50k_2022.html" = "2022/aa_50k_2022.html"
+"/running/past/bbf50k_2022.html" = "2022/bbf50k_2022.html"
+"/running/past/big_cottonwood_marathon_2022.html" = "2022/big_cottonwood_marathon_2022.html"
+"/running/past/black_friday_2022.html" = "2022/black_friday_2022.html"
+"/running/past/dptr_106m_2022.html" = "2022/dptr_106m_2022.html"
+"/running/past/duke_city_marathon_2022.html" = "2022/duke_city_marathon_2022.html"
+"/running/past/feral_hog_50k_rucksack_2022.html" = "2022/feral_hog_50k_rucksack_2022.html"
+"/running/past/forever_young_six_miler_2022.html" = "2022/forever_young_six_miler_2022.html"
+"/running/past/jj100_2022.html" = "2022/jj100_2022.html"
+"/running/past/mt_taylor_50k_2022.html" = "2022/mt_taylor_50k_2022.html"
+"/running/past/tatonka_5k_2022.html" = "2022/tatonka_5k_2022.html"
+"/running/past/torgbc_2022.html" = "2022/torgbc_2022.html"
+"/running/past/tortugas_mountain_2022.html" = "2022/tortugas_mountain_2022.html"
+"/running/past/tucson_marathon_2022.html" = "2022/tucson_marathon_2022.html"
+"/running/past/wmfa50k_2022.html" = "2022/wmfa50k_2022.html"
