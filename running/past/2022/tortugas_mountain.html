@@ -1,0 +1,510 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Tortugas Mountain 24 Hour Challenge - Young Lazy deadhead</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Way more than anyone wants to know about Cliff Matthews">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../../favicon.svg">
+        <link rel="shortcut icon" href="../../../favicon.png">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+        <link rel="stylesheet" href="../../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../../welcome.html">Welcome</a></li><li class="chapter-item expanded "><a href="../../../a_public_life.html">A Public Life</a></li><li class="chapter-item expanded "><a href="../../../running.html">Running</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../resources.html">Resources</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../resources/books.html">Books</a></li><li class="chapter-item expanded "><a href="../../../resources/my_stuff.html">My Stuff</a></li></ol></li><li class="chapter-item expanded "><a href="../../../running/direct.html">Events I Direct</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../running/direct/chimney_melon_50k.html">Chimney Melon 50k</a></li><li class="chapter-item expanded "><a href="../../../running/direct/baldy_50k.html">Baldy 50k</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../running/direct/baldy_50k/results.html">Results</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../../running/other_gpx_files.html">Other GPX Files</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../running/other_gpx_files/foothills_50k.html">Foothills 50k</a></li><li class="chapter-item expanded "><a href="../../../running/other_gpx_files/wmfa_50k.html">White Mesa Fat Ass 50k</a></li></ol></li><li class="chapter-item expanded "><a href="../../../running/past.html">Event Reports</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../running/past/2021.html">2021</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../running/past/2021/hardrock.html">Hardrock</a></li></ol></li><li class="chapter-item expanded "><a href="../../../running/past/2022.html">2022</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../running/past/2022/big_cottonwood_marathon.html">Big Cottonwood Marathon</a></li><li class="chapter-item expanded "><a href="../../../running/past/2022/aa_50k.html">AA 50k</a></li><li class="chapter-item expanded "><a href="../../../running/past/2022/torgbc.html">Tour of the Rio Grande</a></li><li class="chapter-item expanded "><a href="../../../running/past/2022/mt_taylor_50k.html">Mt. Taylor 50k</a></li><li class="chapter-item expanded "><a href="../../../running/past/2022/feral_hog_50k_rucksack.html">Feral Hog 50k Rucksack</a></li><li class="chapter-item expanded "><a href="../../../running/past/2022/tortugas_mountain.html" class="active">Tortugas Mountain 24 Hour Challenge</a></li><li class="chapter-item expanded "><a href="../../../running/past/2022/duke_city_marathon.html">Duke City Marathon</a></li><li class="chapter-item expanded "><a href="../../../running/past/2022/tatonka_5k.html">Tatonka 5k</a></li><li class="chapter-item expanded "><a href="../../../running/past/2022/forever_young_six_miler.html">Forever Young 6 miler</a></li><li class="chapter-item expanded "><a href="../../../running/past/2022/jj100.html">Javelina Jundred</a></li><li class="chapter-item expanded "><a href="../../../running/past/2022/dptr_106m.html">Deadman Peaks 106 miler</a></li><li class="chapter-item expanded "><a href="../../../running/past/2022/wmfa50k.html">White Mesa Fat Ass 50k</a></li><li class="chapter-item expanded "><a href="../../../running/past/2022/black_friday.html">Black Friday Turkey Trots</a></li><li class="chapter-item expanded "><a href="../../../running/past/2022/bbf50k.html">Bosque Bigfoot 50k</a></li><li class="chapter-item expanded "><a href="../../../running/past/2022/tucson_marathon.html">Tucson Marathon</a></li></ol></li><li class="chapter-item expanded "><a href="../../../running/past/2023.html">2023</a></li></ol></li><li class="chapter-item expanded "><a href="../../../running/upcoming.html">Future Events</a></li></ol></li><li class="chapter-item expanded "><a href="../../../thanks.html">Thanks</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../thanks/agdg.html">AGDG</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../thanks/agdg/agdgat.html">AGDGAT</a></li></ol></li><li class="chapter-item expanded "><a href="../../../thanks/barge.html">BARGE</a></li><li class="chapter-item expanded "><a href="../../../thanks/team_rwb.html">Team RWB</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Young Lazy deadhead</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="tortugas-mountain-24-hour-challenge-2022"><a class="header" href="#tortugas-mountain-24-hour-challenge-2022">Tortugas Mountain 24 Hour Challenge 2022</a></h1>
+<h2 id="overview"><a class="header" href="#overview">Overview</a></h2>
+<p>I completed fourteen loops: four before sleeping, ten after.  I was in
+the open division, not the drinking division, but I did drink a bit.
+Several people finished with more loops than I did, but I needed to be
+very conservative so that I could return to Albuquerque (a three and
+half hour drive) after the awards ceremony in order to be the five
+hour pace group leader for the Duke City marathon.</p>
+<h2 id="pre-race"><a class="header" href="#pre-race">Pre-Race</a></h2>
+<p>The day before the race, I borrowed $100 from my son for gas money.  I
+didn't think that would be enough for all the gas I would consume, but
+I still had some cash in my wallet and a tiny bit in the bank which I
+could use via my debit card.</p>
+<p>On race day, I woke up and went to make my wife a cappuccino only to
+realize we were out of espresso beans.  Oops!  We had been using
+fairly scruffy beans of late, so I chose to drive down to <a href="https://www.michaelthomascoffee.com/">Michael
+Thomas</a> and get some <strong>excellent</strong>
+beans. I knew the expenditure <em>might</em> leave me without enough money for
+gas on the way home, but after some work on my truck, I didn't have an
+estimate of the miles per gallon I'd get on the trip.  I thought I'd
+be fine but knew that if I was wrong I could borrow money from any of
+a number of people I knew who would be at the race.</p>
+<p>Instead of driving directly to the start/finish site, I drove to
+<a href="http://spotteddogbrewery.com/">Spotted Dog Brewery</a> because I had an
+empty growler with a gift card good for a fill attached to it.  It was
+awarded to me for finishing first in the drinking division last year.
+I didn't fill it last year because it was awarded at the end of the
+race and by then I had already drunk fourteen beers during the course
+of the race and another celebratory beer or two after.  They had a wee
+heavy on tap, so I chose that, but needed to pay about an extra ten
+bucks because of inflation and/or the wee heavy being a bit pricier
+(after all, at 9.5% ABV it is about double the strength of normal
+beer).  I tipped $5, because by then I was reasonably sure I was going
+to need to hit someone up for some additional gas money and I didn't
+want my current cash-poor situation turning me into a stingy bastard.</p>
+<p>From Spotted Dog, I drove to the <a href="https://bryanberg.net/files/outdoors-hiking-areas-with-maps/mountain-time-2/monte-vista-trail-tortugas-a-mountain/">Monte Vista Hiking Trail Parking
+Log</a>.
+That's where the start/finish line is and where I camp.  I got there
+about and hour and a half before the race was due to start, which was
+an hour before the drinkers were going to have a rule-change meeting.
+Although I wasn't going to participate in the drinking division, I had
+had an epiphany and realized that I could still drink a bit at the
+beginning without it jeopardizing my health (e.g., allowing me to
+catch a cold) or otherwise decreasing my ability to pace the Duke City
+Marathon.</p>
+<p>That hour and a half was enough time for me to set up my tent and socialize.
+Embarrassingly, I did not recognize Rob, the founder of this event.  I know
+Rob's son Justin better than Rob, although it's been a few years since I've
+seen Justin and I probably couldn't pick him out of crowd either.  In addition
+to Rob, who lives in Las Cruces, Kathy had driven down from Albuquerque.
+Kathy had done the Feral Hog 25k six days prior, so she and I were the only
+Feral Hog participants who were also doing the 24 Hour Challenge.  That
+makes us Feral Tortugas!</p>
+<p>In some sense, however, the two most important people I ran into were
+Perky and Prince Charming.  They had ponied up for the two porta
+potties.  Yay!  As we chatted, I found out that the winners (male and
+female) of the beer division were <em>not</em> going to get a growler this
+year.  I didn't yet know why, but I did volunteer that I had just
+picked up a growler of wee heavy and before I had even asked about
+borrowing gas money, Perky volunteered to by the growler for me.  I
+asked for $20, which was the amount I was going to borrow, but she
+handed me $30.  I wasn't going to fight her over the extra, especially
+since Prince Charming could break me in half like a toothpick.</p>
+<p>In the blink of an eye, it was five-thirty, a half hour before race
+start and the beer drinkers gathered to hear the new rules and the big
+surprise.  Instead of only the winners of the beer division getting a
+gift, everyone who was going to drink a beer at this little meeting
+(i.e., before the first lap) got a very nice <em>large</em> beer stein with
+the Beer Soaked logo and the epitaph &quot;It's my own damn fault!&quot;  I
+drank a 16 oz. 7.5% ABV <a href="https://www.beeradvocate.com/beer/profile/24659/67709/">Malpais
+Stout</a> and
+thanked Rob profusely for this participant's award.</p>
+<p>In the days leading up to this race I had decided that since I wasn't
+going to compete, I'd make an already social event even more social by
+running each loop with a different person and chatting with (at?)
+them.  However, I never articulated this plan, which was good, because
+I changed my mind when I remembered that I often have a Zoom meeting
+with a bunch of friends on Friday, Saturday and occasionally Wednesday
+evenings at 6pm, which was the starting time for Tortugas Mountain.
+They knew I was a crazy person who liked to run in circles, now I got
+a chance to show them.</p>
+<h2 id="loops-before-bed"><a class="header" href="#loops-before-bed">Loops Before Bed</a></h2>
+<p>I finished <a href="https://www.strava.com/activities/7964427510">four loops</a>
+before heading into my tent to sleep.</p>
+<p>So, I used my phone to join the Zoom meeting, explained to the people
+on the meeting what I was doing, then switched to the forward facing
+camera and stayed on the meeting until the final person dropped off
+about four hours later.</p>
+<p>Before my second loop I had a 12 oz. 7% ABV <a href="https://santafebrewing.com/beer/social-hour/">Social
+Hour</a> and before my
+third loop I had a 12 oz. 7% ABV <a href="https://tumblerootbreweryanddistillery.com/beer/sunset-hazy-ipa/">Sunset Hazy
+IPA</a>.
+On my fourth lap I fell from grace and did not drink a beer.  This was
+according to plan.  I had already had the equivalent of five beers due
+to the first one being a pint rather than twelve ounces and all of
+them being stronger than 5% ABV.  When competing in the drinking
+division, you must drink a beer each loop (in previous years it was
+<em>before</em> each loop, i.e. in the start/finish area, but this year they
+relaxed the rules and allow you to drink the beer as you
+run/hike/walk/stumble).  As such, when competing in the drinking
+division, it makes sense to have the weakest beer allowed (5% ABV) and
+the smallest amount (12 oz.) because drinking stronger beer adds up
+(just ask Jason, who was drinking 7% ABV beers at the beginning last
+year!).  However, since I was in the open division, stacking a little
+more alcohol early was just that much more social lubricant for my
+zoom call.</p>
+<p>My plan had been to finish five or six laps before going to bed, but I
+hadn't really thought things through and I hadn't even considered the
+Zoom call, which slowed me down a bit.  So when I saw that it was about
+eleven thirty at the end of my fourth lap, I decided it was a good time
+to stop and get some sleep.</p>
+<p>It took me a little while to sleep and I woke up a few times, both to
+use my pee bottle and to hear some fun friendly noise as various
+runners finished their laps.  That was great, it meant that even my
+sleeping was semi-social.</p>
+<p>At 5:15 my alarm went off like it usually does and I had the double espresso
+I had made at home and brought with me.  I probably have a double espresso
+at 5:15 Mountain time 360 days a year.  Every once in a while I shift when
+I have it, but only in extenuating circumstances.  I typically wake up
+well before 5:15 but wait until 5:15 (on the second!) to drink the espresso
+because I use it to synchronize my sleep so that I don't get up earlier and
+earlier or later and later and to also tell my GI system to do its thing.</p>
+<p>It was still dark out, so I put my Kogolla light bar and Petzl headlamp
+back on (those are what I was using the night before) putzed around a bit
+hoping for the caffeine to allow me to take a dump, got impatient and
+finally started my next loops at 5:36am.</p>
+<h2 id="loops-after-bed"><a class="header" href="#loops-after-bed">Loops After Bed</a></h2>
+<p>I completed <a href="https://www.strava.com/activities/7969011612">ten loops</a>
+after sleeping.</p>
+<p>Although I had much less sleep and a lower quality of sleep than normal,
+I felt great.  My lighting was excellent and it was a bit cooler. I ran
+my first few post-bedtime laps in a little under an hour each, and that
+includes the time I was taking to eat like a piggy at the start/finish
+aid station as well as at the aid station that is roughly at the half-way
+point.</p>
+<p>I had really enjoyed my Zoom the night before, so I did something
+similar at 11am.  I have a different group of people who have a
+recurring 11am daily zoom.  I've known some of these people for close
+to thirty years but I only recently found out that they had this Zoom
+call every day (perhaps I knew that at one point and forgot, but I'm
+not on Facebook and I don't recall reading about it on our mailing
+list).  There were only two others on the call, but it was fun to do a
+show-and-tell and answer questions for about a half hour.</p>
+<p>Like many a looped-course ultra, this race was run &quot;washing-machine&quot;
+style, meaning runners switch directions for each loop.  The first and
+all odd loops were run clockwise (as viewed from above), the second
+and all even loops counter-clockwise.  That allows competitors to see
+their competition and allows social participants to see the entire
+field, at least briefly, several times.  However, it did conspire
+against allowing me to spend time with Lukas, the winner.  We were
+chatting a little bit at the start/finish aid station, and we
+continued our conversation as we jogged together back to the main
+course, but, alas, he turned right and I turned left. For the next
+several loops, I'd see Lukas at the start/finish aid station, it was
+almost like clockwork.  The difference though is that before we synced
+up he had already run <em>seven</em> more laps than I had! He also chose to
+run a final lap after I had called it a day, so he got twenty-two laps
+in all told, while I finished a mere fourteen.</p>
+<p>Around 2pm I was finishing my twelfth lap and I had already worked out
+the numbers.  If I sped up a little I could get three more laps in
+before the 6pm finish time, but that would be taxing, might increase
+my chance of injury and would leave me little time to tear down my
+tent and put things away before the awards ceremony.  As such, I
+decided that I would do fourteen laps this year, just like last year,
+but since it was in the open division, I wouldn't even podium.  Last
+year my fourteen laps (and fourteen &quot;beers&quot; (they were mostly hard
+seltzers which I might explain sometime, but not now)) was not just
+first place in the drinking division but a new course record.</p>
+<p>Once I realized I was only going to do two more laps, I decided to see
+if I could mooch a beer for each of my two final laps.  There would be
+four hours between the first of the two beers and the end of the race
+and about two and a half before the second beer and the end of the
+race and even after the end of the race was the awards ceremony, so I
+would still be able to drive safely, legally and comfortably.  I came
+into the aid station and asked if anyone could give me a beer and the
+few people who were there were all out of beer!  Someone, however,
+(Marco?), let me know that earlier Perky and Prince Charming had
+offered him a beer which he had declined, so he retroactively accepted
+that beer and gave it to me (i.e., we pilfered a Miller High Life from
+their cooler).  I know P&amp;PC well enough to know that they wouldn't
+mind and that I probably was not draining them dry.</p>
+<p>Guess whom I saw when finishing my thirteenth lap!?  Sure enough P&amp;PC
+were at their tailgate, parked next to my truck, and I got to confess
+my sin.  They were amused and volunteered to give me another beer.  I
+could have another Miller High Life or—what the heck&amp;mash;we
+could open the growler.  They even had a nice <em>small</em> plastic cup I
+could pour the growler into.  I was sold.  I did have to be careful
+to limit myself, because this was indeed stronger brew, but it was
+only 3:30pm and I wouldn't be driving until 6:15 or 6:30.</p>
+<p>I had some of the wee heavy and was futzing with my stuff as P&amp;PC
+departed.  Like I, they were going to head out on a counter-clockwise
+loop.  I knew I would catch up with them and this time, I'd actually
+hang out and chat on the loop.  So, a little while later I topped off
+my beer and headed up.  I wanted to catch up, but I also didn't want
+to spill my beer.  I didn't execute perfectly and there was a little
+sloshing over the side, but shortly I was within chatting distance.</p>
+<p>Perky walks quickly!  Here walking pace is slower than mine, so she
+would get ahead of Prince Charming and myself and eventually PC would
+remind me to run a bit to catch up so that I wouldn't have to shout so
+much.  We had good time catching up and discussing our plans for 2023.</p>
+<h2 id="post-race"><a class="header" href="#post-race">Post-Race</a></h2>
+<p>At 5:09 I was done with my laps and done drinking until after noon the
+following day.  I pulled out my cooler and spent about a half hour
+packing my sleeping mat, eating recovery food fortified (with chia
+seeds, hemp seeds, soy milk and Udo's Oil)) oatmeal, nasty green
+drink, rice milk and some spaghetti and most importantly listening to
+everyone's stories.  I then hastily packed my tent, gathered the rest
+of my gear and shoved everything in my truck so that I could be back
+for the awards ceremony.</p>
+<p>The two times I've done this previously, I've left my tent set up and
+gone back to it after the ceremony.  This year, with the start of the
+Duke City Marathon less than thirteen hours away, I said thanks,
+hopped in my truck, drove to a gas station, bought fifty dollars of
+fuel, saw that my tank was almost full, crossed my fingers and got on
+the road.  Oh, while the gas was pumping, I had the choice: eat more
+spaghetti or clean the bug blots off my windshield.  The splats were a
+bit of a nuisance, but I was hungry, so I left them there.</p>
+<p>My drive back was mostly uneventful.  I was not tired.  I was not wired.
+I wasn't overly anxious, but I did continue looking at the gas gauge with
+regularity.  I had one obnoxious driver to deal with, but luckily that
+vehicle pulled off in Truth or Consequences (that's the name of a town).</p>
+<p>Everything was basically going fine until I ran into a little rain.
+My truck has fairly dim headlights (although they're a little bit
+brighter than they had been a few days go before I replaced a bulb)
+and my night vision isn't great.  My windshield wipers are pretty
+poor, but it wasn't supposed to rain until the next day, or at least
+that's what I thought.  Had I known it would rain, I wouldn't have
+eaten that spaghetti.  Light rain, bug bits, and poor windshield
+wipers are a bad combination, especially at night.  Luckily, there
+were some gaps in the slime that I could see through until the rain
+came down harder and everything got cleaned up.</p>
+<p>I got home around 9:30, started charging my electrical stuff, took a
+shower, put away a few things, set my alarm for 4:30am and got to bed
+around 11pm.  Tomorrow would be fun (and I'm not being sarcastic).</p>
+<p>Whee!</p>
+<h2 id="food"><a class="header" href="#food">&quot;Food&quot;</a></h2>
+<p>I brought some food from Albuquerque and think I might have had enough
+calories to squeak by, but there was yummy junk food at the aid stations
+so I ate a ton of that during the race.</p>
+<p>Sophie had made a bunch of potato slices roasted in spiced oil.  I had a few
+in Albuquerque for lunch, then stuffed a lot more in a baggie for the
+drive down.  Sure enough, I ate them all.</p>
+<p>Before the race I ate a bag of lentils (2/3rds cup when they were
+dry).  I had made an entire package of spaghetti (approximately 2,000
+calories), but only ate a little of that during the race.  Most came
+back to Albuquerque with me and I ate it on the Monday and Tuesday
+after the race.</p>
+<p>Sophie had made some homemade hummus and I took half of it with me in a
+baggie.  With the baggie sitting on top of the ice in the cooler, the hummus
+took on a Play-Doh consistency, which was great, because I could tear off a
+piece and eat it without utensils.  I also brought a baggie of steamed
+broccoli and cauliflower that I ate mid-day Saturday.</p>
+<p>I ate a huge amount of aid station &quot;orange slice&quot; candies and pretzels
+on both days.  Thanks!</p>
+<p>On Saturday, I additionally snacked on salt &amp; vinegar potato chips,
+some vegan cookies that were kind of like cream colored Oreos and some
+vegan Dijon mustard crisps.  I had a Mountain Dew after each of my first
+two Saturday laps.</p>
+<p>At the remote aid station, after I had eaten all the orange slice candies,
+I had a big handful of M&amp;Ms and eight tiny Twix bites.  Neither of those
+are vegan; they both have milk in them.  I believe those were the only two
+non-vegan things I consumed.</p>
+<h2 id="minor-setbacks"><a class="header" href="#minor-setbacks">Minor Setbacks</a></h2>
+<h3 id="chafing"><a class="header" href="#chafing">Chafing</a></h3>
+<p>I did not bring Body Glide and my running shorts irritated me a little
+bit.  I also was wearing an ultra-vest without a shirt when I was using
+my Kogolla light bar because I wanted something to hold the battery
+and (when not Zooming) my iPod touch.  However, at one point I also
+added tube filled with water and that extra pressure was enough to
+chafe my right nipple.  Eventually I realized what was going on and
+moved the water to the other side and everything was fine.</p>
+<h3 id="sunburn"><a class="header" href="#sunburn">Sunburn</a></h3>
+<p>I didn't wear any sunscreen, so I got a minor sunburn.  I definitely didn't
+feel it at the time, so I don't think it slowed me down appreciably.  I felt
+it slightly after getting home. Over the next couple of days the red turned
+to tan, so I'm happy.</p>
+<h3 id="falling"><a class="header" href="#falling">Falling</a></h3>
+<p>I fell and hit the ground a few times.  The first two or three times were,
+IIRC, Saturday, i.e., after I had slept, before I was drinking beer again.
+I tore some skin here and there but none were bad enough to introduce a
+limp or cause trouble post race.</p>
+<h3 id="heat"><a class="header" href="#heat">Heat</a></h3>
+<p>I had meant to bring my ice hat and use it, both because I think it speeds
+me up, but also to get a little practice with it before Javelina Jundred.
+I even had it in the file that I created that had the
+list of things to bring, but I forgot to look at that file.</p>
+<h2 id="music-driven-legs"><a class="header" href="#music-driven-legs">Music Driven Legs</a></h2>
+<p>I easily get the runner's high.  While I have it, music often hits me
+emotionally.  I feel like I'm a bull being led by a nose-ring and when
+the music is upbeat or perhaps just emotionally satisfying, I
+sometimes use it to drive my legs.  One song that touched me while I
+was out there was City of New Orleans.  City of New Orleans was
+written by <a href="https://en.wikipedia.org/wiki/Steve_Goodman">Steve
+Goodman</a> but made famous
+by Arlo Guthrie.  Neither of those two were singing it, but since it
+came off my iPod library, I might eventually figure out whose version
+it was.</p>
+<p>Listening to anything Steve Goodman had to do with always brings out a mix
+of emotions in me.  The guy died of cancer when he was 36 but penned and
+performed many a classic.  City of New Orleans isn't particularly fast,
+and I find it melancholy, but it was definitely driving my legs hard as I
+finished up one of my daylight even laps.  I can't remember the other
+songs that wound me up, although one of them was by Jesus Jones.</p>
+<h2 id="historical"><a class="header" href="#historical">Historical</a></h2>
+<p>The Tortuga Mountain 24 Hour Challenge started out as a drinking event, where
+all participants were required to drink a beer before each 4 mile loop around
+Tortugas Mountain (also known as &quot;A&quot; Mountain due to the capital 'A' in white
+rock on the hill that is visible for miles).  The beer needed to be 12 ounces
+or more and 5% ABV or more.</p>
+<p>As the event became popular, some people chose to do it without all
+the beer, so separate divisions were created.  These divisions are
+recognized at the event itself, but are not made in the UltraSignup
+results. So, you can either take my word or ask a race director, but
+in 2021, I set a new course record of 14 beers and <a href="https://ultrasignup.com/results_event.aspx?did=83711#id220546">56
+miles</a>.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../running/past/2022/feral_hog_50k_rucksack.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../../running/past/2022/duke_city_marathon.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../running/past/2022/feral_hog_50k_rucksack.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../../running/past/2022/duke_city_marathon.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>

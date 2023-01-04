@@ -1,0 +1,482 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Duke City Marathon - Young Lazy deadhead</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Way more than anyone wants to know about Cliff Matthews">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../../favicon.svg">
+        <link rel="shortcut icon" href="../../../favicon.png">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+        <link rel="stylesheet" href="../../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../../welcome.html">Welcome</a></li><li class="chapter-item expanded "><a href="../../../a_public_life.html">A Public Life</a></li><li class="chapter-item expanded "><a href="../../../running.html">Running</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../resources.html">Resources</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../resources/books.html">Books</a></li><li class="chapter-item expanded "><a href="../../../resources/my_stuff.html">My Stuff</a></li></ol></li><li class="chapter-item expanded "><a href="../../../running/direct.html">Events I Direct</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../running/direct/chimney_melon_50k.html">Chimney Melon 50k</a></li><li class="chapter-item expanded "><a href="../../../running/direct/baldy_50k.html">Baldy 50k</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../running/direct/baldy_50k/results.html">Results</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../../running/other_gpx_files.html">Other GPX Files</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../running/other_gpx_files/foothills_50k.html">Foothills 50k</a></li><li class="chapter-item expanded "><a href="../../../running/other_gpx_files/wmfa_50k.html">White Mesa Fat Ass 50k</a></li></ol></li><li class="chapter-item expanded "><a href="../../../running/past.html">Event Reports</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../running/past/2021.html">2021</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../running/past/2021/hardrock.html">Hardrock</a></li></ol></li><li class="chapter-item expanded "><a href="../../../running/past/2022.html">2022</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../running/past/2022/big_cottonwood_marathon.html">Big Cottonwood Marathon</a></li><li class="chapter-item expanded "><a href="../../../running/past/2022/aa_50k.html">AA 50k</a></li><li class="chapter-item expanded "><a href="../../../running/past/2022/torgbc.html">Tour of the Rio Grande</a></li><li class="chapter-item expanded "><a href="../../../running/past/2022/mt_taylor_50k.html">Mt. Taylor 50k</a></li><li class="chapter-item expanded "><a href="../../../running/past/2022/feral_hog_50k_rucksack.html">Feral Hog 50k Rucksack</a></li><li class="chapter-item expanded "><a href="../../../running/past/2022/tortugas_mountain.html">Tortugas Mountain 24 Hour Challenge</a></li><li class="chapter-item expanded "><a href="../../../running/past/2022/duke_city_marathon.html" class="active">Duke City Marathon</a></li><li class="chapter-item expanded "><a href="../../../running/past/2022/tatonka_5k.html">Tatonka 5k</a></li><li class="chapter-item expanded "><a href="../../../running/past/2022/forever_young_six_miler.html">Forever Young 6 miler</a></li><li class="chapter-item expanded "><a href="../../../running/past/2022/jj100.html">Javelina Jundred</a></li><li class="chapter-item expanded "><a href="../../../running/past/2022/dptr_106m.html">Deadman Peaks 106 miler</a></li><li class="chapter-item expanded "><a href="../../../running/past/2022/wmfa50k.html">White Mesa Fat Ass 50k</a></li><li class="chapter-item expanded "><a href="../../../running/past/2022/black_friday.html">Black Friday Turkey Trots</a></li><li class="chapter-item expanded "><a href="../../../running/past/2022/bbf50k.html">Bosque Bigfoot 50k</a></li><li class="chapter-item expanded "><a href="../../../running/past/2022/tucson_marathon.html">Tucson Marathon</a></li></ol></li><li class="chapter-item expanded "><a href="../../../running/past/2023.html">2023</a></li></ol></li><li class="chapter-item expanded "><a href="../../../running/upcoming.html">Future Events</a></li></ol></li><li class="chapter-item expanded "><a href="../../../thanks.html">Thanks</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../thanks/agdg.html">AGDG</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../thanks/agdg/agdgat.html">AGDGAT</a></li></ol></li><li class="chapter-item expanded "><a href="../../../thanks/barge.html">BARGE</a></li><li class="chapter-item expanded "><a href="../../../thanks/team_rwb.html">Team RWB</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Young Lazy deadhead</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="duke-city-marathon-2022"><a class="header" href="#duke-city-marathon-2022">Duke City Marathon 2022</a></h1>
+<h2 id="overview"><a class="header" href="#overview">Overview</a></h2>
+<p>I ran
+<a href="https://www.athlinks.com/event/35398/results/Event/1032202/Course/2296576/Bib/1458">4:59:51</a>,
+<em>much</em> (i.e., nine seconds) too quickly.  My
+<a href="https://www.strava.com/activities/7974024108">miles</a> weren't
+particularly consistent, either, with my fastest complete mile being
+10:58 and my final .43 mile being 10:21.  My slowest mile was 12:01.</p>
+<h2 id="practice"><a class="header" href="#practice">Practice</a></h2>
+<p>I take my pacing seriously.  In the week before DCM, I did four 4.0
+mile test runs, where my goal was to run an 11:27 pace for exactly 4
+miles. I hit my goal each day:</p>
+<ul>
+<li><a href="https://www.strava.com/activities/7946619899">45:56</a></li>
+<li><a href="https://www.strava.com/activities/7952148780">45:56</a></li>
+<li><a href="https://www.strava.com/activities/7957238032">45:54</a></li>
+<li><a href="https://www.strava.com/activities/7961958284">45:54</a></li>
+</ul>
+<p>I used two GPS watches, one showing my my overall average pace and the
+other showing me my instantaneous pace.  The problem is that neither
+watch gives me a particularly accurate instantaneous pace, but with
+both watches and practice I can do fairly well.</p>
+<h2 id="sign-up"><a class="header" href="#sign-up">Sign-Up</a></h2>
+<p>I got to run this for free, so I don't want to sound like I'm whining,
+but there always seems to be additional complication doing this as a
+pacer, because instead of using an online form to register, I got a
+PDF which I then filled out and submitted to Glenda which she then
+submitted to the Duke City Marathon people.</p>
+<p>Just as I was approaching the Spotted Dog Brewery I got a text message:</p>
+<blockquote>
+<p>Hey Clifford, this is [redacted] with the Duke City Marathon. We received your form, but there is no race checked off. Can you please let me know which race you would like to run</p>
+</blockquote>
+<p>At a light I responded with </p>
+<blockquote>
+<p>&quot;Marathon. I'm the 5 hour pace group leader&quot;</p>
+</blockquote>
+<p>I didn't attempt to look up my details while I was away from home
+(doing the <a href="tortugas_mountain_2022.html">Tortugas 24 Hour Challenge</a>).
+Race morning I wanted to see how people could track me and I found I
+was listed as &quot;Cliff&quot;, not &quot;Clifford&quot; as I had written on the form and
+as I was messaged. Even worse, my age was listed as 42.  These
+differences don't matter to me personally, but streamlining and
+bug-fixing the pacer process might allow DCM to get more pacers in the
+future.</p>
+<h2 id="weather"><a class="header" href="#weather">Weather</a></h2>
+<p>On Friday morning, before I left for Las Cruces (returning Saturday
+evening), I had already checked the DCM race-day weather and saw that
+it was going to be low fifties, winds around twenty five miles per
+hour and rain.  Wind (except when it's a tailwind) is always annoying,
+especially when carrying a sign, but my big worry was that I am used
+to dressing lightly and speeding up to keep my body warm.  As a pacer,
+it's my duty to keep a steady pace.  So I set aside a long sleeve
+shirt, a fleece hat, light rain jacket, gloves and hand warmers for
+race day morning.</p>
+<h2 id="pre-race"><a class="header" href="#pre-race">Pre-Race</a></h2>
+<p>My alarm went off at 4:30 and I downed a double espresso that I had
+made previously.  Almost every other day I have my double espresso at
+5:15, but I wanted to make sure I had plenty of time to poop before
+driving to the convention center.</p>
+<p>I ate a 533 calorie serving of my <a href="https://github.com/ctm/diet/blob/master/recipes/fortified_oatmeal.txt">fortified
+oatmeal</a>
+at 4:45.  If it hadn't been for the weather, I'd have probably just
+started the race in a fasted state, since I can run or bike slowly for
+several hours in that state. However, I didn't want to risk it, since
+it was my duty to keep a steady pace.</p>
+<p>I got to the convention center parking lot with plenty of time to spare.
+I made my way to the Albuquerque Road Runners bag drop to pick up my bib
+and sign.  I chatted a bit with Dennis and Glenda and as time passed, I
+decided to ditch more and more of my rain gear.  Eventually I decided to
+use the hand warmers (because they're trivial to throw away if they get
+annoying) and to tie my rain jacket around my waist.</p>
+<p>As usual, the Road Runners had a huge bowl of tiny Tootsie Rolls an as
+usual, I ate a whole bunch of them.</p>
+<p>At some point, I Judy (see below) introduced herself to me and let me know
+she was going to run around my pace because she was training for an upcoming
+fifty miler. Yay! Go Judy!</p>
+<p>I met
+<a href="https://www.athlinks.com/event/35398/results/Event/1032202/Course/2296576/Bib/274">Andrew</a>,
+the 3:45 pace group leader and
+<a href="https://www.athlinks.com/event/35398/results/Event/1032202/Course/2296576/Bib/1459">Nick</a>,
+the 4:00 pace group leader.  We chatted a bit about running, then
+headed out to hold up our signs so people could find us.</p>
+<p>Days after finishing DCM, I looked up Nick on UltraSignup and saw that
+he had come in
+<a href="https://ultrasignup.com/results_event.aspx?did=80566#id1112065">3rd</a>!
+(just after <a href="https://ultrasignup.com/results_participant.aspx?fname=Luke&amp;lname=Nelson&amp;age=41">Luke
+Nelson</a>!)
+in the <a href="https://www.plain100.com/">Plain 100</a> in 2021.  I am not
+worthy; I suck at navigating (although I'm <a href="https://bataanmemorialdeathmarch.itsyourrace.com/Results/6574/2016/35464/1524">OK with a pack)</a>.</p>
+<h2 id="the-race"><a class="header" href="#the-race">The Race</a></h2>
+<h3 id="first-half"><a class="header" href="#first-half">First Half</a></h3>
+<p>As usual, I was a chatterbox in the first half.  I volunteered a lot
+of advice to anyone willing to listen or who was stuck nearby.  I
+tried to emphasize that people are different and that I don't
+necessarily know what I'm doing, and I tried to add some
+self-deprecating remarks, but <a href="https://www.scottishpoetrylibrary.org.uk/poem/louse-seeing-one-ladys-bonnet-church/">who
+knows?</a></p>
+<p>I tried to get names and stories from people running with me, but I didn't
+take notes after the race and so I've already forgotten many details.  Four
+people I do remember are:</p>
+<ul>
+<li><a href="https://www.athlinks.com/event/35398/results/Event/1032202/Course/2296576/Bib/189">Judy</a>, an ultra runner with an upcoming 50 miler</li>
+<li><a href="https://www.athlinks.com/event/35398/results/Event/1032202/Course/2296576/Bib/165">Chris</a>, an Economics Ph.D. student, former programmer and poker enthusiast</li>
+<li><a href="https://www.athlinks.com/event/35398/results/Event/1032202/Course/2296576/Bib/158">Michael</a>, a jiu-jitsu fighter from Arizona</li>
+<li><a href="https://www.athlinks.com/event/35398/results/Event/1032202/Course/2296576/Bib/361">Gus</a>, who was sufficiently silent in the first half to escape my attempted friendliness</li>
+</ul>
+<p>In the first mile I mentioned that I think the shorter the distance a
+race is, the harder it is.  I elaborated to Chris, by mentioning that
+<em>typically</em> goals change due to the distance. i.e., when you're
+sprinting, your only goal is to finish as quickly as possible; when
+you're running a marathon your goal tends to be to PR and/or correct
+previous mistakes, but when running an ultra often your only goal is
+to finish.</p>
+<p>Judy and I talked a little bit about ultra-running before she got ahead
+of me.</p>
+<p>Before too long, Michael and I traded story after story. That may have been
+boring (or worse!) for the others, but we didn't care; we were clicking off
+miles and having a great day. As the turn-around approached, Michael bid me
+goodbye, knowing that he was going to run the second half a little slower.</p>
+<p>I noticed Gus, but at this point he wasn't part of the conversation and
+I didn't know whether he was deliberately running our pace or if he
+just happened to be there.  In retrospect, heh!</p>
+<h3 id="second-half"><a class="header" href="#second-half">Second Half</a></h3>
+<p>After the turnaround, I saw the 13 mile sign, checked my GPS watch and saw
+that it said 13.18 miles. Uh oh. That's a big enough discrepancy that a
+11:27 pace is not going to get me to the finish line in five hours. Although
+I'd like to hit five hours exactly, I'd rather finish slightly early than 
+slightly late, because if anyone is following me and wants to get sub five,
+they may not think about the fact that it's chip timed and they may have
+started in front of me, in which case they need to finish in front of me
+too.  Being early just exacerbates that problem.</p>
+<p>Since there was a little bit of a tailwind, I chose to speed up a
+little bit and bring my average pace to around 11:24.  I also decided
+that I should probably ingest some calories, since I hadn't eaten or
+drank anything since the race started.  I had five gels with me and
+planned on eating three, but I accidentally got four out, so that's
+what I ate.  Tearing open the packets and making sure not to
+accidentally drop anything while holding the &quot;5:00&quot; sign was an
+exercise in clumsiness, but I got it done.</p>
+<p>Before too long I started having a cup of water at some of the aid
+stations.  I'm a firm believer in drinking only when I'm thirsty and I
+hadn't been thirsty up until then. Between it getting warmer, me
+having more miles on my legs and the gels (at least two of the four
+were caffeinated), I got slightly thirsty, so I drank a little here
+and there.</p>
+<p>As I ran westward on Paseo del Norte I ran into Judy.  Looking at my
+splits, I now know I was running about a 10:57 minute/mile pace.  At
+the time I knew I was running faster than 11:27 because I was trying
+go get down to 11:24 overall.  If I had confidence in the mile marking
+and my math, I might have tried to run a little slower, but I figured
+if I was going to make a mistake and run a little too quickly, doing
+so here, with the tailwind and before everyone was hitting the wall
+would be best.</p>
+<p>Not too long after turning south on the Bosque Bike Path, I had a
+chance to chat with
+<a href="https://www.athlinks.com/event/35398/results/Event/1032202/Course/2296576/Bib/397">Julie</a>,
+a <a href="http://www.50statesmarathonclub.com/">50 states</a> member who plans
+to finish in Hawaii.  She told me how many states she had left and I
+think it was eight.  I believe she's hoping to finish three or four a
+year.</p>
+<p>If I remember correctly, it wasn't too long after chatting with Julie
+that I started talking with Chris again. Eventually I confessed to be
+working on poker software and we chatted a bit about that.
+Unfortunately, I got wrapped up in the conversation and let my pace
+gradually speed up.  I don't know if it was due to my increased pace,
+but Chris developed a cramp at some point and I didn't see him again,
+although looking at the results I see he (5:20:58) and Julie (5:20:53)
+finished within five seconds of each other. Neat!</p>
+<p>I sort of thought I was all alone, except the quiet guy was still
+there.  I think it was around twenty miles in when I started chatting
+him up.  He seemed to be breathing a bit hard, so initially I expected
+him to drop off, but it turns out he had been deliberately following me
+because he had indeed wanted to finish sub five.</p>
+<p>Eventually I learned this formerly silent guy was Gus. What I didn't
+know until after the race was over is that my ultra running friend
+<a href="https://www.athlinks.com/event/35398/results/Event/1032202/Course/2296576/Bib/339">John
+Hancock</a>
+had pointed Gus at me.  Gus had found John through Strava and when
+John heard that Gus wanted to run sub five he pointed me out.  I had
+seen John before the race start and he even mentioned that he had sent
+someone my way, but at the time Gus wasn't around, so I didn't know
+whom he had sent.</p>
+<p>One of the markers—23, I think—toward the end of the
+course agreed with my watch.  This was a little disconcerting, because
+most of the previous ones had all been around .2 miles further than my
+watch was claiming I had run.  If this new one was correct, then I've
+been running much too fast, so once again I slowed down a bit, only to
+get to find the next sign about .2 miles further than my GPS watch
+said. D'oh!</p>
+<p>I don't know for sure what was happening with the signs. I believe
+courses are supposed to be measured by running a wheel along the
+shortest distance within the cones and I most definitely wasn't
+running the tangents.  However, at one point—25, I
+think—the marathon and half marathon distance signs were fairly
+close to each other and since the rest of the course was shared, that
+couldn't be right, because they should be a tenth of a mile apart.</p>
+<p>With less than a mile to go I encouraged Gus to run ahead so that he
+would lock down his sub-five (which he did with a 4:59:38 finish).  I was
+alone and trying to adjust my speed to take into consideration how much
+further I thought might be left in both distance and time.  Someone saw
+me approaching him and shouted</p>
+<blockquote>
+<p>&quot;Oh no you don't!&quot;</p>
+</blockquote>
+<p>and sped up.  He was going for sub-five. I occasionally shouted
+&quot;Run!&quot;  at him because I didn't want him to be caught short by the
+chip timing.</p>
+<h2 id="post-race"><a class="header" href="#post-race">Post Race</a></h2>
+<p>As I approached the finish line it was clear I was going to finish too
+quickly.  I slowed down to add a few seconds, but I didn't want to
+slow too much (much less come to a complete stop) in order to finish
+closer to 5:00:00. This was not the year to beat my record of being
+only three seconds off.</p>
+<p>Glenda found me after crossing the finish line as did John Hancock.
+That's when I learned that Gus had been sent by John.  I returned to
+the ARR bag drop area and fetched some recovery food (another serving
+of fortified oatmeal) and beverages (<a href="https://github.com/ctm/diet/blob/master/recipes/rice_milk.txt">rice
+milk</a>
+and a <a href="https://tumblerootbreweryanddistillery.com/beer/sunset-hazy-ipa/">Best Energy Electrolyte
+Replacement</a>).</p>
+<p>I hung around the bag drop area until they were ready to tear down
+most of it.  I then helped schlep some of the gear to Dennis's car
+before driving over to Marcia's and Jeff's where the fed and beveraged
+me.</p>
+<h2 id="historical"><a class="header" href="#historical">Historical</a></h2>
+<p>This was my fourth time leading the five hour pace group. I started doing it in
+2017 and decided to do it every year, but there was no DCM in 2020 due to
+covid and the Albuquerque Road Runners didn't supply pace group leaders in
+2021, so my streak is sort of unbroken.</p>
+<ul>
+<li><a href="https://results.rmraces.live/duke-city-marathon/events/2017/2017-duke-city-marathon/466/entrant?share=1">2017 4:59:54</a></li>
+<li><a href="https://results.rmraces.live/sve-socal/events/2018/35th-annual-big-5-duke-city-marathon/427/entrant?share=1">2018 5:00:03</a></li>
+<li><a href="https://results.rmraces.live/sve-socal/events/2019/36th-annual-big-5-duke-city-marathon/330/entrant?share=1">2019 5:00:19</a></li>
+</ul>
+<p>My goal was to run a steady 4:27 minute / mile and then to adjust my
+speed in the last quarter to half mile to cross the timing mat at
+exactly 5:00:00.  This was a little tricky because my GPS watch wasn't
+necessarily going to agree on the distance in the best of circumstances,
+but especially with this year's mile marker placements.</p>
+<p>I was a little nervous running a 24 hour race the day before (i.e. the
+end of the 24-hour event was thirteen hours before the start of DCM),
+although I did have precedent for running a big event the day
+before. Although in 2017, I hadn't run anything since the Mt. Taylor
+50k three weeks and a day prior, in 2018 I ran the White Mesa 50k the
+day before and in 2019 I ran the Sandia Crossing Marathon 7:24:30 the
+day before.  It's not that I deliberately look for events to do the
+day before the Duke City Marathon, it's just that running at an 11:27
+min/mile pace is not that challenging.</p>
+<p>So, this year, when I found that the Tortugas Mountain 24 Hour
+Challenge was being held in Las Cruces the day before, I chose to do
+the challenge, but enter the non-drinking division and cap my miles at
+60 (or 64). Initially I had also planned on not drinking during Tortugas
+Mountain, but I changed my mind and simply drank considerably less and
+delayed my celebratory drinking until post DCM.</p>
+<p>It all worked out fine, but the drive back from Las Cruces was a bit
+nerve-racking, because I didn't know when I'd get to sleep, how well
+I'd sleep or how fit I would feel in the morning.  Turns out, I got to
+bed late, slept poorly, felt great and had no trouble performing my
+pacing duties.</p>
+<h2 id="pix"><a class="header" href="#pix">Pix</a></h2>
+<p>I participate in so many events that it's exceedingly rare that I buy
+photos (especially since some events provide photos for free), but
+Foggy Bay Photos was out taking pictures and
+<a href="https://thefoggybay.shootproof.com/gallery/19549154/search?q=1458">here</a>
+are the ones they took of me.</p>
+<h2 id="more-to-add-later"><a class="header" href="#more-to-add-later">More to Add, Later</a></h2>
+<p>All told, I took 800mg of ibuprofen: 400mg around 4:45am, with my
+fortified oatmeal and another 400mg soon after having my gels, just past
+the turnaround.</p>
+<p>The first amount of ibuprofen was to counter any minor discomfort that
+might show up due to my participation in the Tortugas Mountain 24-Hour
+Challenge.  The latter was due to minor discomfort that I was feeling
+in my knees, that I <em>think</em> was due to the way carrying a sign altered
+my gait.</p>
+<p>Ibuprofen is a tricky subject, so my plan is to eventually create a
+section of this book that explains when I use it and why and also
+mentions some of the risks.  I've had at least two good friends of
+mine go to the hospital for kidney failure due, in part, to overuse
+of ibuprofen. So, rather than mentioning that in this race report,
+I'll eventually take the time to mention it in the upcoming <code>Ibuprofen</code>
+section of my upcoming <code>Drugs</code> section of my upcoming <code>Practices</code> section.</p>
+<p>I don't know when I'll get to the above. I do have a <a href="https://www.youtube.com/watch?v=Gz0EdL8TyT4">Day
+Job</a><sup class="footnote-reference"><a href="#1">1</a></sup>.</p>
+<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<p>Yeah, I'll add a <code>Grateful Dead</code> section too; I was lucky enough
+to go to many shows back in the day, including this one.</p>
+</div>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../running/past/2022/tortugas_mountain.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../../running/past/2022/tatonka_5k.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../running/past/2022/tortugas_mountain.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../../running/past/2022/tatonka_5k.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>
