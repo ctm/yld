@@ -63,6 +63,7 @@ is my middle name.
 |Sep 22|[AA50k](https://newmexicofa50k.wordpress.com/aa50k/)|50k|No||
 |Sep 24|[Tour of Rio Grande](https://www.torgbc.com/)|100 miles|No|Bike ride: _not announced yet_|
 |Sep 30|[Mount Taylor](http://www.mttaylor50k.com/)|50k|No|_not announced yet_|
+|Oct 22|[Tatonka](https://www.core-crew.com/tatonka-5-10k-run)|5k|Maybe|_will probably run with my pack_|
 |Oct 23|[Forever Young](https://www.abqroadrunners.com/forever-young-run.html)|6 miles|Yes|_not announced yet_|
 |Oct 28|[Javelina Jundred](https://aravaiparunning.com/network/javelinajundred/)|100 miles|Yes|Goal: sub-20, _have not registered yet_|
 |Nov 4|[Deadman Peaks](https://deadmanpeaks.com/)|100 miles|No|_not announced yet_|
