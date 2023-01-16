@@ -42,4 +42,4 @@ Sunday.  This gives me a lot of time to think and record voice notes.
 I'm planning to dump some of my thoughts into this "book".  It's kind
 of like me writing up thoughts for a younger version of myself and
 probably equally pointless.  I don't (yet!) have a time machine and
-younger deadhead listened to nobody.
+the early model of Young Lazy Deadhead listened to no one.

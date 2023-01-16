@@ -1,10 +1,6 @@
 # Running
 
-I run a lot. I'm also the race director for the [Baldy
-50k](https://newmexicofa50k.wordpress.com/baldy_50k/) and the [Chimney
-Melon
-50k](https://newmexicofa50k.wordpress.com/chimney-melon-50k/),
-which are two of the events in the [Albuquerque Fat Ass
+I run a lot. I'm also the race director for the [Albuquerque Fat Ass
 Series](https://newmexicofa50k.wordpress.com/).
 
 The Albuquerque Fat Ass Series is hosted (for free, thanks!) on
@@ -16,7 +12,7 @@ to the [Albuquerque Road Runners](https://www.abqroadrunners.com/), a
 brief presentation on my Hardrock 2021 experience. I had planned on writing
 up the notes in this book and then using them to guide my presentation,
 but instead I just had a few beers and talked everyone's ears off.  So,
-I have to get into Hardrock again so I can do it right next time.
+I'll have to get into Hardrock again so I can do it right next time.
 
 In my early ultra running years I benefited greatly from various
 blogs, including, but by no means limited to, [Studies in
@@ -34,5 +30,5 @@ want to write them down and whose impatience won't write memories down
 when I still have them). So, instead of a blog, I'm sort of doing a
 book, and I'm using GitHub so that I can change things over time, but
 not in a sneaky way to pretend I didn't say something that later turns
-out embarrassing, but to allow me to eventually cut dross and provide
-useful information rather than a quick brain dump.
+out embarrassing, but to allow me to _eventually_ cut dross and provide
+useful information rather than my initial quick brain dump.

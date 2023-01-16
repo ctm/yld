@@ -1,10 +1,10 @@
 # Books
 
-This list is currently unordered and contains no reviews.  Eventually,
-I _might_ explain what I think I got out of each book, but for now
-this is a super quick, nowhere near exhaustive, brain dump.  In fact, I
-wrote this while away from home, so I wasn't even able to glance at my
-bookshelf to fill in gaps.
+This list is currently alphabetically ordered and contains no reviews.
+Eventually, I _might_ explain what I think I got out of each book, but
+for now this is a super quick, nowhere near exhaustive, brain dump.
+In fact, I wrote this while away from home, so I wasn't even able to
+glance at my bookshelf to fill in gaps.
 
 * Prescriptive
   * [Eat & Run](https://www.goodreads.com/en/book/show/13202092-eat-and-run)
