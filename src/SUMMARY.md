@@ -48,3 +48,4 @@
     - [AGDGAT](./thanks/agdg/agdgat.md)
   - [BARGE](./thanks/barge.md)
   - [Team RWB](./thanks/team_rwb.md)
+  - [GEORGE](./thanks/george.md)
