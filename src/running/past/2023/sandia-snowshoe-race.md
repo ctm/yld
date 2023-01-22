@@ -1,18 +1,26 @@
 # Sandia Snowshoe Race
 ## Overview
-I was the first person sixty years or older to finish.  That meant I
-won the male 60-69 age group &lt;cough>_tallest midget_&lt;/cough>
-award.  I chose a nice chair from REI as my prize.  Yay.
+[I](https://runsignup.com/Race/Results/121254/IndividualResult/dgfR?resultSetId=363582#U27103220)
+was the first person sixty years or older to finish.  That meant I won
+the male 60-69 age group &lt;cough>_tallest midget_&lt;/cough> award.
+[I chose a nice chair from REI as my
+prize](https://youtu.be/S2y3KjIPAZo?t=565).  Thanks!
 
-I don't yet know my rank, but I suspect it was 8th, 9th or 10th.  I'll
-update this when I see the official results.  Similarly, I don't know
-how long it took me, because [I forgot to turn my GPS watch
-off](https://www.strava.com/activities/8429966466) after crossing the
-finish line.
+I finished [9th overall in 37:50:12](https://runsignup.com/Race/Results/121254#resultSetId-363582).  I forgot to turn my GPS watch
+off after crossing the
+finish line, but I used Strava's cropping function to come up with a [GPX
+track](https://www.strava.com/activities/8429966466) that's close enough..
 
 ## The Race
-I ran, blew up, walked, ran, walked, ran, walked, took my polypro jacket
-off, ran some more and eventually finished.
+I ran, blew up, walked, ran, walked, ran, walked, took my polypro
+jacket off, ran some more and eventually finished.
+
+If I hadn't worn my jacket, and had I brought a handheld and my iPod
+touch, I could have shaved a minute or two off my finish time and
+perhaps gaining a rank or two.  IOW, I was a big baby once again this
+year, although I don't think I would've beaten
+[Andy](https://ultrasignup.com/results_participant.aspx?fname=Andrew&lname=Gray)
+and I **know** I couldn't have beaten [Brett](https://ultrasignup.com/results_participant.aspx?fname=Brett&lname=Sanborn).  
 
 ## Aftermath
 I drove home earlier than I normally do, because I was nervous about the conga
@@ -31,6 +39,11 @@ Mountains](https://friendsofthesandias.org/).  This is an excellent
 race and next year I'll run the entire thing.  ~~Honest!~~ Maybe!
 
 ## Background
+<img src="sandia-snowshoe-race/cooling-down.jpg"
+     title="Cooling Down"
+     alt="Cliff Matthews, cooling off next to Andy Gray"
+     style="float: left; margin-right: 10px;" />
+
 Only half-jokingly, I call this the toughest race I do each year.  I stole
 that from my brother-in-law, but it's definitely true when toughest takes
 into consideration both the intensity of the effort and just how slowly and
