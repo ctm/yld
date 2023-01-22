@@ -35,6 +35,7 @@
       - [The Grinch Lunch](./running/past/2022/grinch_lunch.md)
     - [2023](./running/past/2023.md)
       - [Foothills Fat Ass](running/past/2023/foothills_fat_ass.md)
+      - [Sandia Snowshoe Race](running/past/2023/sandia-snowshoe-race.md)
 - [Programming](./programming.md)
   - [PDP-8](./programming/pdp8.md)
     - [My First Hack](./programming/pdp8/first-hack.md)
