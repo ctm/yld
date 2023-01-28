@@ -1,7 +1,7 @@
 # Grinch Lunch
 
 The [Grinch
-Lunch](https://www.abqroadrunners.com/burque-brewery-tour.html) is the
+Lunch](https://www.facebook.com/events/1307112846691234) is the
 second stop on the [Burque Brew
 Tour](https://www.abqroadrunners.com/burque-brewery-tour.html). This
 year, however, I chose not to drink any alcohol from November 28th,
