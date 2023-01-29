@@ -21,3 +21,5 @@ Runners](https://www.abqroadrunners.com/). I also had a chance to plug
 the upcoming [Foothills Fat
 Ass](https://newmexicofa50k.wordpress.com/foothills-50k/) runs and
 chat a little with the founders of that tradition.
+
+My official time was [22:28.7](https://www.webscorer.com/racedetails?raceid=301215&did=361733).

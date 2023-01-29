@@ -47,3 +47,5 @@ of the run, but it wasn't even uncomfortable; it was just barely
 present.  Tomorrow, I have a 24 mile training run with a 40 pound
 pack.  Even with ibuprofen and acetaminophen I think my hot-spot will
 be screaming.
+
+My official time was [30:06.7](https://www.webscorer.com/racedetails?raceid=303794&did=366246).
