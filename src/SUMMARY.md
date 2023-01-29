@@ -41,6 +41,8 @@
 - [Programming](./programming.md)
   - [PDP-8](./programming/pdp8.md)
     - [My First Hack](./programming/pdp8/first-hack.md)
+  - [PDP-11](./programming/pdp11.md)
+    - [I am Not Worthy](./programming/pdp11/not-worthy.md)
   - [Rust](./programming/rust.md)
 - [Poker](./poker.md)
 - [Bataan](./bataan.md)
