@@ -42,12 +42,6 @@ relax and drink beer. I got to catch up a bit with several of the
 meeting Doug, a runner who is older than I and younger than Gene.  I
 also got to meet Gene's wife, Ellen.
 
-[^1]: the hot-spot I had on my right foot made itself known by the end
-of the run, but it wasn't even uncomfortable; it was just barely
-present.  Tomorrow, I have a 24 mile training run with a 40 pound
-pack.  Even with ibuprofen and acetaminophen I think my hot-spot will
-be screaming.
-
 My official time was [30:06.7](https://www.webscorer.com/racedetails?raceid=303794&did=366246).
 
 ### Epilogue
@@ -58,4 +52,9 @@ before my [hardest training run of the
 year](https://www.strava.com/activities/8473162718) was a good idea.
 OTOH, this cements my picture in the urban dictionary next to the
 phrase "boy ain't right."
+
+[^1]: the hot-spot I had on my right foot made itself known by the end
+of the run, but it wasn't even uncomfortable; it was just barely
+present.  The day after this race, I had a 24 mile training run with a 40 pound
+pack.  Even with ibuprofen and acetaminophen my hot-spot screamed.
 
