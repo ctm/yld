@@ -49,3 +49,13 @@ pack.  Even with ibuprofen and acetaminophen I think my hot-spot will
 be screaming.
 
 My official time was [30:06.7](https://www.webscorer.com/racedetails?raceid=303794&did=366246).
+
+### Epilogue
+
+I had a great time at Resolutions Stink!, but I'm not sure that racing
+four miles with a hot-spot that's probably Morton's neuroma the day
+before my [hardest training run of the
+year](https://www.strava.com/activities/8473162718) was a good idea.
+OTOH, this cements my picture in the urban dictionary next to the
+phrase "boy ain't right."
+
