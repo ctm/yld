@@ -15,6 +15,12 @@ he's in a more advanced group. Although I've seen Gene's results "forever,"
 I only recently started chatting with him pre and post race.  Turns out
 he's a fellow deadhead.  We are everywhere.
 
+<img src="https://www.abqroadrunners.com/uploads/6/7/7/6/6776981/canteen-8_orig.jpg"
+     title="Gene leads Nick; I give up"
+     alt="Gene leads Nick, I give up"
+     style="float: left; margin-right: 10px;" />
+
+
 Similar to the [Black Friday Turkey Trots](../2022/black_friday.md)
 and the [Grinch Lunch](../2022/grinch_lunch.md), Nick ("Piggy Style")
 ran with ~~me~~ us initially, barely breaking a sweat while Gene and I
