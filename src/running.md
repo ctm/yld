@@ -27,8 +27,7 @@ However, I'm always doing something and if I had to write a good blog
 entry for a race, I'd never finish (because I'm a bad writer, a
 procrastinator and someone whose memory won't remember details when I
 want to write them down and whose impatience won't write memories down
-when I still have them). So, instead of a blog, I'm sort of doing a
-book, and I'm using GitHub so that I can change things over time, but
+when I still have them). So, instead of a blog, I'm writing this
+book. I'm using GitHub so that I can change things over time, but
 not in a sneaky way to pretend I didn't say something that later turns
-out embarrassing, but to allow me to _eventually_ cut dross and provide
-useful information rather than my initial quick brain dump.
+out embarrassing, but to allow me to _eventually_ cut dross.
