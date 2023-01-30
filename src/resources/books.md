@@ -33,5 +33,5 @@ I'm sure some have slipped through the cracks.
   * [The Rise of Superman](https://www.goodreads.com/book/show/18222878-the-rise-of-superman)
   * [Hard Driving: The Wendell Scott Story](https://www.goodreads.com/book/show/4758904-hard-driving)[^1]
   
-[^1]: [The Ballad of Wendel Scott](https://www.youtube.com/watch?v=y2vXth5xwHA) got my attention (and it's on my "Speed 3" playlist).
+[^1]: [The Ballad of Wendel Scott](https://www.youtube.com/watch?v=y2vXth5xwHA) got my attention (and it's on my [Speed 3](https://www.youtube.com/playlist?list=PLiHB06ix3lYik1aF8qZpFQN3A1QAtzTFu) playlist).
 

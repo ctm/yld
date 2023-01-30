@@ -34,13 +34,14 @@ view.
 Once again, I knew I was beat and so I ran fast enough to remain in
 third, but I didn't run _painfully_[^1] fast.  Nick pipped Gene at the end.
 
-I had actually meant to bring my iPod touch and listen to my Speed 3
+I had actually meant to bring my iPod touch and listen to my [Speed
+3](https://www.youtube.com/playlist?list=PLiHB06ix3lYik1aF8qZpFQN3A1QAtzTFu)
 playlist.  If I had, I _suspect_ I'd have run a _little_ faster, but I
 don't think I could have caught either.  Gene ran a [16:46
 5k](https://runsignup.com/Race/Results/140087/IndividualResult/bSdZ?resultSetId=362701#U42660677)
 earlier this year.  That's a 5:24 pace for over three miles. I believe
-my fastest mile ever was just barely under six minutes and that was years
-ago when I was doing more speedwork.  I am not worthy.
+my fastest mile ever was just barely under six minutes and that was
+years ago when I was doing more speedwork.  I am not worthy.
 
 The weather was excellent, so people gathered together outside to
 relax and drink beer. I got to catch up a bit with several of the
