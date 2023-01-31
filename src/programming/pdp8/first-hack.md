@@ -3,7 +3,7 @@
 A friend of mine mentioned the PDP-8 earlier today and I bombarded him with
 the following story.
 
-> We had a PDP-8 in high school. It had core memory, so they turned it off at night (core retains its memory without power). We ran BASIC on that machine and it had an address that you could "soft-restart" it. That address was 0200 (octal, of course). So, in the morning, the person starting the computer would make sure the toggles had that one bit set, then you'd flick the "load program counter" toggle on the front end, then hit start.
+> We had a PDP-8/e in high school. It had core memory, so they turned it off at night (core retains its memory without power). We ran BASIC on that machine and it had an address that you could "soft-restart" it. That address was 0200 (octal, of course). So, in the morning, the person starting the computer would make sure the [toggles](https://www.youtube.com/watch?v=NtAF-WfWyGU) had that one bit set, then you'd flick the "load program counter" toggle on the front end, then hit start.
 >
 > Part of the memory was reserved and not used by BASIC. I think it was reserved for the boot-loader, but I could be mistaken. Either way, I knew that I could toggle in a very small program in that space, run it and then soft-restart back into BASIC, so I wrote a tiny loop that ran through all of memory and changed the CLR (clear the accumulator) instructions into ?LSR? (load the switch register into the accumulator). I then loaded 0200 into the switch register, toggled the load program counter, then switched the 0200 toggle back down so the switch register was now 0000, then I hit start.
 >
