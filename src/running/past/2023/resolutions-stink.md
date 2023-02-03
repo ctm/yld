@@ -37,11 +37,9 @@ third, but I didn't run _painfully_[^1] fast.  Nick pipped Gene at the end.
 I had actually meant to bring my iPod touch and listen to my [Speed
 3](https://www.youtube.com/playlist?list=PLiHB06ix3lYik1aF8qZpFQN3A1QAtzTFu)
 playlist.  If I had, I _suspect_ I'd have run a _little_ faster, but I
-don't think I could have caught either.  Gene ran a [16:46
-5k](https://runsignup.com/Race/Results/140087/IndividualResult/bSdZ?resultSetId=362701#U42660677)
-earlier this year.  That's a 5:24 pace for over three miles. I believe
-my fastest mile ever was just barely under six minutes and that was
-years ago when I was doing more speedwork.  I am not worthy.
+don't think I could have caught either.  Gene [took second
+_overall_](https://runsignup.com/Race/Results/140087/IndividualResult/bSdZ?resultSetId=362701#U42660677)
+in a local (ostensibly[^2]) 5k earlier this year.
 
 The weather was excellent, so people gathered together outside to
 relax and drink beer. I got to catch up a bit with several of the
@@ -65,3 +63,8 @@ of the run, but it wasn't even uncomfortable; it was just barely
 present.  The day after this race, I had a 24 mile training run with a 40 pound
 pack.  Even with ibuprofen and acetaminophen my hot-spot screamed.
 
+[^2]: The course was short, so he didn't actually run a 5:24 pace, but
+the dude's out-of-my league fast. I believe my fastest mile&mdash;and
+it was just a single mile&mdash;ever was just barely under six minutes
+and that was years ago when I was doing more speedwork.  I am not
+worthy.
