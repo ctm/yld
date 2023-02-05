@@ -5,6 +5,7 @@
 - [Running](./running.md)
   - [Resources](./resources.md)
     - [Books](./resources/books.md)
+    - [Music](./resources/music.md)
   - [GPX Files](./running/other_gpx_files.md)
     - [Foothills 50k](./running/other_gpx_files/foothills_50k.md)
     - [White Mesa Fat Ass 50k](./running/other_gpx_files/wmfa_50k.md)
