@@ -44,6 +44,8 @@
     - [My First Hack](./programming/pdp8/first-hack.md)
   - [PDP-11](./programming/pdp11.md)
     - [I am Not Worthy](./programming/pdp11/not-worthy.md)
+  - [Ancient Peripherals](./programming/ancient-peripherals.md)
+     - [Punch Cards](./programming/ancient-peripherals/punch-cards.md)      
   - [Rust](./programming/rust.md)
 - [Poker](./poker.md)
 - [Bataan](./bataan.md)
