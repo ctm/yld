@@ -22,6 +22,7 @@ I'm sure some have slipped through the cracks.
 * Biographical and Autobiographical
   * [Born to Run](https://www.goodreads.com/book/show/6289283-born-to-run)
   * [Corbitt: The Story of Ted Corbitt](https://www.goodreads.com/book/show/9600894-corbitt)
+  * [The Miler](https://www.goodreads.com/book/show/74028.Steve_Scott_the_Miler)
   * [Out There](https://www.goodreads.com/book/show/22802297-out-there)
   * [Out and Back](https://www.goodreads.com/book/show/57622554-out-and-back)
   * [Presto!](https://www.goodreads.com/book/show/29359067-presto-how-i-made-over-100-pounds-disappear-and-other-magical-tales)
@@ -30,8 +31,8 @@ I'm sure some have slipped through the cracks.
   * [Running with Sherman](https://www.goodreads.com/book/show/43834684-running-with-sherman)
   * [Tales from Out There: The Barkley Marathons](https://www.goodreads.com/book/show/7818528-tales-from-out-there)
 * Tangential
-  * [The Rise of Superman](https://www.goodreads.com/book/show/18222878-the-rise-of-superman)
   * [Hard Driving: The Wendell Scott Story](https://www.goodreads.com/book/show/4758904-hard-driving)[^1]
+  * [The Rise of Superman](https://www.goodreads.com/book/show/18222878-the-rise-of-superman)
   
 [^1]: [The Ballad of Wendel Scott](https://www.youtube.com/watch?v=y2vXth5xwHA) got my attention (and it's on my [Speed 3](https://www.youtube.com/playlist?list=PLiHB06ix3lYik1aF8qZpFQN3A1QAtzTFu) playlist).
 
