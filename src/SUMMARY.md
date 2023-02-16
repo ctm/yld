@@ -44,6 +44,8 @@
       - [King of the Hill](running/past/2023/king-of-the-hill.md)
       - [Shenanigains](running/past/2023/shenanigains.md)
       - [Bataan Memorial Death March](running/past/2023/bmdm.md)
+  - [My Beliefs](./running/my-beliefs.md)
+    - [Knees](./running/my-beliefs/knees.md)
 - [Programming](./programming.md)
   - [PDP-8](./programming/pdp8.md)
     - [My First Hack](./programming/pdp8/first-hack.md)
