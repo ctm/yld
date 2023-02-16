@@ -14,6 +14,7 @@
     - [Baldy 50k](./running/direct/baldy_50k.md)
       - [Results](./running/direct/baldy_50k/results.md)
   - [As Entrant](./running/past.md)
+    - [DNFs](./running/dnfs.md)
     - [2021](./running/past/2021.md)
       - [Hardrock](./running/past/2021/hardrock.md)
     - [2022](./running/past/2022.md)
