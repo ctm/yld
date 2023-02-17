@@ -28,10 +28,10 @@ a while, typically when I've already written the text as an email for one
 reason or another.
 
 [^1]: Steve Jobs called me at home when I was in bed with pneumonia
-and I did not handle the call well.  [John Perry
-Barlow](https://www.stone.com/barlow/) used Executor but his literal
-first words to me in person were "You're an asshole." I'll write up
-those two stories if there's any interest.
+and [I did not handle the call well](programming/blown/steve-jobs.md).
+Additionally, [John Perry Barlow](https://www.stone.com/barlow/) used
+Executor but his literal first words to me in person were "You're an
+asshole."
 
 [^2]: Multibot was the first software to deal multi-table poker tournaments on
 the internet. You won't find it via a web search though, because I sold it
