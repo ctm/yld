@@ -16,7 +16,7 @@
 of Executor/NEXTSTEP and liked it] &hellip;
 
 > So, how hard would it be to to turn the individual Mac windows into
-NEXTSTEP windows
+NEXTSTEP windows?
 
 [small pause while I think about it]
 
