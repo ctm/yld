@@ -47,6 +47,8 @@
     - [I am Not Worthy](./programming/pdp11/not-worthy.md)
   - [Ancient Peripherals](./programming/ancient-peripherals.md)
      - [Punch Cards](./programming/ancient-peripherals/punch-cards.md)      
+  - [Blown Opportunities](./programming/blown.md)
+    - [Steve Jobs](./programming/blown/steve-jobs.md)
   - [Rust](./programming/rust.md)
 - [Poker](./poker.md)
 - [Bataan](./bataan.md)
