@@ -40,6 +40,7 @@
       - [Foothills Fat Ass](running/past/2023/foothills_fat_ass.md)
       - [Sandia Snowshoe Race](running/past/2023/sandia-snowshoe-race.md)
       - [Resolutions Stink!](running/past/2023/resolutions-stink.md)
+      - [Mt. Taylor Winter Quadrathlon](running/past/2023/the-quad.md)
 - [Programming](./programming.md)
   - [PDP-8](./programming/pdp8.md)
     - [My First Hack](./programming/pdp8/first-hack.md)
