@@ -1,6 +1,6 @@
 # Resolutions Stink!
 
-["Resolutions Stink!"](3281713308711524) is the
+["Resolutions Stink!"](https://www.facebook.com/events/3281713308711524) is the
 third stop on the [Burque Brew
 Tour](https://www.abqroadrunners.com/burque-brewery-tour.html). This
 year, however, I chose not to drink any alcohol from November 28th,
@@ -16,23 +16,23 @@ I only recently started chatting with him pre and post race.  Turns out
 he's a fellow deadhead.  We are everywhere.
 
 <img src="https://www.abqroadrunners.com/uploads/6/7/7/6/6776981/canteen-8_orig.jpg"
-     title="Gene leads Nick; I give up"
-     alt="Gene leads Nick, I give up"
+     title="Gene leads Piggy Style; I give up"
+     alt="Gene leads Piggy Style, I give up"
      style="float: left; margin-right: 10px;" />
 
 
 Similar to the [Black Friday Turkey Trots](../2022/black_friday.md)
-and the [Grinch Lunch](../2022/grinch_lunch.md), Nick ("Piggy Style")
+and the [Grinch Lunch](../2022/grinch_lunch.md), Piggy Style
 ran with ~~me~~ us initially, barely breaking a sweat while Gene and I
 pushed fairly hard.  Yup, Gene was tagging along, or so I thought.
 Turns out he was innit to winnit.  I did pull ahead of both of them
 very briefly when running the downhills in the first half, but Gene
-and Nick more than made up for it on the corresponding uphills. After
+and Piggy Style more than made up for it on the corresponding uphills. After
 the turnaround I never caught up with them again, but I had a nice
 view.
 
 Once again, I knew I was beat and so I ran fast enough to remain in
-third, but I didn't run _painfully_[^1] fast.  Nick pipped Gene at the end.
+third, but I didn't run _painfully_[^1] fast.  Piggy Style pipped Gene at the end.
 
 I had actually meant to bring my iPod touch and listen to my [Speed
 3](https://www.youtube.com/playlist?list=PLiHB06ix3lYik1aF8qZpFQN3A1QAtzTFu)

@@ -41,6 +41,7 @@
       - [Sandia Snowshoe Race](running/past/2023/sandia-snowshoe-race.md)
       - [Resolutions Stink!](running/past/2023/resolutions-stink.md)
       - [Mt. Taylor Winter Quadrathlon](running/past/2023/the-quad.md)
+      - [V Day](running/past/2023/v-day.md)
 - [Programming](./programming.md)
   - [PDP-8](./programming/pdp8.md)
     - [My First Hack](./programming/pdp8/first-hack.md)

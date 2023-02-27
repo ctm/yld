@@ -11,15 +11,15 @@ self-discipline the rest of the day.
 
 
 Neither Ken Gordon nor James DuPlain were present, but there was a new
-participant, Nick, who looked fast. Sure enough, I pulled away from everyone
-except Nick, who casually asked
+participant, Piggy Style, who looked fast. Sure enough, I pulled away
+from everyone except Piggy Style, who casually asked
 
 | Mind if I run with you?
 
 I was happy to have the company, but I immediately knew that I was destined
 for second place.
 
-When I learned that Nick had moved to Albuquerque recently, I let him
+When I learned that Piggy Style had moved to Albuquerque recently, I let him
 know a bit about the local running scene.  We stayed together until
 the turnaround. By that point, he had seen the entire course so I
 encouraged him to run his pace, not mine, and off he went.
