@@ -1,0 +1,274 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Knees - Young Lazy deadhead</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Way more than anyone wants to know about Cliff Matthews">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="../../welcome.html">Welcome</a></li><li class="chapter-item "><a href="../../a_public_life.html">A Public Life</a></li><li class="chapter-item expanded "><a href="../../running.html">Running</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../resources.html">Resources</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../resources/books.html">Books</a></li><li class="chapter-item "><a href="../../resources/music.html">Music</a></li></ol></li><li class="chapter-item "><a href="../../running/other_gpx_files.html">GPX Files</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../running/other_gpx_files/foothills_50k.html">Foothills 50k</a></li><li class="chapter-item "><a href="../../running/other_gpx_files/wmfa_50k.html">White Mesa Fat Ass 50k</a></li></ol></li><li class="chapter-item "><a href="../../running/direct.html">As Race Director</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../running/direct/chimney_melon_50k.html">Chimney Melon 50k</a></li><li class="chapter-item "><a href="../../running/direct/baldy_50k.html">Baldy 50k</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../running/direct/baldy_50k/results.html">Results</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../running/past.html">As Entrant</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../running/dnfs.html">DNFs</a></li><li class="chapter-item "><a href="../../running/past/2021.html">2021</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../running/past/2021/hardrock.html">Hardrock</a></li></ol></li><li class="chapter-item "><a href="../../running/past/2022.html">2022</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../running/past/2022/cocodona-250.html">Cocodona 250</a></li><li class="chapter-item "><a href="../../running/past/2022/big_cottonwood_marathon.html">Big Cottonwood Marathon</a></li><li class="chapter-item "><a href="../../running/past/2022/aa_50k.html">AA 50k</a></li><li class="chapter-item "><a href="../../running/past/2022/torgbc.html">Tour of the Rio Grande</a></li><li class="chapter-item "><a href="../../running/past/2022/mt_taylor_50k.html">Mt. Taylor 50k</a></li><li class="chapter-item "><a href="../../running/past/2022/feral_hog_50k_rucksack.html">Feral Hog 50k Rucksack</a></li><li class="chapter-item "><a href="../../running/past/2022/tortugas_mountain.html">Tortugas Mountain 24 Hour Challenge</a></li><li class="chapter-item "><a href="../../running/past/2022/duke_city_marathon.html">Duke City Marathon</a></li><li class="chapter-item "><a href="../../running/past/2022/tatonka_5k.html">Tatonka 5k</a></li><li class="chapter-item "><a href="../../running/past/2022/forever_young_six_miler.html">Forever Young 6 miler</a></li><li class="chapter-item "><a href="../../running/past/2022/jj100.html">Javelina Jundred</a></li><li class="chapter-item "><a href="../../running/past/2022/dptr_106m.html">Deadman Peaks 106 miler</a></li><li class="chapter-item "><a href="../../running/past/2022/wmfa50k.html">White Mesa Fat Ass 50k</a></li><li class="chapter-item "><a href="../../running/past/2022/ed_t.html">Ed Thanksgiving's Group Run</a></li><li class="chapter-item "><a href="../../running/past/2022/black_friday.html">Black Friday Turkey Trots</a></li><li class="chapter-item "><a href="../../running/past/2022/bbf50k.html">Bosque Bigfoot 50k</a></li><li class="chapter-item "><a href="../../running/past/2022/tucson_marathon.html">Tucson Marathon</a></li><li class="chapter-item "><a href="../../running/past/2022/grinch_lunch.html">The Grinch Lunch</a></li></ol></li><li class="chapter-item "><a href="../../running/past/2023.html">2023</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../running/past/2023/foothills_fat_ass.html">Foothills Fat Ass</a></li><li class="chapter-item "><a href="../../running/past/2023/sandia-snowshoe-race.html">Sandia Snowshoe Race</a></li><li class="chapter-item "><a href="../../running/past/2023/resolutions-stink.html">Resolutions Stink!</a></li><li class="chapter-item "><a href="../../running/past/2023/the-quad.html">Mt. Taylor Winter Quadrathlon</a></li><li class="chapter-item "><a href="../../running/past/2023/king-of-the-hill.html">King of the Hill</a></li><li class="chapter-item "><a href="../../running/past/2023/shenanigains.html">Shenanigains</a></li><li class="chapter-item "><a href="../../running/past/2023/bmdm.html">Bataan Memorial Death March</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../running/my-beliefs.html">My Beliefs</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../running/my-beliefs/knees.html" class="active">Knees</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../programming.html">Programming</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../programming/pdp8.html">PDP-8</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../programming/pdp8/first-hack.html">My First Hack</a></li></ol></li><li class="chapter-item "><a href="../../programming/pdp11.html">PDP-11</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../programming/pdp11/not-worthy.html">I am Not Worthy</a></li></ol></li><li class="chapter-item "><a href="../../programming/ancient-peripherals.html">Ancient Peripherals</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../programming/ancient-peripherals/punch-cards.html">Punch Cards</a></li></ol></li><li class="chapter-item "><a href="../../programming/blown.html">Blown Opportunities</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../programming/blown/steve-jobs.html">Steve Jobs</a></li></ol></li><li class="chapter-item "><a href="../../programming/rust.html">Rust</a></li></ol></li><li class="chapter-item "><a href="../../poker.html">Poker</a></li><li class="chapter-item "><a href="../../bataan.html">Bataan</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../bataan/death-march.html">Death March</a></li><li class="chapter-item "><a href="../../bataan/memorial-death-march.html">Memorial Death March</a></li></ol></li><li class="chapter-item "><a href="../../thanks.html">Thanks</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../thanks/agdg.html">AGDG</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../thanks/agdg/agdgat.html">AGDGAT</a></li></ol></li><li class="chapter-item "><a href="../../thanks/barge.html">BARGE</a></li><li class="chapter-item "><a href="../../thanks/team_rwb.html">Team RWB</a></li><li class="chapter-item "><a href="../../thanks/george.html">GEORGE</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Young Lazy deadhead</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="knees"><a class="header" href="#knees">Knees</a></h1>
+<p>The following is how I think <em>my</em> knees work. I am not telling you how
+your knees work.</p>
+<h3 id="in-the-beginning"><a class="header" href="#in-the-beginning">In the beginning</a></h3>
+<p>When I started running, one knee would always chirp at some distance.  As
+time went on, that distance increased. Eventually it didn't chirp (although
+I did get orthotics, see below).</p>
+<p>I fall a lot. Historically, that was due to either poor eyesight combined
+with wearing sunglasses when I shouldn't, or getting lost in thought.  Over
+time I've taught myself to take off the sunglasses in dim light or even
+in bright light with tricky shadows.  Although I've made some progress in
+not getting lost in thought, it still happens.</p>
+<p>In general, when I fall and scrape up my knee, there might be minor
+discomfort in that knee for a day or two and the scab would be gone in
+two weeks, leaving behind a veneer of scar tissue at worst.</p>
+<h3 id="a-dozen-years-later"><a class="header" href="#a-dozen-years-later">A dozen years later</a></h3>
+<p>On September 10th, 2022, however, I took a <a href="https://ctm.github.io/docs/yld/running/past/2022/big_cottonwood_marathon.html#bam">pretty nasty
+fall</a>
+while running the Big Cottonwood Marathon.  That scab didn't
+completely disappear for five weeks and the external scar tissue
+didn't go away for about six months.  I had intermittent knee pain for
+about four months, but I kept training and it fully resolved.</p>
+<h3 id="orthotics"><a class="header" href="#orthotics">Orthotics</a></h3>
+<p>When I was in eighth grade, I stress fractured a small bone inside my foot
+when I was jumping out of a swing for distance.  My dad was in the Air Force,
+so I had free medical care.  The foot doctor that I saw told me that I had
+extremely high arches and that I needed custom orthotics or I wouldn't be able
+to walk when I was thirty.</p>
+<p>The custom orthotics were made of some extremely hard plastic.  I was told
+that the plastic would never break, but to be very careful if it did, because
+it would be extremely sharp.  Within a year or two, using a spade, I broke
+the orthotic, without cutting my foot.  The pieces were indeed fairly sharp.
+I threw them away and never wore them, or any other orthotics, until after
+I took up running.</p>
+<p>So, the claim that I wouldn't be able to walk when I was thirty was bogus.
+However, when I took up hiking, I was having some knee pain and a friend of
+mine introduced me to a woman who made custom orthotics.  She made some for
+me and they seemed to help.  Eventually, after having worn through a pair or
+two of her custom orthotics, I found she had retired, so I switched to another
+orthotic maker.  I was his problem client. It took a bit of fiddling around
+to get them just right, but I've been wearing his orthotics ever since.  He
+is now mostly retired, but still sees some of his old clients.</p>
+<p>At one point I decided to forego the custom orthotics because I really
+didn't know if they were working or if it was more akin to all the
+ankle support I initially needed when I was hiking and in the
+beginning of my running.  As my ankles got stronger, I needed less
+support.  So, perhaps I didn't need these &quot;fancy&quot; orthotics after all.
+Without them (and it's been so long since I experimented, that I can't
+remember if I went with no orthotics or off-the-shelf ones), my knee
+discomfort returned.</p>
+<p>From my point-of-view, it's possible that if I had continued to train
+without the custom orthotics that my knees would get used to it (or
+the nocebo effect would wear off) and my discomfort would go away.
+However, I also figure it's possible that I'd do damage and I already
+had the custom orthotics, so I went back to using them.</p>
+<h3 id="possibly-incorrect-conclusions"><a class="header" href="#possibly-incorrect-conclusions">(Possibly incorrect) Conclusions</a></h3>
+<p>I do not think my knees are &quot;consumable.&quot;  I do not think that
+running— even with a pack—<i>the way I do it</i>, is
+damaging <i>my</i> knees.  I believe that running strengthens my
+knees.</p>
+<p>I do believe that falling damages my knees and I really am trying to
+fall less.</p>
+<p>For what it's worth, I know many people who have injured their knees
+playing basketball or soccer and a few who have injured their knees
+running.  I've torn a ligament in my left shoulder and I'm very glad
+that I run on my legs and not my arms.</p>
+<p>I do not wish knee damage on anyone.  I would hate for people to
+emulate my behavior and damage their knees.  I am, however, quite glad
+that I've continued training even when one of my knees (typically, the
+one that I fell on most recently) &quot;chirp&quot;.</p>
+<p>I'll admit it: I don't <em>know</em> how my knees work, but I have my
+strong suspicions.  I don't know if what I'm doing will eventually
+catch up with me, but I've been <a href="https://github.com/ctm/Bataan-Memorial-Death-March#bataan-memorial-death-march-training">training hard for the Bataan Memorial
+Death
+March</a>
+(or a substitute in the years when it wasn't held in person) for well
+over ten years.  My training begins in mid November and lasts until
+mid March.  During those months I'm <strong>running</strong> with my pack two or
+more times a week most weeks.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../running/my-beliefs.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../programming.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../running/my-beliefs.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../programming.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>
