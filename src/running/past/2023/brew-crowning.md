@@ -44,6 +44,11 @@ Luckily, I didn't find out. I ran quickly enough to [win a free
 beer](https://www.webscorer.com/racedetails?raceid=309537&did=376999&gender=M)
 for Glenda, but slowly enough that the rest of my day was skittles.
 
+Normally, I include Strava tracks for each of my races, but my [Academy of
+Pain Strava Tracks](https://www.strava.com/activities/8777534313)
+subsume my Crowning Race. Look around mile 20.  In theory, I averaged
+about an 8:10 pace (minutes per mile).
+
 Whee!
 
 <hr/>
