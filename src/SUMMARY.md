@@ -44,6 +44,8 @@
       - [King of the Hill](running/past/2023/king-of-the-hill.md)
       - [Shenanigains](running/past/2023/shenanigains.md)
       - [Bataan Memorial Death March](running/past/2023/bmdm.md)
+      - [Academy of Pain](running/past/2023/academy-of-pain.md)
+      - [Burque Brew Tour Crowning](running/past/2023/brew-crowning.md)
   - [My Beliefs](./running/my-beliefs.md)
     - [Knees](./running/my-beliefs/knees.md)
 - [Programming](./programming.md)
