@@ -50,14 +50,21 @@ numbers](https://www.strava.com/activities/8814457349) are similar.
 
 ## [Food](https://www.youtube.com/watch?v=ly7PONiKGUs)
 
+<img src="berta/glorious.jpg"
+     title="Friends and Food"
+     height=172.5px
+     width=300px
+     alt="Post Race &ldquo;Pot-Luck&rdquo; 😉"
+     style="float: left; margin-right: 10px;" />
+
 The post race spread was glorious, most of which was homemade by KK,
-although Perky and Prince Charming brought a vegan cherry pie. I did
-not take notes on what I ate, nor did I take photos (I should have!),
-so this list of what I ate (all vegan) is incomplete: tomato and
-veggie casserole, bean stew, slice of cherry pie, overnight oats with
-tiramisu-like topping, chips and salsa, grapes, mixed nuts and gummy
-candy.  There was also beer and mimosas, but it's not June 25th yet.
-There was also plenty of non-vegan food, apple juice, coffee, etc.
+although Perky and Prince Charming brought a vegan cherry pie. Here's
+what I remember I ate (all vegan):
+tomato and veggie casserole, bean stew, slice of cherry pie, overnight
+oats with tiramisu-like topping, chips and salsa, grapes, mixed nuts
+and gummy candy.  There was also beer and mimosas&mdash;but it's not June
+25th yet&mdash;and plenty of non-vegan food, apple juice,
+coffee, etc.
 
 ## Gratitude
 
