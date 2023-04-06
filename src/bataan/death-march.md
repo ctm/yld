@@ -9,6 +9,7 @@ Here are a few books that document the Bataan Death March or other atrocities in
 * [No Uncle Sam](https://www.goodreads.com/book/show/1493007.No_Uncle_Sam)
 * [Some Survived](https://www.goodreads.com/book/show/693426.Some_Survived)
 * [Tears in the Darkness](https://www.goodreads.com/book/show/6455003-tears-in-the-darkness)[^3]
+* [Tell Me Another War Story](https://www.goodreads.com/book/show/30055478-tell-me-another-war-story)
 * [The Naked Soldier](https://www.goodreads.com/book/show/29506650-the-naked-soldier)[^4]
 
 [^1] The author, [James
