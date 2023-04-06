@@ -18,6 +18,7 @@
     - [2021](./running/past/2021.md)
       - [Hardrock](./running/past/2021/hardrock.md)
     - [2022](./running/past/2022.md)
+      - [Cedro Peak 50k](./running/past/2022/cedro.md)
       - [Cocodona 250](./running/past/2022/cocodona-250.md)
       - [Big Cottonwood Marathon](./running/past/2022/big_cottonwood_marathon.md)
       - [AA 50k](./running/past/2022/aa_50k.md)
