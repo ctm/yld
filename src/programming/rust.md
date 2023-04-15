@@ -8,7 +8,6 @@ forget stuff.
 I would not have been able to write
 [mb2](https://ctm.github.io/docs/players_manual/) in any other
 language.  I wrote multibot in Objective-C, but multibot was nowhere
-near as flexible as mb2 did.  For example, multibot dealt only Texas
+near as flexible as mb2.  For example, multibot dealt only Texas
 Hold'em, Seven Card Stud and Omaha.  Mb2 [deals over fifty
 games](https://ctm.github.io/docs/players_manual/games.html).
-
