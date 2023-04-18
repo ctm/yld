@@ -37,6 +37,17 @@ chose not to start.  Initially, I had planned to, but it was during
 Balloon Fiesta drinking and my AA50k drinking, I was just not healthy
 enough to want to ride SFC in horrible weather.
 
+Although I was registered for the 2023 Boston Marathon, my right foot
+was not in good enough shape for me to do the Tough Ruck the day
+before.  Additionally, although I had planned on taking my family
+with me to Boston for an east-coast vacation, that plan changed when
+my daughter Iris was appointed to the United States Military Academy.
+I'll be taking our family to her acceptance day ceremony in August,
+instead.
+<br/>
+<br/>
+<br/>
+<hr/>
 [^1]: It was the Race Director's first race and my first ultra.  I barely
 made the turnaround cutoff and I looked dodgy.  RD radioed down to the aid
 station captain at the next aid station and requested I be examined for fitness
