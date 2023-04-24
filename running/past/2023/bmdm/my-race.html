@@ -1,0 +1,447 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>My Race - Young Lazy deadhead</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Way more than anyone wants to know about Cliff Matthews">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../../../favicon.svg">
+        <link rel="shortcut icon" href="../../../../favicon.png">
+        <link rel="stylesheet" href="../../../../css/variables.css">
+        <link rel="stylesheet" href="../../../../css/general.css">
+        <link rel="stylesheet" href="../../../../css/chrome.css">
+        <link rel="stylesheet" href="../../../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../../highlight.css">
+        <link rel="stylesheet" href="../../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="../../../../welcome.html">Welcome</a></li><li class="chapter-item "><a href="../../../../life.html">Life</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../../life/too-public.html">Too Public?</a></li><li class="chapter-item "><a href="../../../../life/my-beliefs.html">My Beliefs</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../../life/my-beliefs/multiple-universes.html">Multiple Universes</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../../../running.html">Running</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../../resources.html">Resources</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../../resources/books.html">Books</a></li><li class="chapter-item "><a href="../../../../resources/music.html">Music</a></li></ol></li><li class="chapter-item "><a href="../../../../running/other_gpx_files.html">GPX Files</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../../running/other_gpx_files/foothills_50k.html">Foothills 50k</a></li><li class="chapter-item "><a href="../../../../running/other_gpx_files/wmfa_50k.html">White Mesa Fat Ass 50k</a></li></ol></li><li class="chapter-item "><a href="../../../../running/direct.html">As Race Director</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../../running/direct/chimney_melon_50k.html">Chimney Melon 50k</a></li><li class="chapter-item "><a href="../../../../running/direct/baldy_50k.html">Baldy 50k</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../../running/direct/baldy_50k/results.html">Results</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../../../running/past.html">As Entrant</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../../running/dnfs.html">DNFs</a></li><li class="chapter-item "><a href="../../../../running/past/2021.html">2021</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../../running/past/2021/hardrock.html">Hardrock</a></li></ol></li><li class="chapter-item "><a href="../../../../running/past/2022.html">2022</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../../running/past/2022/cedro.html">Cedro Peak 50k</a></li><li class="chapter-item "><a href="../../../../running/past/2022/cocodona-250.html">Cocodona 250</a></li><li class="chapter-item "><a href="../../../../running/past/2022/big_cottonwood_marathon.html">Big Cottonwood Marathon</a></li><li class="chapter-item "><a href="../../../../running/past/2022/aa_50k.html">AA 50k</a></li><li class="chapter-item "><a href="../../../../running/past/2022/torgbc.html">Tour of the Rio Grande</a></li><li class="chapter-item "><a href="../../../../running/past/2022/mt_taylor_50k.html">Mt. Taylor 50k</a></li><li class="chapter-item "><a href="../../../../running/past/2022/feral_hog_50k_rucksack.html">Feral Hog 50k Rucksack</a></li><li class="chapter-item "><a href="../../../../running/past/2022/tortugas_mountain.html">Tortugas Mountain 24 Hour Challenge</a></li><li class="chapter-item "><a href="../../../../running/past/2022/duke_city_marathon.html">Duke City Marathon</a></li><li class="chapter-item "><a href="../../../../running/past/2022/tatonka_5k.html">Tatonka 5k</a></li><li class="chapter-item "><a href="../../../../running/past/2022/forever_young_six_miler.html">Forever Young 6 miler</a></li><li class="chapter-item "><a href="../../../../running/past/2022/jj100.html">Javelina Jundred</a></li><li class="chapter-item "><a href="../../../../running/past/2022/dptr_106m.html">Deadman Peaks 106 miler</a></li><li class="chapter-item "><a href="../../../../running/past/2022/wmfa50k.html">White Mesa Fat Ass 50k</a></li><li class="chapter-item "><a href="../../../../running/past/2022/ed_t.html">Ed Thanksgiving's Group Run</a></li><li class="chapter-item "><a href="../../../../running/past/2022/black_friday.html">Black Friday Turkey Trots</a></li><li class="chapter-item "><a href="../../../../running/past/2022/bbf50k.html">Bosque Bigfoot 50k</a></li><li class="chapter-item "><a href="../../../../running/past/2022/tucson_marathon.html">Tucson Marathon</a></li><li class="chapter-item "><a href="../../../../running/past/2022/grinch_lunch.html">The Grinch Lunch</a></li></ol></li><li class="chapter-item expanded "><a href="../../../../running/past/2023.html">2023</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../../running/past/2023/foothills_fat_ass.html">Foothills Fat Ass</a></li><li class="chapter-item "><a href="../../../../running/past/2023/sandia-snowshoe-race.html">Sandia Snowshoe Race</a></li><li class="chapter-item "><a href="../../../../running/past/2023/resolutions-stink.html">Resolutions Stink!</a></li><li class="chapter-item "><a href="../../../../running/past/2023/the-quad.html">Mt. Taylor Winter Quadrathlon</a></li><li class="chapter-item "><a href="../../../../running/past/2023/v-day.html">V Day</a></li><li class="chapter-item "><a href="../../../../running/past/2023/king-of-the-hill.html">King of the Hill</a></li><li class="chapter-item "><a href="../../../../running/past/2023/shenanigains.html">Shenanigains</a></li><li class="chapter-item expanded "><a href="../../../../running/past/2023/bmdm.html">Bataan Memorial Death March</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../../running/past/2023/bmdm/my-race.html" class="active">My Race</a></li></ol></li><li class="chapter-item "><a href="../../../../running/past/2023/academy-of-pain.html">Academy of Pain</a></li><li class="chapter-item "><a href="../../../../running/past/2023/brew-crowning.html">Burque Brew Tour Crowning</a></li><li class="chapter-item "><a href="../../../../running/past/2023/berta.html">Berta Fun Run</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../../../running/my-beliefs.html">My Beliefs</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../../running/my-beliefs/knees.html">Knees</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../../../programming.html">Programming</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../../programming/pdp8.html">PDP-8</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../../programming/pdp8/first-hack.html">My First Hack</a></li></ol></li><li class="chapter-item "><a href="../../../../programming/pdp11.html">PDP-11</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../../programming/pdp11/not-worthy.html">I am Not Worthy</a></li></ol></li><li class="chapter-item "><a href="../../../../programming/ancient-peripherals.html">Ancient Peripherals</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../../programming/ancient-peripherals/punch-cards.html">Punch Cards</a></li></ol></li><li class="chapter-item "><a href="../../../../programming/blown.html">Blown Opportunities</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../../programming/blown/steve-jobs.html">Steve Jobs</a></li></ol></li><li class="chapter-item "><a href="../../../../programming/rust.html">Rust</a></li></ol></li><li class="chapter-item "><a href="../../../../poker.html">Poker</a></li><li class="chapter-item "><a href="../../../../bataan.html">Bataan</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../../bataan/death-march.html">Death March</a></li><li class="chapter-item "><a href="../../../../bataan/memorial-death-march.html">Memorial Death March</a></li></ol></li><li class="chapter-item "><a href="../../../../thanks.html">Thanks</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../../thanks/agdg.html">AGDG</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../../thanks/agdg/agdgat.html">AGDGAT</a></li></ol></li><li class="chapter-item "><a href="../../../../thanks/barge.html">BARGE</a></li><li class="chapter-item "><a href="../../../../thanks/team_rwb.html">Team RWB</a></li><li class="chapter-item "><a href="../../../../thanks/george.html">GEORGE</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Young Lazy deadhead</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="my-race"><a class="header" href="#my-race">My <em>Race</em></a></h1>
+<h2 id="zachary-carnahan-won"><a class="header" href="#zachary-carnahan-won">Zachary Carnahan Won</a></h2>
+<p>Zachary Carnahan <a href="https://bataanmemorialdeathmarch.itsyourrace.com/Results/6574/2023/115251/1771">won in
+4:40:41.221</a>. I
+finished second in
+<a href="https://bataanmemorialdeathmarch.itsyourrace.com/Results/6574/2023/115251/2017">4:41:03.683</a>,
+a 22.462 second difference.</p>
+<h3 id="coulda--shoulda-woulda"><a class="header" href="#coulda--shoulda-woulda">Coulda,  Shoulda, Woulda</a></h3>
+<p>I could have run faster. I should have run faster and had I known I
+was as close to my PR
+(<a href="https://bataanmemorialdeathmarch.itsyourrace.com/Results/6574/2016/35464/1524">4:39:45.185</a>)
+as I was, I would have run faster, even without knowing that it would
+have made the difference between first and second.</p>
+<p>I didn't run as fast I could have for three reasons:</p>
+<ul>
+<li>
+<p>A runner with what looked like a pack with a plate in it passed me
+with sufficient speed and grace that I figured I was not going to
+finish first this year with my gimpy foot. As he passed me, I shouted
+to him &quot;Do you have a plate in there?&quot; and he just smiled.  My guess
+is he didn't actually hear me.  He had earbuds in. I did catch up with
+him during lunch, afterward and nope, no plate.</p>
+</li>
+<li>
+<p>I knew that six days after BMDM was going to be the <a href="../academy-of-pain.html">Academy of
+Pain</a>, a twelve hour timed race that I wanted
+to run at least fifty miles during. I had run that distance in the
+same event last year and this year I was on the fence as to whether my
+foot would hold up well enough to justify signing up for the <a href="https://cocodona.com/">Cocoona
+250</a> and I figured AoP would be an excellent
+test. I really wanted to sign up for C250, so I justified not running
+harder in order to not jeopardize that test.</p>
+</li>
+<li>
+<p>Running hard that late in the race is annoyingly uncomfortable.  I can do
+it, but let's face it, I looked for—and found—reasons not to.</p>
+</li>
+</ul>
+<p>At lunch I asked Zachary point blank if I had caught up to him would he
+have put up a fight and his answer was no.  I had passed him going up
+mineral hill, but he saw my backpack outside a porta-potty and deliberately
+chose to run as quickly as he could to gain as much of a lead as possible.
+That was quite successful, because my hubris lead me to believe that I had
+crushed his spirit and it didn't occur to me that he had passed me during
+my brief pit stop. The downside to Zachary is that by his own admission
+he blew up and that's why, had I run faster, he didn't think he'd have
+been able to put up a fight.</p>
+<h2 id="far-too-much-race-information"><a class="header" href="#far-too-much-race-information">Far too much Race Information</a></h2>
+<h3 id="last-years-race"><a class="header" href="#last-years-race">Last Year's Race</a></h3>
+<p>&quot;Last year&quot; was 2019, because BMDM hadn't been held in person since then.</p>
+<p>I was in the best shape ever and we had perfect weather.
+Unfortunately, I developed debilitating hip pain that was almost
+definitely due to my <a href="https://github.com/ctm/Bataan-Memorial-Death-March/blob/master/2019.md#wah-wah-wah-my-pack-broke">pack
+breaking</a>.
+I did not see or hear my pack break, but my pack was definitely broken
+by the time I picked it up after taking it off and crossing the finish
+line.</p>
+<h3 id="this-years-training"><a class="header" href="#this-years-training">This Year's Training</a></h3>
+<p><a href="https://github.com/ctm/Bataan-Memorial-Death-March/blob/master/2023.md#past">This year's
+training</a>
+did not go well.  I started out with a hot-spot in my right foot and
+training with a pack made it worse.  Each training year I do one or
+two twenty-four mile trainings and, in general, those are good
+predictors for my performance.  However, in 2019 I didn't do as well
+as predicted, presumably due to the broken pack. This year, I did
+*<strong>much</strong> better than predicted, because both of my twenty-four mile
+trainings were marred by foot pain that wasn't present on race day.</p>
+<h3 id="reconnaissance"><a class="header" href="#reconnaissance">Reconnaissance</a></h3>
+<p>I'm a programmer and I had already written some software to <a href="https://github.com/ctm/fantoccini-shiprock#fantoccini-shiprock">scrape
+race
+results</a>
+and to <a href="https://github.com/ctm/runs#ctm-runs">compute</a> the <a href="http://www.mttaylor50k.com/mt.-taylor-doubler.html">Mt. Taylor
+Doublers</a> and the
+<a href="https://www.abqroadrunners.com/member-race-series.html">Albuquerque Roadrunners Member Race
+Series</a>
+scores.</p>
+<p>Since 2016, BMDM has had its results and entrants compiled by Its Your
+Race, so I used my software to scrape the previous results and the
+2023 entrants so I could see who was entered who had previously
+finished in less than six hours.</p>
+<p>There were only five:</p>
+<table><thead><tr><th>Age</th><th>Name</th><th>Finishing Time</th></tr></thead><tbody>
+<tr><td>37</td><td>DAVID TATHAM</td><td>5:28:30.1</td></tr>
+<tr><td>35</td><td>CHRISTOPHER JOHNSON</td><td>5:31:51.7</td></tr>
+<tr><td>47</td><td>Daniel Schuerch</td><td>5:35:42.1</td></tr>
+<tr><td>34</td><td>ZACHARY CARNAHAN</td><td>5:38:27.6</td></tr>
+<tr><td>46</td><td>BRIAN HRONIK</td><td>5:47:21.4</td></tr>
+</tbody></table>
+<p>None of these people had run sub five, and the youngest was 34.  Most
+people during the intervening years had probably lost interest,
+although the fact that these people had signed up showed they were at
+least somewhat interested.  I didn't think it likely (but I was
+wrong!) that any of these people would train hard and decrease their
+time by more than a half hour, which made me think that if I finished
+sub-five, I'd either come in first or would be beat by someone new.
+New people usually are surprised by the difficulty of the course.</p>
+<h3 id="drugs"><a class="header" href="#drugs">Drugs</a></h3>
+<p>I broke down and saw a podiatrist on March 10th, the day before the
+King of the Hill Ruck race and only nine days before the Bataan Memorial
+Death March.  I explained what was going on and why I believed it was
+a morton's neuroma and why we could rule out a stress fracture. He
+examined my foot, concurred and gave me a shot of cortisone.</p>
+<p>Cortisone is a steroid and I believe its use is a World Anti Doping
+Agency (<a href="https://www.wada-ama.org/en">WADA</a>) violation without a
+Therapeutic Use Exemption
+(<a href="https://www.wada-ama.org/en/athletes-support-personnel/therapeutic-use-exemptions-tues">TUE</a>). As
+far a I know, none of the events I participate in are run using WADA
+rules, so this is an area I know very little about.  I did not seek
+the cortisone to enhance my ability. It's the only steroid I've ever
+used and it certainly wasn't something I turned to lightly.</p>
+<p>In addition to the cortisone, I used caffeine (3 double espressos),
+200mg ibuprofen, 500mg acetaminophen and a bar of 90% dark chocolate
+(contains theobromine) <a href="https://github.com/ctm/diet/blob/master/log/2023.txt#L4101-L4153">on race
+day</a>.
+None of those are (AFAIK) WADA violations, although the ibuprofen and
+acetaminophen are barred from
+<a href="https://montblanc.utmb.world/races/utmb">UTMB</a>.</p>
+<h3 id="pre-race"><a class="header" href="#pre-race">Pre-Race</a></h3>
+<p>Almost every day I have a double espresso at 5:15 to &quot;wake me up&quot; (although
+I'm typically awake and doing things around 4:45) and to &quot;get me going&quot;. I
+chose not to use wake-up caffeine the morning of BMDM, because I didn't want
+to need to go to the bathroom when stuck in traffic and because I didn't want
+the caffeine wearing off too soon.</p>
+<p>Unfortunately, I didn't sleep well. Various noises kept me awake.  So with
+less time spent sleeping and with poorer quality of sleep, the lack of caffeine
+contributed to me forgetting my handhelds, losing my keys and
+chewing up time.</p>
+<p>In years past, there were porta-potties on the way out that could be
+hit one final time after the gun had started but before crossing the
+starting timing mat.  In 2019 the lack of those porta potties
+surprised me and interfered with my race.  This year, the lack of
+porta potties near the parking area surprised me.  Luckily, I had
+brought a lug-a-loo and could use that while Iris slept.  Oops. the
+lug-a-loo was in my truck back in Albuquerque. Surprise!</p>
+<p>We did make it to the porta potties in time to hit
+them—<strong>once</strong>—before heading to our starting positions,
+but would once be enough? No.</p>
+<h3 id="to-mineral-hill"><a class="header" href="#to-mineral-hill">To Mineral Hill</a></h3>
+<p>I rushed to get to the runner's section of the starting line. I wanted
+to be settled by the time the opening ceremony began. I succeeded, but
+got separated from Iris. We weren't planning on going the same pace, so
+that was OK.</p>
+<p>They fired the starting (big!) gun. I started <a href="https://www.youtube.com/playlist?list=PLiHB06ix3lYgdhd6NgF-zde9tpLh81wsU">my
+playlist</a>
+and we were off. Before too long we crossed the starting timing mat
+and were running. The first six miles are basically downhill and I averaged
+about a 9:20 min/mile pace, getting my heart-rate up to around 150 bpm and
+holding it there.</p>
+<p>I struck up many conversations with fellow runners, typically starting
+out by asking if they had run the course before. If they hadn't, I
+explained how it would unfold and more often than not I suggested that
+they wanted to be careful not to burn out early.</p>
+<p>One person mentioned that he knew Ray Pickering, the guy who had
+started the Bataan Memorial Death March. He said that Ray was there
+and I let him know that I'd love to meet Ray. That didn't happen, but
+perhaps some day I'll get that honor.</p>
+<p>One person I chatted with recognized me from <a href="https://bataanmarch.com/register/civilian-individual/">my picture on the
+Civilian Individual Heavy Division registration
+page</a>.</p>
+<p>Miles seven and eight are gentle uphills and around mile eight is where
+participants doing the honorary march turn to the left.  The rest of us
+turn to the right and head up Mineral Hill.</p>
+<h3 id="up-mineral-hill"><a class="header" href="#up-mineral-hill">Up Mineral Hill</a></h3>
+<p>My goal was to keep my heart rate around 150 bpm going up Mineral Hill.  I
+wasn't sure if could keep it that low without having to walk here and there,
+but I was much more concerned with not blowing up than I was to artificially
+force myself to run the entire way up.</p>
+<p>I continued chatting with fellow participants, mostly people who were
+traveling my speed. Since I wasn't always running, that allowed me to chat
+with some walkers, too.  By this time, I only remember seeing one person
+running with a pack, and he too would walk every now and then. He was ahead
+of me, but I was gaining.</p>
+<p>I asked him if he had done this before and he said he had.  That should have
+been a warning, because it meant he knew what he was doing.  I mentioned that
+I had probably chatted with him in previous years, but my memory is shot, and
+2019 was an eternity in the past.  Of course that was Zachary. While we
+were still going up, I passed him.  I (incorrectly!) figured my gap would
+only widen, since I can run the downhill pretty quickly. I didn't see him
+again until I spotted him at the post event lunch, where I congratulated
+him and picked his brain.</p>
+<h3 id="down-mineral-hill"><a class="header" href="#down-mineral-hill">Down Mineral Hill</a></h3>
+<p>According to <a href="https://www.strava.com/activities/8742917864">my Strava
+Track</a>, the course peaks
+at mile 13.2. I ran my fifteenth mile in 8:45 and my seventeenth in
+10:27, but my sixteenth took me 12:29.  I had to use the porta potty.
+Once pass before the start was not enough. Not only did I lose a couple
+minutes there, but that's when Zachary passed me.  He knew who I was and
+he also recognized my unique backpack.</p>
+<p>I didn't know that Zachary had passed me, but I did see a guy with a
+small Osprey backpack that looked like it was designed to hold a metal
+plate, like a small GoRuck pack. I shouted &quot;Do you have a plate in
+there?&quot;  I misinterpreted the smile I got in return and thought that
+he had.  My mind wasn't functioning well the entire day. The cascade
+of tiredness induced troubles just getting to the starting line left
+me even further addled. I was actually surprised that Osprey was
+making a plate carrier, but I figured rucking just must be taking off
+more than I had realized.  I was delusional.</p>
+<h3 id="the-sand-pit"><a class="header" href="#the-sand-pit">The Sand Pit</a></h3>
+<p>I don't remember what year they changed the course, but the sand pit
+now has some uphill to it. According to Strava, mile twenty-one has 95
+feet of gain and mile twenty-two has another 131 feet of gain.  I was
+no longer keeping my heart rate up around 150; it was closer to 140
+and I was wearing down.  From mile 22.4 to 24.2 is downhill and rather
+than using that downhill effectively, I used it to rest.  It took me
+11:08 to run my twenty fourth mile even though it was downhill.  I had
+let me heart-rate drop down to 135.  I had given up.  I wasn't going
+to catch Osprey guy, so I had no chance at first and six days later I
+wanted to run fifty miles (but without a pack!).</p>
+<h3 id="the-home-stretch"><a class="header" href="#the-home-stretch">The Home Stretch</a></h3>
+<p>The twenty-fifth mile was a little up hill and the twenty-sixth a
+little down. I ran them in 12:37 ad 12:31.  My heart wasn't in it in
+part because my head wasn't in it.  Not only was I not thinking
+straight, but I had never looked at my elapsed time and furthermore, I
+misremembered my PR as 4:35 or 4:36 and not 4:39.  A PR was in my
+grasp, but I didn't even know it.  I spent months training, but not
+enough time working on a race-day plan.</p>
+<h3 id="second"><a class="header" href="#second">Second</a></h3>
+<p>After finishing, I called my sister Marcia.  She's completed the Bataan
+Memorial Death March (without a pack) and typically comes out to join us.
+This year, she needed to stay back in Albuquerque.  I couldn't get the
+tracking app to work on my phone, so I didn't know where I had placed.
+There was a results tent, but it had a sign saying that your results
+wouldn't be available until about a half hour after you crossed the
+finish line.</p>
+<p>I figured Marcia could use the web to find out how many people had
+finished ahead of me.  My time was roughly 4:40, but Osprey guy
+probably finished sub 4:30 and there was no way I had a sub 4:30 in me
+this year.</p>
+<blockquote>
+<p>Second (pause) and unless I botched the math, by twenty three seconds.</p>
+</blockquote>
+<blockquote>
+<p>Are you shitting me?</p>
+</blockquote>
+<p>I was quite proud that my sister had thought of this way to yank my
+chain<sup class="footnote-reference"><a href="#1">1</a></sup>.</p>
+<p>Nope. Oh well, there's always next year.</p>
+<br/>
+<br/>
+<br/>
+<hr/>
+<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<p>I figured she was still upset from when we were young adults
+and I told her matter-of-factly that cat's can't see through glass and
+she believed me<sup class="footnote-reference"><a href="#2">2</a></sup>.</p>
+</div>
+<div class="footnote-definition" id="2"><sup class="footnote-definition-label">2</sup>
+<p>That was payback from when we were both kids.  She
+told me she was learning about exponents and I unskillfully lied that I
+already knew what they were. She offered that they were the king of
+France. &quot;Yeah, I knew that.&quot; I lied again.</p>
+</div>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../../running/past/2023/bmdm.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../../../running/past/2023/academy-of-pain.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../../running/past/2023/bmdm.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../../../running/past/2023/academy-of-pain.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../../../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>
