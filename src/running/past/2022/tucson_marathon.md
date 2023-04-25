@@ -146,7 +146,7 @@ time for both of us to watch the Army Navy football game.  My daughter
 Margaret earned an Army ROTC scholarship and is a freshman at the
 University of New Mexico (where I went to grad school).  My other
 daughter is a senior in high school with an application pending to
-attend West Point.  So, all three of us were rooting for Army and
+attend West Point[^5].  So, all three of us were rooting for Army and
 I was texting my daughters during the exciting game.  I may not have
 beaten the old people, but Army beat Navy. It was a very good day.
 
@@ -169,3 +169,5 @@ an email asking me for my mailing address so he could send me a shirt! I'm
 sure that if there was anyone else who inadvertently didn't get a shirt, and
 wanted one, that he or she could have gotten one by asking.
 
+[^5]: Since writing this report, my daughter's application was accepted. She
+received her appointment (i.e., was admitted). Yay!
