@@ -124,7 +124,7 @@ the finish line, but I forgot to ask about them at the finish line, so
 I have no shirt from the race, which is OK for me, because I have too
 many shirts, but it is disappointing that shirts were handled that
 way.  By the time I finished, there were many other things I was
-thinking about than to remember to ask for a shirt[^4].
+thinking about than to remember to ask for a shirt[^3].
 
 I hung out long enough to pick up the slate coaster I won for being
 second in my age group, then hopped a bus back to the parking lot at
@@ -146,7 +146,7 @@ time for both of us to watch the Army Navy football game.  My daughter
 Margaret earned an Army ROTC scholarship and is a freshman at the
 University of New Mexico (where I went to grad school).  My other
 daughter is a senior in high school with an application pending to
-attend West Point[^5].  So, all three of us were rooting for Army and
+attend West Point[^4].  So, all three of us were rooting for Army and
 I was texting my daughters during the exciting game.  I may not have
 beaten the old people, but Army beat Navy. It was a very good day.
 
@@ -159,15 +159,16 @@ beaten the old people, but Army beat Navy. It was a very good day.
     [Ruin Jonny's Bar Mitzvah](https://www.youtube.com/watch?v=564YWy-BYN8&list=OLAK5uy_loe_I2N5dCNioTZ7dSNa_6q8zTxsXvRCM)
 
 
-[^2]: [If you're Gonna be Dumb You Gotta be Tough](https://www.youtube.com/watch?v=bXeDRbJP_QE), [Rawhide](https://www.youtube.com/watch?v=qKEzV3ZVKfY), and [The Ballad of Wendell Scott](https://www.youtube.com/watch?v=y2vXth5xwHA)[^3]
+[^2]: [If you're Gonna be Dumb You Gotta be Tough](https://www.youtube.com/watch?v=bXeDRbJP_QE), [Rawhide](https://www.youtube.com/watch?v=qKEzV3ZVKfY), and [The Ballad of Wendell Scott](https://www.youtube.com/watch?v=y2vXth5xwHA)[^5]
 
 
-[^3]: [Wendell Scott's biography](https://www.goodreads.com/book/show/58611896-hard-driving)
-
-[^4]: Soon I posted this race report, an Aravaipa employee sent me
+[^3]: Soon I posted this race report, an Aravaipa employee sent me
 an email asking me for my mailing address so he could send me a shirt! I'm
 sure that if there was anyone else who inadvertently didn't get a shirt, and
 wanted one, that he or she could have gotten one by asking.
 
-[^5]: Since writing this report, my daughter's application was accepted. She
+[^4]: Since writing this report, my daughter's application was accepted. She
 received her appointment (i.e., was admitted). Yay!
+
+[^5]: [Wendell Scott's biography](https://www.goodreads.com/book/show/58611896-hard-driving)
+
