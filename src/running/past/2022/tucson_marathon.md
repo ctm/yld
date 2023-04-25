@@ -124,7 +124,7 @@ the finish line, but I forgot to ask about them at the finish line, so
 I have no shirt from the race, which is OK for me, because I have too
 many shirts, but it is disappointing that shirts were handled that
 way.  By the time I finished, there were many other things I was
-thinking about than to remember to ask for a shirt.
+thinking about than to remember to ask for a shirt[^4].
 
 I hung out long enough to pick up the slate coaster I won for being
 second in my age group, then hopped a bus back to the parking lot at
@@ -163,3 +163,9 @@ beaten the old people, but Army beat Navy. It was a very good day.
 
 
 [^3]: [Wendell Scott's biography](https://www.goodreads.com/book/show/58611896-hard-driving)
+
+[^4]: Soon I posted this race report, an Aravaipa employee sent me
+an email asking me for my mailing address so he could send me a shirt! I'm
+sure that if there was anyone else who inadvertently didn't get a shirt, and
+wanted one, that he or she could have gotten one by asking.
+
