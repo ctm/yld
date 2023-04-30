@@ -5,6 +5,7 @@
   - [Too Public?](life/too-public.md)
   - [My Beliefs](./life/my-beliefs.md)
     - [Multiple Universes](./life/my-beliefs/multiple-universes.md)
+    - [Soy](./life/my-beliefs/soy.md)
 - [Running](./running.md)
   - [Resources](./resources.md)
     - [Books](./resources/books.md)
