@@ -54,6 +54,8 @@
       - [Academy of Pain](running/past/2023/academy-of-pain.md)
       - [Burque Brew Tour Crowning](running/past/2023/brew-crowning.md)
       - [Berta Fun Run](running/past/2023/berta.md)
+      - [Cocodona 250](./running/past/2023/cocodona-250.md)
+        - [Creepy Crawly Winner](./running/past/2023/cocodona-250/creepy-crawly.md)
   - [My Beliefs](./running/my-beliefs.md)
     - [Knees](./running/my-beliefs/knees.md)
 - [Programming](./programming.md)
