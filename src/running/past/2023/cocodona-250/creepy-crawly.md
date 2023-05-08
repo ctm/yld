@@ -11,7 +11,12 @@ phone, but the monster had left by the time I could take a
 picture. Luckily, this was on the first day, so there were other
 runners nearby. I pointed the gila monster out to at least one who
 took a picture. Maybe someday I'll see it. I didn't, however, think to
-get that runner's name or bib number.
+get that runner's name or bib number. 
+
+If you took a photo of a gila monster on the first
+day&mdash;especially if il mostro was pointed out to you by a guy too
+stupid to wear a hat in the sun&mdash;please [contact
+me](mailto:clifford.t.matthews@gmail.com).
 
 By the second day, I was running solo mostly. Coming off of Mount
 Mingus, there's an interminable trail that is normally fairly
@@ -41,7 +46,7 @@ didn't make a lot of sense.
 It took me a little while to find the medium sized snake next to the
 small rock. Furthermore, being tired, I didn't process "it's not
 moving" as "it's standing it's ground"; I was thinking more like
-"perhaps it's dead." Nope. It was a healthy adult [mojave
+"perhaps it's dead." Nope. It was a healthy adult [Mojave
 rattler](https://www.youtube.com/watch?v=feqD7ikbyOY&t=86s). I got out
 my phone, got close enough to get a low-resolution picture, spoke
 calmly to it, then walked widely around it. I stayed on the trail, but
@@ -51,7 +56,7 @@ I believe I was well outside its
 > "What the fuck? That snake was threatening us. Why wasn't it threatening him?"<br/>
 "Maybe he's a snake whisperer"
 
-Heh. I was tempted to shout back that it was ok, because although I'm
+Heh. I was tempted to shout back that it was OK, because although I'm
 young, I was actually doing this year's Cocodona 250 sober and
 rattlesnakes bite young _drunk_ men.
 
@@ -65,7 +70,7 @@ rattlesnakes bite young _drunk_ men.
 
 The following day I was hiking up the penultimate big climb and I saw
 a centipede. Although I know the difference between diamondback,
-timber and mojave rattlers, I didn't know much about various
+timber and Mojave rattlers, I didn't know much about various
 centipedes. I had a vague recollection of seeing a video of someone
 getting bitten by one, but I got a photo and video of the large
 colorful one I saw. Sure enough, it was a giant desert centipede,
@@ -82,7 +87,7 @@ him](https://www.youtube.com/watch?v=-6vzjjIrRK8&t=829s).
 
 I also saw a horned toad. They're common, and they're also not
 venomous, but they can squirt blood from their eyes. It's also amazing
-how camoflauged they are.
+how camouflaged they are.
 
 FTR, I did not hear of any bites or stings, nor did I see anyone
 "attacked" by teddy bear cholla, but there was some teddy bear cholla
