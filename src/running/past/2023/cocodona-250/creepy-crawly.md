@@ -73,7 +73,8 @@ a centipede. Although I know the difference between diamondback,
 timber and Mojave rattlers, I didn't know much about various
 centipedes. I had a vague recollection of seeing a video of someone
 getting bitten by one, but I got a photo and video of the large
-colorful one I saw. Sure enough, it was a giant desert centipede,
+colorful one I saw. Once I had a chance to search the web, sure enough,
+I had seen a giant desert centipede,
 which was indeed the species that [Coyote Peterson had bite
 him](https://www.youtube.com/watch?v=-6vzjjIrRK8&t=829s).
 
@@ -85,9 +86,9 @@ him](https://www.youtube.com/watch?v=-6vzjjIrRK8&t=829s).
      width="250"
      />
 
-I also saw a horned toad. They're common, and they're also not
-venomous, but they can squirt blood from their eyes. It's also amazing
-how camouflaged they are.
+I also saw a horned toad. They're common, and they're not venomous,
+but they can squirt blood from their eyes. It's also amazing how
+camouflaged they are.
 
 FTR, I did not hear of any bites or stings, nor did I see anyone
 "attacked" by teddy bear cholla, but there was some teddy bear cholla
