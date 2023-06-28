@@ -20,7 +20,7 @@ The [Couch to 5k
 program](https://marathonhandbook.com/couch-to-5k-training-plan/) is
 worth mentioning even though I never did it. However, the people who
 started the BARGE Fun Run did and that's what inspired them.  The
-BARGE Run Run inspired me.  After seeing me finish my first marathon,
+BARGE Fun Run inspired me.  After seeing me finish my first marathon,
 my brother-in-law thought "If Cliff can do it, how hard can it be?"
 and decided to run a marathon as well.  He, however, on my advice, did
 use the Couch to 5k program.  Not only did he finish the 2010 Chicago
