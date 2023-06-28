@@ -9,7 +9,6 @@
 
         <!-- Custom HTML head -->
         
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="Way more than anyone wants to know about Cliff Matthews">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
@@ -34,14 +33,15 @@
 
     </head>
     <body>
+    <div id="body-container">
         <!-- Provide site root to javascript -->
-        <script type="text/javascript">
+        <script>
             var path_to_root = "";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
-        <script type="text/javascript">
+        <script>
             try {
                 var theme = localStorage.getItem('mdbook-theme');
                 var sidebar = localStorage.getItem('mdbook-sidebar');
@@ -57,7 +57,7 @@
         </script>
 
         <!-- Set the theme before any content is loaded, prevents flash -->
-        <script type="text/javascript">
+        <script>
             var theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
@@ -69,12 +69,14 @@
         </script>
 
         <!-- Hide / unhide sidebar before it is displayed -->
-        <script type="text/javascript">
+        <script>
             var html = document.querySelector('html');
-            var sidebar = 'hidden';
+            var sidebar = null;
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
             }
             html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
@@ -100,7 +102,7 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
@@ -133,7 +135,7 @@
                 </div>
 
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
-                <script type="text/javascript">
+                <script>
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
                     document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
                     Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
@@ -269,7 +271,7 @@ minutes jotting things down.</p>
 program</a> is
 worth mentioning even though I never did it. However, the people who
 started the BARGE Fun Run did and that's what inspired them.  The
-BARGE Run Run inspired me.  After seeing me finish my first marathon,
+BARGE Fun Run inspired me.  After seeing me finish my first marathon,
 my brother-in-law thought &quot;If Cliff can do it, how hard can it be?&quot;
 and decided to run a marathon as well.  He, however, on my advice, did
 use the Couch to 5k program.  Not only did he finish the 2010 Chicago
@@ -440,13 +442,13 @@ I doubt anyone who came after us would even notice our handiwork.</p>
 <p>The weather was very nice.  No thunder or lightning or even rain. It
 was mostly overcast.  My truck claims it was 42F at about 7:30am and
 51F at 8:20pm.</p>
-<table><thead><tr><th>Rank</th><th>Time</th><th>Name</th><th>Notes</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Rank</th><th>Time</th><th>Name</th><th>Notes</th></tr></thead><tbody>
 <tr><td>1</td><td>12:14:02</td><td>George Sefzik</td><td>did a bonked bonus hike</td></tr>
 <tr><td>2</td><td>12:17:06</td><td>Cliff Matthews</td><td>held George back</td></tr>
 <tr><td>3</td><td>14:30:36</td><td>Spencer Briggs</td><td></td></tr>
 <tr><td>4</td><td>14:30:37</td><td>James DuPlain</td><td>It was my light that wasn't working that resulted in us going so slow for the last two hours.</td></tr>
 </tbody></table>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="events-ive-participated-in"><a class="header" href="#events-ive-participated-in">Events I've Participated In</a></h1>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="events-ive-participated-in"><a class="header" href="#events-ive-participated-in">Events I've Participated In</a></h1>
 <p>Over the years I've participated in more than a couple of hundred events.
 I often take notes to myself before and afterward; I've even written the
 occasional event report and mailed it to a few friends.  Unless asked,
@@ -471,7 +473,7 @@ Maniacs</a>; which <a href="https://db.marathonmaniacs.com/Maniacs/myraces/4395"
 <p>UltraSignup doesn't always list the entrants who Did Not Finish (DNF).
 So, for completeness, these are, I believe, all the times I've started
 a race and not officially finished:</p>
-<table><thead><tr><th>Year</th><th>Race</th><th>Reason</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Year</th><th>Race</th><th>Reason</th></tr></thead><tbody>
 <tr><td>2010</td><td>Deadman Peaks Trail Run 50 miler</td><td>WNATF: Was Not Allowed To Finish<sup class="footnote-reference"><a href="#1">1</a></sup></td></tr>
 <tr><td>2014</td><td>Cedro Peak 45 miler</td><td>Flu caught up with me</td></tr>
 <tr><td>2015</td><td>Western States</td><td>SAR injury<sup class="footnote-reference"><a href="#2">2</a></sup></td></tr>
@@ -480,6 +482,7 @@ a race and not officially finished:</p>
 <tr><td>2016</td><td>Fat Dog 120</td><td>Different trekking pole broke + bad nutrition; <a href="https://runningjohn.blogspot.com/2016/08/2016-mountain-madness-fat-dog-120-race.html">finished but too late</a></td></tr>
 <tr><td>2019</td><td>Foothills 50k</td><td>White-out blizzard (nobody finished)</td></tr>
 </tbody></table>
+</div>
 <p>Eventually, I'll write up a race report for each of those, because I
 think DNFs are more noteworthy (and unique) than other race reports.</p>
 <h3 id="cancellation-mid-race"><a class="header" href="#cancellation-mid-race">Cancellation Mid Race</a></h3>
@@ -552,7 +555,7 @@ pretty bad that day).</p>
 <p>The only event I had planned on doing in December was Perky Garcia's Grinch
 Lunch, but I had covid and stayed home.</p>
 <p>These are the events I completed:</p>
-<table><thead><tr><th>Month</th><th>Day</th><th>Event</th><th>Type</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Month</th><th>Day</th><th>Event</th><th>Type</th></tr></thead><tbody>
 <tr><td>January</td><td>1</td><td><strong>Unofficial</strong> Foothills Fat Ass</td><td>50k</td></tr>
 <tr><td>February</td><td>13</td><td>Bosque Bigfoot</td><td>50k</td></tr>
 <tr><td>March</td><td>28</td><td>Duke City <strong>Substitute</strong></td><td>Half Marathon</td></tr>
@@ -574,6 +577,7 @@ Lunch, but I had covid and stayed home.</p>
 <tr><td></td><td>26</td><td>Black Friday Turkey Trots</td><td>4 Miler</td></tr>
 <tr><td></td><td>27</td><td>Bosque Bigfoot</td><td>50k</td></tr>
 </tbody></table>
+</div>
 <div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
 <p>Six different ascents up the Sandia Mountain in one calendar day.
 We take my truck down after the first ascent, then use the tram to get down from the next four ascents, then get picked up at the top.
@@ -607,7 +611,7 @@ miles and rode my bike another 70.  Strava shows that I
 <p>The majority of entries in this table are races, but in most cases I did
 not &quot;race&quot; them; I finished them at an enjoyable pace.  The non-races I've
 included are mostly social training runs that I try to do every year.</p>
-<table><thead><tr><th>Month</th><th>Day</th><th>Event</th><th>Type</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Month</th><th>Day</th><th>Event</th><th>Type</th></tr></thead><tbody>
 <tr><td>January</td><td>1</td><td><a href="https://www.webscorer.com/race?raceid=264048">Foothills Fat Ass</a></td><td><a href="https://newmexicofa50k.wordpress.com/foothills-50k/">50k</a></td></tr>
 <tr><td></td><td>15</td><td><a href="https://www.strava.com/activities/6530265474">Academy of Pain</a></td><td><a href="https://www.facebook.com/events/499435151405235">12 Hour</a></td></tr>
 <tr><td></td><td>22</td><td><a href="https://friendsofthesandias.org/2022-sandia-snowshoe-race/">Sandia Snowshoe Race</a></td><td><a href="https://friendsofthesandias.org/snowshoe-race/">5k</a></td></tr>
@@ -649,6 +653,7 @@ included are mostly social training runs that I try to do every year.</p>
 <tr><td>December</td><td>10</td><td><a href="running/past/2022/tucson_marathon.html">Tucson</a></td><td><a href="https://www.tucsonmarathon.com/">Marathon</a></td></tr>
 <tr><td></td><td>31</td><td><a href="running/past/2022/grinch_lunch.html">Grinch Lunch</a></td><td><a href="https://www.facebook.com/events/587035643112558">5k</a></td></tr>
 </tbody></table>
+</div>
 <div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
 <p>I &quot;ran&quot; the Cedro Peak 50k in a fasted state, and only consumed water until the third to last aid station when I had <a href="https://santafebrewing.com/beer/adobe-igloo/">a beer</a>.  At the next two aid stations I also had <a href="http://www.exnovobrew.com/perle-haggard">a beer</a>.  Those three beers were my only calories that day until after I had finished the race.</p>
 </div>
@@ -2708,7 +2713,7 @@ Marathon is the one that will require extended scrutiny as it gets closer.</p>
 <p>The <code>R</code> column is only checked when I plan to run very hard (e.g., to win
 or to try to do well for my age).  Racing is annoyingly hard and lazy
 is my middle name.</p>
-<table><thead><tr><th>Month</th><th style="text-align: right">D</th><th>Event</th><th>Type</th><th>R</th><th>Notes</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Month</th><th style="text-align: right">D</th><th>Event</th><th>Type</th><th>R</th><th>Notes</th></tr></thead><tbody>
 <tr><td>January</td><td style="text-align: right">1</td><td><a href="https://newmexicofa50k.wordpress.com/foothills-50k/">Foothills Fat Ass</a></td><td>50k</td><td></td><td><a href="running/past/2023/foothills_fat_ass.html">Done</a></td></tr>
 <tr><td></td><td style="text-align: right">21</td><td><a href="https://friendsofthesandias.org/snowshoe-race/">Sandia Snowshoe</a></td><td>5k</td><td>✅</td><td><a href="running/past/2023/sandia-snowshoe-race.html">1 AG, 2 OA</a></td></tr>
 <tr><td></td><td style="text-align: right">28</td><td><a href="https://www.facebook.com/events/3281713308711524">Resolutions Stink!</a></td><td>4 miles</td><td>✅</td><td><a href="running/past/2023/resolutions-stink.html">3 OA</a></td></tr>
@@ -2742,6 +2747,7 @@ is my middle name.</p>
 <tr><td>December</td><td style="text-align: right">9</td><td><a href="https://www.tucsonmarathon.com/">Tucson</a></td><td>Marathon</td><td></td><td><em>may not do</em><sup class="footnote-reference"><a href="#3">3</a></sup></td></tr>
 <tr><td></td><td style="text-align: right">30</td><td><a href="https://www.facebook.com/events/587035643112558">Grinch Lunch</a></td><td>5k</td><td>✅</td><td><em>not announced</em></td></tr>
 </tbody></table>
+</div>
 <div class="footnote-definition" id="2"><sup class="footnote-definition-label">1</sup>
 <p>I was given a dispensation to allow me to run to the Burque
 Brew Crowning, run that event, and then run back and have all my mileage
@@ -3522,13 +3528,14 @@ Race, so I used my software to scrape the previous results and the
 2023 entrants so I could see who was entered who had previously
 finished in less than six hours.</p>
 <p>There were only five:</p>
-<table><thead><tr><th>Age</th><th>Name</th><th>Finishing Time</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Age</th><th>Name</th><th>Finishing Time</th></tr></thead><tbody>
 <tr><td>37</td><td>DAVID TATHAM</td><td>5:28:30.1</td></tr>
 <tr><td>35</td><td>CHRISTOPHER JOHNSON</td><td>5:31:51.7</td></tr>
 <tr><td>47</td><td>Daniel Schuerch</td><td>5:35:42.1</td></tr>
 <tr><td>34</td><td>ZACHARY CARNAHAN</td><td>5:38:27.6</td></tr>
 <tr><td>46</td><td>BRIAN HRONIK</td><td>5:47:21.4</td></tr>
 </tbody></table>
+</div>
 <p>None of these people had run sub five, and the youngest was 34.  Most
 people during the intervening years had probably lost interest,
 although the fact that these people had signed up showed they were at
@@ -3742,7 +3749,7 @@ logistics.</p>
 also need to use a restroom once or twice.  Although not strictly necessary,
 having a plan for where I'll run which miles will put my mind at ease, so
 I drew up this one:</p>
-<table><thead><tr><th>Time</th><th style="text-align: right">Total</th><th style="text-align: right">New</th><th>What</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Time</th><th style="text-align: right">Total</th><th style="text-align: right">New</th><th>What</th></tr></thead><tbody>
 <tr><td>0600</td><td style="text-align: right"></td><td style="text-align: right">11.55</td><td>3.5 AA laps</td></tr>
 <tr><td>0830</td><td style="text-align: right">11.55</td><td style="text-align: right">5.80</td><td>down to Bombs Away</td></tr>
 <tr><td>1000</td><td style="text-align: right">17.35</td><td style="text-align: right">3.50</td><td>Crowning Race</td></tr>
@@ -3750,6 +3757,7 @@ I drew up this one:</p>
 <tr><td>1215</td><td style="text-align: right">26.65</td><td style="text-align: right">24.75</td><td>7.5 AA laps</td></tr>
 <tr><td>1800</td><td style="text-align: right">51.40</td><td style="text-align: right"></td><td></td></tr>
 </tbody></table>
+</div>
 <p>Water was easy. I have a seven gallon water jug I keep in my truck (along
 with the lugaloo).  I have a running belt that holds two six ounce water
 bottles.  It'll be sufficiently cool that I can drink water between AA laps
@@ -4760,26 +4768,27 @@ do anything he asks me to do.</p>
 
 
 
-        <script type="text/javascript">
+        <script>
             window.playground_copyable = true;
         </script>
 
 
-        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
 
-        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
 
-        <script type="text/javascript">
+        <script>
         window.addEventListener('load', function() {
             window.setTimeout(window.print, 100);
         });
         </script>
 
+    </div>
     </body>
 </html>

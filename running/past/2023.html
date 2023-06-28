@@ -8,7 +8,6 @@
 
         <!-- Custom HTML head -->
         
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="Way more than anyone wants to know about Cliff Matthews">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
@@ -33,14 +32,15 @@
 
     </head>
     <body>
+    <div id="body-container">
         <!-- Provide site root to javascript -->
-        <script type="text/javascript">
+        <script>
             var path_to_root = "../../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
-        <script type="text/javascript">
+        <script>
             try {
                 var theme = localStorage.getItem('mdbook-theme');
                 var sidebar = localStorage.getItem('mdbook-sidebar');
@@ -56,7 +56,7 @@
         </script>
 
         <!-- Set the theme before any content is loaded, prevents flash -->
-        <script type="text/javascript">
+        <script>
             var theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
@@ -68,12 +68,14 @@
         </script>
 
         <!-- Hide / unhide sidebar before it is displayed -->
-        <script type="text/javascript">
+        <script>
             var html = document.querySelector('html');
-            var sidebar = 'hidden';
+            var sidebar = null;
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
             }
             html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
@@ -99,7 +101,7 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
@@ -132,7 +134,7 @@
                 </div>
 
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
-                <script type="text/javascript">
+                <script>
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
                     document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
                     Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
@@ -190,7 +192,7 @@ Marathon is the one that will require extended scrutiny as it gets closer.</p>
 <p>The <code>R</code> column is only checked when I plan to run very hard (e.g., to win
 or to try to do well for my age).  Racing is annoyingly hard and lazy
 is my middle name.</p>
-<table><thead><tr><th>Month</th><th style="text-align: right">D</th><th>Event</th><th>Type</th><th>R</th><th>Notes</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Month</th><th style="text-align: right">D</th><th>Event</th><th>Type</th><th>R</th><th>Notes</th></tr></thead><tbody>
 <tr><td>January</td><td style="text-align: right">1</td><td><a href="https://newmexicofa50k.wordpress.com/foothills-50k/">Foothills Fat Ass</a></td><td>50k</td><td></td><td><a href="2023/foothills_fat_ass.html">Done</a></td></tr>
 <tr><td></td><td style="text-align: right">21</td><td><a href="https://friendsofthesandias.org/snowshoe-race/">Sandia Snowshoe</a></td><td>5k</td><td>✅</td><td><a href="2023/sandia-snowshoe-race.html">1 AG, 2 OA</a></td></tr>
 <tr><td></td><td style="text-align: right">28</td><td><a href="https://www.facebook.com/events/3281713308711524">Resolutions Stink!</a></td><td>4 miles</td><td>✅</td><td><a href="2023/resolutions-stink.html">3 OA</a></td></tr>
@@ -224,6 +226,7 @@ is my middle name.</p>
 <tr><td>December</td><td style="text-align: right">9</td><td><a href="https://www.tucsonmarathon.com/">Tucson</a></td><td>Marathon</td><td></td><td><em>may not do</em><sup class="footnote-reference"><a href="#3">3</a></sup></td></tr>
 <tr><td></td><td style="text-align: right">30</td><td><a href="https://www.facebook.com/events/587035643112558">Grinch Lunch</a></td><td>5k</td><td>✅</td><td><em>not announced</em></td></tr>
 </tbody></table>
+</div>
 <div class="footnote-definition" id="2"><sup class="footnote-definition-label">1</sup>
 <p>I was given a dispensation to allow me to run to the Burque
 Brew Crowning, run that event, and then run back and have all my mileage
@@ -278,21 +281,22 @@ pounds one's feet harder than most trainings.</p>
 
 
 
-        <script type="text/javascript">
+        <script>
             window.playground_copyable = true;
         </script>
 
 
-        <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
 
-        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
 
         <!-- Custom JS scripts -->
 
 
+    </div>
     </body>
 </html>
