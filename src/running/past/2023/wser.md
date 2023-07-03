@@ -15,7 +15,7 @@ here are some notes to myself.
     * Meeting Jim (James Keller) and Emily in Reno
     * Peter Livingstone, my right-hand man (crew & pacer)
     * No overnight parking citation
-    * Young Dirty Rob (or Robb -- I don't remember)
+    * Young Dirty Rob (Robin Mcdearmon)
     * Pre-race meeting Matt (Hagen), Ian (???) and Marty (Gardner)
     * Cardiovascular Survey
   * Race
