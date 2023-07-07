@@ -57,6 +57,7 @@
       - [Cocodona 250](./running/past/2023/cocodona-250.md)
         - [Creepy Crawly Winner](./running/past/2023/cocodona-250/creepy-crawly.md)
       - [Western States](./running/past/2023/wser.md)
+  - [Unicycling](unicycling.md)
   - [My Beliefs](./running/my-beliefs.md)
     - [Knees](./running/my-beliefs/knees.md)
 - [Programming](./programming.md)
