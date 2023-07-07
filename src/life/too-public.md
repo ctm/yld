@@ -15,7 +15,7 @@ Developers Guild](https://agdg.co/)) aka nmdeadhead
 Although I don't wear a tinfoil hat, I _am_ concerned with privacy,
 albeit I'm more concerned with yours than mine.
 
-I don't have a Facebook or Instagram account. I do have a [LinkedIn
+I ~~don't~~ have a [Facebook](https://www.facebook.com/profile.php?id=100093257525075)[^1] (although not yet an Instagram) account. I also have a [LinkedIn
 account](https://www.linkedin.com/in/clifford-matthews-4a44231/),
 although I haven't done a good job of keeping it up to date. 
 
@@ -28,3 +28,11 @@ felt weird having so much info out there, but I did hear from others
 who read it and appreciated that I made it available, so this book
 continues that tradition. I'll slowly added more info that people may
 or may not find handy. It keeps me off the streets.
+
+[^1]: I am exceedingly late to the Facebook game. So far I haven't deliberately
+reached out and asked anyone to be my friend, although I may have been tricked
+into doing so by thinking I was clicking a button or three to accept a friend
+request.  _A_ problem (I won't use the definitive article, becvause I have
+many problems) I have is that I love people, including people who hate me.
+I don't currently have the time to ask seven billion or so people to be my
+friend, so &hellip; I ask no one&mdash;for now.
