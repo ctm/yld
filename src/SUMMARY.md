@@ -72,6 +72,7 @@
     - [Steve Jobs](./programming/blown/steve-jobs.md)
   - [Rust](./programming/rust.md)
 - [Poker](./poker.md)
+  - [I used to&hellip;](./poker/be-a-dick.md)
   - [WSOP Chip Bet](./poker/wsop-chip-bet.md)
 - [Bataan](./bataan.md)
   - [Death March](./bataan/death-march.md)
