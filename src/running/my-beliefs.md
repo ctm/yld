@@ -12,3 +12,11 @@ used to be explained by endorphins.  It's now explained by
 endocannabinoids.  Who knows, for me it might actually be nothing more
 than the placebo effect.  I still, however, _often_ get the runner's
 high.
+
+Oh my. This needs its own page, but starting on a unicycle ride in Las
+Vegas during [BARGE](https://www.barge.org/), I got the runner's high
+while riding my unicycle.  I was absolutely not expecting it, because I've
+ridden my bike thousands of miles over the last N > 10 years and _never_
+gotten the runner's high riding a bicycle.
+
+
