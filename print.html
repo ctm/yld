@@ -1,17 +1,17 @@
 <!DOCTYPE HTML>
-<html lang="en" class="sidebar-visible no-js light">
+<html lang="en" class="light" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>Young Lazy deadhead</title>
-        <meta name="robots" content="noindex" />
+        <meta name="robots" content="noindex">
 
 
         <!-- Custom HTML head -->
         
         <meta name="description" content="Way more than anyone wants to know about Cliff Matthews">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff">
 
         <link rel="icon" href="favicon.svg">
         <link rel="shortcut icon" href="favicon.png">
@@ -32,7 +32,7 @@
         <!-- Custom theme stylesheets -->
 
     </head>
-    <body>
+    <body class="sidebar-visible no-js">
     <div id="body-container">
         <!-- Provide site root to javascript -->
         <script>
@@ -62,24 +62,29 @@
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
-            html.classList.remove('no-js')
             html.classList.remove('light')
             html.classList.add(theme);
-            html.classList.add('js');
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
         </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var html = document.querySelector('html');
+            var body = document.querySelector('body');
             var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
             }
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -117,9 +122,9 @@
                                 <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                             <i class="fa fa-bars"></i>
-                        </button>
+                        </label>
                         <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                             <i class="fa fa-paint-brush"></i>
                         </button>
@@ -2708,21 +2713,20 @@ per year.</p>
 <p>During my <a href="https://github.com/ctm/Bataan-Memorial-Death-March">serious training
 block</a> for the
 Bataan Memorial Death March (BMDM) I have relatively few events.  I do
-serious ruck training two and a half days a week. I had planned on
+my ruck training two and a half days a week. I had planned on
 trying to participate in the Tough Ruck in 2023, but I nursed a
-hot-spot in my right foot during my BMDM training and think it's
-better to aim for Tough Ruck 2024 instead.</p>
-<p>On March 19th, I finished the Bataan Memorial Death March.</p>
+hot-spot in my right foot during my BMDM training and chose
+to aim for Tough Ruck 2024 instead.</p>
+<p>On March 19th, I <a href="running/past/2023/bmdm.html">finished the Bataan Memorial Death March</a>.</p>
 <p>My next block leads up to Hardrock (the next time I get in) or a
 qualifier or two in the years I don't get in. This year, I did not get
-in to Hardrock, although I did get in to Western States.  So I'm
-hoping to complete the Cocodona 250 again as my Hardrock Qualifier.  I
-had won the Bigfoot 200 lottery, but have to defer to 2024 since it
-conflicts with <a href="https://www.westpoint.edu/parents/frequently-asked-questions#marchback">Acceptance
+in to Hardrock, although I did get in to Western States.  I
+had won the Bigfoot 200 lottery, but had to defer to 2024 since it
+conflicted with <a href="https://www.westpoint.edu/parents/frequently-asked-questions#marchback">Acceptance
 Day</a>.
 Because I had signed up for the Bigfoot 200 (and because my finances
-are still tricky) I won't be attempting the Grand Slam.  Now that
-Western States is over (I finished it, which was my goal), I'm back to
+are still tricky) I didn't attempt the Grand Slam.  Now that
+Western States is over (<a href="running/past/2023/wser.html">I finished it</a>, which was my goal), I'm back to
 a &quot;fun around&quot; block.</p>
 <p>During my fun around block I typically &quot;participate&quot; (i.e., try to
 finish) in a lot of events, but actually &quot;race&quot; (i.e., try to <em>win</em> or
@@ -2730,6 +2734,10 @@ at least run quickly for my age) in very few.  This year, however,
 since my foot is still giving me trouble, my highest priority will
 be rehabilitating my foot, which may mean a lot of unicycling instead
 of running.</p>
+<p>Unfortunately, life has gotten in the way of writing up race reports,
+so, as of late October 2023, although I have finished <em>almost</em>
+everything I had planned for the year, I have written very little.
+For some events I have notes and I hope to go back and write them up.</p>
 <p>My fun around block ends in mid November, when I once again start
 my hardcore training for BMDM.</p>
 <h2 id="events-id-like-to-enter"><a class="header" href="#events-id-like-to-enter">Events I'd Like to Enter</a></h2>
@@ -2769,18 +2777,19 @@ is my middle name.</p>
 <tr><td></td><td style="text-align: right">10</td><td><a href="https://newmexicofa50k.wordpress.com/chimney-melon-50k/">Chimney Melon</a></td><td>25k</td><td></td><td><a href="https://www.strava.com/activities/9241296139">DNF the 50k</a>, but no race report yet</td></tr>
 <tr><td></td><td style="text-align: right">24</td><td><a href="https://www.wser.org/">Western States</a></td><td>100 Miler</td><td></td><td><a href="running/past/2023/wser.html">29:45:12</a></td></tr>
 <tr><td>July</td><td style="text-align: right">21</td><td><a href="https://www.barge.org/">BARGE</a> Fun Run</td><td>5k</td><td></td><td><a href="running/past/2023/barge-fun-run.html">Fun!</a></td></tr>
-<tr><td>August</td><td style="text-align: right">5</td><td><a href="https://newmexicofa50k.wordpress.com/baldy_50k/">Mt. Baldy</a></td><td>50k</td><td></td><td><em>may do a shorter distance</em></td></tr>
-<tr><td>September</td><td style="text-align: right">22</td><td><a href="https://newmexicofa50k.wordpress.com/aa50k/">AA50k</a></td><td>50k</td><td></td><td><em>may do a shorter distance</em></td></tr>
-<tr><td></td><td style="text-align: right">24</td><td><a href="https://www.torgbc.com/">ToRGC</a></td><td>Bike Century</td><td></td><td>Registered</td></tr>
-<tr><td></td><td style="text-align: right">30</td><td><a href="http://www.mttaylor50k.com/">Mount Taylor</a></td><td>50k</td><td></td><td><em>on waitlist</em></td></tr>
-<tr><td>October</td><td style="text-align: right">22</td><td><a href="running/past/2022/duke_city_marathon.html">Duke City</a></td><td><a href="https://www.dukecitymarathon.com/">Marathon</a><sup class="footnote-reference"><a href="#5">4</a></sup></td><td></td><td>Registered</td></tr>
-<tr><td></td><td style="text-align: right">28</td><td><a href="https://aravaiparunning.com/network/javelinajundred/">Javelina Jundred</a></td><td>100 Miler</td><td>✅</td><td><em>on waitlist</em></td></tr>
-<tr><td>November</td><td style="text-align: right">4</td><td><a href="https://deadmanpeaks.com/">Deadman Peaks</a></td><td>53 Miler</td><td></td><td><em>not registered yet</em></td></tr>
-<tr><td></td><td style="text-align: right">11</td><td><a href="https://newmexicofa50k.wordpress.com/white_mesa_50k/">White Mesa</a></td><td>50k</td><td></td><td></td></tr>
-<tr><td></td><td style="text-align: right">24</td><td><a href="https://www.facebook.com/Burque-Brewery-Tour-563485270788124/">Black Friday TT</a></td><td>4 miles</td><td>✅</td><td><em>not announced</em></td></tr>
-<tr><td></td><td style="text-align: right">25</td><td><a href="https://www.racenm.com/">Bosque Bigfoot</a></td><td>50k</td><td></td><td><em>not registered yet</em></td></tr>
-<tr><td>December</td><td style="text-align: right">9</td><td><a href="https://www.tucsonmarathon.com/">Tucson</a></td><td>Marathon</td><td></td><td><em>may not do</em><sup class="footnote-reference"><a href="#3">5</a></sup></td></tr>
-<tr><td></td><td style="text-align: right">30</td><td><a href="https://www.facebook.com/events/587035643112558">Grinch Lunch</a></td><td>5k</td><td>✅</td><td><em>not announced</em></td></tr>
+<tr><td>August</td><td style="text-align: right">5</td><td><a href="https://newmexicofa50k.wordpress.com/baldy_50k/">Mt. Baldy</a></td><td>30k</td><td></td><td>Only did <a href="https://www.webscorer.com/racedetails?raceid=323683&amp;did=400798">30k</a><sup class="footnote-reference"><a href="#6">4</a></sup>, but no race report yet</td></tr>
+<tr><td>September</td><td style="text-align: right">22</td><td><a href="https://newmexicofa50k.wordpress.com/aa50k/">AA50k</a></td><td>50k</td><td></td><td><a href="https://www.webscorer.com/race?raceid=332863">DFL</a>, no race report yet</td></tr>
+<tr><td></td><td style="text-align: right">24</td><td><a href="https://www.torgbc.com/">ToRGC</a></td><td>Bike Century</td><td></td><td><a href="https://www.strava.com/activities/9914563470">8:18:29</a><sup class="footnote-reference"><a href="#7">5</a></sup>, but no ride report yet</td></tr>
+<tr><td></td><td style="text-align: right">30</td><td><a href="http://www.mttaylor50k.com/">Mount Taylor</a></td><td>50k</td><td></td><td><a href="https://ultrasignup.com/results_event.aspx?did=101656#id220546">8:31:33</a>, but no race report yet</td></tr>
+<tr><td>October</td><td style="text-align: right">22</td><td><a href="running/past/2022/duke_city_marathon.html">Duke City</a></td><td><a href="https://www.dukecitymarathon.com/">Marathon</a><sup class="footnote-reference"><a href="#5">6</a></sup></td><td></td><td>Registered</td></tr>
+<tr><td></td><td style="text-align: right">28</td><td><a href="https://aravaiparunning.com/network/javelinajundred/">Javelina Jundred</a></td><td>100 Miler</td><td>✅</td><td>Registered</td></tr>
+<tr><td>November</td><td style="text-align: right">4</td><td><a href="https://deadmanpeaks.com/">Deadman Peaks</a></td><td>53 Miler</td><td></td><td>Registered</td></tr>
+<tr><td></td><td style="text-align: right">11</td><td><a href="https://newmexicofa50k.wordpress.com/white_mesa_50k/">White Mesa</a></td><td>50k</td><td></td><td><a href="https://www.facebook.com/events/1490318231767938">Going!</a></td></tr>
+<tr><td></td><td style="text-align: right">18</td><td><a href="https://www.socorrotrailrunningseries.com/socorrosoulsofsorrow">Socorro Souls of Sorrow</a></td><td>36 Miler</td><td></td><td>Registered</td></tr>
+<tr><td></td><td style="text-align: right">24</td><td><a href="https://www.facebook.com/events/243804552011808">Black Friday TT</a></td><td>4 miles</td><td>✅</td><td>Going!</td></tr>
+<tr><td></td><td style="text-align: right">25</td><td><a href="https://ultrasignup.com/register.aspx?did=105828">Bosque Bigfoot</a></td><td>50k</td><td></td><td>Registered</td></tr>
+<tr><td>December</td><td style="text-align: right">9</td><td><a href="https://www.tucsonmarathon.com/">Tucson</a></td><td>Marathon</td><td></td><td><em>may not do</em><sup class="footnote-reference"><a href="#3">7</a></sup></td></tr>
+<tr><td></td><td style="text-align: right">23</td><td><a href="https://www.facebook.com/events/712962300691876/">Grinch Lunch</a></td><td>5k</td><td>✅</td><td>Going!</td></tr>
 </tbody></table>
 </div>
 <div class="footnote-definition" id="4"><sup class="footnote-definition-label">1</sup>
@@ -2800,10 +2809,22 @@ my right foot.  It was not sufficiently healthy to allow me to do the
 Tough Ruck and although the Boston Marathon holds a special place in
 my heart, my money was ridiculously tight.</p>
 </div>
-<div class="footnote-definition" id="5"><sup class="footnote-definition-label">4</sup>
+<div class="footnote-definition" id="6"><sup class="footnote-definition-label">4</sup>
+<p>I was nervous that my foot might get too uncomfortable on the
+backside, so I chose to return early with
+<a href="https://ultrasignup.com/results_participant.aspx?fname=Labe&amp;lname=Kopelov">Labe</a>. Labe
+had only been back in Albuquerque for a few days and the altitude was
+taking its toll. It was a great time to get to know him better.</p>
+</div>
+<div class="footnote-definition" id="7"><sup class="footnote-definition-label">5</sup>
+<p>Rode with my brother-in-law who had a couple flats, so I lost a little
+time. Also, made a wrong turn (or, perhaps, missed a turn). So, I finished
+later than the desired 8 hour cut-off. I'll do better next year.</p>
+</div>
+<div class="footnote-definition" id="5"><sup class="footnote-definition-label">6</sup>
 <p>I will be the five hour pace group leader.</p>
 </div>
-<div class="footnote-definition" id="3"><sup class="footnote-definition-label">5</sup>
+<div class="footnote-definition" id="3"><sup class="footnote-definition-label">7</sup>
 <p>I like the Tucson marathon a lot. However, my step-mother, Jeanne,
 no longer lives in the area, so I don't get to combine the Tucson marathon
 with a chance to visit her.  Additionally, the Tucson marathon is in the
