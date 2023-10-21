@@ -1,0 +1,319 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Tatonka 5k - Young Lazy deadhead</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="Way more than anyone wants to know about Cliff Matthews">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../../favicon.svg">
+        <link rel="shortcut icon" href="../../../favicon.png">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+        <link rel="stylesheet" href="../../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="../../../welcome.html">Welcome</a></li><li class="chapter-item "><a href="../../../life.html">Life</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../life/too-public.html">Too Public?</a></li><li class="chapter-item "><a href="../../../life/my-beliefs.html">My Beliefs</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../life/my-beliefs/multiple-universes.html">Multiple Universes</a></li><li class="chapter-item "><a href="../../../life/my-beliefs/soy.html">Soy</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../../running.html">Running</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../resources.html">Resources</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../resources/books.html">Books</a></li><li class="chapter-item "><a href="../../../resources/music.html">Music</a></li></ol></li><li class="chapter-item "><a href="../../../running/other_gpx_files.html">GPX Files</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../running/other_gpx_files/foothills_50k.html">Foothills 50k</a></li><li class="chapter-item "><a href="../../../running/other_gpx_files/wmfa_50k.html">White Mesa Fat Ass 50k</a></li></ol></li><li class="chapter-item "><a href="../../../running/direct.html">As Race Director</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../running/direct/chimney_melon_50k.html">Chimney Melon 50k</a></li><li class="chapter-item "><a href="../../../running/direct/baldy_50k.html">Baldy 50k</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../running/direct/baldy_50k/results.html">Results</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../../running/past.html">As Entrant</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../running/dnfs.html">DNFs</a></li><li class="chapter-item "><a href="../../../running/past/2021.html">2021</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../running/past/2021/hardrock.html">Hardrock</a></li></ol></li><li class="chapter-item "><a href="../../../running/past/2022.html">2022</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../running/past/2022/cedro.html">Cedro Peak 50k</a></li><li class="chapter-item "><a href="../../../running/past/2022/cocodona-250.html">Cocodona 250</a></li><li class="chapter-item "><a href="../../../running/past/2022/big_cottonwood_marathon.html">Big Cottonwood Marathon</a></li><li class="chapter-item "><a href="../../../running/past/2022/aa_50k.html">AA 50k</a></li><li class="chapter-item "><a href="../../../running/past/2022/torgbc.html">Tour of the Rio Grande</a></li><li class="chapter-item "><a href="../../../running/past/2022/mt_taylor_50k.html">Mt. Taylor 50k</a></li><li class="chapter-item "><a href="../../../running/past/2022/feral_hog_50k_rucksack.html">Feral Hog 50k Rucksack</a></li><li class="chapter-item "><a href="../../../running/past/2022/tortugas_mountain.html">Tortugas Mountain 24 Hour Challenge</a></li><li class="chapter-item "><a href="../../../running/past/2022/duke_city_marathon.html">Duke City Marathon</a></li><li class="chapter-item "><a href="../../../running/past/2022/tatonka_5k.html">Tatonka 5k</a></li><li class="chapter-item "><a href="../../../running/past/2022/forever_young_six_miler.html">Forever Young 6 miler</a></li><li class="chapter-item "><a href="../../../running/past/2022/jj100.html">Javelina Jundred</a></li><li class="chapter-item "><a href="../../../running/past/2022/dptr_106m.html">Deadman Peaks 106 miler</a></li><li class="chapter-item "><a href="../../../running/past/2022/wmfa50k.html">White Mesa Fat Ass 50k</a></li><li class="chapter-item "><a href="../../../running/past/2022/ed_t.html">Ed Thanksgiving's Group Run</a></li><li class="chapter-item "><a href="../../../running/past/2022/black_friday.html">Black Friday Turkey Trots</a></li><li class="chapter-item "><a href="../../../running/past/2022/bbf50k.html">Bosque Bigfoot 50k</a></li><li class="chapter-item "><a href="../../../running/past/2022/tucson_marathon.html">Tucson Marathon</a></li><li class="chapter-item "><a href="../../../running/past/2022/grinch_lunch.html">The Grinch Lunch</a></li></ol></li><li class="chapter-item expanded "><a href="../../../running/past/2023.html">2023</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../running/past/2023/foothills_fat_ass.html">Foothills Fat Ass</a></li><li class="chapter-item "><a href="../../../running/past/2023/sandia-snowshoe-race.html">Sandia Snowshoe Race</a></li><li class="chapter-item "><a href="../../../running/past/2023/resolutions-stink.html">Resolutions Stink!</a></li><li class="chapter-item "><a href="../../../running/past/2023/the-quad.html">Mt. Taylor Winter Quadrathlon</a></li><li class="chapter-item "><a href="../../../running/past/2023/v-day.html">V Day</a></li><li class="chapter-item "><a href="../../../running/past/2023/king-of-the-hill.html">King of the Hill</a></li><li class="chapter-item "><a href="../../../running/past/2023/shenanigains.html">Shenanigains</a></li><li class="chapter-item "><a href="../../../running/past/2023/bmdm.html">Bataan Memorial Death March</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../running/past/2023/bmdm/my-race.html">My Race</a></li></ol></li><li class="chapter-item "><a href="../../../running/past/2023/academy-of-pain.html">Academy of Pain</a></li><li class="chapter-item "><a href="../../../running/past/2023/brew-crowning.html">Burque Brew Tour Crowning</a></li><li class="chapter-item "><a href="../../../running/past/2023/berta.html">Berta Fun Run</a></li><li class="chapter-item "><a href="../../../running/past/2023/cocodona-250.html">Cocodona 250</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../running/past/2023/cocodona-250/creepy-crawly.html">Creepy Crawly Winner</a></li></ol></li><li class="chapter-item "><a href="../../../running/past/2023/wser.html">Western States</a></li><li class="chapter-item "><a href="../../../running/past/2023/barge-fun-run.html">BARGE Fun Run</a></li><li class="chapter-item expanded "><a href="../../../running/past/2023/tatonka_5k.html" class="active">Tatonka 5k</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../../unicycling.html">Unicycling</a></li><li class="chapter-item "><a href="../../../running/my-beliefs.html">My Beliefs</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../running/my-beliefs/knees.html">Knees</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../../programming.html">Programming</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../programming/pdp8.html">PDP-8</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../programming/pdp8/first-hack.html">My First Hack</a></li></ol></li><li class="chapter-item "><a href="../../../programming/pdp11.html">PDP-11</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../programming/pdp11/not-worthy.html">I am Not Worthy</a></li></ol></li><li class="chapter-item "><a href="../../../programming/ancient-peripherals.html">Ancient Peripherals</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../programming/ancient-peripherals/punch-cards.html">Punch Cards</a></li></ol></li><li class="chapter-item "><a href="../../../programming/blown.html">Blown Opportunities</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../programming/blown/steve-jobs.html">Steve Jobs</a></li></ol></li><li class="chapter-item "><a href="../../../programming/rust.html">Rust</a></li></ol></li><li class="chapter-item "><a href="../../../poker.html">Poker</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../poker/wsop-chip-bet.html">WSOP Chip Bet</a></li></ol></li><li class="chapter-item "><a href="../../../bataan.html">Bataan</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../bataan/death-march.html">Death March</a></li><li class="chapter-item "><a href="../../../bataan/memorial-death-march.html">Memorial Death March</a></li></ol></li><li class="chapter-item "><a href="../../../thanks.html">Thanks</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../thanks/agdg.html">AGDG</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../thanks/agdg/agdgat.html">AGDGAT</a></li></ol></li><li class="chapter-item "><a href="../../../thanks/barge.html">BARGE</a></li><li class="chapter-item "><a href="../../../thanks/team_rwb.html">Team RWB</a></li><li class="chapter-item "><a href="../../../thanks/george.html">GEORGE</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Young Lazy deadhead</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="tatonka-5k-2023"><a class="header" href="#tatonka-5k-2023">Tatonka 5k 2023</a></h1>
+<h2 id="overview"><a class="header" href="#overview">Overview</a></h2>
+<p>This was the eighth edition of the <a href="https://www.core-crew.com/tatonka-5-10k-run">Tatonka 5k &quot;Fun
+Run&quot;</a>. This was my second
+time running it.  I only learned about it last year.</p>
+<p><img src="https://static.wixstatic.com/media/02d80f_7335d59773d243b4bc7840a861e1c4b0~mv2.jpg/v1/fit/w_643,h_2000,al_c,q_85/02d80f_7335d59773d243b4bc7840a861e1c4b0~mv2.jpg"
+     title="American Hero, SFC Matthew Q. McClintock and son"
+     alt="American Hero, SFC Matthew Q. McClintock and son"
+     width=320.5px
+     height=321.5px
+     style="float: left; margin-right: 10px;" /></p>
+<p>Declan, Matthew's son, turned eight today, but couldn't be here. He
+lives back east.  So, pre-race, his grandmother led the crowd, singing
+Happy Birthday, which was recorded and sent to him.</p>
+<p>Happy Birthday, Declan!</p>
+<p>Matthew's mother and brother run this event, and they're supported by
+amazing volunteers, including JROTC students from the local high schools.</p>
+<p>In addition to it being a celebration of Matthew's life, this run is a
+fundraiser for the <a href="https://greenberetfoundation.org/">Green Beret Foundation</a>.</p>
+<h2 id="pre-race"><a class="header" href="#pre-race">Pre Race</a></h2>
+<p>Once again, my buddy Don was there and although I remembered his name,
+I had forgotten that <em>this</em> Don was <strong>the same</strong> Don who taught
+Physics at <a href="https://www.westpoint.edu/">USMA</a>, which is where Iris,
+one of our (my wife's and my) twin daughters is going to school. Don
+introduced me to Amy, who was to take first in the female 50-100 age
+group.</p>
+<p>There are only two age groups: 10-49 and 50-100<sup class="footnote-reference"><a href="#1">1</a></sup>. Pre-race I ran
+into my friend
+<a href="https://ultrasignup.com/results_participant.aspx?fname=George&amp;lname=Sefzik">George</a>
+and his son George.  George is 48, while George is 18. I don't
+remember George's father's age, but I do remember his name:
+George. That George, i.e., George's father, was a liaison (I <em>think</em>
+that's the name of the position) for high school students who apply to
+USMA. George himself, went to the Air Force Academy. His son, George,
+goes to UNM, which is where Margaret—our other twin daughter—is
+enrolled.</p>
+<p>After readying my ruck (there's no separate rucksack division; I
+just use this race to help me ease into my <a href="https://github.com/ctm/Bataan-Memorial-Death-March#bataan-memorial-death-march-training">Bataan Memorial Death
+March
+training</a>),
+I hung out with Don and Amy as we all sang (at least those of us who
+weren't too choked up) Happy Birthday to Declan. The color guard and National
+Anthem were next. After a description of the course, we
+started promptly at 10am.</p>
+<h2 id="the-race"><a class="header" href="#the-race">The Race</a></h2>
+<p>Like <a href="https://ctm.github.io/docs/yld/running/past/2022/tatonka_5k.html#the-race">last
+year</a>,
+the race was held in the <a href="https://nmvetsmemorial.org/">New
+Mexico Veterans Memorial</a>. This year,
+however it was much more twisty, because it was basically two 1.55
+mile loops as opposed to last year when it was approximately three
+1.16 mile loops<sup class="footnote-reference"><a href="#2">2</a></sup>.</p>
+<p>This year, a combination of a foot injury and a rib injury kept me
+from running, much less running with a pack, for the last several
+months.  As such, I knew I was out of shape, so I pulled out all the
+stops.  I had a double espresso a little more than a half hour before
+the race started; I wore my ice hat filled with ice and I carried two
+hand-helds, each filled with ice water.</p>
+<p>My goal was to not go out too quickly, but to rev my heart up to
+around 160 beats per minute and hold it there.  If there were people
+to pass or people to prevent from passing while I was up in my
+redline, I'd try my best, but nope. Sadie came in 26th, in 29:29.6.
+Eighteen seconds later I finished at <a href="https://www.webscorer.com/racedetails?raceid=332932&amp;did=415087">27th in
+29:47.7</a>
+and I didn't see Erin in back of me, but she finished less than seven
+seconds after I did, in 28th at 29:54.5.</p>
+<p>I'm happy that I was able to <a href="https://www.strava.com/activities/10079475107">rev up my heart rate and keep it
+up</a>. I'm realistic
+enough to not be surprised that I was 38 seconds per mile slower this
+year even though my average heart rate was 4 beats per minute
+faster. Fitness is a thing, and I've lost a bunch.</p>
+<h2 id="post-race"><a class="header" href="#post-race">Post Race</a></h2>
+<p>This year I drank my rice milk and ate my recovery <a href="https://github.com/ctm/diet/blob/master/recipes/fortified_oatmeal.txt">fortified
+oatmeal</a>
+<em>before</em> drinking my <a href="https://www.beeradvocate.com/beer/profile/24659/67709/">celebratory
+beer</a>. I took
+a few photos as Amy and George took first in their (age, sex)
+divisions and chuckled as the announcer wasn't completely sure what
+was going on with George Sefzik taking first and George J. Sefzik
+taking fourth. I suggested that cheating might be involved.</p>
+<p>It was a largely unknown event held in a largely unknown venue. And
+yet…it's growing.</p>
+<p>Before leaving, I hugged mom McClintock and tried to speak.</p>
+<br/>
+<br/>
+<br/>
+<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<p>I plan to keep doing this for forty one more years, just to
+cause them trouble when I'm 101. Thinking of you,
+<a href="https://www.youtube.com/watch?v=v2IKpjr5rqU">Ben</a>.</p>
+</div>
+<div class="footnote-definition" id="2"><sup class="footnote-definition-label">2</sup>
+<p>Yup, last year's course was a little long, but this year's was just right.</p>
+</div>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../running/past/2023/barge-fun-run.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../../unicycling.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../running/past/2023/barge-fun-run.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../../unicycling.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../../elasticlunr.min.js"></script>
+        <script src="../../../mark.min.js"></script>
+        <script src="../../../searcher.js"></script>
+
+        <script src="../../../clipboard.min.js"></script>
+        <script src="../../../highlight.js"></script>
+        <script src="../../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
