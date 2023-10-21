@@ -58,6 +58,7 @@
         - [Creepy Crawly Winner](./running/past/2023/cocodona-250/creepy-crawly.md)
       - [Western States](./running/past/2023/wser.md)
       - [BARGE Fun Run](./running/past/2023/barge-fun-run.md)
+      - [Tatonka 5k](./running/past/2023/tatonka_5k.md)
   - [Unicycling](unicycling.md)
   - [My Beliefs](./running/my-beliefs.md)
     - [Knees](./running/my-beliefs/knees.md)
