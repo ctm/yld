@@ -61,6 +61,7 @@
       - [Tatonka 5k](./running/past/2023/tatonka_5k.md)
       - [Duke City Marathon](./running/past/2023/duke_city_marathon.md)
       - [Javelina Jundred](./running/past/2023/jj100.md)
+      - [Deadman Peaks 53 Miler](./running/past/2023/dptr_53m.md)
   - [Unicycling](unicycling.md)
   - [My Beliefs](./running/my-beliefs.md)
     - [Knees](./running/my-beliefs/knees.md)
