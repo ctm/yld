@@ -9,7 +9,8 @@ ran slowly because I was concerned about my right foot.
 ### Experiment in white
 
 I chose to wear the same white shirt and white arm bands during the portion
-of the race with the most sun exposure.  There was ice at the second aid station
+of the race with the most sun exposure.  There was ice at La Ventana
+aid station
 which helped, but unfortunately none at the turnaround. Overall I think it
 helped, but it's hard to say because I was deliberately running slowly.
 
@@ -23,6 +24,17 @@ In the final segment I caught up with Candace, a Navajo runner and she
 too was running her first fifty miler. I hung out with her as she made
 the final big climb and she did it faster than I probably would have had
 I not had such excellent company.
+
+### Darkness
+
+I've been caught out in the dark on that course a couple of times and it
+is unpleasant.  This year I chose not to have a bag at the turnaround and
+to simply have two headlamps with me in my ultra vest and a complete
+Kogolla kit in my Mesa Portales drop bag.  That worked well, since not
+only did I have a light for myself, I had a backup in case that light
+failed or I ran across a runner needing a headlamp (which is exactly
+what happened).
+
 
 ### My right foot
 
