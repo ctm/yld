@@ -2,17 +2,20 @@
 
 ## Overview
 
-Results aren't up yet, but my Strava activity claims I finished in
-[14:44:27](https://www.strava.com/activities/10165600641).  I deliberately
-ran slowly because I was concerned about my right foot.  
+Finishing in 14:44:34, I was [13th out of 19
+finishers](https://ultrasignup.com/results_event.aspx?did=106610#id220546). Five
+starters Did Not Finish.
+
+[I deliberately
+ran slowly](https://www.strava.com/activities/10165600641) because I was concerned about my right foot.  
 
 ### Experiment in white
 
-I chose to wear the same white shirt and white arm bands during the portion
-of the race with the most sun exposure.  There was ice at La Ventana
-aid station
-which helped, but unfortunately none at the turnaround. Overall I think it
-helped, but it's hard to say because I was deliberately running slowly.
+I chose to wear the same white shirt and white arm bands during the
+portion of the race with the most sun exposure.  There was ice at La
+Ventana aid station which helped, but unfortunately none at the
+turnaround. Overall I think it helped, but it's hard to say because I
+was deliberately running slowly.
 
 ### A couple of awesome first fifty milers
 

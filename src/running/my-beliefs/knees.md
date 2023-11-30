@@ -115,18 +115,22 @@ I started riding a unicycle at the end of June (the 28th, to be precise) 2023
 after effectively a 30 year hiatus. I'm trying to ramp up my mileage so I can
 ride a 100 mile event in Alaska at the end of March in 2024.
 
-My knees are absolutely unprepared for this and although I don't get knee
-discomfort while I'm riding, I've woken up in the middle of the night with
-fairly intense knee pain (in just one knee) that has lasted for about a half
-hour. Surprisingly, the pain diminishes to discomfort and is typically gone
-by the time I awake.
+My knees were absolutely unprepared for this and although I didn't get
+knee discomfort while I was riding, There were times when I woke up in
+the middle of the night with fairly intense knee pain (in just one
+knee) that has lasted for about a half hour. Surprisingly, the pain
+always diminished to discomfort and was typically gone by the time I
+awoke.
 
-This mystery pain has happened a few days in a row, but never more than
-three days in a row, if I remember correctly.  It is something I'm paying
-attention to, and as such, I'm concerned, but not worried.
+This mystery pain happened a few days in a row, but never more than
+three days in a row, if I remember correctly.  It was something I was paying
+attention to, and I became concerned, but not worried.
 
-I _think_ I'm over the worst of it, and I'm not backing down my mileage;
-I'm still increasing it.  I believe that what I'm doing (the unicycle riding,
-plus my diet and how much I sleep) is making my knees more suited to long
-distance unicycle riding, but I may be kidding myself. There's only one way
-to find out&hellip;
+However, when I had the trouble I _did not_ back down my mileage; I
+increased it and the problem went away. Eventually, however, I did
+back down my mileage, but that had to do with my right foot healing up
+and me wanting to do _a lot_ more running to regain some the fitness I lost
+(and to lose some of the weight I gained).
+
+So, AFAICT, unicycling put different stresses on my knees than running had
+and my body adapted to them.  Yay.
