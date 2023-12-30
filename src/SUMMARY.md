@@ -14,6 +14,7 @@
     - [Foothills 50k](./running/other_gpx_files/foothills_50k.md)
     - [White Mesa Fat Ass 50k](./running/other_gpx_files/wmfa_50k.md)
   - [As Race Director](./running/direct.md)
+    - [Foothills Fat Ass](./running/direct/foothills-fat-ass.md)
     - [Chimney Melon 50k](./running/direct/chimney_melon_50k.md)
     - [Baldy 50k](./running/direct/baldy_50k.md)
       - [Results](./running/direct/baldy_50k/results.md)
