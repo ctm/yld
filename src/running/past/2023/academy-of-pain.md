@@ -85,7 +85,7 @@ I didn't pick up the box until pretty close to race day, and then I saw
 that all that remained were things that required hot water (e.g. instant
 oatmeal, coffee).
 
-I new it would be chilly, so I figured I'd simply bring that box of stuff,
+I knew it would be chilly, so I figured I'd simply bring that box of stuff,
 two thermoses filled with boiling water and two stoves (a small JetBoil that
 heats a single serving very quickly and a larger propane stove that can
 heat an entire pan).  People could immediately use the water from a thermos,

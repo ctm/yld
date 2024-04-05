@@ -98,7 +98,7 @@ was going on with George Sefzik taking first and George J. Sefzik
 taking fourth. I suggested that cheating might be involved.
 
 It was a largely unknown event held in a largely unknown venue. And
-yet&hellip;it's growing.
+yet&hellip; it's growing.
 
 Before leaving, I hugged mom McClintock and tried to speak.
 
