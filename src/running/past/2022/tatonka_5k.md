@@ -85,8 +85,16 @@ I didn't know.
 
 They collected people's bibs an then drew door prizes and Don won a
 gigantic plastic candy cane filled with&mdash;what a strange
-coincidence&mdash; shots of Cinnamon Fireball.  I don't take a lot of
+coincidence&mdash;shots of Cinnamon Fireball.  I don't take a lot of
 selfies, but when I do, I'm often drinking.
+
+<img src="tatonka_5k/cheers.jpg"
+     title="Cheers!"
+     alt="YLD and Don holding open Fireball shooters"
+     width=426.6px
+     height=320.6px
+     style="float: left; margin-right: 10px;" />
+
 
 > "Cheers!"
 
