@@ -53,7 +53,7 @@ The course has changed over the years.  This year was a new course, although
 it _may_ have been the same course as last year.  I didn't get a good GPX
 track last year and my memory is not good enough to know.  My brother-in-law
 and sister both did the course last year, but not this year. Regardless, the
-general pattern is hat it starts out downhill, then has some rollers, then
+general pattern is that it starts out downhill, then has some rollers, then
 finishes going uphill.
 
 Each year, in theory, I plan to push myself **hard**, but something comes up
