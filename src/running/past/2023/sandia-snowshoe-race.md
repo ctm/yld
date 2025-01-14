@@ -17,7 +17,7 @@ jacket off, ran some more and eventually finished.
 
 If I hadn't worn my jacket, and had I brought a handheld and my iPod
 touch, I could have shaved a minute or two off my finish time and
-perhaps gaining a rank or two.  IOW, I was a big baby once again this
+perhaps gained a rank or two.  IOW, I was a big baby once again this
 year, although I don't think I would've beaten
 [Andy](https://ultrasignup.com/results_participant.aspx?fname=Andrew&lname=Gray)
 and I **know** I couldn't have beaten [Brett](https://ultrasignup.com/results_participant.aspx?fname=Brett&lname=Sanborn).  
