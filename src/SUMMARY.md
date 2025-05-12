@@ -69,6 +69,8 @@
       - [Ed Thanksgiving's Group Run](./running/past/2023/ed_t.md)
       - [Black Friday Turkey Trots](./running/past/2023/black_friday.md)
       - [Bosque Bigfoot 50k](./running/past/2023/bbf50k.md)
+    - [2025](./running/past/2025.md)
+      - [Jemez Mountain Trail Run 50 Miler](./running/past/2025/jmtr50m.md)
   - [Unicycling](unicycling.md)
   - [My Beliefs](./running/my-beliefs.md)
     - [Knees](./running/my-beliefs/knees.md)
