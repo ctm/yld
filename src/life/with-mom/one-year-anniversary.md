@@ -30,6 +30,15 @@ measurements, per-se. However, Marcia had already started taking mom's
 blood pressure every day.  I continued that policy and have dutifully
 entered that data into her iPhone's health app.
 
+I track quite a bit about myself, but much less more about mom.  One
+thing I don't track for either of us, but I do pay attention to is
+knee discomfort.  I've found, over the years, that when **I** have
+knee discomfort, [running helps](../../running/my-beliefs/knees.md)
+("motion is lotion") more often than not.  In the first few months
+there times when she [TODO](https://www.strava.com/activities/13074881707)
+I"M PUTTING THIS BRANCH AWAY FOR A LITTLE WHILE
+
+
 I don't know what mom's weight was then, nor do I know what it was
 now.  I do know that she was a size 14, because recently she's had to
 buy new clothes due to her weight loss.
