@@ -21,6 +21,8 @@
     - [White Mesa 50k](./running/direct/white_mesa_50k.md)
   - [As Entrant](./running/past.md)
     - [DNFs](./running/dnfs.md)
+    - [2015](./running/past/2015.md)
+      - [Western States](./running/past/2015/wser.md)
     - [2021](./running/past/2021.md)
       - [Hardrock](./running/past/2021/hardrock.md)
     - [2022](./running/past/2022.md)
