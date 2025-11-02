@@ -42,12 +42,13 @@ was not in good enough shape for me to do the Tough Ruck the day
 before.  Additionally, although I had planned on taking my family
 with me to Boston for an east-coast vacation, that plan changed when
 my daughter Iris was appointed to the United States Military Academy.
-I'll be taking our family to her acceptance day ceremony in August,
+I took our family to her acceptance day ceremony in August,
 instead.
 <br/>
 <br/>
 <br/>
-<hr/>
+
+
 [^1]: It was the Race Director's first race and my first ultra.  I barely
 made the turnaround cutoff and I looked dodgy.  RD radioed down to the aid
 station captain at the next aid station and requested I be examined for fitness
@@ -61,5 +62,5 @@ analgesics and the limp went away, but I was in crazy pain and
 semi-hunched over.  I missed a turnoff and went a long way up a hill
 (misleading others off course, too).  The others recovered (including
 [one spectacular&mdash;record
-breaking&mdash;finish]((https://www.youtube.com/watch?v=QqKinAETu8E)),
+breaking&mdash;finish](https://www.youtube.com/watch?v=QqKinAETu8E),
 but I had to drop at mile 85.
