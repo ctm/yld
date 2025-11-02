@@ -13,6 +13,7 @@ a race and not officially finished:
 |2016|Bighorn 100 Miler|Trekking pole broke|
 |2016|Fat Dog 120|Different trekking pole broke + bad nutrition; [finished but too late](https://runningjohn.blogspot.com/2016/08/2016-mountain-madness-fat-dog-120-race.html)|
 |2019|Foothills 50k|White-out blizzard (nobody finished)|
+|2025|Bigfoot 200|Started injured, fell at mile five, breaking a trekking pole[^3]|
 
 Eventually, I'll write up a race report for each of those, because I
 think DNFs are more noteworthy (and unique) than other race reports.
@@ -64,3 +65,14 @@ semi-hunched over.  I missed a turnoff and went a long way up a hill
 [one spectacular&mdash;record
 breaking&mdash;finish](https://www.youtube.com/watch?v=QqKinAETu8E),
 but I had to drop at mile 85.
+
+[^3]: This one deserves its own race report, but I came back so beaten
+up that not only did I not write much up, I didn't even fill out my
+relevant Strava activities. I did, however, write a "status report and
+(abbreviated BF200 write-up)" email to a a few of my closest
+ne'erdowells. So, perhaps I can use that to rekindle some memories if
+I ever make the time. That letter ended with: "I've taken more than my
+fair share of humility pills (because they wear off so quickly!),
+sometimes eating handfuls at a time, but this was my first humility
+_enema_. Whee!"
+
