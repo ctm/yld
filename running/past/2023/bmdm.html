@@ -24,28 +24,41 @@
         <link rel="stylesheet" href="../../../fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="../../../highlight.css">
-        <link rel="stylesheet" href="../../../tomorrow-night.css">
-        <link rel="stylesheet" href="../../../ayu-highlight.css">
+        <link rel="stylesheet" id="highlight-css" href="../../../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../../../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
 
-        <!-- Provide site root to javascript -->
+        <!-- Provide site root and default themes to javascript -->
         <script>
-            var path_to_root = "../../../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+            const path_to_root = "../../../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../../../searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../../../toc.js"></script>
     </head>
     <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
     <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
-                var theme = localStorage.getItem('mdbook-theme');
-                var sidebar = localStorage.getItem('mdbook-sidebar');
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
 
                 if (theme.startsWith('"') && theme.endsWith('"')) {
                     localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
@@ -59,7 +72,8 @@
 
         <!-- Set the theme before any content is loaded, prevents flash -->
         <script>
-            var theme;
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             const html = document.documentElement;
@@ -72,17 +86,20 @@
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var sidebar = null;
-            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -109,13 +126,14 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
                     </div>
@@ -132,7 +150,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -163,7 +186,7 @@ from the web site this year.</p>
 <p>Historically, there were many educational activities to participate in
 on Saturday, however the most powerful was when the veterans of the
 Bataan Death March would speak and answer questions. Sunday is a march
-for most, but a race for some<sup class="footnote-reference"><a href="#1">1</a></sup>.</p>
+for most, but a race for some<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup>.</p>
 <h3 id="saturday"><a class="header" href="#saturday">Saturday</a></h3>
 <p>Prior to 2023, the last time the Bataan Memorial Death March was held
 was 2019 and by then although there were other Bataan Death March
@@ -213,7 +236,7 @@ first for some.</p>
 <p>There were only three of us at the Motel-6 Telshor: Jeff, Iris and
 myself.  Still, we chose to go in two vehicles, my wife's van and
 Jeff's parents' car.</p>
-<p>Jeff and I got up at 3:20<sup class="footnote-reference"><a href="#2">2</a></sup> so we could be driving by 3:50.  We were
+<p>Jeff and I got up at 3:20<sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup> so we could be driving by 3:50.  We were
 told to be at the gates by 4:30 and even though we didn't get on the
 highway quite as smoothly as I had anticipated (I had forgotten that
 everyone would be tired and that we hadn't done this in four years),
@@ -329,17 +352,18 @@ report and I'll mention you, too.</p>
 <br/>
 <br/>
 <hr/>
-<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
 <p>From an outsider's perspective, the whole concept of a "Memorial Death
 March" may seem disrespectful. It's not. Similarly,
-racing—rather than marching—is also not disrespectful.</p>
-</div>
-<div class="footnote-definition" id="2"><sup class="footnote-definition-label">2</sup>
+racing—rather than marching—is also not disrespectful. <a href="#fr-1-1">↩</a></p>
+</li>
+<li id="footnote-2">
 <p>Iris had her own room, so I don't know what time she got up.  I'm very
 proud of her. The day before she asked what time she needed to be in the
-lobby. I told her 3:50 and we both knew that she'd be there then. Yay!</p>
-</div>
-
+lobby. I told her 3:50 and we both knew that she'd be there then. Yay! <a href="#fr-2-1">↩</a></p>
+</li>
+</ol>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
@@ -386,6 +410,7 @@ lobby. I told her 3:50 and we both knew that she'd be there then. Yay!</p>
         <script src="../../../book.js"></script>
 
         <!-- Custom JS scripts -->
+
 
 
     </div>

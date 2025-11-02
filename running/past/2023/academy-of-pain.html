@@ -24,28 +24,41 @@
         <link rel="stylesheet" href="../../../fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="../../../highlight.css">
-        <link rel="stylesheet" href="../../../tomorrow-night.css">
-        <link rel="stylesheet" href="../../../ayu-highlight.css">
+        <link rel="stylesheet" id="highlight-css" href="../../../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../../../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
 
-        <!-- Provide site root to javascript -->
+        <!-- Provide site root and default themes to javascript -->
         <script>
-            var path_to_root = "../../../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+            const path_to_root = "../../../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../../../searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../../../toc.js"></script>
     </head>
     <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
     <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
-                var theme = localStorage.getItem('mdbook-theme');
-                var sidebar = localStorage.getItem('mdbook-sidebar');
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
 
                 if (theme.startsWith('"') && theme.endsWith('"')) {
                     localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
@@ -59,7 +72,8 @@
 
         <!-- Set the theme before any content is loaded, prevents flash -->
         <script>
-            var theme;
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             const html = document.documentElement;
@@ -72,17 +86,20 @@
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var sidebar = null;
-            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -109,13 +126,14 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
                     </div>
@@ -132,7 +150,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -297,7 +320,7 @@ peeled each of the Jolly Ranchers before stuffing them into my mouth.</p>
 <p>I temporarily put my Albuquerque Road Runners crop top back on so I
 could use the library's facilities, then took it off, put it back in
 my truck, double checked that my truck keys were in a zippered pocket
-that I had zippered shut<sup class="footnote-reference"><a href="#1">1</a></sup> and headed out for more fun.</p>
+that I had zippered shut<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup> and headed out for more fun.</p>
 <h2 id="final-loops"><a class="header" href="#final-loops">Final "loops"</a></h2>
 <p>I had done 32 miles now, which meant if did five more loops I would be
 about a mile and a half shy of fifty miles.  I had plenty of time to
@@ -335,7 +358,8 @@ I'm happy with my performance and will now see if I can muster the
 resources to enter.</p>
 <p>Thank you, Julie!</p>
 <hr/>
-<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
 <p>Last year I lost my truck keys in the Cherry Hills Library
 parking lot after doing an AA lap with my pack.  It wasn't during
 Academy of Pain, but it was the same truck in the same parking lot and
@@ -343,9 +367,9 @@ hence it was a painful memory.  Speaking of painful memories, I still
 remember the time at the Cedro Peak 50k that I patted myself on the
 back for remembering to put my keys in a zippered pocket only to
 forget to actually close the pocket.  Of course they fell out. Luckily,
-my sister was able to find them for me.  Thanks, Marcia!</p>
-</div>
-
+my sister was able to find them for me.  Thanks, Marcia! <a href="#fr-1-1">↩</a></p>
+</li>
+</ol>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
@@ -392,6 +416,7 @@ my sister was able to find them for me.  Thanks, Marcia!</p>
         <script src="../../../book.js"></script>
 
         <!-- Custom JS scripts -->
+
 
 
     </div>

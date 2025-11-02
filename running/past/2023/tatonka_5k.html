@@ -24,28 +24,41 @@
         <link rel="stylesheet" href="../../../fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="../../../highlight.css">
-        <link rel="stylesheet" href="../../../tomorrow-night.css">
-        <link rel="stylesheet" href="../../../ayu-highlight.css">
+        <link rel="stylesheet" id="highlight-css" href="../../../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../../../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
 
-        <!-- Provide site root to javascript -->
+        <!-- Provide site root and default themes to javascript -->
         <script>
-            var path_to_root = "../../../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+            const path_to_root = "../../../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../../../searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../../../toc.js"></script>
     </head>
     <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
     <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
-                var theme = localStorage.getItem('mdbook-theme');
-                var sidebar = localStorage.getItem('mdbook-sidebar');
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
 
                 if (theme.startsWith('"') && theme.endsWith('"')) {
                     localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
@@ -59,7 +72,8 @@
 
         <!-- Set the theme before any content is loaded, prevents flash -->
         <script>
-            var theme;
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             const html = document.documentElement;
@@ -72,17 +86,20 @@
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var sidebar = null;
-            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -109,13 +126,14 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
                     </div>
@@ -132,7 +150,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -178,7 +201,7 @@ Physics at <a href="https://www.westpoint.edu/">USMA</a>, which is where Iris,
 one of our (my wife's and my) twin daughters is going to school. Don
 introduced me to Amy, who was to take first in the female 50-100 age
 group.</p>
-<p>There are only two age groups: 10-49 and 50-100<sup class="footnote-reference"><a href="#1">1</a></sup>. Pre-race I ran
+<p>There are only two age groups: 10-49 and 50-100<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup>. Pre-race I ran
 into my friend
 <a href="https://ultrasignup.com/results_participant.aspx?fname=George&amp;lname=Sefzik">George</a>
 and his son George.  George is 48, while George is 18. I don't
@@ -203,7 +226,7 @@ the race was held in the <a href="https://nmvetsmemorial.org/">New
 Mexico Veterans Memorial</a>. This year,
 however it was much more twisty, because it was basically two 1.55
 mile loops as opposed to last year when it was approximately three
-1.16 mile loops<sup class="footnote-reference"><a href="#2">2</a></sup>.</p>
+1.16 mile loops<sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup>.</p>
 <p>This year, a combination of a foot injury and a rib injury kept me
 from running, much less running with a pack, for the last several
 months.  As such, I knew I was out of shape, so I pulled out all the
@@ -238,15 +261,16 @@ yet… it's growing.</p>
 <br/>
 <br/>
 <br/>
-<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
 <p>I plan to keep doing this for forty one more years, just to
 cause them trouble when I'm 101. Thinking of you,
-<a href="https://www.youtube.com/watch?v=v2IKpjr5rqU">Ben</a>.</p>
-</div>
-<div class="footnote-definition" id="2"><sup class="footnote-definition-label">2</sup>
-<p>Yup, last year's course was a little long, but this year's was just right.</p>
-</div>
-
+<a href="https://www.youtube.com/watch?v=v2IKpjr5rqU">Ben</a>. <a href="#fr-1-1">↩</a></p>
+</li>
+<li id="footnote-2">
+<p>Yup, last year's course was a little long, but this year's was just right. <a href="#fr-2-1">↩</a></p>
+</li>
+</ol>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
@@ -293,6 +317,7 @@ cause them trouble when I'm 101. Thinking of you,
         <script src="../../../book.js"></script>
 
         <!-- Custom JS scripts -->
+
 
 
     </div>

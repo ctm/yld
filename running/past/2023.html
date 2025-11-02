@@ -24,28 +24,41 @@
         <link rel="stylesheet" href="../../fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="../../highlight.css">
-        <link rel="stylesheet" href="../../tomorrow-night.css">
-        <link rel="stylesheet" href="../../ayu-highlight.css">
+        <link rel="stylesheet" id="highlight-css" href="../../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
 
-        <!-- Provide site root to javascript -->
+        <!-- Provide site root and default themes to javascript -->
         <script>
-            var path_to_root = "../../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+            const path_to_root = "../../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../../searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../../toc.js"></script>
     </head>
     <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
     <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
-                var theme = localStorage.getItem('mdbook-theme');
-                var sidebar = localStorage.getItem('mdbook-sidebar');
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
 
                 if (theme.startsWith('"') && theme.endsWith('"')) {
                     localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
@@ -59,7 +72,8 @@
 
         <!-- Set the theme before any content is loaded, prevents flash -->
         <script>
-            var theme;
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             const html = document.documentElement;
@@ -72,17 +86,20 @@
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var sidebar = null;
-            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -109,13 +126,14 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
                     </div>
@@ -132,7 +150,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -170,7 +193,7 @@ per year.</p>
 <ol>
 <li>Bataan Memorial Death March</li>
 <li>Hardrock (or qualifier)</li>
-<li>Fun Around<sup class="footnote-reference"><a href="#4">1</a></sup></li>
+<li>Fun Around<sup class="footnote-reference" id="fr-4-1"><a href="#footnote-4">1</a></sup></li>
 </ol>
 <p>During my <a href="https://github.com/ctm/Bataan-Memorial-Death-March">serious training
 block</a> for the
@@ -228,10 +251,10 @@ is my middle name.</p>
 <tr><td>March</td><td style="text-align: right">11</td><td><a href="https://www.loslunasnm.gov/721/King-of-the-Hill">King of the Hill</a></td><td>10k Ruck</td><td>✅</td><td><a href="2023/king-of-the-hill.html">1 OA</a></td></tr>
 <tr><td></td><td style="text-align: right">11</td><td><a href="https://ultrasignup.com/register.aspx?did=100045">Shenanigains</a></td><td>10 Hour</td><td></td><td><a href="2023/shenanigains.html">Done</a></td></tr>
 <tr><td></td><td style="text-align: right">19</td><td><a href="https://bataanmarch.com/register/civilian-individual/">Bataan Memorial</a></td><td>Marathon Ruck</td><td>✅</td><td><a href="2023/bmdm.html">2 OA</a></td></tr>
-<tr><td></td><td style="text-align: right">25</td><td><a href="https://www.facebook.com/events/1768138600253055">Academy of Pain</a></td><td>12 hours<sup class="footnote-reference"><a href="#2">2</a></sup></td><td></td><td><a href="2023/academy-of-pain.html">Done</a></td></tr>
+<tr><td></td><td style="text-align: right">25</td><td><a href="https://www.facebook.com/events/1768138600253055">Academy of Pain</a></td><td>12 hours<sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup></td><td></td><td><a href="2023/academy-of-pain.html">Done</a></td></tr>
 <tr><td></td><td style="text-align: right">25</td><td><a href="https://www.facebook.com/events/1307112846691234">Burque Brew Crowning</a></td><td>3.8 miles</td><td>✅</td><td><a href="2023/brew-crowning.html">2 OA</a></td></tr>
 <tr><td>April</td><td style="text-align: right">1</td><td><a href="https://www.abqroadrunners.com/fun-runs-freeforall.html">Berta Fun Run</a></td><td>6 miler</td><td>✅</td><td><a href="2023/berta.html">1 OA</a></td></tr>
-<tr><td></td><td style="text-align: right">17</td><td><a href="https://www.baa.org/races/boston-marathon">Boston</a></td><td>Marathon</td><td></td><td>Did Not Start<sup class="footnote-reference"><a href="#1">3</a></sup></td></tr>
+<tr><td></td><td style="text-align: right">17</td><td><a href="https://www.baa.org/races/boston-marathon">Boston</a></td><td>Marathon</td><td></td><td>Did Not Start<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">3</a></sup></td></tr>
 <tr><td>May</td><td style="text-align: right">1</td><td><a href="https://cocodona.com/">Cocodona 250</a></td><td>250 Miler</td><td></td><td><a href="2023/cocodona-250.html">105th OA</a></td></tr>
 <tr><td></td><td style="text-align: right">20</td><td><a href="https://www.jemezmountaintrailruns.org/">Jemez Mountain</a></td><td>50 Miler</td><td></td><td><a href="https://ultrasignup.com/results_event.aspx?did=96904#id220546">DFL</a>, but no race report yet</td></tr>
 <tr><td></td><td style="text-align: right">21</td><td><a href="https://www.santafecentury.com/">Santa Fe Century</a></td><td>Bike Century</td><td></td><td><a href="https://www.strava.com/activities/9116115657">Finished</a>, but no ride report yet</td></tr>
@@ -239,12 +262,12 @@ is my middle name.</p>
 <tr><td></td><td style="text-align: right">10</td><td><a href="https://newmexicofa50k.wordpress.com/chimney-melon-50k/">Chimney Melon</a></td><td>25k</td><td></td><td><a href="https://www.strava.com/activities/9241296139">DNF the 50k</a>, but no race report yet</td></tr>
 <tr><td></td><td style="text-align: right">24</td><td><a href="https://www.wser.org/">Western States</a></td><td>100 Miler</td><td></td><td><a href="2023/wser.html">29:45:12</a></td></tr>
 <tr><td>July</td><td style="text-align: right">21</td><td><a href="https://www.barge.org/">BARGE</a> Fun Run</td><td>5k</td><td></td><td><a href="2023/barge-fun-run.html">Fun!</a></td></tr>
-<tr><td>August</td><td style="text-align: right">5</td><td><a href="https://newmexicofa50k.wordpress.com/baldy_50k/">Mt. Baldy</a></td><td>30k</td><td></td><td>Only did <a href="https://www.webscorer.com/racedetails?raceid=323683&amp;did=400798">30k</a><sup class="footnote-reference"><a href="#6">4</a></sup>, but no race report yet</td></tr>
+<tr><td>August</td><td style="text-align: right">5</td><td><a href="https://newmexicofa50k.wordpress.com/baldy_50k/">Mt. Baldy</a></td><td>30k</td><td></td><td>Only did <a href="https://www.webscorer.com/racedetails?raceid=323683&amp;did=400798">30k</a><sup class="footnote-reference" id="fr-6-1"><a href="#footnote-6">4</a></sup>, but no race report yet</td></tr>
 <tr><td>September</td><td style="text-align: right">22</td><td><a href="https://newmexicofa50k.wordpress.com/aa50k/">AA50k</a></td><td>50k</td><td></td><td><a href="https://www.webscorer.com/race?raceid=332863">DFL</a>, no race report yet</td></tr>
-<tr><td></td><td style="text-align: right">24</td><td><a href="https://www.torgbc.com/">ToRGC</a></td><td>Bike Century</td><td></td><td><a href="https://www.strava.com/activities/9914563470">8:18:29</a><sup class="footnote-reference"><a href="#7">5</a></sup>, but no ride report yet</td></tr>
+<tr><td></td><td style="text-align: right">24</td><td><a href="https://www.torgbc.com/">ToRGC</a></td><td>Bike Century</td><td></td><td><a href="https://www.strava.com/activities/9914563470">8:18:29</a><sup class="footnote-reference" id="fr-7-1"><a href="#footnote-7">5</a></sup>, but no ride report yet</td></tr>
 <tr><td></td><td style="text-align: right">30</td><td><a href="http://www.mttaylor50k.com/">Mount Taylor</a></td><td>50k</td><td></td><td><a href="https://ultrasignup.com/results_event.aspx?did=101656#id220546">8:31:33</a>, but no race report yet</td></tr>
-<tr><td>October</td><td style="text-align: right">21</td><td><a href="https://www.core-crew.com/tatonka-5-10k-run">Tatonka Run</a></td><td>5k<sup class="footnote-reference"><a href="#8">6</a></sup></td><td>✅</td><td><a href="2023/tatonka_5k.html">2 AG</a></td></tr>
-<tr><td></td><td style="text-align: right">22</td><td><a href="https://www.dukecitymarathon.com/">Duke City</a></td><td>Marathon<sup class="footnote-reference"><a href="#5">7</a></sup></td><td></td><td><a href="2023/duke_city_marathon.html">5:00:37</a></td></tr>
+<tr><td>October</td><td style="text-align: right">21</td><td><a href="https://www.core-crew.com/tatonka-5-10k-run">Tatonka Run</a></td><td>5k<sup class="footnote-reference" id="fr-8-1"><a href="#footnote-8">6</a></sup></td><td>✅</td><td><a href="2023/tatonka_5k.html">2 AG</a></td></tr>
+<tr><td></td><td style="text-align: right">22</td><td><a href="https://www.dukecitymarathon.com/">Duke City</a></td><td>Marathon<sup class="footnote-reference" id="fr-5-1"><a href="#footnote-5">7</a></sup></td><td></td><td><a href="2023/duke_city_marathon.html">5:00:37</a></td></tr>
 <tr><td></td><td style="text-align: right">28</td><td><a href="https://aravaiparunning.com/network/javelinajundred/">Javelina Jundred</a></td><td>100 Miler</td><td>✅</td><td><a href="2023/jj100.html">1 AG, 153 OA</a></td></tr>
 <tr><td>November</td><td style="text-align: right">4</td><td><a href="https://deadmanpeaks.com/">Deadman Peaks</a></td><td>53 Miler</td><td></td><td><a href="2023/dptr_53m.html">1 (of 1) AG</a></td></tr>
 <tr><td></td><td style="text-align: right">11</td><td><a href="https://newmexicofa50k.wordpress.com/white_mesa_50k/">White Mesa</a></td><td>50k</td><td></td><td><a href="2023/wmfa50k.html">1 (of 2) OA</a></td></tr>
@@ -252,46 +275,46 @@ is my middle name.</p>
 <tr><td></td><td style="text-align: right">23</td><td><a href="https://www.strava.com/activities/10207803545">Ed Thanksgiving's Group Run</a></td><td>Half Marathon</td><td></td><td><a href="2023/ed_t.html">TODO</a></td></tr>
 <tr><td></td><td style="text-align: right">24</td><td><a href="https://www.facebook.com/events/243804552011808">Black Friday TT</a></td><td>4 miles</td><td>✅</td><td><a href="2023/black_friday.html">TODO</a></td></tr>
 <tr><td></td><td style="text-align: right">25</td><td><a href="https://ultrasignup.com/register.aspx?did=105828">Bosque Bigfoot</a></td><td>50k</td><td></td><td><a href="2023/bbf50k.html">TODO</a></td></tr>
-<tr><td>December</td><td style="text-align: right">10</td><td><a href="https://www.tucsonmarathon.com/">Tucson</a></td><td>Marathon</td><td></td><td><em>did not do</em><sup class="footnote-reference"><a href="#3">8</a></sup></td></tr>
+<tr><td>December</td><td style="text-align: right">10</td><td><a href="https://www.tucsonmarathon.com/">Tucson</a></td><td>Marathon</td><td></td><td><em>did not do</em><sup class="footnote-reference" id="fr-3-1"><a href="#footnote-3">8</a></sup></td></tr>
 <tr><td></td><td style="text-align: right">23</td><td><a href="https://www.facebook.com/events/712962300691876/">Grinch Lunch</a></td><td>5k</td><td>✅</td><td><a href="https://www.webscorer.com/race?raceid=338434">3 OA</a>, but no race report yet</td></tr>
 </tbody></table>
-</div>
-<div class="footnote-definition" id="4"><sup class="footnote-definition-label">1</sup>
+</div><hr>
+<ol class="footnote-definition"><li id="footnote-4">
 <p>It's really my "fuck around" block, but I mention the block by name a
 lot on this page, so I've bowdlerized it everywhere but this footnote,
-because I don't want to offend.</p>
-</div>
-<div class="footnote-definition" id="2"><sup class="footnote-definition-label">2</sup>
+because I don't want to offend. <a href="#fr-4-1">↩</a></p>
+</li>
+<li id="footnote-2">
 <p>I was given a dispensation to allow me to run to the Burque
 Brew Crowning, run that event, and then run back and have all my mileage
-count. As such, racked up 50 miles again this year.</p>
-</div>
-<div class="footnote-definition" id="1"><sup class="footnote-definition-label">3</sup>
+count. As such, racked up 50 miles again this year. <a href="#fr-2-1">↩</a></p>
+</li>
+<li id="footnote-1">
 <p>I registered for the Boston Marathon, but did not travel to
 Boston to attend. I could not justify the expense, due to the state of
 my right foot.  It was not sufficiently healthy to allow me to do the
 Tough Ruck and although the Boston Marathon holds a special place in
-my heart, my money was ridiculously tight.</p>
-</div>
-<div class="footnote-definition" id="6"><sup class="footnote-definition-label">4</sup>
+my heart, my money was ridiculously tight. <a href="#fr-1-1">↩</a></p>
+</li>
+<li id="footnote-6">
 <p>I was nervous that my foot might get too uncomfortable on the
 backside, so I chose to return early with
 <a href="https://ultrasignup.com/results_participant.aspx?fname=Labe&amp;lname=Kopelov">Labe</a>. Labe
 had only been back in Albuquerque for a few days and the altitude was
-taking its toll. It was a great time to get to know him better.</p>
-</div>
-<div class="footnote-definition" id="7"><sup class="footnote-definition-label">5</sup>
+taking its toll. It was a great time to get to know him better. <a href="#fr-6-1">↩</a></p>
+</li>
+<li id="footnote-7">
 <p>Rode with my brother-in-law who had a couple flats, so I lost a little
 time. Also, made a wrong turn (or, perhaps, missed a turn). So, I finished
-later than the desired 8 hour cut-off. I'll do better next year.</p>
-</div>
-<div class="footnote-definition" id="8"><sup class="footnote-definition-label">6</sup>
-<p>Although it has no separate ruck division, I chose to race the Tatonka 5k while wearing my pack. It weighed 41.3 pounds.</p>
-</div>
-<div class="footnote-definition" id="5"><sup class="footnote-definition-label">7</sup>
-<p>I was the five hour pace group leader.</p>
-</div>
-<div class="footnote-definition" id="3"><sup class="footnote-definition-label">8</sup>
+later than the desired 8 hour cut-off. I'll do better next year. <a href="#fr-7-1">↩</a></p>
+</li>
+<li id="footnote-8">
+<p>Although it has no separate ruck division, I chose to race the Tatonka 5k while wearing my pack. It weighed 41.3 pounds. <a href="#fr-8-1">↩</a></p>
+</li>
+<li id="footnote-5">
+<p>I was the five hour pace group leader. <a href="#fr-5-1">↩</a></p>
+</li>
+<li id="footnote-3">
 <p>I like the Tucson marathon a lot. However, my step-mother, Jeanne,
 no longer lives in the area, so I don't get to combine the Tucson marathon
 with a chance to visit her.  Additionally, the Tucson marathon is in the
@@ -300,9 +323,9 @@ caused a little problem, because I already had an issue with my right foot
 and <em>racing</em> a marathon (to try to get 1st AG)—even without a pack—
 pounds one's feet harder than most trainings. This year, not only do I
 have some lingering issues with my right foot, at the end of the year I
-was strapped both for cash and time, so I chose to stay in Albuquerque.</p>
-</div>
-
+was strapped both for cash and time, so I chose to stay in Albuquerque. <a href="#fr-3-1">↩</a></p>
+</li>
+</ol>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
@@ -349,6 +372,7 @@ was strapped both for cash and time, so I chose to stay in Albuquerque.</p>
         <script src="../../book.js"></script>
 
         <!-- Custom JS scripts -->
+
 
 
     </div>

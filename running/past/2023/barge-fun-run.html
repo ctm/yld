@@ -24,28 +24,41 @@
         <link rel="stylesheet" href="../../../fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="../../../highlight.css">
-        <link rel="stylesheet" href="../../../tomorrow-night.css">
-        <link rel="stylesheet" href="../../../ayu-highlight.css">
+        <link rel="stylesheet" id="highlight-css" href="../../../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../../../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
 
-        <!-- Provide site root to javascript -->
+        <!-- Provide site root and default themes to javascript -->
         <script>
-            var path_to_root = "../../../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+            const path_to_root = "../../../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../../../searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../../../toc.js"></script>
     </head>
     <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
     <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
-                var theme = localStorage.getItem('mdbook-theme');
-                var sidebar = localStorage.getItem('mdbook-sidebar');
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
 
                 if (theme.startsWith('"') && theme.endsWith('"')) {
                     localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
@@ -59,7 +72,8 @@
 
         <!-- Set the theme before any content is loaded, prevents flash -->
         <script>
-            var theme;
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             const html = document.documentElement;
@@ -72,17 +86,20 @@
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var sidebar = null;
-            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -109,13 +126,14 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
                     </div>
@@ -132,7 +150,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -167,7 +190,7 @@ middle of a heat wave, and the sun was shining.</p>
 <p>Although an annual tradition, we knew—with this
 temperature—we'd be few. After the weather forecast, only two
 others had expressed an interest and one of them, Messenger of Doom,
-had been up late the night before<sup class="footnote-reference"><a href="#1">1</a></sup>.</p>
+had been up late the night before<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup>.</p>
 <p>It's Vegas. I played the odds… and lost.  Her text was polite, but she
 was a little surprised and mildly disappointed that we had left without her.
 I gave vague directions to Blues, then "ran" back for her.</p>
@@ -180,11 +203,11 @@ and eventually wondering where Blues was.</p>
      width=204.8x
      style="float: left; margin-right: 10px;" /></p>
 <p>We finished our lap and GamboMouse was waiting for us. and for
-Blues<sup class="footnote-reference"><a href="#2">2</a></sup>. and for mickdog<sup class="footnote-reference"><a href="#3">3</a></sup>. It was a complete success if you
+Blues<sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup>. and for mickdog<sup class="footnote-reference" id="fr-3-1"><a href="#footnote-3">3</a></sup>. It was a complete success if you
 ignore the fact that we lost two of the five participants and that I
 didn't actually bring the <a href="https://dgtzuqphqg23d.cloudfront.net/MotqkwPx7Sp0nScjvzj4R95XfBBeUpxZqJxZnQYz3EU-2048x1536.jpg">BARGE Fun Run bottle
 openers</a>
-that I had promised to bring<sup class="footnote-reference"><a href="#4">4</a></sup>.</p>
+that I had promised to bring<sup class="footnote-reference" id="fr-4-1"><a href="#footnote-4">4</a></sup>.</p>
 <p>I can't wait until next year!</p>
 <h2 id="background"><a class="header" href="#background">Background</a></h2>
 <p><a href="https://www.barge.org/">BARGE</a> is a gathering of people who have an
@@ -204,13 +227,13 @@ Run.  It wasn't widely announced and nobody—not even
 Ron—attended. He liked running, but early morning and heat were
 not for him. Not that year.</p>
 <p><a href="https://www.youtube.com/watch?v=w82CqjaDKmA">Perseverance pays</a> and
-the following year the Fun Run was once again announced<sup class="footnote-reference"><a href="#6">5</a></sup> and this time
+the following year the Fun Run was once again announced<sup class="footnote-reference" id="fr-6-1"><a href="#footnote-6">5</a></sup> and this time
 it was actually held.  Turns out BARGE already included a few runners
 (I certainly wasn't one of them though!).  Who knew?</p>
 <p>In 2009, I had been hiking for a few years and thought it would be fun
 to show up for the fun run and attempt to run a mile with a few of my
 fellow BARGErs even though I had never (to my knowledge) run a mile
-non-stop in my life<sup class="footnote-reference"><a href="#5">6</a></sup>.</p>
+non-stop in my life<sup class="footnote-reference" id="fr-5-1"><a href="#footnote-5">6</a></sup>.</p>
 <p>I <em>guessed</em> my fitness from hiking would be enough to allow me to do
 that, but I honestly knew nothing about running and as BARGE 2009
 approached, I got nervous.  A family member of a friend had a seizure
@@ -224,31 +247,6 @@ Snowshoe</a>, but the
 <em>funnest</em> run I do each year, well, now you know…the <em>rest</em> of
 the story.</p>
 <hr/>
-<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
-<p>Specifically, he was <a href="https://www.barge.org/barge-2023">finishing
-eighth</a>, which was "in the money",
-in the Pot Limit Omaha tournament.</p>
-</div>
-<div class="footnote-definition" id="2"><sup class="footnote-definition-label">2</sup>
-<p>My directions were too vague or perhaps outright misleading.
-Bob continued walking on Joe Brown until he got to Sahara. I called him
-from the finish line to find out where he was, then ran back to tell him
-that unlike normal race directors, I <em>would</em> charge him for the extra
-mileage, but I sobered up out before I got to him.</p>
-</div>
-<div class="footnote-definition" id="3"><sup class="footnote-definition-label">3</sup>
-<p>I did not have mickdog's contact info, but I wasn't worried.
-GamboMouse said they stayed together up until the last tenth of a mile
-or so.  He must have gone in through a different door.  Since he must have,
-that is indeed what he had done.</p>
-</div>
-<div class="footnote-definition" id="4"><sup class="footnote-definition-label">4</sup>
-<p>I did <a href="https://www.strava.com/activities/9532136969">eventually send
-them</a>.</p>
-</div>
-<div class="footnote-definition" id="6"><sup class="footnote-definition-label">5</sup>
-<p>On July 20th, 2009 Ron sent:</p>
-</div>
 <blockquote>
 <p>Folks, <br/>
 <br/>
@@ -262,13 +260,39 @@ There is no sign up, no participation fee, and no liability insurance.  I recomm
 <br/>
 -R</p>
 </blockquote>
-<div class="footnote-definition" id="5"><sup class="footnote-definition-label">6</sup>
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
+<p>Specifically, he was <a href="https://www.barge.org/barge-2023">finishing
+eighth</a>, which was "in the money",
+in the Pot Limit Omaha tournament. <a href="#fr-1-1">↩</a></p>
+</li>
+<li id="footnote-2">
+<p>My directions were too vague or perhaps outright misleading.
+Bob continued walking on Joe Brown until he got to Sahara. I called him
+from the finish line to find out where he was, then ran back to tell him
+that unlike normal race directors, I <em>would</em> charge him for the extra
+mileage, but I sobered up out before I got to him. <a href="#fr-2-1">↩</a></p>
+</li>
+<li id="footnote-3">
+<p>I did not have mickdog's contact info, but I wasn't worried.
+GamboMouse said they stayed together up until the last tenth of a mile
+or so.  He must have gone in through a different door.  Since he must have,
+that is indeed what he had done. <a href="#fr-3-1">↩</a></p>
+</li>
+<li id="footnote-4">
+<p>I did <a href="https://www.strava.com/activities/9532136969">eventually send
+them</a>. <a href="#fr-4-1">↩</a></p>
+</li>
+<li id="footnote-6">
+<p>On July 20th, 2009 Ron sent: <a href="#fr-6-1">↩</a></p>
+</li>
+<li id="footnote-5">
 <p>When they tried to get us to do this in elementary school, I walked part
 of it. I did, however, play a lot of ultimate Frisbee in high school and that
 involves a lot of running, but with time to catch one's breath in between, at
-least at my level of skill.</p>
-</div>
-
+least at my level of skill. <a href="#fr-5-1">↩</a></p>
+</li>
+</ol>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
@@ -315,6 +339,7 @@ least at my level of skill.</p>
         <script src="../../../book.js"></script>
 
         <!-- Custom JS scripts -->
+
 
 
     </div>

@@ -25,28 +25,41 @@
         <link rel="stylesheet" href="fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="highlight.css">
-        <link rel="stylesheet" href="tomorrow-night.css">
-        <link rel="stylesheet" href="ayu-highlight.css">
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
 
-        <!-- Provide site root to javascript -->
+        <!-- Provide site root and default themes to javascript -->
         <script>
-            var path_to_root = "";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc.js"></script>
     </head>
     <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
     <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
-                var theme = localStorage.getItem('mdbook-theme');
-                var sidebar = localStorage.getItem('mdbook-sidebar');
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
 
                 if (theme.startsWith('"') && theme.endsWith('"')) {
                     localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
@@ -60,7 +73,8 @@
 
         <!-- Set the theme before any content is loaded, prevents flash -->
         <script>
-            var theme;
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             const html = document.documentElement;
@@ -73,17 +87,20 @@
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var sidebar = null;
-            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -110,13 +127,14 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
                     </div>
@@ -133,7 +151,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -179,7 +202,7 @@ Developers Guild</a>) aka nmdeadhead
 (<a href="https://freesound.org/people/nmdeadhead/">Freesound</a>, <a href="https://www.reddit.com/user/nmdeadhead">reddit</a>, <a href="https://news.ycombinator.com/user?id=nmdeadhead">Hacker News</a>).</p>
 <p>Although I don't wear a tinfoil hat, I <em>am</em> concerned with privacy,
 albeit I'm more concerned with yours than mine.</p>
-<p>I <del>don't</del> have a <a href="https://www.facebook.com/profile.php?id=100093257525075">Facebook</a><sup class="footnote-reference"><a href="#1">1</a></sup> (although not yet an Instagram) account. I also have a <a href="https://www.linkedin.com/in/clifford-matthews-4a44231/">LinkedIn
+<p>I <del>don't</del> have a <a href="https://www.facebook.com/profile.php?id=100093257525075">Facebook</a><sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup> (although not yet an Instagram) account. I also have a <a href="https://www.linkedin.com/in/clifford-matthews-4a44231/">LinkedIn
 account</a>,
 although I haven't done a good job of keeping it up to date.</p>
 <p>Over the years, I've tossed various random stuff into <a href="https://github.com/ctm?tab=repositories">public
@@ -191,16 +214,17 @@ felt weird having so much info out there, but I did hear from others
 who read it and appreciated that I made it available, so this book
 continues that tradition. I'll slowly added more info that people may
 or may not find handy. It keeps me off the streets.</p>
-<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
 <p>I am exceedingly late to the Facebook game. So far I haven't deliberately
 reached out and asked anyone to be my friend, although I may have been tricked
 into doing so by thinking I was clicking a button or three to accept a friend
 request.  <em>A</em> problem (I won't use the definitive article, becvause I have
 many problems) I have is that I love people, including people who hate me.
 I don't currently have the time to ask seven billion or so people to be my
-friend, so … I ask no one—for now.</p>
-</div>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="my-beliefs"><a class="header" href="#my-beliefs">My Beliefs</a></h1>
+friend, so … I ask no one—for now. <a href="#fr-1-1">↩</a></p>
+</li>
+</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="my-beliefs"><a class="header" href="#my-beliefs">My Beliefs</a></h1>
 <p>I have a ton of beliefs and I'm sure many are wrong.  I don't, however,
 deliberately choose to be contrarian or controversial, much less choose
 to be deliberately wrong.  I have more confidence in some of my beliefs
@@ -333,15 +357,16 @@ I'm sure some have slipped through the cracks.</p>
 </li>
 <li>Tangential
 <ul>
-<li><a href="https://www.goodreads.com/book/show/4758904-hard-driving">Hard Driving: The Wendell Scott Story</a><sup class="footnote-reference"><a href="#1">1</a></sup></li>
+<li><a href="https://www.goodreads.com/book/show/4758904-hard-driving">Hard Driving: The Wendell Scott Story</a><sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup></li>
 <li><a href="https://www.goodreads.com/book/show/18222878-the-rise-of-superman">The Rise of Superman</a></li>
 </ul>
 </li>
 </ul>
-<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
-<p><a href="https://www.youtube.com/watch?v=y2vXth5xwHA">The Ballad of Wendel Scott</a> got my attention (and it's on my <a href="https://www.youtube.com/playlist?list=PLiHB06ix3lYik1aF8qZpFQN3A1QAtzTFu">Speed 3</a> playlist).</p>
-</div>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="music"><a class="header" href="#music">Music</a></h1>
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
+<p><a href="https://www.youtube.com/watch?v=y2vXth5xwHA">The Ballad of Wendel Scott</a> got my attention (and it's on my <a href="https://www.youtube.com/playlist?list=PLiHB06ix3lYik1aF8qZpFQN3A1QAtzTFu">Speed 3</a> playlist). <a href="#fr-1-1">↩</a></p>
+</li>
+</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="music"><a class="header" href="#music">Music</a></h1>
 <p>I like listening to music as I run. The vast majority of the time I
 simply listen to songs at random from my iPod's large library.  I get
 the runner's high fairly easily and when that's kicked in, the music
@@ -584,13 +609,14 @@ Maniacs</a>; which <a href="https://db.marathonmaniacs.com/Maniacs/myraces/4395"
 So, for completeness, these are, I believe, all the times I've started
 a race and not officially finished:</p>
 <div class="table-wrapper"><table><thead><tr><th>Year</th><th>Race</th><th>Reason</th></tr></thead><tbody>
-<tr><td>2010</td><td>Deadman Peaks Trail Run 50 miler</td><td>WNATF: Was Not Allowed To Finish[^1]</td></tr>
+<tr><td>2010</td><td>Deadman Peaks Trail Run 50 miler</td><td>WNATF: Was Not Allowed To Finish<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup></td></tr>
 <tr><td>2014</td><td>Cedro Peak 45 miler</td><td>Flu caught up with me</td></tr>
-<tr><td>2015</td><td>Western States</td><td>SAR injury<sup class="footnote-reference"><a href="#2">1</a></sup></td></tr>
+<tr><td>2015</td><td>Western States</td><td>SAR injury<sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup></td></tr>
 <tr><td>2015</td><td>Leadville</td><td>Same SAR injury + didn't pay attention to cutoffs</td></tr>
 <tr><td>2016</td><td>Bighorn 100 Miler</td><td>Trekking pole broke</td></tr>
 <tr><td>2016</td><td>Fat Dog 120</td><td>Different trekking pole broke + bad nutrition; <a href="https://runningjohn.blogspot.com/2016/08/2016-mountain-madness-fat-dog-120-race.html">finished but too late</a></td></tr>
 <tr><td>2019</td><td>Foothills 50k</td><td>White-out blizzard (nobody finished)</td></tr>
+<tr><td>2025</td><td>Bigfoot 200</td><td>Started injured, fell at mile five, breaking a trekking pole<sup class="footnote-reference" id="fr-3-1"><a href="#footnote-3">3</a></sup></td></tr>
 </tbody></table>
 </div>
 <p>Eventually, I'll write up a race report for each of those, because I
@@ -615,17 +641,19 @@ was not in good enough shape for me to do the Tough Ruck the day
 before.  Additionally, although I had planned on taking my family
 with me to Boston for an east-coast vacation, that plan changed when
 my daughter Iris was appointed to the United States Military Academy.
-I'll be taking our family to her acceptance day ceremony in August,
+I took our family to her acceptance day ceremony in August,
 instead.
 <br/>
 <br/>
 <br/></p>
-<hr/>
-[^1]: It was the Race Director's first race and my first ultra.  I barely
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
+<p>It was the Race Director's first race and my first ultra.  I barely
 made the turnaround cutoff and I looked dodgy.  RD radioed down to the aid
 station captain at the next aid station and requested I be examined for fitness
-when I arrived.  There was no cutoff, but I was cut anyway.
-<div class="footnote-definition" id="2"><sup class="footnote-definition-label">1</sup>
+when I arrived.  There was no cutoff, but I was cut anyway. <a href="#fr-1-1">↩</a></p>
+</li>
+<li id="footnote-2">
 <p>I injured my foot in a search-and-rescue mission in May, but
 continued to train on it a little longer than I should have.  I did
 realize that it wasn't healing properly and did back off, not soon
@@ -633,14 +661,25 @@ enough.  I ran the first thirty some miles with a limp.  I then took
 analgesics and the limp went away, but I was in crazy pain and
 semi-hunched over.  I missed a turnoff and went a long way up a hill
 (misleading others off course, too).  The others recovered (including
-<a href="running/(https://www.youtube.com/watch?v=QqKinAETu8E)">one spectacular—record
+<a href="https://www.youtube.com/watch?v=QqKinAETu8E">one spectacular—record
 breaking—finish</a>,
-but I had to drop at mile 85.</p>
-</div>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="2021"><a class="header" href="#2021">2021</a></h1>
+but I had to drop at mile 85. <a href="#fr-2-1">↩</a></p>
+</li>
+<li id="footnote-3">
+<p>This one deserves its own race report, but I came back so beaten
+up that not only did I not write much up, I didn't even fill out my
+relevant Strava activities. I did, however, write a "status report and
+(abbreviated BF200 write-up)" email to a a few of my closest
+ne'erdowells. So, perhaps I can use that to rekindle some memories if
+I ever make the time. That letter ended with: "I've taken more than my
+fair share of humility pills (because they wear off so quickly!),
+sometimes eating handfuls at a time, but this was my first humility
+<em>enema</em>. Whee!" <a href="#fr-3-1">↩</a></p>
+</li>
+</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="2021"><a class="header" href="#2021">2021</a></h1>
 <p>In 2021 I:</p>
 <ul>
-<li>finally got all six ascents of Elevation Insanity<sup class="footnote-reference"><a href="#1">1</a></sup> done in a calendar day</li>
+<li>finally got all six ascents of Elevation Insanity<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup> done in a calendar day</li>
 <li>finished Hardrock (it was my first attempt)</li>
 <li>set a course record at the Tortugas Mountain 24-hour challenge in the drinking division</li>
 <li>took first in my Age Group in the Big Cottonwood Marathon</li>
@@ -669,7 +708,7 @@ Lunch, but I had covid and stayed home.</p>
 <tr><td>January</td><td>1</td><td><strong>Unofficial</strong> Foothills Fat Ass</td><td>50k</td></tr>
 <tr><td>February</td><td>13</td><td>Bosque Bigfoot</td><td>50k</td></tr>
 <tr><td>March</td><td>28</td><td>Duke City <strong>Substitute</strong></td><td>Half Marathon</td></tr>
-<tr><td>April</td><td>24</td><td>Chimney Canyon Threepeat</td><td>Training<sup class="footnote-reference"><a href="#2">2</a></sup></td></tr>
+<tr><td>April</td><td>24</td><td>Chimney Canyon Threepeat</td><td>Training<sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup></td></tr>
 <tr><td>May</td><td>8</td><td>Elevation Insanity XI</td><td>Hike</td></tr>
 <tr><td></td><td>22</td><td>Jemez Mountain Trail Run</td><td>50 Miler</td></tr>
 <tr><td>June</td><td>12</td><td>Chimney Melon</td><td>50k</td></tr>
@@ -687,20 +726,20 @@ Lunch, but I had covid and stayed home.</p>
 <tr><td></td><td>26</td><td>Black Friday Turkey Trots</td><td>4 Miler</td></tr>
 <tr><td></td><td>27</td><td>Bosque Bigfoot</td><td>50k</td></tr>
 </tbody></table>
-</div>
-<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+</div><hr>
+<ol class="footnote-definition"><li id="footnote-1">
 <p>Six different ascents up the Sandia Mountain in one calendar day.
 We take my truck down after the first ascent, then use the tram to get down from the next four ascents, then get picked up at the top.
-About 23,850 feet of elevation gain in 24 hours.</p>
-</div>
-<div class="footnote-definition" id="2"><sup class="footnote-definition-label">2</sup>
+About 23,850 feet of elevation gain in 24 hours. <a href="#fr-1-1">↩</a></p>
+</li>
+<li id="footnote-2">
 <p>Park at the La Luz Trailhead, then take Old La Luz up to the Chimney
 Canyon Trail, then ascend that until getting to the north&lt;-&gt;south trail
 that is at the top, but to the west of the towers, then take that over
 to the La Luz Spur trail, then descend back to the base of Chimney Canyon
-Trail, repeat twice more, then use Old La Luz to return to our vehicles.</p>
-</div>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="hardrock-2021"><a class="header" href="#hardrock-2021">Hardrock 2021</a></h1>
+Trail, repeat twice more, then use Old La Luz to return to our vehicles. <a href="#fr-2-1">↩</a></p>
+</li>
+</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="hardrock-2021"><a class="header" href="#hardrock-2021">Hardrock 2021</a></h1>
 <p>This was the biggie, but I didn't take notes
 at the time.  My excellent team comprised JE: crew chief, SB: JE's
 right hand man, PL: pacer from Grouse (mile 42.2) to Telluride (mile
@@ -734,13 +773,13 @@ included are mostly social training runs that I try to do every year.</p>
 <tr><td></td><td>26</td><td><a href="https://www.webscorer.com/racedetails?raceid=271787&amp;did=318184">Burque Brew Tour Unofficial Last Stop</a></td><td><a href="https://www.facebook.com/events/465186074899647">3.7 Miles</a></td></tr>
 <tr><td>April</td><td>2</td><td><a href="https://www.strava.com/activities/6923122767">Magdalena Madness</a></td><td><a href="https://socorrotrailrunners.blogspot.com/p/magdalena-madness.html">12 Hour</a></td></tr>
 <tr><td></td><td>16</td><td><a href="https://www.strava.com/activities/6993673614">Chimney Canyon Repeat</a></td><td>Failed Training</td></tr>
-<tr><td></td><td>23</td><td><a href="running/past/2022/cedro.html">Cedro Peak</a></td><td><a href="https://cedropeaktrailevent.wordpress.com/">50k</a><sup class="footnote-reference"><a href="#1">1</a></sup></td></tr>
+<tr><td></td><td>23</td><td><a href="running/past/2022/cedro.html">Cedro Peak</a></td><td><a href="https://cedropeaktrailevent.wordpress.com/">50k</a><sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup></td></tr>
 <tr><td>May</td><td>2</td><td><a href="running/past/2022/cocodona-250.html">Cocodona 250</a></td><td><a href="http://cocodona.com/">250 Miler</a></td></tr>
 <tr><td></td><td>14</td><td><a href="https://www.strava.com/activities/7143740391">Chimney Canyon Threepeat</a></td><td>Training</td></tr>
 <tr><td></td><td>18</td><td><a href="https://www.strava.com/activities/7166693370">Shortest Double Crossing</a></td><td>Training</td></tr>
 <tr><td></td><td>22</td><td><a href="https://www.strava.com/activities/7187704802">Santa Fe Century</a></td><td><a href="https://www.santafecentury.com/">Bicycle Century</a></td></tr>
 <tr><td>June</td><td>4</td><td><a href="https://www.athlinks.com/event/177488/results/Event/993811/Course/2149488/Bib/1202">Believe in Heroes</a></td><td><a href="https://visitloslunas.org/events/10th-annual-believe-in-heroes-memorial-run/">5k Ruck Race</a></td></tr>
-<tr><td>July</td><td>29</td><td><a href="https://www.strava.com/activities/7548646358">BARGE Fun Run</a></td><td><a href="https://www.barge.org/">5k</a><sup class="footnote-reference"><a href="#2">2</a></sup></td></tr>
+<tr><td>July</td><td>29</td><td><a href="https://www.strava.com/activities/7548646358">BARGE Fun Run</a></td><td><a href="https://www.barge.org/">5k</a><sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup></td></tr>
 <tr><td>August</td><td>6</td><td><a href="https://www.strava.com/activities/7595451430">Shortest Double Crossing</a></td><td>Training</td></tr>
 <tr><td></td><td>13</td><td><a href="https://www.webscorer.com/race?raceid=288504">Baldy 50k</a></td><td><a href="https://newmexicofa50k.wordpress.com/baldy_50k/">50k</a></td></tr>
 <tr><td></td><td>27</td><td><a href="https://www.strava.com/activities/7717983430">Paced Jason Romero at the Creede 100 Miler</a></td><td><a href="https://www.tempestadventures.com/creede-100/course">final 50 Miles</a></td></tr>
@@ -751,8 +790,8 @@ included are mostly social training runs that I try to do every year.</p>
 <tr><td>October</td><td>1</td><td><a href="running/past/2022/mt_taylor_50k.html">Mt. Taylor</a></td><td><a href="http://www.mttaylor50k.com/">50k</a></td></tr>
 <tr><td></td><td>8</td><td><a href="running/past/2022/feral_hog_50k_rucksack.html">Feral Hog</a></td><td><a href="http://www.feraladventures.com/challenges/feral-hog-50k/">50k Ruck Race</a></td></tr>
 <tr><td></td><td>14</td><td><a href="running/past/2022/tortugas_mountain.html">Tortugas Mountain</a></td><td><a href="http://snmta.org/event/24-hour-a-mountain-challenge/">24 Hour</a></td></tr>
-<tr><td></td><td>16</td><td><a href="running/past/2022/duke_city_marathon.html">Duke City</a></td><td><a href="https://www.dukecitymarathon.com/">Marathon</a><sup class="footnote-reference"><a href="#3">3</a></sup></td></tr>
-<tr><td></td><td>22</td><td><a href="running/past/2022/tatonka_5k.html">Tatonka Run</a></td><td><a href="https://www.core-crew.com/tatonka-5-10k-run">5k</a><sup class="footnote-reference"><a href="#4">4</a></sup></td></tr>
+<tr><td></td><td>16</td><td><a href="running/past/2022/duke_city_marathon.html">Duke City</a></td><td><a href="https://www.dukecitymarathon.com/">Marathon</a><sup class="footnote-reference" id="fr-3-1"><a href="#footnote-3">3</a></sup></td></tr>
+<tr><td></td><td>22</td><td><a href="running/past/2022/tatonka_5k.html">Tatonka Run</a></td><td><a href="https://www.core-crew.com/tatonka-5-10k-run">5k</a><sup class="footnote-reference" id="fr-4-1"><a href="#footnote-4">4</a></sup></td></tr>
 <tr><td></td><td>23</td><td><a href="running/past/2022/forever_young_six_miler.html">Forever Young Run</a></td><td><a href="https://www.abqroadrunners.com/forever-young-run.html">10k</a></td></tr>
 <tr><td></td><td>29</td><td><a href="running/past/2022/jj100.html">Javelina Jundred</a></td><td><a href="https://aravaiparunning.com/network/javelinajundred/">100 Miler</a></td></tr>
 <tr><td>November</td><td>5</td><td><a href="running/past/2022/dptr_106m.html">Deadman Peaks</a></td><td><a href="https://deadmanpeaks.com/">100 Miler</a></td></tr>
@@ -763,20 +802,20 @@ included are mostly social training runs that I try to do every year.</p>
 <tr><td>December</td><td>10</td><td><a href="running/past/2022/tucson_marathon.html">Tucson</a></td><td><a href="https://www.tucsonmarathon.com/">Marathon</a></td></tr>
 <tr><td></td><td>31</td><td><a href="running/past/2022/grinch_lunch.html">Grinch Lunch</a></td><td><a href="https://www.facebook.com/events/587035643112558">5k</a></td></tr>
 </tbody></table>
-</div>
-<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
-<p>I "ran" the Cedro Peak 50k in a fasted state, and only consumed water until the third to last aid station when I had <a href="https://santafebrewing.com/beer/adobe-igloo/">a beer</a>.  At the next two aid stations I also had <a href="http://www.exnovobrew.com/perle-haggard">a beer</a>.  Those three beers were my only calories that day until after I had finished the race.</p>
-</div>
-<div class="footnote-definition" id="2"><sup class="footnote-definition-label">2</sup>
-<p>The BARGE Fun Run is what got me started running (back in 2009!). It's a long story. However, in 2022, most of the participants did a 5k loop. I did that loop then ran back to join a walker.</p>
-</div>
-<div class="footnote-definition" id="3"><sup class="footnote-definition-label">3</sup>
-<p>I was the five hour pace group leader.</p>
-</div>
-<div class="footnote-definition" id="4"><sup class="footnote-definition-label">4</sup>
-<p>Although it has no separate ruck division, I chose to race the Tatonka 5k while wearing my pack. It weighed 41.8 pounds.</p>
-</div>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="cedro-peak-50k"><a class="header" href="#cedro-peak-50k">Cedro Peak 50k</a></h1>
+</div><hr>
+<ol class="footnote-definition"><li id="footnote-1">
+<p>I "ran" the Cedro Peak 50k in a fasted state, and only consumed water until the third to last aid station when I had <a href="https://santafebrewing.com/beer/adobe-igloo/">a beer</a>.  At the next two aid stations I also had <a href="http://www.exnovobrew.com/perle-haggard">a beer</a>.  Those three beers were my only calories that day until after I had finished the race. <a href="#fr-1-1">↩</a></p>
+</li>
+<li id="footnote-2">
+<p>The BARGE Fun Run is what got me started running (back in 2009!). It's a long story. However, in 2022, most of the participants did a 5k loop. I did that loop then ran back to join a walker. <a href="#fr-2-1">↩</a></p>
+</li>
+<li id="footnote-3">
+<p>I was the five hour pace group leader. <a href="#fr-3-1">↩</a></p>
+</li>
+<li id="footnote-4">
+<p>Although it has no separate ruck division, I chose to race the Tatonka 5k while wearing my pack. It weighed 41.8 pounds. <a href="#fr-4-1">↩</a></p>
+</li>
+</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="cedro-peak-50k"><a class="header" href="#cedro-peak-50k">Cedro Peak 50k</a></h1>
 <p><img src="running/past/2022/cedro/cheers.jpg"
      title="Cheers"
      height=682.6px
@@ -2196,12 +2235,13 @@ of ibuprofen. So, rather than mentioning that in this race report,
 I'll eventually take the time to mention it in the upcoming <code>Ibuprofen</code>
 section of my upcoming <code>Drugs</code> section of my upcoming <code>Practices</code> section.</p>
 <p>I don't know when I'll get to the above. I do have a <a href="https://www.youtube.com/watch?v=Gz0EdL8TyT4">Day
-Job</a><sup class="footnote-reference"><a href="#1">1</a></sup>.</p>
-<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+Job</a><sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup>.</p>
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
 <p>Yeah, I'll add a <code>Grateful Dead</code> section too; I was lucky enough
-to go to many shows back in the day, including this one.</p>
-</div>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="tatonka-5k-2022"><a class="header" href="#tatonka-5k-2022">Tatonka 5k 2022</a></h1>
+to go to many shows back in the day, including this one. <a href="#fr-1-1">↩</a></p>
+</li>
+</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="tatonka-5k-2022"><a class="header" href="#tatonka-5k-2022">Tatonka 5k 2022</a></h1>
 <h2 id="overview-8"><a class="header" href="#overview-8">Overview</a></h2>
 <p>Like Memorial Day, the <a href="https://www.core-crew.com/tatonka-5-10k-run">Tatonka
 5k</a> is both a somber
@@ -2666,8 +2706,8 @@ I hadn't even brought them with me; they were back in my truck.</p>
 <h3 id="race"><a class="header" href="#race">Race</a></h3>
 <p>The race itself was uneventful.  I listened to my Bataan Memorial
 Death March playlist.  It's all quick tunes, four Me First and the
-Gimme Gimmes albums<sup class="footnote-reference"><a href="#1">1</a></sup> (with the "slow" songs expurgated) with my "Speed
-3" playlist<sup class="footnote-reference"><a href="#2">2</a></sup> in between each album.</p>
+Gimme Gimmes albums<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup> (with the "slow" songs expurgated) with my "Speed
+3" playlist<sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup> in between each album.</p>
 <p>As I ran, I had to figure out when to take my consumables: two 200mg
 ibuprofen tablets, the five Chocolate Outrage Gu gels and my quad
 espresso.  I had half my quad espresso (i.e. a double espresso) at
@@ -2712,7 +2752,7 @@ the finish line, but I forgot to ask about them at the finish line, so
 I have no shirt from the race, which is OK for me, because I have too
 many shirts, but it is disappointing that shirts were handled that
 way.  By the time I finished, there were many other things I was
-thinking about than to remember to ask for a shirt<sup class="footnote-reference"><a href="#3">3</a></sup>.</p>
+thinking about than to remember to ask for a shirt<sup class="footnote-reference" id="fr-3-1"><a href="#footnote-3">3</a></sup>.</p>
 <p>I hung out long enough to pick up the slate coaster I won for being
 second in my age group, then hopped a bus back to the parking lot at
 the start.  Or at least that's what I thought I did.  I didn't think
@@ -2731,35 +2771,36 @@ time for both of us to watch the Army Navy football game.  My daughter
 Margaret earned an Army ROTC scholarship and is a freshman at the
 University of New Mexico (where I went to grad school).  My other
 daughter is a senior in high school with an application pending to
-attend West Point<sup class="footnote-reference"><a href="#4">4</a></sup>.  So, all three of us were rooting for Army and
+attend West Point<sup class="footnote-reference" id="fr-4-1"><a href="#footnote-4">4</a></sup>.  So, all three of us were rooting for Army and
 I was texting my daughters during the exciting game.  I may not have
 beaten the old people, but Army beat Navy. It was a very good day.</p>
-<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
 <p><a href="https://www.youtube.com/watch?v=oDQz4FzFrS4&amp;list=PL2DTtIwdCob1r2eviyFoem4CKFgrSMOnh">Blow in the
 Wind</a>,
 <a href="https://www.youtube.com/watch?v=wWZtPKTpOEo&amp;list=PLp5Ue8WePEmv95WkWWXBLVDlQQhvTb0PX">Love Their
 Country</a>,
 <a href="https://www.youtube.com/watch?v=yUvxpYf0crw&amp;list=OLAK5uy_ms0t0gvpnS9Nkzh9Gg68q1GdmrIFKx7DA">Are A
 Drag</a>, and
-<a href="https://www.youtube.com/watch?v=564YWy-BYN8&amp;list=OLAK5uy_loe_I2N5dCNioTZ7dSNa_6q8zTxsXvRCM">Ruin Jonny's Bar Mitzvah</a></p>
-</div>
-<div class="footnote-definition" id="2"><sup class="footnote-definition-label">2</sup>
-<p><a href="https://www.youtube.com/watch?v=bXeDRbJP_QE">If you're Gonna be Dumb You Gotta be Tough</a>, <a href="https://www.youtube.com/watch?v=qKEzV3ZVKfY">Rawhide</a>, and <a href="https://www.youtube.com/watch?v=y2vXth5xwHA">The Ballad of Wendell Scott</a><sup class="footnote-reference"><a href="#5">5</a></sup></p>
-</div>
-<div class="footnote-definition" id="3"><sup class="footnote-definition-label">3</sup>
+<a href="https://www.youtube.com/watch?v=564YWy-BYN8&amp;list=OLAK5uy_loe_I2N5dCNioTZ7dSNa_6q8zTxsXvRCM">Ruin Jonny's Bar Mitzvah</a> <a href="#fr-1-1">↩</a></p>
+</li>
+<li id="footnote-2">
+<p><a href="https://www.youtube.com/watch?v=bXeDRbJP_QE">If you're Gonna be Dumb You Gotta be Tough</a>, <a href="https://www.youtube.com/watch?v=qKEzV3ZVKfY">Rawhide</a>, and <a href="https://www.youtube.com/watch?v=y2vXth5xwHA">The Ballad of Wendell Scott</a><sup class="footnote-reference" id="fr-5-1"><a href="#footnote-5">5</a></sup> <a href="#fr-2-1">↩</a></p>
+</li>
+<li id="footnote-3">
 <p>Soon I posted this race report, an Aravaipa employee sent me
 an email asking me for my mailing address so he could send me a shirt! I'm
 sure that if there was anyone else who inadvertently didn't get a shirt, and
-wanted one, that he or she could have gotten one by asking.</p>
-</div>
-<div class="footnote-definition" id="4"><sup class="footnote-definition-label">4</sup>
+wanted one, that he or she could have gotten one by asking. <a href="#fr-3-1">↩</a></p>
+</li>
+<li id="footnote-4">
 <p>Since writing this report, my daughter's application was accepted. She
-received her appointment (i.e., was admitted). Yay!</p>
-</div>
-<div class="footnote-definition" id="5"><sup class="footnote-definition-label">5</sup>
-<p><a href="https://www.goodreads.com/book/show/58611896-hard-driving">Wendell Scott's biography</a></p>
-</div>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="grinch-lunch"><a class="header" href="#grinch-lunch">Grinch Lunch</a></h1>
+received her appointment (i.e., was admitted). Yay! <a href="#fr-4-1">↩</a></p>
+</li>
+<li id="footnote-5">
+<p><a href="https://www.goodreads.com/book/show/58611896-hard-driving">Wendell Scott's biography</a> <a href="#fr-5-1">↩</a></p>
+</li>
+</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="grinch-lunch"><a class="header" href="#grinch-lunch">Grinch Lunch</a></h1>
 <p>The <a href="https://www.facebook.com/events/1307112846691234">Grinch
 Lunch</a> is the
 second stop on the <a href="https://www.abqroadrunners.com/burque-brewery-tour.html">Burque Brew
@@ -2798,7 +2839,7 @@ per year.</p>
 <ol>
 <li>Bataan Memorial Death March</li>
 <li>Hardrock (or qualifier)</li>
-<li>Fun Around<sup class="footnote-reference"><a href="#4">1</a></sup></li>
+<li>Fun Around<sup class="footnote-reference" id="fr-4-1"><a href="#footnote-4">1</a></sup></li>
 </ol>
 <p>During my <a href="https://github.com/ctm/Bataan-Memorial-Death-March">serious training
 block</a> for the
@@ -2856,10 +2897,10 @@ is my middle name.</p>
 <tr><td>March</td><td style="text-align: right">11</td><td><a href="https://www.loslunasnm.gov/721/King-of-the-Hill">King of the Hill</a></td><td>10k Ruck</td><td>✅</td><td><a href="running/past/2023/king-of-the-hill.html">1 OA</a></td></tr>
 <tr><td></td><td style="text-align: right">11</td><td><a href="https://ultrasignup.com/register.aspx?did=100045">Shenanigains</a></td><td>10 Hour</td><td></td><td><a href="running/past/2023/shenanigains.html">Done</a></td></tr>
 <tr><td></td><td style="text-align: right">19</td><td><a href="https://bataanmarch.com/register/civilian-individual/">Bataan Memorial</a></td><td>Marathon Ruck</td><td>✅</td><td><a href="running/past/2023/bmdm.html">2 OA</a></td></tr>
-<tr><td></td><td style="text-align: right">25</td><td><a href="https://www.facebook.com/events/1768138600253055">Academy of Pain</a></td><td>12 hours<sup class="footnote-reference"><a href="#2">2</a></sup></td><td></td><td><a href="running/past/2023/academy-of-pain.html">Done</a></td></tr>
+<tr><td></td><td style="text-align: right">25</td><td><a href="https://www.facebook.com/events/1768138600253055">Academy of Pain</a></td><td>12 hours<sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup></td><td></td><td><a href="running/past/2023/academy-of-pain.html">Done</a></td></tr>
 <tr><td></td><td style="text-align: right">25</td><td><a href="https://www.facebook.com/events/1307112846691234">Burque Brew Crowning</a></td><td>3.8 miles</td><td>✅</td><td><a href="running/past/2023/brew-crowning.html">2 OA</a></td></tr>
 <tr><td>April</td><td style="text-align: right">1</td><td><a href="https://www.abqroadrunners.com/fun-runs-freeforall.html">Berta Fun Run</a></td><td>6 miler</td><td>✅</td><td><a href="running/past/2023/berta.html">1 OA</a></td></tr>
-<tr><td></td><td style="text-align: right">17</td><td><a href="https://www.baa.org/races/boston-marathon">Boston</a></td><td>Marathon</td><td></td><td>Did Not Start<sup class="footnote-reference"><a href="#1">3</a></sup></td></tr>
+<tr><td></td><td style="text-align: right">17</td><td><a href="https://www.baa.org/races/boston-marathon">Boston</a></td><td>Marathon</td><td></td><td>Did Not Start<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">3</a></sup></td></tr>
 <tr><td>May</td><td style="text-align: right">1</td><td><a href="https://cocodona.com/">Cocodona 250</a></td><td>250 Miler</td><td></td><td><a href="running/past/2023/cocodona-250.html">105th OA</a></td></tr>
 <tr><td></td><td style="text-align: right">20</td><td><a href="https://www.jemezmountaintrailruns.org/">Jemez Mountain</a></td><td>50 Miler</td><td></td><td><a href="https://ultrasignup.com/results_event.aspx?did=96904#id220546">DFL</a>, but no race report yet</td></tr>
 <tr><td></td><td style="text-align: right">21</td><td><a href="https://www.santafecentury.com/">Santa Fe Century</a></td><td>Bike Century</td><td></td><td><a href="https://www.strava.com/activities/9116115657">Finished</a>, but no ride report yet</td></tr>
@@ -2867,12 +2908,12 @@ is my middle name.</p>
 <tr><td></td><td style="text-align: right">10</td><td><a href="https://newmexicofa50k.wordpress.com/chimney-melon-50k/">Chimney Melon</a></td><td>25k</td><td></td><td><a href="https://www.strava.com/activities/9241296139">DNF the 50k</a>, but no race report yet</td></tr>
 <tr><td></td><td style="text-align: right">24</td><td><a href="https://www.wser.org/">Western States</a></td><td>100 Miler</td><td></td><td><a href="running/past/2023/wser.html">29:45:12</a></td></tr>
 <tr><td>July</td><td style="text-align: right">21</td><td><a href="https://www.barge.org/">BARGE</a> Fun Run</td><td>5k</td><td></td><td><a href="running/past/2023/barge-fun-run.html">Fun!</a></td></tr>
-<tr><td>August</td><td style="text-align: right">5</td><td><a href="https://newmexicofa50k.wordpress.com/baldy_50k/">Mt. Baldy</a></td><td>30k</td><td></td><td>Only did <a href="https://www.webscorer.com/racedetails?raceid=323683&amp;did=400798">30k</a><sup class="footnote-reference"><a href="#6">4</a></sup>, but no race report yet</td></tr>
+<tr><td>August</td><td style="text-align: right">5</td><td><a href="https://newmexicofa50k.wordpress.com/baldy_50k/">Mt. Baldy</a></td><td>30k</td><td></td><td>Only did <a href="https://www.webscorer.com/racedetails?raceid=323683&amp;did=400798">30k</a><sup class="footnote-reference" id="fr-6-1"><a href="#footnote-6">4</a></sup>, but no race report yet</td></tr>
 <tr><td>September</td><td style="text-align: right">22</td><td><a href="https://newmexicofa50k.wordpress.com/aa50k/">AA50k</a></td><td>50k</td><td></td><td><a href="https://www.webscorer.com/race?raceid=332863">DFL</a>, no race report yet</td></tr>
-<tr><td></td><td style="text-align: right">24</td><td><a href="https://www.torgbc.com/">ToRGC</a></td><td>Bike Century</td><td></td><td><a href="https://www.strava.com/activities/9914563470">8:18:29</a><sup class="footnote-reference"><a href="#7">5</a></sup>, but no ride report yet</td></tr>
+<tr><td></td><td style="text-align: right">24</td><td><a href="https://www.torgbc.com/">ToRGC</a></td><td>Bike Century</td><td></td><td><a href="https://www.strava.com/activities/9914563470">8:18:29</a><sup class="footnote-reference" id="fr-7-1"><a href="#footnote-7">5</a></sup>, but no ride report yet</td></tr>
 <tr><td></td><td style="text-align: right">30</td><td><a href="http://www.mttaylor50k.com/">Mount Taylor</a></td><td>50k</td><td></td><td><a href="https://ultrasignup.com/results_event.aspx?did=101656#id220546">8:31:33</a>, but no race report yet</td></tr>
-<tr><td>October</td><td style="text-align: right">21</td><td><a href="https://www.core-crew.com/tatonka-5-10k-run">Tatonka Run</a></td><td>5k<sup class="footnote-reference"><a href="#8">6</a></sup></td><td>✅</td><td><a href="running/past/2023/tatonka_5k.html">2 AG</a></td></tr>
-<tr><td></td><td style="text-align: right">22</td><td><a href="https://www.dukecitymarathon.com/">Duke City</a></td><td>Marathon<sup class="footnote-reference"><a href="#5">7</a></sup></td><td></td><td><a href="running/past/2023/duke_city_marathon.html">5:00:37</a></td></tr>
+<tr><td>October</td><td style="text-align: right">21</td><td><a href="https://www.core-crew.com/tatonka-5-10k-run">Tatonka Run</a></td><td>5k<sup class="footnote-reference" id="fr-8-1"><a href="#footnote-8">6</a></sup></td><td>✅</td><td><a href="running/past/2023/tatonka_5k.html">2 AG</a></td></tr>
+<tr><td></td><td style="text-align: right">22</td><td><a href="https://www.dukecitymarathon.com/">Duke City</a></td><td>Marathon<sup class="footnote-reference" id="fr-5-1"><a href="#footnote-5">7</a></sup></td><td></td><td><a href="running/past/2023/duke_city_marathon.html">5:00:37</a></td></tr>
 <tr><td></td><td style="text-align: right">28</td><td><a href="https://aravaiparunning.com/network/javelinajundred/">Javelina Jundred</a></td><td>100 Miler</td><td>✅</td><td><a href="running/past/2023/jj100.html">1 AG, 153 OA</a></td></tr>
 <tr><td>November</td><td style="text-align: right">4</td><td><a href="https://deadmanpeaks.com/">Deadman Peaks</a></td><td>53 Miler</td><td></td><td><a href="running/past/2023/dptr_53m.html">1 (of 1) AG</a></td></tr>
 <tr><td></td><td style="text-align: right">11</td><td><a href="https://newmexicofa50k.wordpress.com/white_mesa_50k/">White Mesa</a></td><td>50k</td><td></td><td><a href="running/past/2023/wmfa50k.html">1 (of 2) OA</a></td></tr>
@@ -2880,46 +2921,46 @@ is my middle name.</p>
 <tr><td></td><td style="text-align: right">23</td><td><a href="https://www.strava.com/activities/10207803545">Ed Thanksgiving's Group Run</a></td><td>Half Marathon</td><td></td><td><a href="running/past/2023/ed_t.html">TODO</a></td></tr>
 <tr><td></td><td style="text-align: right">24</td><td><a href="https://www.facebook.com/events/243804552011808">Black Friday TT</a></td><td>4 miles</td><td>✅</td><td><a href="running/past/2023/black_friday.html">TODO</a></td></tr>
 <tr><td></td><td style="text-align: right">25</td><td><a href="https://ultrasignup.com/register.aspx?did=105828">Bosque Bigfoot</a></td><td>50k</td><td></td><td><a href="running/past/2023/bbf50k.html">TODO</a></td></tr>
-<tr><td>December</td><td style="text-align: right">10</td><td><a href="https://www.tucsonmarathon.com/">Tucson</a></td><td>Marathon</td><td></td><td><em>did not do</em><sup class="footnote-reference"><a href="#3">8</a></sup></td></tr>
+<tr><td>December</td><td style="text-align: right">10</td><td><a href="https://www.tucsonmarathon.com/">Tucson</a></td><td>Marathon</td><td></td><td><em>did not do</em><sup class="footnote-reference" id="fr-3-1"><a href="#footnote-3">8</a></sup></td></tr>
 <tr><td></td><td style="text-align: right">23</td><td><a href="https://www.facebook.com/events/712962300691876/">Grinch Lunch</a></td><td>5k</td><td>✅</td><td><a href="https://www.webscorer.com/race?raceid=338434">3 OA</a>, but no race report yet</td></tr>
 </tbody></table>
-</div>
-<div class="footnote-definition" id="4"><sup class="footnote-definition-label">1</sup>
+</div><hr>
+<ol class="footnote-definition"><li id="footnote-4">
 <p>It's really my "fuck around" block, but I mention the block by name a
 lot on this page, so I've bowdlerized it everywhere but this footnote,
-because I don't want to offend.</p>
-</div>
-<div class="footnote-definition" id="2"><sup class="footnote-definition-label">2</sup>
+because I don't want to offend. <a href="#fr-4-1">↩</a></p>
+</li>
+<li id="footnote-2">
 <p>I was given a dispensation to allow me to run to the Burque
 Brew Crowning, run that event, and then run back and have all my mileage
-count. As such, racked up 50 miles again this year.</p>
-</div>
-<div class="footnote-definition" id="1"><sup class="footnote-definition-label">3</sup>
+count. As such, racked up 50 miles again this year. <a href="#fr-2-1">↩</a></p>
+</li>
+<li id="footnote-1">
 <p>I registered for the Boston Marathon, but did not travel to
 Boston to attend. I could not justify the expense, due to the state of
 my right foot.  It was not sufficiently healthy to allow me to do the
 Tough Ruck and although the Boston Marathon holds a special place in
-my heart, my money was ridiculously tight.</p>
-</div>
-<div class="footnote-definition" id="6"><sup class="footnote-definition-label">4</sup>
+my heart, my money was ridiculously tight. <a href="#fr-1-1">↩</a></p>
+</li>
+<li id="footnote-6">
 <p>I was nervous that my foot might get too uncomfortable on the
 backside, so I chose to return early with
 <a href="https://ultrasignup.com/results_participant.aspx?fname=Labe&amp;lname=Kopelov">Labe</a>. Labe
 had only been back in Albuquerque for a few days and the altitude was
-taking its toll. It was a great time to get to know him better.</p>
-</div>
-<div class="footnote-definition" id="7"><sup class="footnote-definition-label">5</sup>
+taking its toll. It was a great time to get to know him better. <a href="#fr-6-1">↩</a></p>
+</li>
+<li id="footnote-7">
 <p>Rode with my brother-in-law who had a couple flats, so I lost a little
 time. Also, made a wrong turn (or, perhaps, missed a turn). So, I finished
-later than the desired 8 hour cut-off. I'll do better next year.</p>
-</div>
-<div class="footnote-definition" id="8"><sup class="footnote-definition-label">6</sup>
-<p>Although it has no separate ruck division, I chose to race the Tatonka 5k while wearing my pack. It weighed 41.3 pounds.</p>
-</div>
-<div class="footnote-definition" id="5"><sup class="footnote-definition-label">7</sup>
-<p>I was the five hour pace group leader.</p>
-</div>
-<div class="footnote-definition" id="3"><sup class="footnote-definition-label">8</sup>
+later than the desired 8 hour cut-off. I'll do better next year. <a href="#fr-7-1">↩</a></p>
+</li>
+<li id="footnote-8">
+<p>Although it has no separate ruck division, I chose to race the Tatonka 5k while wearing my pack. It weighed 41.3 pounds. <a href="#fr-8-1">↩</a></p>
+</li>
+<li id="footnote-5">
+<p>I was the five hour pace group leader. <a href="#fr-5-1">↩</a></p>
+</li>
+<li id="footnote-3">
 <p>I like the Tucson marathon a lot. However, my step-mother, Jeanne,
 no longer lives in the area, so I don't get to combine the Tucson marathon
 with a chance to visit her.  Additionally, the Tucson marathon is in the
@@ -2928,9 +2969,9 @@ caused a little problem, because I already had an issue with my right foot
 and <em>racing</em> a marathon (to try to get 1st AG)—even without a pack—
 pounds one's feet harder than most trainings. This year, not only do I
 have some lingering issues with my right foot, at the end of the year I
-was strapped both for cash and time, so I chose to stay in Albuquerque.</p>
-</div>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="foothills-fat-ass-1"><a class="header" href="#foothills-fat-ass-1">Foothills Fat Ass</a></h1>
+was strapped both for cash and time, so I chose to stay in Albuquerque. <a href="#fr-3-1">↩</a></p>
+</li>
+</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="foothills-fat-ass-1"><a class="header" href="#foothills-fat-ass-1">Foothills Fat Ass</a></h1>
 <h2 id="overview-14"><a class="header" href="#overview-14">Overview</a></h2>
 <p>Perky and Prince Charming came up with the idea of a <a href="https://newmexicofa50k.wordpress.com/foothills-50k/">New Year's Day
 Fat Ass Run</a> and
@@ -2942,7 +2983,7 @@ have decided to give up on playing the bass.  He's that good.</p>
 <p>And so the Foothills Fat Ass was never to be hosted again, except,
 well although it's inconceivably intimidating to try to fill their
 shoes, I do have <a href="https://www.outsideonline.com/health/running/trail-white-horse/">big
-feet</a><sup class="footnote-reference"><a href="#1">1</a></sup>,
+feet</a><sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup>,
 and "not too smart" would be my middle name, except it's three
 words. Additionally, I have plenty of free time, <strong>since I'm not wasting
 any by trying to learn how to play the bass</strong>. So…</p>
@@ -2998,10 +3039,11 @@ the ground.</p>
 me my seven hour goal</a>.</p>
 <h3 id="plans-for-next-year-1"><a class="header" href="#plans-for-next-year-1">Plans for Next Year</a></h3>
 <p>To finish under seven hours, duh!</p>
-<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
-<p>The article contains a little artistic license; my Cascadias were actually size <em>fourteen</em>.</p>
-</div>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="sandia-snowshoe-race"><a class="header" href="#sandia-snowshoe-race">Sandia Snowshoe Race</a></h1>
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
+<p>The article contains a little artistic license; my Cascadias were actually size <em>fourteen</em>. <a href="#fr-1-1">↩</a></p>
+</li>
+</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="sandia-snowshoe-race"><a class="header" href="#sandia-snowshoe-race">Sandia Snowshoe Race</a></h1>
 <h2 id="overview-15"><a class="header" href="#overview-15">Overview</a></h2>
 <p><a href="https://runsignup.com/Race/Results/121254/IndividualResult/dgfR?resultSetId=363582#U27103220">I</a>
 was the first person sixty years or older to finish.  That meant I won
@@ -3028,7 +3070,7 @@ defroster in specific.</p>
 <p>I saw three cars stuck in snow with various people trying to help get
 the cars out. I'd stop and help, but the snow shovel that I
 kept in my truck for years was stolen a while back and I haven't had the
-money to get a replacement.  Additionally, I <del>kind of</del> had to pee <strong>real badly</strong><sup class="footnote-reference"><a href="#1">1</a></sup>.</p>
+money to get a replacement.  Additionally, I <del>kind of</del> had to pee <strong>real badly</strong><sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup>.</p>
 <h2 id="thank-you"><a class="header" href="#thank-you">Thank You</a></h2>
 <p>Thank you, <a href="https://friendsofthesandias.org/">Friends of the Sandia
 Mountains</a>.  This is an excellent
@@ -3072,13 +3114,14 @@ tell me the outside temperature.  So, by the time to head to the start line
 again I chose to err on the side of caution and wore far too much clothing:
 a long-sleeve T-shirt, arm-bands and a polypro jacket on my chest, running
 shorts and my lightest tights on my legs.</p>
-<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
 <p>Karma. Had I hung around until the end and then volunteered to
 help clean up, I would have had plenty of time for relief.
 Heck, if I had stopped to help with even one of the three vehicles, I could
-have gone then.</p>
-</div>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="resolutions-stink"><a class="header" href="#resolutions-stink">Resolutions Stink!</a></h1>
+have gone then. <a href="#fr-1-1">↩</a></p>
+</li>
+</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="resolutions-stink"><a class="header" href="#resolutions-stink">Resolutions Stink!</a></h1>
 <p><a href="https://www.facebook.com/events/3281713308711524">"Resolutions Stink!"</a> is the
 third stop on the <a href="https://www.abqroadrunners.com/burque-brewery-tour.html">Burque Brew
 Tour</a>. This
@@ -3106,13 +3149,13 @@ and Piggy Style more than made up for it on the corresponding uphills. After
 the turnaround I never caught up with them again, but I had a nice
 view.</p>
 <p>Once again, I knew I was beat and so I ran fast enough to remain in
-third, but I didn't run <em>painfully</em><sup class="footnote-reference"><a href="#1">1</a></sup> fast.  Piggy Style pipped Gene at the end.</p>
+third, but I didn't run <em>painfully</em><sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup> fast.  Piggy Style pipped Gene at the end.</p>
 <p>I had actually meant to bring my iPod touch and listen to my <a href="https://www.youtube.com/playlist?list=PLiHB06ix3lYik1aF8qZpFQN3A1QAtzTFu">Speed
 3</a>
 playlist.  If I had, I <em>suspect</em> I'd have run a <em>little</em> faster, but I
 don't think I could have caught either.  Gene <a href="https://runsignup.com/Race/Results/140087/IndividualResult/bSdZ?resultSetId=362701#U42660677">took second
 <em>overall</em></a>
-in a local (ostensibly<sup class="footnote-reference"><a href="#2">2</a></sup>) 5k earlier this year.</p>
+in a local (ostensibly<sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup>) 5k earlier this year.</p>
 <p>The weather was excellent, so people gathered together outside to
 relax and drink beer. I got to catch up a bit with several of the
 <a href="https://www.abqroadrunners.com/">Albuquerque Road Runners</a>, including
@@ -3126,22 +3169,23 @@ before my <a href="https://www.strava.com/activities/8473162718">hardest trainin
 year</a> was a good idea.
 OTOH, this cements my picture in the urban dictionary next to the
 phrase "boy ain't right."</p>
-<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
 <p>the hot-spot I had on my right foot made itself known by the end
 of the run, but it wasn't even uncomfortable; it was just barely
 present.  The day after this race, I had a 24 mile training run with a 40 pound
-pack.  Even with ibuprofen and acetaminophen my hot-spot screamed.</p>
-</div>
-<div class="footnote-definition" id="2"><sup class="footnote-definition-label">2</sup>
+pack.  Even with ibuprofen and acetaminophen my hot-spot screamed. <a href="#fr-1-1">↩</a></p>
+</li>
+<li id="footnote-2">
 <p>The course was short, so he didn't actually run a 5:24 pace, but
 the dude's out-of-my league fast. I believe my fastest mile—and
 it was just a single mile—ever was just barely under six minutes
 and that was years ago when I was doing more speedwork.  I am not
-worthy.</p>
-</div>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="mt-taylor-winter-quadrathlon"><a class="header" href="#mt-taylor-winter-quadrathlon">Mt. Taylor Winter Quadrathlon</a></h1>
+worthy. <a href="#fr-2-1">↩</a></p>
+</li>
+</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="mt-taylor-winter-quadrathlon"><a class="header" href="#mt-taylor-winter-quadrathlon">Mt. Taylor Winter Quadrathlon</a></h1>
 <h2 id="overview-16"><a class="header" href="#overview-16">Overview</a></h2>
-<p>I didn't "break"<sup class="footnote-reference"><a href="#1">1</a></sup> any bones or tear any ligaments.</p>
+<p>I didn't "break"<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup> any bones or tear any ligaments.</p>
 <p>Last year I <a href="https://runsignup.com/Race/Results/84435/IndividualResult/SBTS?resultSetId=302356#U56959498">finished in slightly over seven
 hours</a>,
 but had a foot injury.  This year, I had a
@@ -3301,15 +3345,16 @@ was overheated by the time I got off my bike.</p>
 I'm not drinking, they could have mine. Only there wasn't free beer.  I'm
 pretty sure they've done that in the past, but I'm not sure they even had
 it last year.  I can't remember, have I mentioned that my memory is bad?</p>
-<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
 <p>During The Quad in 2012, I fell hard while skiing and managed to
 acquire several hairline fractures in the top of my humerus.  When I want
 to be a drama boy, I can say I "broke" my shoulder, but come on; that's
 not what people think of when they hear "break." Turns out, I also tore
 one of my ligaments.  The hairline fractures were well on their way to
-complete healing by the time I saw a doctor.</p>
-</div>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="v-day"><a class="header" href="#v-day">V Day</a></h1>
+complete healing by the time I saw a doctor. <a href="#fr-1-1">↩</a></p>
+</li>
+</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="v-day"><a class="header" href="#v-day">V Day</a></h1>
 <p><a href="https://www.facebook.com/events/5573661939381690">V Day Run</a> is the fourth
 run of the Burque Brewery Tour.</p>
 <p>Overcast, not particularly windy, warm <em>for me</em>. The course was new,
@@ -3355,7 +3400,7 @@ penguin.</p>
 <p>I finished in
 <a href="https://www.athlinks.com/event/166931/results/Event/1033484/Course/2300465/Bib/1629">1:02:35</a>
 for first overall in the 10k ruck.  There were only four other ruckers
-this year and the notable absence was my buddy GEORGE<sup class="footnote-reference"><a href="#1">1</a></sup> who
+this year and the notable absence was my buddy GEORGE<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup> who
 absolutely crushed me last year.  Without GEORGE there to keep me
 honest, I finished <a href="https://www.athlinks.com/event/166931/results/Event/987740/Course/2128097/Bib/884">four seconds slower than last
 year</a>.</p>
@@ -3365,7 +3410,7 @@ and with the <a href="running/past/2023/bmdm">Bataan Memorial Death March</a> on
 I did not write a race report, yet.</p>
 <p>The day before KotH, I visited a local podiatrist. After we agreed
 that my hot-spot symptoms were consistent with a morton's neuroma and
-definitely weren't a stress fracture, he gave me a cortisone shot<sup class="footnote-reference"><a href="#2">2</a></sup>.
+definitely weren't a stress fracture, he gave me a cortisone shot<sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup>.
 The race wasn't long enough to determine whether that helped
 appreciably, but it definitely didn't hurt.</p>
 <p>Other than that, I don't think there's too much to say about my race
@@ -3377,26 +3422,27 @@ the Albuquerque Brewery Tour so that I would win the crown.</p>
 <br/>
 <br/>
 <hr/>
-<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
 <p>I have a few friends whose first name is George, including a
 friend whose father and son are both George. I have such trouble
 remembering names, I tried to pay George to get his wife to rename
 herself to George, but I guess my three dollars isn't good enough for
 that stuck up George.  Anyway, this GEORGE literally sends all of his
 text to everyone in ALL CAPS. He's a huge inspiration to me, because
-HE'S ALWAYS SHOUTING words of encouragement.</p>
-</div>
-<div class="footnote-definition" id="2"><sup class="footnote-definition-label">2</sup>
+HE'S ALWAYS SHOUTING words of encouragement. <a href="#fr-1-1">↩</a></p>
+</li>
+<li id="footnote-2">
 <p>As far as I know, prior to my appointment, I had never met the
 podiatrist (whose name I'm omitting in case he wants to avoid being
 associated with this ne'er-do-well), and yet without prompting he
-volunteered "You trimmed your beard!"</p>
-</div>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="shenanigains"><a class="header" href="#shenanigains">Shenanigains</a></h1>
+volunteered "You trimmed your beard!" <a href="#fr-2-1">↩</a></p>
+</li>
+</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="shenanigains"><a class="header" href="#shenanigains">Shenanigains</a></h1>
 <h2 id="overview-18"><a class="header" href="#overview-18">Overview</a></h2>
 <p>I made six ascents, which put me at 29th out of 31 participants, but I
 beat all the people who stayed home. Oh wait, since there was a limit
-to the number of entrants, my presence kept someone at home<sup class="footnote-reference"><a href="#1">1</a></sup>.</p>
+to the number of entrants, my presence kept someone at home<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup>.</p>
 <h2 id="winners"><a class="header" href="#winners">Winners</a></h2>
 <p>We were all winners, because Julie and Dustin put on great races.
 However, my pen-pal <a href="https://ultrasignup.com/results_participant.aspx?fname=Guillermo&amp;lname=Canedo&amp;age=53">Guillermo
@@ -3416,12 +3462,13 @@ City field), since Kevin Stewart is ostensibly from Carmel Maine.</p>
 <br/>
 <br/>
 <hr/>
-<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
 <p>Just kidding.  I explained my predicament to the race directors
 and made sure that I was the last person on the wait-list, precisely
-because I <em>didn't</em> want to tie up a slot.</p>
-</div>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="bataan-memorial-death-march"><a class="header" href="#bataan-memorial-death-march">Bataan Memorial Death March</a></h1>
+because I <em>didn't</em> want to tie up a slot. <a href="#fr-1-1">↩</a></p>
+</li>
+</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="bataan-memorial-death-march"><a class="header" href="#bataan-memorial-death-march">Bataan Memorial Death March</a></h1>
 <p>I've already created a <a href="running/past/2023/../../../bataan.html">nascent Bataan section</a> that
 briefly mentions both the Death March and the Memorial.</p>
 <h2 id="event-march-race"><a class="header" href="#event-march-race">Event, March, Race</a></h2>
@@ -3432,7 +3479,7 @@ from the web site this year.</p>
 <p>Historically, there were many educational activities to participate in
 on Saturday, however the most powerful was when the veterans of the
 Bataan Death March would speak and answer questions. Sunday is a march
-for most, but a race for some<sup class="footnote-reference"><a href="#1">1</a></sup>.</p>
+for most, but a race for some<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup>.</p>
 <h3 id="saturday"><a class="header" href="#saturday">Saturday</a></h3>
 <p>Prior to 2023, the last time the Bataan Memorial Death March was held
 was 2019 and by then although there were other Bataan Death March
@@ -3482,7 +3529,7 @@ first for some.</p>
 <p>There were only three of us at the Motel-6 Telshor: Jeff, Iris and
 myself.  Still, we chose to go in two vehicles, my wife's van and
 Jeff's parents' car.</p>
-<p>Jeff and I got up at 3:20<sup class="footnote-reference"><a href="#2">2</a></sup> so we could be driving by 3:50.  We were
+<p>Jeff and I got up at 3:20<sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup> so we could be driving by 3:50.  We were
 told to be at the gates by 4:30 and even though we didn't get on the
 highway quite as smoothly as I had anticipated (I had forgotten that
 everyone would be tired and that we hadn't done this in four years),
@@ -3598,17 +3645,18 @@ report and I'll mention you, too.</p>
 <br/>
 <br/>
 <hr/>
-<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
 <p>From an outsider's perspective, the whole concept of a "Memorial Death
 March" may seem disrespectful. It's not. Similarly,
-racing—rather than marching—is also not disrespectful.</p>
-</div>
-<div class="footnote-definition" id="2"><sup class="footnote-definition-label">2</sup>
+racing—rather than marching—is also not disrespectful. <a href="#fr-1-1">↩</a></p>
+</li>
+<li id="footnote-2">
 <p>Iris had her own room, so I don't know what time she got up.  I'm very
 proud of her. The day before she asked what time she needed to be in the
-lobby. I told her 3:50 and we both knew that she'd be there then. Yay!</p>
-</div>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="my-race-1"><a class="header" href="#my-race-1">My <em>Race</em></a></h1>
+lobby. I told her 3:50 and we both knew that she'd be there then. Yay! <a href="#fr-2-1">↩</a></p>
+</li>
+</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="my-race-1"><a class="header" href="#my-race-1">My <em>Race</em></a></h1>
 <h2 id="zachary-carnahan-won"><a class="header" href="#zachary-carnahan-won">Zachary Carnahan Won</a></h2>
 <p>Zachary Carnahan <a href="https://bataanmemorialdeathmarch.itsyourrace.com/Results/6574/2023/115251/1771">won in
 4:40:41.221</a>. I
@@ -3844,24 +3892,25 @@ this year.</p>
 <p>Are you shitting me?</p>
 </blockquote>
 <p>I was quite proud that my sister had thought of this way to yank my
-chain<sup class="footnote-reference"><a href="#1">1</a></sup>.</p>
+chain<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup>.</p>
 <p>Nope. Oh well, there's always next year.</p>
 <br/>
 <br/>
 <br/>
 <hr/>
-<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
 <p>I figured she was still upset from when we were young adults
 and I told her matter-of-factly that cat's can't see through glass and
-she believed me<sup class="footnote-reference"><a href="#2">2</a></sup>.</p>
-</div>
-<div class="footnote-definition" id="2"><sup class="footnote-definition-label">2</sup>
+she believed me<sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup>. <a href="#fr-1-1">↩</a></p>
+</li>
+<li id="footnote-2">
 <p>That was payback from when we were both kids.  She
 told me she was learning about exponents and I unskillfully lied that I
 already knew what they were. She offered that they were the king of
-France. "Yeah, I knew that." I lied again.</p>
-</div>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="academy-of-pain"><a class="header" href="#academy-of-pain">Academy of Pain</a></h1>
+France. "Yeah, I knew that." I lied again. <a href="#fr-2-1">↩</a></p>
+</li>
+</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="academy-of-pain"><a class="header" href="#academy-of-pain">Academy of Pain</a></h1>
 <h2 id="overview-19"><a class="header" href="#overview-19">Overview</a></h2>
 <p>I ran a mostly leisurely
 <a href="https://www.strava.com/activities/8777534313">50.21</a> miles in the
@@ -4006,7 +4055,7 @@ peeled each of the Jolly Ranchers before stuffing them into my mouth.</p>
 <p>I temporarily put my Albuquerque Road Runners crop top back on so I
 could use the library's facilities, then took it off, put it back in
 my truck, double checked that my truck keys were in a zippered pocket
-that I had zippered shut<sup class="footnote-reference"><a href="#1">1</a></sup> and headed out for more fun.</p>
+that I had zippered shut<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup> and headed out for more fun.</p>
 <h2 id="final-loops"><a class="header" href="#final-loops">Final "loops"</a></h2>
 <p>I had done 32 miles now, which meant if did five more loops I would be
 about a mile and a half shy of fifty miles.  I had plenty of time to
@@ -4044,7 +4093,8 @@ I'm happy with my performance and will now see if I can muster the
 resources to enter.</p>
 <p>Thank you, Julie!</p>
 <hr/>
-<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
 <p>Last year I lost my truck keys in the Cherry Hills Library
 parking lot after doing an AA lap with my pack.  It wasn't during
 Academy of Pain, but it was the same truck in the same parking lot and
@@ -4052,9 +4102,9 @@ hence it was a painful memory.  Speaking of painful memories, I still
 remember the time at the Cedro Peak 50k that I patted myself on the
 back for remembering to put my keys in a zippered pocket only to
 forget to actually close the pocket.  Of course they fell out. Luckily,
-my sister was able to find them for me.  Thanks, Marcia!</p>
-</div>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="burque-brew-tour-crowning"><a class="header" href="#burque-brew-tour-crowning">Burque Brew Tour Crowning</a></h1>
+my sister was able to find them for me.  Thanks, Marcia! <a href="#fr-1-1">↩</a></p>
+</li>
+</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="burque-brew-tour-crowning"><a class="header" href="#burque-brew-tour-crowning">Burque Brew Tour Crowning</a></h1>
 <p>The <a href="https://www.facebook.com/events/1307112846691234">Burque Brew Tour
 Crowning</a> is social event
 with a little race prepended so the guests have something to do before the
@@ -4088,7 +4138,7 @@ this year, but that seems unlikely.</p>
 heart set on cranking out an easy fifty miles. I'm pretty darned sure
 that if I ran <em>too quickly</em> I'd stress my legs too much and the
 remaining 27.4 miles I needed to finish post-race would be annoying
-and I'm a big baby<sup class="footnote-reference"><a href="#1">1</a></sup>.  What I didn't know was what would be too
+and I'm a big baby<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup>.  What I didn't know was what would be too
 quickly in this context.</p>
 <p>Luckily, I didn't find out. I ran quickly enough to <a href="https://www.webscorer.com/racedetails?raceid=309537&amp;did=376999&amp;gender=M">win a free
 beer</a>
@@ -4099,12 +4149,13 @@ subsume my Crowning Race. Look around mile 20.  In theory, I averaged
 about an 8:10 pace (minutes per mile).</p>
 <p>Whee!</p>
 <hr/>
-<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
 <p>Technically, I'm a
 <a href="https://en.wikipedia.org/wiki/Satisficing">satisficer</a>, but I'm too lazy to
-type so many letters.</p>
-</div>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="berta-fun-run"><a class="header" href="#berta-fun-run">Berta Fun Run</a></h1>
+type so many letters. <a href="#fr-1-1">↩</a></p>
+</li>
+</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="berta-fun-run"><a class="header" href="#berta-fun-run">Berta Fun Run</a></h1>
 <h2 id="background-2"><a class="header" href="#background-2">Background</a></h2>
 <p>This was the final event in the &gt;&gt;Albuquerque Road Runners
 <a href="https://www.abqroadrunners.com/fun-runs-freeforall.html">Free<i>for</i>All
@@ -4219,7 +4270,7 @@ approaches, or was it <a href="https://www.youtube.com/watch?v=Z55Tf7M1tzQ">some
 else</a>?</p>
 </details>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="rigged"><a class="header" href="#rigged">Rigged!</a></h1>
-<p>The Cocodona 250 was rigged<sup class="footnote-reference"><a href="#1">1</a></sup> in my favor, and thus I won. At least with
+<p>The Cocodona 250 was rigged<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup> in my favor, and thus I won. At least with
 respect to seeing venomous animals. Unfortunately, I currently only
 have a photo of two of the trifecta.</p>
 <p>Initially, I chose to have my phone off rather than in airplane
@@ -4312,16 +4363,17 @@ seeing a gila monster, but I do have a poor memory. I have seen
 centipedes every once in a while, but there's no fucking way I'd see
 all three in a single race if it weren't rigged. Come on! I'm not
 stupid!</p>
-<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
 <p>Pretty much every online poker site is accused of being juiced,
 where they rig the game in favor of someone or other for …
 reasons. I actually play on the site I created and I play well
 enough that I have very good statistics. The people I play with
 know (I think!) that I’d never rig it or cheat in any way, but
 they will write “rigged!” when someone gets especially lucky,
-especially if that someone is I.</p>
-</div>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="western-states"><a class="header" href="#western-states">Western States</a></h1>
+especially if that someone is I. <a href="#fr-1-1">↩</a></p>
+</li>
+</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="western-states"><a class="header" href="#western-states">Western States</a></h1>
 <p>This one will take a little bit of yak shaving to write up.  In the meantime,
 here are some notes to myself.</p>
 <ul>
@@ -4393,7 +4445,7 @@ middle of a heat wave, and the sun was shining.</p>
 <p>Although an annual tradition, we knew—with this
 temperature—we'd be few. After the weather forecast, only two
 others had expressed an interest and one of them, Messenger of Doom,
-had been up late the night before<sup class="footnote-reference"><a href="#1">1</a></sup>.</p>
+had been up late the night before<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup>.</p>
 <p>It's Vegas. I played the odds… and lost.  Her text was polite, but she
 was a little surprised and mildly disappointed that we had left without her.
 I gave vague directions to Blues, then "ran" back for her.</p>
@@ -4406,11 +4458,11 @@ and eventually wondering where Blues was.</p>
      width=204.8x
      style="float: left; margin-right: 10px;" /></p>
 <p>We finished our lap and GamboMouse was waiting for us. and for
-Blues<sup class="footnote-reference"><a href="#2">2</a></sup>. and for mickdog<sup class="footnote-reference"><a href="#3">3</a></sup>. It was a complete success if you
+Blues<sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup>. and for mickdog<sup class="footnote-reference" id="fr-3-1"><a href="#footnote-3">3</a></sup>. It was a complete success if you
 ignore the fact that we lost two of the five participants and that I
 didn't actually bring the <a href="https://dgtzuqphqg23d.cloudfront.net/MotqkwPx7Sp0nScjvzj4R95XfBBeUpxZqJxZnQYz3EU-2048x1536.jpg">BARGE Fun Run bottle
 openers</a>
-that I had promised to bring<sup class="footnote-reference"><a href="#4">4</a></sup>.</p>
+that I had promised to bring<sup class="footnote-reference" id="fr-4-1"><a href="#footnote-4">4</a></sup>.</p>
 <p>I can't wait until next year!</p>
 <h2 id="background-3"><a class="header" href="#background-3">Background</a></h2>
 <p><a href="https://www.barge.org/">BARGE</a> is a gathering of people who have an
@@ -4430,13 +4482,13 @@ Run.  It wasn't widely announced and nobody—not even
 Ron—attended. He liked running, but early morning and heat were
 not for him. Not that year.</p>
 <p><a href="https://www.youtube.com/watch?v=w82CqjaDKmA">Perseverance pays</a> and
-the following year the Fun Run was once again announced<sup class="footnote-reference"><a href="#6">5</a></sup> and this time
+the following year the Fun Run was once again announced<sup class="footnote-reference" id="fr-6-1"><a href="#footnote-6">5</a></sup> and this time
 it was actually held.  Turns out BARGE already included a few runners
 (I certainly wasn't one of them though!).  Who knew?</p>
 <p>In 2009, I had been hiking for a few years and thought it would be fun
 to show up for the fun run and attempt to run a mile with a few of my
 fellow BARGErs even though I had never (to my knowledge) run a mile
-non-stop in my life<sup class="footnote-reference"><a href="#5">6</a></sup>.</p>
+non-stop in my life<sup class="footnote-reference" id="fr-5-1"><a href="#footnote-5">6</a></sup>.</p>
 <p>I <em>guessed</em> my fitness from hiking would be enough to allow me to do
 that, but I honestly knew nothing about running and as BARGE 2009
 approached, I got nervous.  A family member of a friend had a seizure
@@ -4450,31 +4502,6 @@ Snowshoe</a>, but the
 <em>funnest</em> run I do each year, well, now you know…the <em>rest</em> of
 the story.</p>
 <hr/>
-<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
-<p>Specifically, he was <a href="https://www.barge.org/barge-2023">finishing
-eighth</a>, which was "in the money",
-in the Pot Limit Omaha tournament.</p>
-</div>
-<div class="footnote-definition" id="2"><sup class="footnote-definition-label">2</sup>
-<p>My directions were too vague or perhaps outright misleading.
-Bob continued walking on Joe Brown until he got to Sahara. I called him
-from the finish line to find out where he was, then ran back to tell him
-that unlike normal race directors, I <em>would</em> charge him for the extra
-mileage, but I sobered up out before I got to him.</p>
-</div>
-<div class="footnote-definition" id="3"><sup class="footnote-definition-label">3</sup>
-<p>I did not have mickdog's contact info, but I wasn't worried.
-GamboMouse said they stayed together up until the last tenth of a mile
-or so.  He must have gone in through a different door.  Since he must have,
-that is indeed what he had done.</p>
-</div>
-<div class="footnote-definition" id="4"><sup class="footnote-definition-label">4</sup>
-<p>I did <a href="https://www.strava.com/activities/9532136969">eventually send
-them</a>.</p>
-</div>
-<div class="footnote-definition" id="6"><sup class="footnote-definition-label">5</sup>
-<p>On July 20th, 2009 Ron sent:</p>
-</div>
 <blockquote>
 <p>Folks, <br/>
 <br/>
@@ -4488,13 +4515,39 @@ There is no sign up, no participation fee, and no liability insurance.  I recomm
 <br/>
 -R</p>
 </blockquote>
-<div class="footnote-definition" id="5"><sup class="footnote-definition-label">6</sup>
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
+<p>Specifically, he was <a href="https://www.barge.org/barge-2023">finishing
+eighth</a>, which was "in the money",
+in the Pot Limit Omaha tournament. <a href="#fr-1-1">↩</a></p>
+</li>
+<li id="footnote-2">
+<p>My directions were too vague or perhaps outright misleading.
+Bob continued walking on Joe Brown until he got to Sahara. I called him
+from the finish line to find out where he was, then ran back to tell him
+that unlike normal race directors, I <em>would</em> charge him for the extra
+mileage, but I sobered up out before I got to him. <a href="#fr-2-1">↩</a></p>
+</li>
+<li id="footnote-3">
+<p>I did not have mickdog's contact info, but I wasn't worried.
+GamboMouse said they stayed together up until the last tenth of a mile
+or so.  He must have gone in through a different door.  Since he must have,
+that is indeed what he had done. <a href="#fr-3-1">↩</a></p>
+</li>
+<li id="footnote-4">
+<p>I did <a href="https://www.strava.com/activities/9532136969">eventually send
+them</a>. <a href="#fr-4-1">↩</a></p>
+</li>
+<li id="footnote-6">
+<p>On July 20th, 2009 Ron sent: <a href="#fr-6-1">↩</a></p>
+</li>
+<li id="footnote-5">
 <p>When they tried to get us to do this in elementary school, I walked part
 of it. I did, however, play a lot of ultimate Frisbee in high school and that
 involves a lot of running, but with time to catch one's breath in between, at
-least at my level of skill.</p>
-</div>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="tatonka-5k-2023"><a class="header" href="#tatonka-5k-2023">Tatonka 5k 2023</a></h1>
+least at my level of skill. <a href="#fr-5-1">↩</a></p>
+</li>
+</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="tatonka-5k-2023"><a class="header" href="#tatonka-5k-2023">Tatonka 5k 2023</a></h1>
 <h2 id="overview-20"><a class="header" href="#overview-20">Overview</a></h2>
 <p>This was the eighth edition of the <a href="https://www.core-crew.com/tatonka-5-10k-run">Tatonka 5k "Fun
 Run"</a>. This was my second
@@ -4520,7 +4573,7 @@ Physics at <a href="https://www.westpoint.edu/">USMA</a>, which is where Iris,
 one of our (my wife's and my) twin daughters is going to school. Don
 introduced me to Amy, who was to take first in the female 50-100 age
 group.</p>
-<p>There are only two age groups: 10-49 and 50-100<sup class="footnote-reference"><a href="#1">1</a></sup>. Pre-race I ran
+<p>There are only two age groups: 10-49 and 50-100<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup>. Pre-race I ran
 into my friend
 <a href="https://ultrasignup.com/results_participant.aspx?fname=George&amp;lname=Sefzik">George</a>
 and his son George.  George is 48, while George is 18. I don't
@@ -4545,7 +4598,7 @@ the race was held in the <a href="https://nmvetsmemorial.org/">New
 Mexico Veterans Memorial</a>. This year,
 however it was much more twisty, because it was basically two 1.55
 mile loops as opposed to last year when it was approximately three
-1.16 mile loops<sup class="footnote-reference"><a href="#2">2</a></sup>.</p>
+1.16 mile loops<sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup>.</p>
 <p>This year, a combination of a foot injury and a rib injury kept me
 from running, much less running with a pack, for the last several
 months.  As such, I knew I was out of shape, so I pulled out all the
@@ -4580,15 +4633,16 @@ yet… it's growing.</p>
 <br/>
 <br/>
 <br/>
-<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
 <p>I plan to keep doing this for forty one more years, just to
 cause them trouble when I'm 101. Thinking of you,
-<a href="https://www.youtube.com/watch?v=v2IKpjr5rqU">Ben</a>.</p>
-</div>
-<div class="footnote-definition" id="2"><sup class="footnote-definition-label">2</sup>
-<p>Yup, last year's course was a little long, but this year's was just right.</p>
-</div>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="duke-city-marathon-2023"><a class="header" href="#duke-city-marathon-2023">Duke City Marathon 2023</a></h1>
+<a href="https://www.youtube.com/watch?v=v2IKpjr5rqU">Ben</a>. <a href="#fr-1-1">↩</a></p>
+</li>
+<li id="footnote-2">
+<p>Yup, last year's course was a little long, but this year's was just right. <a href="#fr-2-1">↩</a></p>
+</li>
+</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="duke-city-marathon-2023"><a class="header" href="#duke-city-marathon-2023">Duke City Marathon 2023</a></h1>
 <h2 id="overview-21"><a class="header" href="#overview-21">Overview</a></h2>
 <p>My first twenty six
 <a href="https://www.strava.com/activities/10086484966">miles</a> were much more
@@ -4737,15 +4791,16 @@ like ramen, that need to be heated for a while in hot water, and to
 heat them, a small propane stove and pan.</p>
 <p>I don't think <em>any</em> of the heated stuff got consumed, although I do think a
 bottle of <a href="https://www.youtube.com/watch?v=MxV-Nyhw_Qs&amp;t=135s">Pepsi</a> was taken.
-I can't be sure, because <em>I</em> was on drugs<sup class="footnote-reference"><a href="#1">1</a></sup>.</p>
+I can't be sure, because <em>I</em> was on drugs<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup>.</p>
 <br/>
 <br/>
 <br/>
 <hr/>
-<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
-<p><a href="https://github.com/ctm/diet/blob/master/log/2023.txt#L13405-L13406">caffeine</a> and <a href="https://theconversation.com/the-runners-high-may-result-from-molecules-called-cannabinoids-the-bodys-own-version-of-thc-and-cbd-170796">endocannabinoids</a></p>
-</div>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="socorro-souls-of-sorrow-2023"><a class="header" href="#socorro-souls-of-sorrow-2023">Socorro Souls of Sorrow 2023</a></h1>
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
+<p><a href="https://github.com/ctm/diet/blob/master/log/2023.txt#L13405-L13406">caffeine</a> and <a href="https://theconversation.com/the-runners-high-may-result-from-molecules-called-cannabinoids-the-bodys-own-version-of-thc-and-cbd-170796">endocannabinoids</a> <a href="#fr-1-1">↩</a></p>
+</li>
+</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="socorro-souls-of-sorrow-2023"><a class="header" href="#socorro-souls-of-sorrow-2023">Socorro Souls of Sorrow 2023</a></h1>
 <p>TODO</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="ed-thanksgivings-group-run-2023"><a class="header" href="#ed-thanksgivings-group-run-2023">Ed Thanksgiving's Group Run 2023</a></h1>
 <p>TODO</p>
@@ -4970,8 +5025,8 @@ write more programming prose than running prose, little of it shows
 up here.</p>
 <p>However, before mb2, I created some semi-notable software,
 including
-<a href="https://en.wikipedia.org/wiki/Executor_(software)">Executor</a><sup class="footnote-reference"><a href="#1">1</a></sup> and
-<a href="https://ctm.github.io/docs/players_manual/thanks/multibot.html">multibot</a><sup class="footnote-reference"><a href="#2">2</a></sup>. Executor gave <a href="https://en.wikipedia.org/wiki/Sam_Lantinga">Sam
+<a href="https://en.wikipedia.org/wiki/Executor_(software)">Executor</a><sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup> and
+<a href="https://ctm.github.io/docs/players_manual/thanks/multibot.html">multibot</a><sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup>. Executor gave <a href="https://en.wikipedia.org/wiki/Sam_Lantinga">Sam
 Lantinga</a> an excuse to
 write <a href="https://libsdl.org/">SDL</a>. Although Sam probably would have
 created SDL regardless, I still got a nice shout-out in <a href="https://libsdl.org/credits.php">SDL's
@@ -4979,20 +5034,21 @@ Credits</a>.</p>
 <p>For now, I'll just add a page to the programming section every once in
 a while, typically when I've already written the text as an email for one
 reason or another.</p>
-<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
 <p>Steve Jobs called me at home when I was in bed with pneumonia
 and <a href="programming/blown/steve-jobs.html">I did not handle the call well</a>.
 Additionally, <a href="https://www.stone.com/barlow/">John Perry Barlow</a> used
 Executor but his literal first words to me in person were "You're an
-asshole."</p>
-</div>
-<div class="footnote-definition" id="2"><sup class="footnote-definition-label">2</sup>
+asshole." <a href="#fr-1-1">↩</a></p>
+</li>
+<li id="footnote-2">
 <p>Multibot was the first software to deal multi-table poker tournaments on
 the internet. You won't find it via a web search though, because I sold it
 to Poker School Online where it was used for years. If there's interest, I'll
-write more on multibot.</p>
-</div>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="pdp-8"><a class="header" href="#pdp-8">PDP-8</a></h1>
+write more on multibot. <a href="#fr-2-1">↩</a></p>
+</li>
+</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="pdp-8"><a class="header" href="#pdp-8">PDP-8</a></h1>
 <p>I went to Oyster River High School in Durham New Hampshire. At the
 time, ORHS had a
 <a href="http://bitsavers.trailing-edge.com/pdf/dec/pdp8/software/DEC-08-NGCC-D_PaperTapeSW.pdf">PDP-8/e</a>.
@@ -5245,7 +5301,7 @@ source code.</p>
 to deal multi-tab;e poker tournaments (so, e.g., 23 players would
 initially start out on three separate tables: two with eight players
 and one with seven). On Halloween night, 1998, <del>on a handful of cheap
-amphetimines</del><sup class="footnote-reference"><a href="#1">1</a></sup> I pulled the trigger and wrote the core of
+amphetimines</del><sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup> I pulled the trigger and wrote the core of
 <a href="https://ctm.github.io/docs/players_manual/thanks/multibot.html">multibot</a>.</p>
 <p>Although what I wrote on Halloween was in C, that was a
 proof-of-concept that I rewrote in Objective-C.  Why? Because I wanted
@@ -5257,10 +5313,11 @@ School Online.</p>
 January 2021 and I founded <a href="https://craftpoker.com/">Craft Poker Co.</a>.</p>
 <p>Anyway, I have a bunch of poker stories to share. If there's interest,
 I'll start populating this chapter.</p>
-<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
-<p><a href="https://youtu.be/aCcf65G9TLc?t=191">Bluegrass Widow</a></p>
-</div>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="wsop-chip-bet"><a class="header" href="#wsop-chip-bet">WSOP Chip Bet</a></h1>
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
+<p><a href="https://youtu.be/aCcf65G9TLc?t=191">Bluegrass Widow</a> <a href="#fr-1-1">↩</a></p>
+</li>
+</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="wsop-chip-bet"><a class="header" href="#wsop-chip-bet">WSOP Chip Bet</a></h1>
 <p>This one time, at <del>band camp</del> <a href="https://www.barge.org/">BARGE</a>, after
 <a href="https://en.wikipedia.org/wiki/Greg_Raymer">Greg Raymer</a> had won the
 World Series of Poker main event, both he and <a href="https://en.wikipedia.org/wiki/Chris_Ferguson">"Jesus"
@@ -5268,13 +5325,13 @@ Ferguson</a> were present.
 Jesus brought with him a bunch of custom poker chips that had his face
 on them. He was generously giving them away to BARGErs.</p>
 <p>I grabbed one of those custom chips and took it over to Greg, asking
-him to write on it "To D.H., Chris". In the spirit of BARGE<sup class="footnote-reference"><a href="#1">1</a></sup>, once I
+him to write on it "To D.H., Chris". In the spirit of BARGE<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup>, once I
 explained why I wanted it so inscribed, he cheerfully did so.</p>
 <p>My plan was to prominently use the chip as a card protector and see if
 I could find a fellow BARGEr to comment on it in any way.  Once the
 ball was rolling, I'd try to maneuver the conversation to the point
 where I could say something about having the chip signed by the
-<strong>current</strong><sup class="footnote-reference"><a href="#2">2</a></sup> WSOP champion.</p>
+<strong>current</strong><sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup> WSOP champion.</p>
 <p>At least in my mind, the pigeon would then respond with something akin
 to, "No, he won a few years ago" or "No, that's the 2000 World
 Champion." My goal was to—after a little back and
@@ -5290,20 +5347,21 @@ and preventing my r00l.</p>
 <br/>
 <br/>
 <hr/>
-<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
-<p>What I describe here is (attempted) hijinks between friends.
-The goal would have been for the bet amount to be just enough to cause
-the victim to sting from embarrassment, <a href="https://www.quotes.net/mquote/39860">with an ear full of
-cider</a>.</p>
-</div>
-<div class="footnote-definition" id="2"><sup class="footnote-definition-label">2</sup>
-<p>Or perhaps it was the prior year's; it's been too long or me
-to remember exactly which BARGE this occurred at, but my guess is</p>
-</div>
 <ol start="2004">
 <li></li>
 </ol>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="bataan"><a class="header" href="#bataan">Bataan</a></h1>
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
+<p>What I describe here is (attempted) hijinks between friends.
+The goal would have been for the bet amount to be just enough to cause
+the victim to sting from embarrassment, <a href="https://www.quotes.net/mquote/39860">with an ear full of
+cider</a>. <a href="#fr-1-1">↩</a></p>
+</li>
+<li id="footnote-2">
+<p>Or perhaps it was the prior year's; it's been too long or me
+to remember exactly which BARGE this occurred at, but my guess is <a href="#fr-2-1">↩</a></p>
+</li>
+</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="bataan"><a class="header" href="#bataan">Bataan</a></h1>
 <p>My interest in the Bataan Death March came from being a participant in the
 Bataan <strong>Memorial</strong> Death March (BMDM).  I learned about the BMDM due to
 a press release about the former governor of New Mexico, Gary Johnson.  BMDM
@@ -5325,37 +5383,38 @@ talk.</p>
 <p>Here are a few books that document the Bataan Death March or other atrocities in the Philippines:</p>
 <ul>
 <li><a href="https://www.goodreads.com/book/show/693429.Bataan_Death_March">Bataan Death March: A Soldier's Story</a>[^1]</li>
-<li><a href="https://www.currentargus.com/story/life/2015/11/10/familys-legacy-immortalized-book/75261288/">Charlie</a><sup class="footnote-reference"><a href="#2">1</a></sup></li>
+<li><a href="https://www.currentargus.com/story/life/2015/11/10/familys-legacy-immortalized-book/75261288/">Charlie</a><sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">1</a></sup></li>
 <li><a href="https://www.goodreads.com/book/show/94799.Ghost_Soldiers">Ghost Soldiers</a></li>
 <li><a href="https://www.goodreads.com/book/show/572131.Last_Man_Out">Last Man Out</a></li>
 <li><a href="https://www.goodreads.com/book/show/1493007.No_Uncle_Sam">No Uncle Sam</a></li>
 <li><a href="https://www.goodreads.com/book/show/693426.Some_Survived">Some Survived</a></li>
-<li><a href="https://www.goodreads.com/book/show/6455003-tears-in-the-darkness">Tears in the Darkness</a><sup class="footnote-reference"><a href="#3">2</a></sup></li>
+<li><a href="https://www.goodreads.com/book/show/6455003-tears-in-the-darkness">Tears in the Darkness</a><sup class="footnote-reference" id="fr-3-1"><a href="#footnote-3">2</a></sup></li>
 <li><a href="https://www.goodreads.com/book/show/30055478-tell-me-another-war-story">Tell Me Another War Story</a></li>
-<li><a href="https://www.goodreads.com/book/show/29506650-the-naked-soldier">The Naked Soldier</a><sup class="footnote-reference"><a href="#4">3</a></sup></li>
+<li><a href="https://www.goodreads.com/book/show/29506650-the-naked-soldier">The Naked Soldier</a><sup class="footnote-reference" id="fr-4-1"><a href="#footnote-4">3</a></sup></li>
 </ul>
 <p>[^1] The author, <a href="https://www.youtube.com/watch?v=u0HD6eEcViU">James
 Bollich</a>, was one of the
 two Bataan Death March survivors to speak at the Bataan <strong>Memorial</strong>
 Death March in 2019. The other was <a href="https://www.youtube.com/watch?v=EgovVp4pM70">Ben
 Skardon</a>.</p>
-<div class="footnote-definition" id="2"><sup class="footnote-definition-label">1</sup>
+<hr>
+<ol class="footnote-definition"><li id="footnote-2">
 <p><u>Charlie / To Bataan and Back: The Journey of Little Boy
 Blue</u> by Joanna James Sieberg has not had enough copies printed
 o show up in goodreads, on Amazon or in a web search.   I
-met Joanna and she gave me one of her copies.</p>
-</div>
-<div class="footnote-definition" id="3"><sup class="footnote-definition-label">2</sup>
-<p>Ben Steele is the protagonist.</p>
-</div>
-<div class="footnote-definition" id="4"><sup class="footnote-definition-label">3</sup>
+met Joanna and she gave me one of her copies. <a href="#fr-2-1">↩</a></p>
+</li>
+<li id="footnote-3">
+<p>Ben Steele is the protagonist. <a href="#fr-3-1">↩</a></p>
+</li>
+<li id="footnote-4">
 <p>Jesse was in his nineties and still working when he addressed
 his audience at the White Sands Missile Range. He was <a href="https://www.nbcnews.com/news/asian-america/filipino-wwii-veterans-advocate-survivor-bataan-death-march-falls-cancer-n558256">95 when he
 died</a>. As
 mentioned in his obituary, he did not like the <a href="https://en.wikipedia.org/wiki/Rescission_Act_of_1946">Recission
-Act</a>.</p>
-</div>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="memorial-death-march"><a class="header" href="#memorial-death-march">Memorial Death March</a></h1>
+Act</a>. <a href="#fr-4-1">↩</a></p>
+</li>
+</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="memorial-death-march"><a class="header" href="#memorial-death-march">Memorial Death March</a></h1>
 <p>For now, most of my Bataan Memorial Death March material is in <a href="https://github.com/ctm/Bataan-Memorial-Death-March#bataan-memorial-death-march-training">its
 own GitHub
 repository</a>. However,
@@ -5496,6 +5555,7 @@ do anything he asks me to do.</p>
             window.setTimeout(window.print, 100);
         });
         </script>
+
 
     </div>
     </body>

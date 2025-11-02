@@ -24,28 +24,41 @@
         <link rel="stylesheet" href="../fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="../highlight.css">
-        <link rel="stylesheet" href="../tomorrow-night.css">
-        <link rel="stylesheet" href="../ayu-highlight.css">
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
 
-        <!-- Provide site root to javascript -->
+        <!-- Provide site root and default themes to javascript -->
         <script>
-            var path_to_root = "../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc.js"></script>
     </head>
     <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
     <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
-                var theme = localStorage.getItem('mdbook-theme');
-                var sidebar = localStorage.getItem('mdbook-sidebar');
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
 
                 if (theme.startsWith('"') && theme.endsWith('"')) {
                     localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
@@ -59,7 +72,8 @@
 
         <!-- Set the theme before any content is loaded, prevents flash -->
         <script>
-            var theme;
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             const html = document.documentElement;
@@ -72,17 +86,20 @@
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var sidebar = null;
-            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -109,13 +126,14 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
                     </div>
@@ -132,7 +150,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -157,13 +180,14 @@
 So, for completeness, these are, I believe, all the times I've started
 a race and not officially finished:</p>
 <div class="table-wrapper"><table><thead><tr><th>Year</th><th>Race</th><th>Reason</th></tr></thead><tbody>
-<tr><td>2010</td><td>Deadman Peaks Trail Run 50 miler</td><td>WNATF: Was Not Allowed To Finish[^1]</td></tr>
+<tr><td>2010</td><td>Deadman Peaks Trail Run 50 miler</td><td>WNATF: Was Not Allowed To Finish<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup></td></tr>
 <tr><td>2014</td><td>Cedro Peak 45 miler</td><td>Flu caught up with me</td></tr>
-<tr><td>2015</td><td>Western States</td><td>SAR injury<sup class="footnote-reference"><a href="#2">1</a></sup></td></tr>
+<tr><td>2015</td><td>Western States</td><td>SAR injury<sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup></td></tr>
 <tr><td>2015</td><td>Leadville</td><td>Same SAR injury + didn't pay attention to cutoffs</td></tr>
 <tr><td>2016</td><td>Bighorn 100 Miler</td><td>Trekking pole broke</td></tr>
 <tr><td>2016</td><td>Fat Dog 120</td><td>Different trekking pole broke + bad nutrition; <a href="https://runningjohn.blogspot.com/2016/08/2016-mountain-madness-fat-dog-120-race.html">finished but too late</a></td></tr>
 <tr><td>2019</td><td>Foothills 50k</td><td>White-out blizzard (nobody finished)</td></tr>
+<tr><td>2025</td><td>Bigfoot 200</td><td>Started injured, fell at mile five, breaking a trekking pole<sup class="footnote-reference" id="fr-3-1"><a href="#footnote-3">3</a></sup></td></tr>
 </tbody></table>
 </div>
 <p>Eventually, I'll write up a race report for each of those, because I
@@ -188,17 +212,19 @@ was not in good enough shape for me to do the Tough Ruck the day
 before.  Additionally, although I had planned on taking my family
 with me to Boston for an east-coast vacation, that plan changed when
 my daughter Iris was appointed to the United States Military Academy.
-I'll be taking our family to her acceptance day ceremony in August,
+I took our family to her acceptance day ceremony in August,
 instead.
 <br/>
 <br/>
 <br/></p>
-<hr/>
-[^1]: It was the Race Director's first race and my first ultra.  I barely
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
+<p>It was the Race Director's first race and my first ultra.  I barely
 made the turnaround cutoff and I looked dodgy.  RD radioed down to the aid
 station captain at the next aid station and requested I be examined for fitness
-when I arrived.  There was no cutoff, but I was cut anyway.
-<div class="footnote-definition" id="2"><sup class="footnote-definition-label">1</sup>
+when I arrived.  There was no cutoff, but I was cut anyway. <a href="#fr-1-1">↩</a></p>
+</li>
+<li id="footnote-2">
 <p>I injured my foot in a search-and-rescue mission in May, but
 continued to train on it a little longer than I should have.  I did
 realize that it wasn't healing properly and did back off, not soon
@@ -206,11 +232,22 @@ enough.  I ran the first thirty some miles with a limp.  I then took
 analgesics and the limp went away, but I was in crazy pain and
 semi-hunched over.  I missed a turnoff and went a long way up a hill
 (misleading others off course, too).  The others recovered (including
-<a href="(https://www.youtube.com/watch?v=QqKinAETu8E)">one spectacular—record
+<a href="https://www.youtube.com/watch?v=QqKinAETu8E">one spectacular—record
 breaking—finish</a>,
-but I had to drop at mile 85.</p>
-</div>
-
+but I had to drop at mile 85. <a href="#fr-2-1">↩</a></p>
+</li>
+<li id="footnote-3">
+<p>This one deserves its own race report, but I came back so beaten
+up that not only did I not write much up, I didn't even fill out my
+relevant Strava activities. I did, however, write a "status report and
+(abbreviated BF200 write-up)" email to a a few of my closest
+ne'erdowells. So, perhaps I can use that to rekindle some memories if
+I ever make the time. That letter ended with: "I've taken more than my
+fair share of humility pills (because they wear off so quickly!),
+sometimes eating handfuls at a time, but this was my first humility
+<em>enema</em>. Whee!" <a href="#fr-3-1">↩</a></p>
+</li>
+</ol>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
@@ -257,6 +294,7 @@ but I had to drop at mile 85.</p>
         <script src="../book.js"></script>
 
         <!-- Custom JS scripts -->
+
 
 
     </div>

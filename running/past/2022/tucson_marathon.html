@@ -24,28 +24,41 @@
         <link rel="stylesheet" href="../../../fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="../../../highlight.css">
-        <link rel="stylesheet" href="../../../tomorrow-night.css">
-        <link rel="stylesheet" href="../../../ayu-highlight.css">
+        <link rel="stylesheet" id="highlight-css" href="../../../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../../../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
 
-        <!-- Provide site root to javascript -->
+        <!-- Provide site root and default themes to javascript -->
         <script>
-            var path_to_root = "../../../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+            const path_to_root = "../../../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../../../searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../../../toc.js"></script>
     </head>
     <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
     <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
-                var theme = localStorage.getItem('mdbook-theme');
-                var sidebar = localStorage.getItem('mdbook-sidebar');
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
 
                 if (theme.startsWith('"') && theme.endsWith('"')) {
                     localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
@@ -59,7 +72,8 @@
 
         <!-- Set the theme before any content is loaded, prevents flash -->
         <script>
-            var theme;
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             const html = document.documentElement;
@@ -72,17 +86,20 @@
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var sidebar = null;
-            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -109,13 +126,14 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
                     </div>
@@ -132,7 +150,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -214,8 +237,8 @@ I hadn't even brought them with me; they were back in my truck.</p>
 <h3 id="race"><a class="header" href="#race">Race</a></h3>
 <p>The race itself was uneventful.  I listened to my Bataan Memorial
 Death March playlist.  It's all quick tunes, four Me First and the
-Gimme Gimmes albums<sup class="footnote-reference"><a href="#1">1</a></sup> (with the "slow" songs expurgated) with my "Speed
-3" playlist<sup class="footnote-reference"><a href="#2">2</a></sup> in between each album.</p>
+Gimme Gimmes albums<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup> (with the "slow" songs expurgated) with my "Speed
+3" playlist<sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup> in between each album.</p>
 <p>As I ran, I had to figure out when to take my consumables: two 200mg
 ibuprofen tablets, the five Chocolate Outrage Gu gels and my quad
 espresso.  I had half my quad espresso (i.e. a double espresso) at
@@ -260,7 +283,7 @@ the finish line, but I forgot to ask about them at the finish line, so
 I have no shirt from the race, which is OK for me, because I have too
 many shirts, but it is disappointing that shirts were handled that
 way.  By the time I finished, there were many other things I was
-thinking about than to remember to ask for a shirt<sup class="footnote-reference"><a href="#3">3</a></sup>.</p>
+thinking about than to remember to ask for a shirt<sup class="footnote-reference" id="fr-3-1"><a href="#footnote-3">3</a></sup>.</p>
 <p>I hung out long enough to pick up the slate coaster I won for being
 second in my age group, then hopped a bus back to the parking lot at
 the start.  Or at least that's what I thought I did.  I didn't think
@@ -279,35 +302,36 @@ time for both of us to watch the Army Navy football game.  My daughter
 Margaret earned an Army ROTC scholarship and is a freshman at the
 University of New Mexico (where I went to grad school).  My other
 daughter is a senior in high school with an application pending to
-attend West Point<sup class="footnote-reference"><a href="#4">4</a></sup>.  So, all three of us were rooting for Army and
+attend West Point<sup class="footnote-reference" id="fr-4-1"><a href="#footnote-4">4</a></sup>.  So, all three of us were rooting for Army and
 I was texting my daughters during the exciting game.  I may not have
 beaten the old people, but Army beat Navy. It was a very good day.</p>
-<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
 <p><a href="https://www.youtube.com/watch?v=oDQz4FzFrS4&amp;list=PL2DTtIwdCob1r2eviyFoem4CKFgrSMOnh">Blow in the
 Wind</a>,
 <a href="https://www.youtube.com/watch?v=wWZtPKTpOEo&amp;list=PLp5Ue8WePEmv95WkWWXBLVDlQQhvTb0PX">Love Their
 Country</a>,
 <a href="https://www.youtube.com/watch?v=yUvxpYf0crw&amp;list=OLAK5uy_ms0t0gvpnS9Nkzh9Gg68q1GdmrIFKx7DA">Are A
 Drag</a>, and
-<a href="https://www.youtube.com/watch?v=564YWy-BYN8&amp;list=OLAK5uy_loe_I2N5dCNioTZ7dSNa_6q8zTxsXvRCM">Ruin Jonny's Bar Mitzvah</a></p>
-</div>
-<div class="footnote-definition" id="2"><sup class="footnote-definition-label">2</sup>
-<p><a href="https://www.youtube.com/watch?v=bXeDRbJP_QE">If you're Gonna be Dumb You Gotta be Tough</a>, <a href="https://www.youtube.com/watch?v=qKEzV3ZVKfY">Rawhide</a>, and <a href="https://www.youtube.com/watch?v=y2vXth5xwHA">The Ballad of Wendell Scott</a><sup class="footnote-reference"><a href="#5">5</a></sup></p>
-</div>
-<div class="footnote-definition" id="3"><sup class="footnote-definition-label">3</sup>
+<a href="https://www.youtube.com/watch?v=564YWy-BYN8&amp;list=OLAK5uy_loe_I2N5dCNioTZ7dSNa_6q8zTxsXvRCM">Ruin Jonny's Bar Mitzvah</a> <a href="#fr-1-1">↩</a></p>
+</li>
+<li id="footnote-2">
+<p><a href="https://www.youtube.com/watch?v=bXeDRbJP_QE">If you're Gonna be Dumb You Gotta be Tough</a>, <a href="https://www.youtube.com/watch?v=qKEzV3ZVKfY">Rawhide</a>, and <a href="https://www.youtube.com/watch?v=y2vXth5xwHA">The Ballad of Wendell Scott</a><sup class="footnote-reference" id="fr-5-1"><a href="#footnote-5">5</a></sup> <a href="#fr-2-1">↩</a></p>
+</li>
+<li id="footnote-3">
 <p>Soon I posted this race report, an Aravaipa employee sent me
 an email asking me for my mailing address so he could send me a shirt! I'm
 sure that if there was anyone else who inadvertently didn't get a shirt, and
-wanted one, that he or she could have gotten one by asking.</p>
-</div>
-<div class="footnote-definition" id="4"><sup class="footnote-definition-label">4</sup>
+wanted one, that he or she could have gotten one by asking. <a href="#fr-3-1">↩</a></p>
+</li>
+<li id="footnote-4">
 <p>Since writing this report, my daughter's application was accepted. She
-received her appointment (i.e., was admitted). Yay!</p>
-</div>
-<div class="footnote-definition" id="5"><sup class="footnote-definition-label">5</sup>
-<p><a href="https://www.goodreads.com/book/show/58611896-hard-driving">Wendell Scott's biography</a></p>
-</div>
-
+received her appointment (i.e., was admitted). Yay! <a href="#fr-4-1">↩</a></p>
+</li>
+<li id="footnote-5">
+<p><a href="https://www.goodreads.com/book/show/58611896-hard-driving">Wendell Scott's biography</a> <a href="#fr-5-1">↩</a></p>
+</li>
+</ol>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
@@ -354,6 +378,7 @@ received her appointment (i.e., was admitted). Yay!</p>
         <script src="../../../book.js"></script>
 
         <!-- Custom JS scripts -->
+
 
 
     </div>

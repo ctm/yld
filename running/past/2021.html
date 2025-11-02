@@ -24,28 +24,41 @@
         <link rel="stylesheet" href="../../fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="../../highlight.css">
-        <link rel="stylesheet" href="../../tomorrow-night.css">
-        <link rel="stylesheet" href="../../ayu-highlight.css">
+        <link rel="stylesheet" id="highlight-css" href="../../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
 
-        <!-- Provide site root to javascript -->
+        <!-- Provide site root and default themes to javascript -->
         <script>
-            var path_to_root = "../../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+            const path_to_root = "../../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../../searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../../toc.js"></script>
     </head>
     <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
     <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
-                var theme = localStorage.getItem('mdbook-theme');
-                var sidebar = localStorage.getItem('mdbook-sidebar');
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
 
                 if (theme.startsWith('"') && theme.endsWith('"')) {
                     localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
@@ -59,7 +72,8 @@
 
         <!-- Set the theme before any content is loaded, prevents flash -->
         <script>
-            var theme;
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             const html = document.documentElement;
@@ -72,17 +86,20 @@
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var sidebar = null;
-            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -109,13 +126,14 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
                     </div>
@@ -132,7 +150,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -155,7 +178,7 @@
                         <h1 id="2021"><a class="header" href="#2021">2021</a></h1>
 <p>In 2021 I:</p>
 <ul>
-<li>finally got all six ascents of Elevation Insanity<sup class="footnote-reference"><a href="#1">1</a></sup> done in a calendar day</li>
+<li>finally got all six ascents of Elevation Insanity<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup> done in a calendar day</li>
 <li>finished Hardrock (it was my first attempt)</li>
 <li>set a course record at the Tortugas Mountain 24-hour challenge in the drinking division</li>
 <li>took first in my Age Group in the Big Cottonwood Marathon</li>
@@ -184,7 +207,7 @@ Lunch, but I had covid and stayed home.</p>
 <tr><td>January</td><td>1</td><td><strong>Unofficial</strong> Foothills Fat Ass</td><td>50k</td></tr>
 <tr><td>February</td><td>13</td><td>Bosque Bigfoot</td><td>50k</td></tr>
 <tr><td>March</td><td>28</td><td>Duke City <strong>Substitute</strong></td><td>Half Marathon</td></tr>
-<tr><td>April</td><td>24</td><td>Chimney Canyon Threepeat</td><td>Training<sup class="footnote-reference"><a href="#2">2</a></sup></td></tr>
+<tr><td>April</td><td>24</td><td>Chimney Canyon Threepeat</td><td>Training<sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup></td></tr>
 <tr><td>May</td><td>8</td><td>Elevation Insanity XI</td><td>Hike</td></tr>
 <tr><td></td><td>22</td><td>Jemez Mountain Trail Run</td><td>50 Miler</td></tr>
 <tr><td>June</td><td>12</td><td>Chimney Melon</td><td>50k</td></tr>
@@ -202,20 +225,20 @@ Lunch, but I had covid and stayed home.</p>
 <tr><td></td><td>26</td><td>Black Friday Turkey Trots</td><td>4 Miler</td></tr>
 <tr><td></td><td>27</td><td>Bosque Bigfoot</td><td>50k</td></tr>
 </tbody></table>
-</div>
-<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+</div><hr>
+<ol class="footnote-definition"><li id="footnote-1">
 <p>Six different ascents up the Sandia Mountain in one calendar day.
 We take my truck down after the first ascent, then use the tram to get down from the next four ascents, then get picked up at the top.
-About 23,850 feet of elevation gain in 24 hours.</p>
-</div>
-<div class="footnote-definition" id="2"><sup class="footnote-definition-label">2</sup>
+About 23,850 feet of elevation gain in 24 hours. <a href="#fr-1-1">↩</a></p>
+</li>
+<li id="footnote-2">
 <p>Park at the La Luz Trailhead, then take Old La Luz up to the Chimney
 Canyon Trail, then ascend that until getting to the north&lt;-&gt;south trail
 that is at the top, but to the west of the towers, then take that over
 to the La Luz Spur trail, then descend back to the base of Chimney Canyon
-Trail, repeat twice more, then use Old La Luz to return to our vehicles.</p>
-</div>
-
+Trail, repeat twice more, then use Old La Luz to return to our vehicles. <a href="#fr-2-1">↩</a></p>
+</li>
+</ol>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
@@ -262,6 +285,7 @@ Trail, repeat twice more, then use Old La Luz to return to our vehicles.</p>
         <script src="../../book.js"></script>
 
         <!-- Custom JS scripts -->
+
 
 
     </div>

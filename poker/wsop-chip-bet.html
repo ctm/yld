@@ -24,28 +24,41 @@
         <link rel="stylesheet" href="../fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="../highlight.css">
-        <link rel="stylesheet" href="../tomorrow-night.css">
-        <link rel="stylesheet" href="../ayu-highlight.css">
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
 
-        <!-- Provide site root to javascript -->
+        <!-- Provide site root and default themes to javascript -->
         <script>
-            var path_to_root = "../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc.js"></script>
     </head>
     <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
     <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
-                var theme = localStorage.getItem('mdbook-theme');
-                var sidebar = localStorage.getItem('mdbook-sidebar');
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
 
                 if (theme.startsWith('"') && theme.endsWith('"')) {
                     localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
@@ -59,7 +72,8 @@
 
         <!-- Set the theme before any content is loaded, prevents flash -->
         <script>
-            var theme;
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             const html = document.documentElement;
@@ -72,17 +86,20 @@
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var sidebar = null;
-            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -109,13 +126,14 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
                     </div>
@@ -132,7 +150,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -160,13 +183,13 @@ Ferguson</a> were present.
 Jesus brought with him a bunch of custom poker chips that had his face
 on them. He was generously giving them away to BARGErs.</p>
 <p>I grabbed one of those custom chips and took it over to Greg, asking
-him to write on it "To D.H., Chris". In the spirit of BARGE<sup class="footnote-reference"><a href="#1">1</a></sup>, once I
+him to write on it "To D.H., Chris". In the spirit of BARGE<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup>, once I
 explained why I wanted it so inscribed, he cheerfully did so.</p>
 <p>My plan was to prominently use the chip as a card protector and see if
 I could find a fellow BARGEr to comment on it in any way.  Once the
 ball was rolling, I'd try to maneuver the conversation to the point
 where I could say something about having the chip signed by the
-<strong>current</strong><sup class="footnote-reference"><a href="#2">2</a></sup> WSOP champion.</p>
+<strong>current</strong><sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup> WSOP champion.</p>
 <p>At least in my mind, the pigeon would then respond with something akin
 to, "No, he won a few years ago" or "No, that's the 2000 World
 Champion." My goal was to—after a little back and
@@ -182,20 +205,21 @@ and preventing my r00l.</p>
 <br/>
 <br/>
 <hr/>
-<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
-<p>What I describe here is (attempted) hijinks between friends.
-The goal would have been for the bet amount to be just enough to cause
-the victim to sting from embarrassment, <a href="https://www.quotes.net/mquote/39860">with an ear full of
-cider</a>.</p>
-</div>
-<div class="footnote-definition" id="2"><sup class="footnote-definition-label">2</sup>
-<p>Or perhaps it was the prior year's; it's been too long or me
-to remember exactly which BARGE this occurred at, but my guess is</p>
-</div>
 <ol start="2004">
 <li></li>
 </ol>
-
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
+<p>What I describe here is (attempted) hijinks between friends.
+The goal would have been for the bet amount to be just enough to cause
+the victim to sting from embarrassment, <a href="https://www.quotes.net/mquote/39860">with an ear full of
+cider</a>. <a href="#fr-1-1">↩</a></p>
+</li>
+<li id="footnote-2">
+<p>Or perhaps it was the prior year's; it's been too long or me
+to remember exactly which BARGE this occurred at, but my guess is <a href="#fr-2-1">↩</a></p>
+</li>
+</ol>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
@@ -242,6 +266,7 @@ to remember exactly which BARGE this occurred at, but my guess is</p>
         <script src="../book.js"></script>
 
         <!-- Custom JS scripts -->
+
 
 
     </div>

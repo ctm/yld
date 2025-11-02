@@ -24,28 +24,41 @@
         <link rel="stylesheet" href="../../fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="../../highlight.css">
-        <link rel="stylesheet" href="../../tomorrow-night.css">
-        <link rel="stylesheet" href="../../ayu-highlight.css">
+        <link rel="stylesheet" id="highlight-css" href="../../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
 
-        <!-- Provide site root to javascript -->
+        <!-- Provide site root and default themes to javascript -->
         <script>
-            var path_to_root = "../../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+            const path_to_root = "../../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../../searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../../toc.js"></script>
     </head>
     <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
     <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
-                var theme = localStorage.getItem('mdbook-theme');
-                var sidebar = localStorage.getItem('mdbook-sidebar');
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
 
                 if (theme.startsWith('"') && theme.endsWith('"')) {
                     localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
@@ -59,7 +72,8 @@
 
         <!-- Set the theme before any content is loaded, prevents flash -->
         <script>
-            var theme;
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             const html = document.documentElement;
@@ -72,17 +86,20 @@
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var sidebar = null;
-            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -109,13 +126,14 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
                     </div>
@@ -132,7 +150,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -178,13 +201,13 @@ included are mostly social training runs that I try to do every year.</p>
 <tr><td></td><td>26</td><td><a href="https://www.webscorer.com/racedetails?raceid=271787&amp;did=318184">Burque Brew Tour Unofficial Last Stop</a></td><td><a href="https://www.facebook.com/events/465186074899647">3.7 Miles</a></td></tr>
 <tr><td>April</td><td>2</td><td><a href="https://www.strava.com/activities/6923122767">Magdalena Madness</a></td><td><a href="https://socorrotrailrunners.blogspot.com/p/magdalena-madness.html">12 Hour</a></td></tr>
 <tr><td></td><td>16</td><td><a href="https://www.strava.com/activities/6993673614">Chimney Canyon Repeat</a></td><td>Failed Training</td></tr>
-<tr><td></td><td>23</td><td><a href="2022/cedro.html">Cedro Peak</a></td><td><a href="https://cedropeaktrailevent.wordpress.com/">50k</a><sup class="footnote-reference"><a href="#1">1</a></sup></td></tr>
+<tr><td></td><td>23</td><td><a href="2022/cedro.html">Cedro Peak</a></td><td><a href="https://cedropeaktrailevent.wordpress.com/">50k</a><sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup></td></tr>
 <tr><td>May</td><td>2</td><td><a href="2022/cocodona-250.html">Cocodona 250</a></td><td><a href="http://cocodona.com/">250 Miler</a></td></tr>
 <tr><td></td><td>14</td><td><a href="https://www.strava.com/activities/7143740391">Chimney Canyon Threepeat</a></td><td>Training</td></tr>
 <tr><td></td><td>18</td><td><a href="https://www.strava.com/activities/7166693370">Shortest Double Crossing</a></td><td>Training</td></tr>
 <tr><td></td><td>22</td><td><a href="https://www.strava.com/activities/7187704802">Santa Fe Century</a></td><td><a href="https://www.santafecentury.com/">Bicycle Century</a></td></tr>
 <tr><td>June</td><td>4</td><td><a href="https://www.athlinks.com/event/177488/results/Event/993811/Course/2149488/Bib/1202">Believe in Heroes</a></td><td><a href="https://visitloslunas.org/events/10th-annual-believe-in-heroes-memorial-run/">5k Ruck Race</a></td></tr>
-<tr><td>July</td><td>29</td><td><a href="https://www.strava.com/activities/7548646358">BARGE Fun Run</a></td><td><a href="https://www.barge.org/">5k</a><sup class="footnote-reference"><a href="#2">2</a></sup></td></tr>
+<tr><td>July</td><td>29</td><td><a href="https://www.strava.com/activities/7548646358">BARGE Fun Run</a></td><td><a href="https://www.barge.org/">5k</a><sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup></td></tr>
 <tr><td>August</td><td>6</td><td><a href="https://www.strava.com/activities/7595451430">Shortest Double Crossing</a></td><td>Training</td></tr>
 <tr><td></td><td>13</td><td><a href="https://www.webscorer.com/race?raceid=288504">Baldy 50k</a></td><td><a href="https://newmexicofa50k.wordpress.com/baldy_50k/">50k</a></td></tr>
 <tr><td></td><td>27</td><td><a href="https://www.strava.com/activities/7717983430">Paced Jason Romero at the Creede 100 Miler</a></td><td><a href="https://www.tempestadventures.com/creede-100/course">final 50 Miles</a></td></tr>
@@ -195,8 +218,8 @@ included are mostly social training runs that I try to do every year.</p>
 <tr><td>October</td><td>1</td><td><a href="2022/mt_taylor_50k.html">Mt. Taylor</a></td><td><a href="http://www.mttaylor50k.com/">50k</a></td></tr>
 <tr><td></td><td>8</td><td><a href="2022/feral_hog_50k_rucksack.html">Feral Hog</a></td><td><a href="http://www.feraladventures.com/challenges/feral-hog-50k/">50k Ruck Race</a></td></tr>
 <tr><td></td><td>14</td><td><a href="2022/tortugas_mountain.html">Tortugas Mountain</a></td><td><a href="http://snmta.org/event/24-hour-a-mountain-challenge/">24 Hour</a></td></tr>
-<tr><td></td><td>16</td><td><a href="2022/duke_city_marathon.html">Duke City</a></td><td><a href="https://www.dukecitymarathon.com/">Marathon</a><sup class="footnote-reference"><a href="#3">3</a></sup></td></tr>
-<tr><td></td><td>22</td><td><a href="2022/tatonka_5k.html">Tatonka Run</a></td><td><a href="https://www.core-crew.com/tatonka-5-10k-run">5k</a><sup class="footnote-reference"><a href="#4">4</a></sup></td></tr>
+<tr><td></td><td>16</td><td><a href="2022/duke_city_marathon.html">Duke City</a></td><td><a href="https://www.dukecitymarathon.com/">Marathon</a><sup class="footnote-reference" id="fr-3-1"><a href="#footnote-3">3</a></sup></td></tr>
+<tr><td></td><td>22</td><td><a href="2022/tatonka_5k.html">Tatonka Run</a></td><td><a href="https://www.core-crew.com/tatonka-5-10k-run">5k</a><sup class="footnote-reference" id="fr-4-1"><a href="#footnote-4">4</a></sup></td></tr>
 <tr><td></td><td>23</td><td><a href="2022/forever_young_six_miler.html">Forever Young Run</a></td><td><a href="https://www.abqroadrunners.com/forever-young-run.html">10k</a></td></tr>
 <tr><td></td><td>29</td><td><a href="2022/jj100.html">Javelina Jundred</a></td><td><a href="https://aravaiparunning.com/network/javelinajundred/">100 Miler</a></td></tr>
 <tr><td>November</td><td>5</td><td><a href="2022/dptr_106m.html">Deadman Peaks</a></td><td><a href="https://deadmanpeaks.com/">100 Miler</a></td></tr>
@@ -207,20 +230,20 @@ included are mostly social training runs that I try to do every year.</p>
 <tr><td>December</td><td>10</td><td><a href="2022/tucson_marathon.html">Tucson</a></td><td><a href="https://www.tucsonmarathon.com/">Marathon</a></td></tr>
 <tr><td></td><td>31</td><td><a href="2022/grinch_lunch.html">Grinch Lunch</a></td><td><a href="https://www.facebook.com/events/587035643112558">5k</a></td></tr>
 </tbody></table>
-</div>
-<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
-<p>I "ran" the Cedro Peak 50k in a fasted state, and only consumed water until the third to last aid station when I had <a href="https://santafebrewing.com/beer/adobe-igloo/">a beer</a>.  At the next two aid stations I also had <a href="http://www.exnovobrew.com/perle-haggard">a beer</a>.  Those three beers were my only calories that day until after I had finished the race.</p>
-</div>
-<div class="footnote-definition" id="2"><sup class="footnote-definition-label">2</sup>
-<p>The BARGE Fun Run is what got me started running (back in 2009!). It's a long story. However, in 2022, most of the participants did a 5k loop. I did that loop then ran back to join a walker.</p>
-</div>
-<div class="footnote-definition" id="3"><sup class="footnote-definition-label">3</sup>
-<p>I was the five hour pace group leader.</p>
-</div>
-<div class="footnote-definition" id="4"><sup class="footnote-definition-label">4</sup>
-<p>Although it has no separate ruck division, I chose to race the Tatonka 5k while wearing my pack. It weighed 41.8 pounds.</p>
-</div>
-
+</div><hr>
+<ol class="footnote-definition"><li id="footnote-1">
+<p>I "ran" the Cedro Peak 50k in a fasted state, and only consumed water until the third to last aid station when I had <a href="https://santafebrewing.com/beer/adobe-igloo/">a beer</a>.  At the next two aid stations I also had <a href="http://www.exnovobrew.com/perle-haggard">a beer</a>.  Those three beers were my only calories that day until after I had finished the race. <a href="#fr-1-1">↩</a></p>
+</li>
+<li id="footnote-2">
+<p>The BARGE Fun Run is what got me started running (back in 2009!). It's a long story. However, in 2022, most of the participants did a 5k loop. I did that loop then ran back to join a walker. <a href="#fr-2-1">↩</a></p>
+</li>
+<li id="footnote-3">
+<p>I was the five hour pace group leader. <a href="#fr-3-1">↩</a></p>
+</li>
+<li id="footnote-4">
+<p>Although it has no separate ruck division, I chose to race the Tatonka 5k while wearing my pack. It weighed 41.8 pounds. <a href="#fr-4-1">↩</a></p>
+</li>
+</ol>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
@@ -267,6 +290,7 @@ included are mostly social training runs that I try to do every year.</p>
         <script src="../../book.js"></script>
 
         <!-- Custom JS scripts -->
+
 
 
     </div>
