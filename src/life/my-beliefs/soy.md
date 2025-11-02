@@ -6,7 +6,7 @@ it under "Running" would be too specific.
 
 I believe the amount of soy, of the type I eat, is good for me.  I
 don't have man boobs, and although I'm not muscular, per-se, I do very
-well in the Bataan Memorial Death March heavy division do OK in the
+well in the Bataan Memorial Death March heavy division and do OK in the
 Mount Taylor Winter Quadrathlon. Both of those require a fair amount
 of leg and core strength.
 
