@@ -12,7 +12,7 @@ Here are a few books that document the Bataan Death March or other atrocities in
 * [Tell Me Another War Story](https://www.goodreads.com/book/show/30055478-tell-me-another-war-story)
 * [The Naked Soldier](https://www.goodreads.com/book/show/29506650-the-naked-soldier)[^4]
 
-[^1] The author, [James
+[^1]: The author, [James
 Bollich](https://www.youtube.com/watch?v=u0HD6eEcViU), was one of the
 two Bataan Death March survivors to speak at the Bataan **Memorial**
 Death March in 2019. The other was [Ben
