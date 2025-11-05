@@ -23,8 +23,8 @@ Service](https://www.abqroadrunners.com/uploads/6/7/7/6/6776981/arr_newsletter_n
 I knew Chuck as Dennis Muirhead's Wednesday running partner. I looked
 forward to seeing them when our paths intersected.  WMFA50k had
 already been on the calendar for months when his memorial was
-scheduled, so I had to be there in spirit, which made for a day of
-mixed emotions.
+scheduled, so I had to memorialize Chuck in spirit, which made for a
+day of mixed emotions.
 
 ## Weather
 
@@ -57,6 +57,4 @@ I can't be sure, because _I_ was on drugs[^1].
 <br/>
 <br/>
 
-<hr/>
-
-[^1]: [caffeine](https://github.com/ctm/diet/blob/master/log/2023.txt#L13405-L13406) and [endocannabinoids](https://theconversation.com/the-runners-high-may-result-from-molecules-called-cannabinoids-the-bodys-own-version-of-thc-and-cbd-170796)
+[^1]: [caffeine](https://github.com/ctm/diet/blob/master/log/2023.txt#L13403-L13409) and [endocannabinoids](https://theconversation.com/the-runners-high-may-result-from-molecules-called-cannabinoids-the-bodys-own-version-of-thc-and-cbd-170796)
