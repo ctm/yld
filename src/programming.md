@@ -31,7 +31,9 @@ reason or another.
 and [I did not handle the call well](programming/blown/steve-jobs.md).
 Additionally, [John Perry Barlow](https://www.stone.com/barlow/) used
 Executor but his literal first words to me in person were "You're an
-asshole."
+asshole." (said mostly in jest). [Here's a little
+review](https://www.nextcomputers.org/NeXTfiles/Articles/NeXTWORLD/92.2/92.2.Summer.BarlowLavin.html)
+of Executor-MSW from the Summer 1992 edition of NeXTWORLD magazine.
 
 [^2]: Multibot was the first software to deal multi-table poker tournaments on
 the internet. You won't find it via a web search though, because I sold it
