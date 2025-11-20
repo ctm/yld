@@ -12,21 +12,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="icon" href="../../../favicon.svg">
-        <link rel="shortcut icon" href="../../../favicon.png">
-        <link rel="stylesheet" href="../../../css/variables.css">
-        <link rel="stylesheet" href="../../../css/general.css">
-        <link rel="stylesheet" href="../../../css/chrome.css">
-        <link rel="stylesheet" href="../../../css/print.css" media="print">
+        <link rel="icon" href="../../../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../../../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../../../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../../../css/general-2459343d.css">
+        <link rel="stylesheet" href="../../../css/chrome-9dfbd86b.css">
+        <link rel="stylesheet" href="../../../css/print-9e4910d8.css" media="print">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="../../../fonts/fonts.css">
+        <link rel="stylesheet" href="../../../fonts/fonts-9644e21d.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" id="highlight-css" href="../../../highlight.css">
-        <link rel="stylesheet" id="tomorrow-night-css" href="../../../tomorrow-night.css">
-        <link rel="stylesheet" id="ayu-highlight-css" href="../../../ayu-highlight.css">
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../../../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../../../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../../../ayu-highlight-3fdfc3ac.css">
 
         <!-- Custom theme stylesheets -->
 
@@ -36,10 +35,10 @@
             const path_to_root = "../../../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../../../searchindex.js";
+            window.path_to_searchindex_js = "../../../searchindex-2e82017a.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../../../toc.js"></script>
+        <script src="../../../toc-203aea20.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -53,7 +52,7 @@
             </div>
         </div>
     </div>
-    <div id="body-container">
+    <div id="mdbook-body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
@@ -82,12 +81,12 @@
             html.classList.add("js");
         </script>
 
-        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
             let sidebar = null;
-            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
@@ -102,39 +101,39 @@
             }
         </script>
 
-        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
             <!-- populated by js -->
             <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
             <noscript>
                 <iframe class="sidebar-iframe-outer" src="../../../toc.html"></iframe>
             </noscript>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
             </div>
         </nav>
 
-        <div id="page-wrapper" class="page-wrapper">
+        <div id="mdbook-page-wrapper" class="page-wrapper">
 
             <div class="page">
-                <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
-                            <i class="fa fa-bars"></i>
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
                         </label>
-                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
-                            <i class="fa fa-paint-brush"></i>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
                         </button>
-                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
                         </ul>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
-                            <i class="fa fa-search"></i>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
                         </button>
                     </div>
 
@@ -142,38 +141,38 @@
 
                     <div class="right-buttons">
                         <a href="../../../print.html" title="Print this book" aria-label="Print this book">
-                            <i id="print-button" class="fa fa-print"></i>
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
                         </a>
 
                     </div>
                 </div>
 
-                <div id="search-wrapper" class="hidden">
-                    <form id="searchbar-outer" class="searchbar-outer">
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
                         <div class="search-wrapper">
-                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
                             <div class="spinner-wrapper">
-                                <i class="fa fa-spinner fa-spin"></i>
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
                             </div>
                         </div>
                     </form>
-                    <div id="searchresults-outer" class="searchresults-outer hidden">
-                        <div id="searchresults-header" class="searchresults-header"></div>
-                        <ul id="searchresults">
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
                         </ul>
                     </div>
                 </div>
 
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
                 <script>
-                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
-                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
-                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
 
-                <div id="content" class="content">
+                <div id="mdbook-content" class="content">
                     <main>
                         <h1 id="big-cottonwood-marathon-2022"><a class="header" href="#big-cottonwood-marathon-2022">Big Cottonwood Marathon 2022</a></h1>
 <h2 id="overview"><a class="header" href="#overview">Overview</a></h2>
@@ -184,17 +183,17 @@ times, I raced it so I could (and did!) qualify for the Boston
 Marathon. It is a very downhill course, although the rollers starting
 around mile 19 have slowed me down all three years.</p>
 <p>This year, however, my truck died the day before and that
-complicated my race.  Luckily, I'll be sixty years old by Boston
+complicated my race.  Luckily, I’ll be sixty years old by Boston
 2023, so I only needed to run a 3:50 to qualify and I ran
 <a href="https://www.runrevel.com/bcm/results?pk=7660499">3:25:32</a>.</p>
 <p>This report is for my own benefit.  Although I remember the details
-clearly as I write this, it won't be too long before I forget many of
+clearly as I write this, it won’t be too long before I forget many of
 the details.  My plan is to switch from running the Big Cottonwood
 Marathon as a Boston Qualifier to running the Tucson marathon.  My
 MSCS advisor has moved to Tucson and running that race would be a good
 excuse to visit him.  Additionally, Aravaipa puts on a good event.</p>
 <h2 id="thursday-albuquerque-to-moab"><a class="header" href="#thursday-albuquerque-to-moab">Thursday: Albuquerque to Moab</a></h2>
-<p>I left Albuquerque around the time I thought I'd need to leave in
+<p>I left Albuquerque around the time I thought I’d need to leave in
 order to arrive at <a href="https://moabkitchen.com/">Moab Kitchen</a> around
 4pm, i.e., just as they were opening.  I love Moab Kitchen and I also
 found a great campsite just north of there last year that I was looking
@@ -207,21 +206,21 @@ when I remembered that the last time I had tried to use four-wheel
 drive I had trouble shifting it in and out. So, instead of waiting
 until I absolutely had to have 4WD, I decided to check it in the Moab
 Kitchen parking lot. Uh oh. Not only was it exceedingly hard for me to
-get it into 4-Low, I basically couldn't get it, unassisted, back into
+get it into 4-Low, I basically couldn’t get it, unassisted, back into
 2WD.</p>
 <p>After texting some friends for advice, I tried rocking the truck back
 and forth, and finally I got it into 2WD.  Dodged a bullet!  Gemini
 Bridges was out, so I chose to go to <a href="https://campnado.com/dispersed-camping-moab/#klondikebluffs">Klondike Bluffs
 Road</a>
 instead. My truck sounded a little funny as I was driving, but I was
-harried and there may have been grooves in the asphalt.  I couldn't
+harried and there may have been grooves in the asphalt.  I couldn’t
 figure out if I was imagining things.</p>
 <p>I set up my tent, read a bit of
 <a href="https://www.goodreads.com/book/show/29359067-presto-how-i-made-over-100-pounds-disappear-and-other-magical-tales">Presto!</a>,
 then went to sleep.</p>
 <h2 id="friday-morning-moab-to-spanish-fork"><a class="header" href="#friday-morning-moab-to-spanish-fork">Friday morning: Moab to Spanish Fork</a></h2>
 <p>I woke up at my normal time and kicked myself for not having joined
-AAA.  My buddy Jason's truck's radiator catastrophically failed a
+AAA.  My buddy Jason’s truck’s radiator catastrophically failed a
 couple weeks prior. He had to pay a huge bill to get his truck towed.
 At the time, I had mentioned that I keep meaning to sign up for AAA
 (my truck is a 1998 with more than 200,000 miles on it), but I always
@@ -237,10 +236,10 @@ drive when the stoplight I was at turned green.</p>
 <p>I was in the left-most of three non-turning lanes on highway six in
 Spanish Fork.  I put my hazards on, then tried putting the truck in
 neutral and pushing it out of the way.  It moved a little before it
-stopped and couldn't be pushed.  Not by me solo and not when three
+stopped and couldn’t be pushed.  Not by me solo and not when three
 large men volunteered to help.  The transmission was fried and nothing
 I did helped.</p>
-<p>I tried to arrange a tow through AAA but their system didn't work well,
+<p>I tried to arrange a tow through AAA but their system didn’t work well,
 so it literally took hours while I interacted with them.  Eventually
 my truck was towed to Tunex in nearby Springville.  The Tunex people
 were nice and understanding, but not only did they need to diagnose
@@ -253,13 +252,13 @@ a day at <a href="https://turo.com/">Turo</a>.  Sometime around 5pm, I was able
 to <a href="https://www.strava.com/activities/7792735587">jog over to the rental
 car</a>, drive back to
 Tunex, grab a bunch of stuff from my truck (including my food; I had
-chosen to drive north in a fasted state, because I figured I'd eat
+chosen to drive north in a fasted state, because I figured I’d eat
 in the packet pickup parking lot around noon), then drive to packet
 pickup which was going to close at 7pm.</p>
 <p>There was at least one accident that caused the freeway to crawl to a
 halt.  I think there were actually two.  It was a bit nerve-racking
 both because I needed to get to packet pickup by 7, but I certainly
-didn't want to get into a fender bender.</p>
+didn’t want to get into a fender bender.</p>
 <p>I made it to packet pickup around 6pm and then got checked in to the
 Residence Inn around 7pm.  I had not yet eaten that day.  I had
 previously planned on what I would eat and when, but that all got
@@ -271,7 +270,7 @@ post-race recovery food) in an hour or so and going to bed.</p>
 <h2 id="race-day-pre-race"><a class="header" href="#race-day-pre-race">Race Day, pre-race</a></h2>
 <p>My alarm woke me up at 3:15 and I drank a double espresso.  I think I had
 fallen asleep around 9:30, so almost six hours.  Had the previous day not
-been so hectic, <em>my guess</em> is I'd have fallen asleep about an hour earlier
+been so hectic, <em>my guess</em> is I’d have fallen asleep about an hour earlier
 (and had my final calories several hours before that).</p>
 <p>I had a little food at the hotel before the hotel buses drove us to the
 start.  I immediately headed to the porta-potties and kept walking all
@@ -283,8 +282,8 @@ I drank a double espresso. Sometime around then I also ate some basmati
 rice and took two 200mg ibuprofen tablets.</p>
 <p>Initially I had planned on only taking 200mg pre-race and 200mg at the
 halfway point, but I had forgotten to do laundry before getting ready
-to leave Albuquerque, so I didn't have a lot of clean socks.  I did,
-however, have a clean pair of very thin socks.  I also didn't have any
+to leave Albuquerque, so I didn’t have a lot of clean socks.  I did,
+however, have a clean pair of very thin socks.  I also didn’t have any
 low-mileage road shoes, so I chose the Torin pair with around 850
 miles on them (as opposed to my other pair with over 1,400) and
 decided the combination of ancient shoes and thin socks merited
@@ -304,8 +303,8 @@ someone taking a longer than usual time in a potty.  It does, however,
 require each person at the head of the line paying attention to make
 sure that each line is still moving more-or-less fairly. The downside
 is that a line can stall if the person at the head of that line
-doesn't understand this de facto protocol, is distracted or simply
-doesn't want to take any stall except the one directly in front.</p>
+doesn’t understand this de facto protocol, is distracted or simply
+doesn’t want to take any stall except the one directly in front.</p>
 <p>All else equal, the lines at either end of a row of porta-potties will
 move at two-thirds the speed of the interior lines, because the person
 at the head of the line will only have two porta-potties to choose
@@ -314,8 +313,8 @@ knew this, but still chose to stand in the left-most line, figuring
 that since I had plenty of time, two-thirds speed would get me in and
 out with room to spare.  I was wrong.</p>
 <p>The line I was in stalled.  I think the person at the head of the line
-not only wasn't considering the diagonal stall as a possible choice, but
-he also wasn't noticing that people from the adjacent line were taking
+not only wasn’t considering the diagonal stall as a possible choice, but
+he also wasn’t noticing that people from the adjacent line were taking
 the stall in front of him repeatedly.</p>
 <h3 id="drawstring-disaster"><a class="header" href="#drawstring-disaster">Drawstring Disaster</a></h3>
 <p>It had been cool enough that I had chosen to not take off my pre-run
@@ -325,14 +324,14 @@ pack my bag and get it dropped off and get back to the start line than
 attempt to take another poop.</p>
 <p>Unfortunately, when I went to tie up my bag, the string broke.  I asked
 the person shoveling bags into the truck if he had a spare bag, but he
-didn't and directed me further up the hill.  I went all the way up and
+didn’t and directed me further up the hill.  I went all the way up and
 nope, nobody up there had spare bags either, but there were several people
 who also had broken strings.</p>
 <p>I extracted the two pieces of string from the drawstring portion of the bag,
 tied them together and then asked a woman for assistance.  She offered to
 tie my bag while I held it, but I politely asked her to hold the bag while
 I tied it so that if it came undone and I lost anything (and my phone and
-wallet were in the bag!), I'd only have myself to blame.</p>
+wallet were in the bag!), I’d only have myself to blame.</p>
 <p>I then descended to the bag-drop truck and handed them my bag and found my
 place in line. With little fanfare, the race started at 6:45.</p>
 <h2 id="the-race-itself"><a class="header" href="#the-race-itself">The Race itself</a></h2>
@@ -340,21 +339,21 @@ place in line. With little fanfare, the race started at 6:45.</p>
 possibility of my bag either opening and disgorging some of its
 contents or losing the tie that had my bib number.</p>
 <p>If the bag was intact, but without a bib number, would I be able to
-find it? Probably; they'd presumably set it aside and I could identify
-it, or perhaps they'd open it and find my wallet. Similarly, if my
-wallet or phone slipped out, I'd probably be able to reclaim them,
+find it? Probably; they’d presumably set it aside and I could identify
+it, or perhaps they’d open it and find my wallet. Similarly, if my
+wallet or phone slipped out, I’d probably be able to reclaim them,
 too.</p>
 <p>Before the race started I felt like I probably <em>could</em> poop if given
-the chance, but I didn't feel like I <em>needed</em> to.</p>
+the chance, but I didn’t feel like I <em>needed</em> to.</p>
 <p>Once I crossed the starting line, all my anxiety disappeared.  The
 initial downhill grade is steep enough that it takes me a little
-effort and concentration to adjust my cadence and stride so I'm
-getting the "free downhill", not fighting it, but also not running out
+effort and concentration to adjust my cadence and stride so I’m
+getting the “free downhill”, not fighting it, but also not running out
 of control.</p>
 <p>Before the race had begun, I was chatting with another runner and he
 mentioned that the aid stations would have gels.  With that in mind, I
 lightened my expandable waistband by removing five of the seven gels I
-had, figuring I'd just take them from the aid station. I think that
+had, figuring I’d just take them from the aid station. I think that
 was the right thing to do, but it did mean that my gel consumption was
 less predictable, because not all aid stations. I would have known
 that had I researched it pre-race, since it was <a href="https://www.runrevel.com/bcm/info#aid">well
@@ -371,28 +370,28 @@ of the road when I tripped and hit fairly hard.</p>
 scrape my right knee and bloody my right palm. I was able to get back
 up almost immediately and resume running.  I had taken an additional
 400mg of ibuprofen at mile 13 and by now it was kicking in, so I
-didn't have that much discomfort and didn't limp, per-se, but my gait
+didn’t have that much discomfort and didn’t limp, per-se, but my gait
 was slightly affected.</p>
 <h2 id="excuses-excuses"><a class="header" href="#excuses-excuses">Excuses, excuses</a></h2>
 <p>This year I was three minutes and sixteen seconds slower than last
 year, but my average heart rate was ten beats per minute slower.  I
 think that had I been able to eat on the day before like I had planned
-and gotten to sleep when I planned, I wouldn't have needed the
+and gotten to sleep when I planned, I wouldn’t have needed the
 porta-potty. I also think that I slowed a little before I resigned
 myself to making that stop and I suspect that had I not made the
-porta-potty stop I wouldn't have fallen.</p>
-<p>So, did my truck's death the day before prevent me from PR'ing? Maybe.
+porta-potty stop I wouldn’t have fallen.</p>
+<p>So, did my truck’s death the day before prevent me from PR’ing? Maybe.
 On the other hand, it took me 1:29:50 to get to mile 12 this year and
 only 1:28:08 to get there the year before.  Mile 12 was long before I
-took the porta-potty break, so presumably I wasn't slowed as much by
-GI distress and definitely wasn't slowed by the fall (that hadn't yet
+took the porta-potty break, so presumably I wasn’t slowed as much by
+GI distress and definitely wasn’t slowed by the fall (that hadn’t yet
 occurred) in my first 12 miles.  On the other hand, last year my heart-rate
 was around 150bpm at mile 12, but only around 135bpn at mile 12.  My
 average HR was still around 150bpm on my 24th mile last year, but had only
 crept up to 140bpm by during my 24th mile this year. I believe my HR data
-suggests I was being held back a bit at the end, but I'll never know.</p>
-<p>FWIW, had I finished fifteen seconds earlier, I'd have been 3rd in my age
-group. I'd need to take off an <em>additional</em> five minutes and seventeen
+suggests I was being held back a bit at the end, but I’ll never know.</p>
+<p>FWIW, had I finished fifteen seconds earlier, I’d have been 3rd in my age
+group. I’d need to take off an <em>additional</em> five minutes and seventeen
 seconds to have taken 2nd AG and another six seconds after that to have
 been first in my age group this year. No truck problems probably would
 have given me 3rd AG. I think 2nd or 1st AG would have been a coin-flip.</p>
@@ -407,11 +406,11 @@ midnight between the 16th and 17th.  The scab on my knee finally came
 off on October 13th, almost five weeks after the fall.  Normally my
 scabs go away in two weeks.</p>
 <p>Luckily, it was an injury to the outside of my knee and not anything
-internal to my knee itself.  Although I didn't do a big hike a week
+internal to my knee itself.  Although I didn’t do a big hike a week
 after the Big Cottonwood Marathon due to being stuck in Utah, I did do
 the AA50k 13 days after and the Tour of the Rio Grande 15 days after.</p>
 <p>I have added this aftermath section so that if I ever review this
-report, it'll remind me to not fall on asphalt, especially when
+report, it’ll remind me to not fall on asphalt, especially when
 accelerating in a road marathon.  It could have been <em>much</em> worse.</p>
 
                     </main>
@@ -419,11 +418,11 @@ accelerating in a road marathon.  It could have been <em>much</em> worse.</p>
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                             <a rel="prev" href="../../../running/past/2022/cocodona-250.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                                <i class="fa fa-angle-left"></i>
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
                             <a rel="next prefetch" href="../../../running/past/2022/aa_50k.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
                         <div style="clear: both"></div>
@@ -433,16 +432,21 @@ accelerating in a road marathon.  It could have been <em>much</em> worse.</p>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                     <a rel="prev" href="../../../running/past/2022/cocodona-250.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                        <i class="fa fa-angle-left"></i>
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
                     <a rel="next prefetch" href="../../../running/past/2022/aa_50k.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>
 
         </div>
 
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
 
 
 
@@ -451,13 +455,13 @@ accelerating in a road marathon.  It could have been <em>much</em> worse.</p>
         </script>
 
 
-        <script src="../../../elasticlunr.min.js"></script>
-        <script src="../../../mark.min.js"></script>
-        <script src="../../../searcher.js"></script>
+        <script src="../../../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../../../mark-09e88c2c.min.js"></script>
+        <script src="../../../searcher-c2a407aa.js"></script>
 
-        <script src="../../../clipboard.min.js"></script>
-        <script src="../../../highlight.js"></script>
-        <script src="../../../book.js"></script>
+        <script src="../../../clipboard-1626706a.min.js"></script>
+        <script src="../../../highlight-abc7f01d.js"></script>
+        <script src="../../../book-a0b12cfe.js"></script>
 
         <!-- Custom JS scripts -->
 

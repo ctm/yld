@@ -12,21 +12,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="icon" href="../../../favicon.svg">
-        <link rel="shortcut icon" href="../../../favicon.png">
-        <link rel="stylesheet" href="../../../css/variables.css">
-        <link rel="stylesheet" href="../../../css/general.css">
-        <link rel="stylesheet" href="../../../css/chrome.css">
-        <link rel="stylesheet" href="../../../css/print.css" media="print">
+        <link rel="icon" href="../../../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../../../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../../../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../../../css/general-2459343d.css">
+        <link rel="stylesheet" href="../../../css/chrome-9dfbd86b.css">
+        <link rel="stylesheet" href="../../../css/print-9e4910d8.css" media="print">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="../../../fonts/fonts.css">
+        <link rel="stylesheet" href="../../../fonts/fonts-9644e21d.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" id="highlight-css" href="../../../highlight.css">
-        <link rel="stylesheet" id="tomorrow-night-css" href="../../../tomorrow-night.css">
-        <link rel="stylesheet" id="ayu-highlight-css" href="../../../ayu-highlight.css">
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../../../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../../../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../../../ayu-highlight-3fdfc3ac.css">
 
         <!-- Custom theme stylesheets -->
 
@@ -36,10 +35,10 @@
             const path_to_root = "../../../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../../../searchindex.js";
+            window.path_to_searchindex_js = "../../../searchindex-2e82017a.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../../../toc.js"></script>
+        <script src="../../../toc-203aea20.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -53,7 +52,7 @@
             </div>
         </div>
     </div>
-    <div id="body-container">
+    <div id="mdbook-body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
@@ -82,12 +81,12 @@
             html.classList.add("js");
         </script>
 
-        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
             let sidebar = null;
-            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
@@ -102,39 +101,39 @@
             }
         </script>
 
-        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
             <!-- populated by js -->
             <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
             <noscript>
                 <iframe class="sidebar-iframe-outer" src="../../../toc.html"></iframe>
             </noscript>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
             </div>
         </nav>
 
-        <div id="page-wrapper" class="page-wrapper">
+        <div id="mdbook-page-wrapper" class="page-wrapper">
 
             <div class="page">
-                <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
-                            <i class="fa fa-bars"></i>
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
                         </label>
-                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
-                            <i class="fa fa-paint-brush"></i>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
                         </button>
-                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
                         </ul>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
-                            <i class="fa fa-search"></i>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
                         </button>
                     </div>
 
@@ -142,38 +141,38 @@
 
                     <div class="right-buttons">
                         <a href="../../../print.html" title="Print this book" aria-label="Print this book">
-                            <i id="print-button" class="fa fa-print"></i>
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
                         </a>
 
                     </div>
                 </div>
 
-                <div id="search-wrapper" class="hidden">
-                    <form id="searchbar-outer" class="searchbar-outer">
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
                         <div class="search-wrapper">
-                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
                             <div class="spinner-wrapper">
-                                <i class="fa fa-spinner fa-spin"></i>
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
                             </div>
                         </div>
                     </form>
-                    <div id="searchresults-outer" class="searchresults-outer hidden">
-                        <div id="searchresults-header" class="searchresults-header"></div>
-                        <ul id="searchresults">
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
                         </ul>
                     </div>
                 </div>
 
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
                 <script>
-                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
-                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
-                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
 
-                <div id="content" class="content">
+                <div id="mdbook-content" class="content">
                     <main>
                         <h1 id="tortugas-mountain-24-hour-challenge-2022"><a class="header" href="#tortugas-mountain-24-hour-challenge-2022">Tortugas Mountain 24 Hour Challenge 2022</a></h1>
 <h2 id="overview"><a class="header" href="#overview">Overview</a></h2>
@@ -185,7 +184,7 @@ half hour drive) after the awards ceremony in order to be the five
 hour pace group leader for the Duke City marathon.</p>
 <h2 id="pre-race"><a class="header" href="#pre-race">Pre-Race</a></h2>
 <p>The day before the race, I borrowed $100 from my son for gas money.  I
-didn't think that would be enough for all the gas I would consume, but
+didn’t think that would be enough for all the gas I would consume, but
 I still had some cash in my wallet and a tiny bit in the bank which I
 could use via my debit card.</p>
 <p>On race day, I woke up and went to make my wife a cappuccino only to
@@ -193,37 +192,37 @@ realize we were out of espresso beans.  Oops!  We had been using
 fairly scruffy beans of late, so I chose to drive down to <a href="https://www.michaelthomascoffee.com/">Michael
 Thomas</a> and get some <strong>excellent</strong>
 beans. I knew the expenditure <em>might</em> leave me without enough money for
-gas on the way home, but after some work on my truck, I didn't have an
-estimate of the miles per gallon I'd get on the trip.  I thought I'd
+gas on the way home, but after some work on my truck, I didn’t have an
+estimate of the miles per gallon I’d get on the trip.  I thought I’d
 be fine but knew that if I was wrong I could borrow money from any of
 a number of people I knew who would be at the race.</p>
 <p>Instead of driving directly to the start/finish site, I drove to
 <a href="http://spotteddogbrewery.com/">Spotted Dog Brewery</a> because I had an
 empty growler with a gift card good for a fill attached to it.  It was
 awarded to me for finishing first in the drinking division last year.
-I didn't fill it last year because it was awarded at the end of the
+I didn’t fill it last year because it was awarded at the end of the
 race and by then I had already drunk fourteen beers during the course
 of the race and another celebratory beer or two after.  They had a wee
 heavy on tap, so I chose that, but needed to pay about an extra ten
 bucks because of inflation and/or the wee heavy being a bit pricier
 (after all, at 9.5% ABV it is about double the strength of normal
 beer).  I tipped $5, because by then I was reasonably sure I was going
-to need to hit someone up for some additional gas money and I didn't
+to need to hit someone up for some additional gas money and I didn’t
 want my current cash-poor situation turning me into a stingy bastard.</p>
 <p>From Spotted Dog, I drove to the <a href="https://bryanberg.net/files/outdoors-hiking-areas-with-maps/mountain-time-2/monte-vista-trail-tortugas-a-mountain/">Monte Vista Hiking Trail Parking
 Log</a>.
-That's where the start/finish line is and where I camp.  I got there
+That’s where the start/finish line is and where I camp.  I got there
 about and hour and a half before the race was due to start, which was
 an hour before the drinkers were going to have a rule-change meeting.
-Although I wasn't going to participate in the drinking division, I had
+Although I wasn’t going to participate in the drinking division, I had
 had an epiphany and realized that I could still drink a bit at the
 beginning without it jeopardizing my health (e.g., allowing me to
 catch a cold) or otherwise decreasing my ability to pace the Duke City
 Marathon.</p>
 <p>That hour and a half was enough time for me to set up my tent and socialize.
 Embarrassingly, I did not recognize Rob, the founder of this event.  I know
-Rob's son Justin better than Rob, although it's been a few years since I've
-seen Justin and I probably couldn't pick him out of crowd either.  In addition
+Rob’s son Justin better than Rob, although it’s been a few years since I’ve
+seen Justin and I probably couldn’t pick him out of crowd either.  In addition
 to Rob, who lives in Las Cruces, Kathy had driven down from Albuquerque.
 Kathy had done the Feral Hog 25k six days prior, so she and I were the only
 Feral Hog participants who were also doing the 24 Hour Challenge.  That
@@ -232,23 +231,23 @@ makes us Feral Tortugas!</p>
 Perky and Prince Charming.  They had ponied up for the two porta
 potties.  Yay!  As we chatted, I found out that the winners (male and
 female) of the beer division were <em>not</em> going to get a growler this
-year.  I didn't yet know why, but I did volunteer that I had just
+year.  I didn’t yet know why, but I did volunteer that I had just
 picked up a growler of wee heavy and before I had even asked about
 borrowing gas money, Perky volunteered to by the growler for me.  I
 asked for $20, which was the amount I was going to borrow, but she
-handed me $30.  I wasn't going to fight her over the extra, especially
+handed me $30.  I wasn’t going to fight her over the extra, especially
 since Prince Charming could break me in half like a toothpick.</p>
 <p>In the blink of an eye, it was five-thirty, a half hour before race
 start and the beer drinkers gathered to hear the new rules and the big
 surprise.  Instead of only the winners of the beer division getting a
 gift, everyone who was going to drink a beer at this little meeting
 (i.e., before the first lap) got a very nice <em>large</em> beer stein with
-the Beer Soaked logo and the epitaph "It's my own damn fault!"  I
+the Beer Soaked logo and the epitaph “It’s my own damn fault!”  I
 drank a 16 oz. 7.5% ABV <a href="https://www.beeradvocate.com/beer/profile/24659/67709/">Malpais
 Stout</a> and
-thanked Rob profusely for this participant's award.</p>
-<p>In the days leading up to this race I had decided that since I wasn't
-going to compete, I'd make an already social event even more social by
+thanked Rob profusely for this participant’s award.</p>
+<p>In the days leading up to this race I had decided that since I wasn’t
+going to compete, I’d make an already social event even more social by
 running each loop with a different person and chatting with (at?)
 them.  However, I never articulated this plan, which was good, because
 I changed my mind when I remembered that I often have a Zoom meeting
@@ -282,7 +281,7 @@ year!).  However, since I was in the open division, stacking a little
 more alcohol early was just that much more social lubricant for my
 zoom call.</p>
 <p>My plan had been to finish five or six laps before going to bed, but I
-hadn't really thought things through and I hadn't even considered the
+hadn’t really thought things through and I hadn’t even considered the
 Zoom call, which slowed me down a bit.  So when I saw that it was about
 eleven thirty at the end of my fourth lap, I decided it was a good time
 to stop and get some sleep.</p>
@@ -295,7 +294,7 @@ I had made at home and brought with me.  I probably have a double espresso
 at 5:15 Mountain time 360 days a year.  Every once in a while I shift when
 I have it, but only in extenuating circumstances.  I typically wake up
 well before 5:15 but wait until 5:15 (on the second!) to drink the espresso
-because I use it to synchronize my sleep so that I don't get up earlier and
+because I use it to synchronize my sleep so that I don’t get up earlier and
 earlier or later and later and to also tell my GI system to do its thing.</p>
 <p>It was still dark out, so I put my Kogolla light bar and Petzl headlamp
 back on (those are what I was using the night before) putzed around a bit
@@ -312,13 +311,13 @@ aid station as well as at the aid station that is roughly at the half-way
 point.</p>
 <p>I had really enjoyed my Zoom the night before, so I did something
 similar at 11am.  I have a different group of people who have a
-recurring 11am daily zoom.  I've known some of these people for close
+recurring 11am daily zoom.  I’ve known some of these people for close
 to thirty years but I only recently found out that they had this Zoom
-call every day (perhaps I knew that at one point and forgot, but I'm
-not on Facebook and I don't recall reading about it on our mailing
+call every day (perhaps I knew that at one point and forgot, but I’m
+not on Facebook and I don’t recall reading about it on our mailing
 list).  There were only two others on the call, but it was fun to do a
 show-and-tell and answer questions for about a half hour.</p>
-<p>Like many a looped-course ultra, this race was run "washing-machine"
+<p>Like many a looped-course ultra, this race was run “washing-machine”
 style, meaning runners switch directions for each loop.  The first and
 all odd loops were run clockwise (as viewed from above), the second
 and all even loops counter-clockwise.  That allows competitors to see
@@ -328,7 +327,7 @@ against allowing me to spend time with Lukas, the winner.  We were
 chatting a little bit at the start/finish aid station, and we
 continued our conversation as we jogged together back to the main
 course, but, alas, he turned right and I turned left. For the next
-several loops, I'd see Lukas at the start/finish aid station, it was
+several loops, I’d see Lukas at the start/finish aid station, it was
 almost like clockwork.  The difference though is that before we synced
 up he had already run <em>seven</em> more laps than I had! He also chose to
 run a final lap after I had called it a day, so he got twenty-two laps
@@ -339,8 +338,8 @@ before the 6pm finish time, but that would be taxing, might increase
 my chance of injury and would leave me little time to tear down my
 tent and put things away before the awards ceremony.  As such, I
 decided that I would do fourteen laps this year, just like last year,
-but since it was in the open division, I wouldn't even podium.  Last
-year my fourteen laps (and fourteen "beers" (they were mostly hard
+but since it was in the open division, I wouldn’t even podium.  Last
+year my fourteen laps (and fourteen “beers” (they were mostly hard
 seltzers which I might explain sometime, but not now)) was not just
 first place in the drinking division but a new course record.</p>
 <p>Once I realized I was only going to do two more laps, I decided to see
@@ -354,7 +353,7 @@ few people who were there were all out of beer!  Someone, however,
 (Marco?), let me know that earlier Perky and Prince Charming had
 offered him a beer which he had declined, so he retroactively accepted
 that beer and gave it to me (i.e., we pilfered a Miller High Life from
-their cooler).  I know P&amp;PC well enough to know that they wouldn't
+their cooler).  I know P&amp;PC well enough to know that they wouldn’t
 mind and that I probably was not draining them dry.</p>
 <p>Guess whom I saw when finishing my thirteenth lap!?  Sure enough P&amp;PC
 were at their tailgate, parked next to my truck, and I got to confess
@@ -363,28 +362,28 @@ could have another Miller High Life or—what the heck&amp;mash;we
 could open the growler.  They even had a nice <em>small</em> plastic cup I
 could pour the growler into.  I was sold.  I did have to be careful
 to limit myself, because this was indeed stronger brew, but it was
-only 3:30pm and I wouldn't be driving until 6:15 or 6:30.</p>
+only 3:30pm and I wouldn’t be driving until 6:15 or 6:30.</p>
 <p>I had some of the wee heavy and was futzing with my stuff as P&amp;PC
 departed.  Like I, they were going to head out on a counter-clockwise
-loop.  I knew I would catch up with them and this time, I'd actually
+loop.  I knew I would catch up with them and this time, I’d actually
 hang out and chat on the loop.  So, a little while later I topped off
-my beer and headed up.  I wanted to catch up, but I also didn't want
-to spill my beer.  I didn't execute perfectly and there was a little
+my beer and headed up.  I wanted to catch up, but I also didn’t want
+to spill my beer.  I didn’t execute perfectly and there was a little
 sloshing over the side, but shortly I was within chatting distance.</p>
 <p>Perky walks quickly!  Here walking pace is slower than mine, so she
 would get ahead of Prince Charming and myself and eventually PC would
-remind me to run a bit to catch up so that I wouldn't have to shout so
+remind me to run a bit to catch up so that I wouldn’t have to shout so
 much.  We had good time catching up and discussing our plans for 2023.</p>
 <h2 id="post-race"><a class="header" href="#post-race">Post-Race</a></h2>
 <p>At 5:09 I was done with my laps and done drinking until after noon the
 following day.  I pulled out my cooler and spent about a half hour
 packing my sleeping mat, eating recovery food fortified (with chia
-seeds, hemp seeds, soy milk and Udo's Oil)) oatmeal, nasty green
+seeds, hemp seeds, soy milk and Udo’s Oil)) oatmeal, nasty green
 drink, rice milk and some spaghetti and most importantly listening to
-everyone's stories.  I then hastily packed my tent, gathered the rest
+everyone’s stories.  I then hastily packed my tent, gathered the rest
 of my gear and shoved everything in my truck so that I could be back
 for the awards ceremony.</p>
-<p>The two times I've done this previously, I've left my tent set up and
+<p>The two times I’ve done this previously, I’ve left my tent set up and
 gone back to it after the ceremony.  This year, with the start of the
 Duke City Marathon less than thirteen hours away, I said thanks,
 hopped in my truck, drove to a gas station, bought fifty dollars of
@@ -393,24 +392,24 @@ the road.  Oh, while the gas was pumping, I had the choice: eat more
 spaghetti or clean the bug blots off my windshield.  The splats were a
 bit of a nuisance, but I was hungry, so I left them there.</p>
 <p>My drive back was mostly uneventful.  I was not tired.  I was not wired.
-I wasn't overly anxious, but I did continue looking at the gas gauge with
+I wasn’t overly anxious, but I did continue looking at the gas gauge with
 regularity.  I had one obnoxious driver to deal with, but luckily that
-vehicle pulled off in Truth or Consequences (that's the name of a town).</p>
+vehicle pulled off in Truth or Consequences (that’s the name of a town).</p>
 <p>Everything was basically going fine until I ran into a little rain.
-My truck has fairly dim headlights (although they're a little bit
+My truck has fairly dim headlights (although they’re a little bit
 brighter than they had been a few days go before I replaced a bulb)
-and my night vision isn't great.  My windshield wipers are pretty
-poor, but it wasn't supposed to rain until the next day, or at least
-that's what I thought.  Had I known it would rain, I wouldn't have
+and my night vision isn’t great.  My windshield wipers are pretty
+poor, but it wasn’t supposed to rain until the next day, or at least
+that’s what I thought.  Had I known it would rain, I wouldn’t have
 eaten that spaghetti.  Light rain, bug bits, and poor windshield
 wipers are a bad combination, especially at night.  Luckily, there
 were some gaps in the slime that I could see through until the rain
 came down harder and everything got cleaned up.</p>
 <p>I got home around 9:30, started charging my electrical stuff, took a
 shower, put away a few things, set my alarm for 4:30am and got to bed
-around 11pm.  Tomorrow would be fun (and I'm not being sarcastic).</p>
+around 11pm.  Tomorrow would be fun (and I’m not being sarcastic).</p>
 <p>Whee!</p>
-<h2 id="food"><a class="header" href="#food">"Food"</a></h2>
+<h2 id="food"><a class="header" href="#food">“Food”</a></h2>
 <p>I brought some food from Albuquerque and think I might have had enough
 calories to squeak by, but there was yummy junk food at the aid stations
 so I ate a ton of that during the race.</p>
@@ -427,7 +426,7 @@ baggie.  With the baggie sitting on top of the ice in the cooler, the hummus
 took on a Play-Doh consistency, which was great, because I could tear off a
 piece and eat it without utensils.  I also brought a baggie of steamed
 broccoli and cauliflower that I ate mid-day Saturday.</p>
-<p>I ate a huge amount of aid station "orange slice" candies and pretzels
+<p>I ate a huge amount of aid station “orange slice” candies and pretzels
 on both days.  Thanks!</p>
 <p>On Saturday, I additionally snacked on salt &amp; vinegar potato chips,
 some vegan cookies that were kind of like cream colored Oreos and some
@@ -447,10 +446,10 @@ added tube filled with water and that extra pressure was enough to
 chafe my right nipple.  Eventually I realized what was going on and
 moved the water to the other side and everything was fine.</p>
 <h3 id="sunburn"><a class="header" href="#sunburn">Sunburn</a></h3>
-<p>I didn't wear any sunscreen, so I got a minor sunburn.  I definitely didn't
-feel it at the time, so I don't think it slowed me down appreciably.  I felt
+<p>I didn’t wear any sunscreen, so I got a minor sunburn.  I definitely didn’t
+feel it at the time, so I don’t think it slowed me down appreciably.  I felt
 it slightly after getting home. Over the next couple of days the red turned
-to tan, so I'm happy.</p>
+to tan, so I’m happy.</p>
 <h3 id="falling"><a class="header" href="#falling">Falling</a></h3>
 <p>I fell and hit the ground a few times.  The first two or three times were,
 IIRC, Saturday, i.e., after I had slept, before I was drinking beer again.
@@ -462,8 +461,8 @@ me up, but also to get a little practice with it before Javelina Jundred.
 I even had it in the file that I created that had the
 list of things to bring, but I forgot to look at that file.</p>
 <h2 id="music-driven-legs"><a class="header" href="#music-driven-legs">Music Driven Legs</a></h2>
-<p>I easily get the runner's high.  While I have it, music often hits me
-emotionally.  I feel like I'm a bull being led by a nose-ring and when
+<p>I easily get the runner’s high.  While I have it, music often hits me
+emotionally.  I feel like I’m a bull being led by a nose-ring and when
 the music is upbeat or perhaps just emotionally satisfying, I
 sometimes use it to drive my legs.  One song that touched me while I
 was out there was City of New Orleans.  City of New Orleans was
@@ -474,14 +473,14 @@ came off my iPod library, I might eventually figure out whose version
 it was.</p>
 <p>Listening to anything Steve Goodman had to do with always brings out a mix
 of emotions in me.  The guy died of cancer when he was 36 but penned and
-performed many a classic.  City of New Orleans isn't particularly fast,
+performed many a classic.  City of New Orleans isn’t particularly fast,
 and I find it melancholy, but it was definitely driving my legs hard as I
-finished up one of my daylight even laps.  I can't remember the other
+finished up one of my daylight even laps.  I can’t remember the other
 songs that wound me up, although one of them was by Jesus Jones.</p>
 <h2 id="historical"><a class="header" href="#historical">Historical</a></h2>
 <p>The Tortuga Mountain 24 Hour Challenge started out as a drinking event, where
 all participants were required to drink a beer before each 4 mile loop around
-Tortugas Mountain (also known as "A" Mountain due to the capital 'A' in white
+Tortugas Mountain (also known as “A” Mountain due to the capital ‘A’ in white
 rock on the hill that is visible for miles).  The beer needed to be 12 ounces
 or more and 5% ABV or more.</p>
 <p>As the event became popular, some people chose to do it without all
@@ -496,11 +495,11 @@ miles</a>.</p>
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                             <a rel="prev" href="../../../running/past/2022/feral_hog_50k_rucksack.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                                <i class="fa fa-angle-left"></i>
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
                             <a rel="next prefetch" href="../../../running/past/2022/duke_city_marathon.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
                         <div style="clear: both"></div>
@@ -510,16 +509,21 @@ miles</a>.</p>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                     <a rel="prev" href="../../../running/past/2022/feral_hog_50k_rucksack.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                        <i class="fa fa-angle-left"></i>
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
                     <a rel="next prefetch" href="../../../running/past/2022/duke_city_marathon.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>
 
         </div>
 
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
 
 
 
@@ -528,13 +532,13 @@ miles</a>.</p>
         </script>
 
 
-        <script src="../../../elasticlunr.min.js"></script>
-        <script src="../../../mark.min.js"></script>
-        <script src="../../../searcher.js"></script>
+        <script src="../../../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../../../mark-09e88c2c.min.js"></script>
+        <script src="../../../searcher-c2a407aa.js"></script>
 
-        <script src="../../../clipboard.min.js"></script>
-        <script src="../../../highlight.js"></script>
-        <script src="../../../book.js"></script>
+        <script src="../../../clipboard-1626706a.min.js"></script>
+        <script src="../../../highlight-abc7f01d.js"></script>
+        <script src="../../../book-a0b12cfe.js"></script>
 
         <!-- Custom JS scripts -->
 

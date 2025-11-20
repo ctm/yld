@@ -12,21 +12,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="icon" href="../../../../favicon.svg">
-        <link rel="shortcut icon" href="../../../../favicon.png">
-        <link rel="stylesheet" href="../../../../css/variables.css">
-        <link rel="stylesheet" href="../../../../css/general.css">
-        <link rel="stylesheet" href="../../../../css/chrome.css">
-        <link rel="stylesheet" href="../../../../css/print.css" media="print">
+        <link rel="icon" href="../../../../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../../../../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../../../../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../../../../css/general-2459343d.css">
+        <link rel="stylesheet" href="../../../../css/chrome-9dfbd86b.css">
+        <link rel="stylesheet" href="../../../../css/print-9e4910d8.css" media="print">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="../../../../FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="../../../../fonts/fonts.css">
+        <link rel="stylesheet" href="../../../../fonts/fonts-9644e21d.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" id="highlight-css" href="../../../../highlight.css">
-        <link rel="stylesheet" id="tomorrow-night-css" href="../../../../tomorrow-night.css">
-        <link rel="stylesheet" id="ayu-highlight-css" href="../../../../ayu-highlight.css">
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../../../../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../../../../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../../../../ayu-highlight-3fdfc3ac.css">
 
         <!-- Custom theme stylesheets -->
 
@@ -36,10 +35,10 @@
             const path_to_root = "../../../../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../../../../searchindex.js";
+            window.path_to_searchindex_js = "../../../../searchindex-2e82017a.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../../../../toc.js"></script>
+        <script src="../../../../toc-203aea20.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -53,7 +52,7 @@
             </div>
         </div>
     </div>
-    <div id="body-container">
+    <div id="mdbook-body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
@@ -82,12 +81,12 @@
             html.classList.add("js");
         </script>
 
-        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
             let sidebar = null;
-            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
@@ -102,39 +101,39 @@
             }
         </script>
 
-        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
             <!-- populated by js -->
             <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
             <noscript>
                 <iframe class="sidebar-iframe-outer" src="../../../../toc.html"></iframe>
             </noscript>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
             </div>
         </nav>
 
-        <div id="page-wrapper" class="page-wrapper">
+        <div id="mdbook-page-wrapper" class="page-wrapper">
 
             <div class="page">
-                <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
-                            <i class="fa fa-bars"></i>
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
                         </label>
-                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
-                            <i class="fa fa-paint-brush"></i>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
                         </button>
-                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
                         </ul>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
-                            <i class="fa fa-search"></i>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
                         </button>
                     </div>
 
@@ -142,38 +141,38 @@
 
                     <div class="right-buttons">
                         <a href="../../../../print.html" title="Print this book" aria-label="Print this book">
-                            <i id="print-button" class="fa fa-print"></i>
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
                         </a>
 
                     </div>
                 </div>
 
-                <div id="search-wrapper" class="hidden">
-                    <form id="searchbar-outer" class="searchbar-outer">
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
                         <div class="search-wrapper">
-                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
                             <div class="spinner-wrapper">
-                                <i class="fa fa-spinner fa-spin"></i>
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
                             </div>
                         </div>
                     </form>
-                    <div id="searchresults-outer" class="searchresults-outer hidden">
-                        <div id="searchresults-header" class="searchresults-header"></div>
-                        <ul id="searchresults">
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
                         </ul>
                     </div>
                 </div>
 
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
                 <script>
-                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
-                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
-                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
 
-                <div id="content" class="content">
+                <div id="mdbook-content" class="content">
                     <main>
                         <h1 id="my-race"><a class="header" href="#my-race">My <em>Race</em></a></h1>
 <h2 id="zachary-carnahan-won"><a class="header" href="#zachary-carnahan-won">Zachary Carnahan Won</a></h2>
@@ -188,14 +187,14 @@ was as close to my PR
 (<a href="https://bataanmemorialdeathmarch.itsyourrace.com/Results/6574/2016/35464/1524">4:39:45.185</a>)
 as I was, I would have run faster, even without knowing that it would
 have made the difference between first and second.</p>
-<p>I didn't run as fast I could have for three reasons:</p>
+<p>I didn’t run as fast I could have for three reasons:</p>
 <ul>
 <li>
 <p>A runner with what looked like a pack with a plate in it passed me
 with sufficient speed and grace that I figured I was not going to
 finish first this year with my gimpy foot. As he passed me, I shouted
-to him "Do you have a plate in there?" and he just smiled.  My guess
-is he didn't actually hear me.  He had earbuds in. I did catch up with
+to him “Do you have a plate in there?” and he just smiled.  My guess
+is he didn’t actually hear me.  He had earbuds in. I did catch up with
 him during lunch, afterward and nope, no plate.</p>
 </li>
 <li>
@@ -210,7 +209,7 @@ harder in order to not jeopardize that test.</p>
 </li>
 <li>
 <p>Running hard that late in the race is annoyingly uncomfortable.  I can do
-it, but let's face it, I looked for—and found—reasons not to.</p>
+it, but let’s face it, I looked for—and found—reasons not to.</p>
 </li>
 </ul>
 <p>At lunch I asked Zachary point blank if I had caught up to him would he
@@ -218,13 +217,13 @@ have put up a fight and his answer was no.  I had passed him going up
 mineral hill, but he saw my backpack outside a porta-potty and deliberately
 chose to run as quickly as he could to gain as much of a lead as possible.
 That was quite successful, because my hubris lead me to believe that I had
-crushed his spirit and it didn't occur to me that he had passed me during
+crushed his spirit and it didn’t occur to me that he had passed me during
 my brief pit stop. The downside to Zachary is that by his own admission
-he blew up and that's why, had I run faster, he didn't think he'd have
+he blew up and that’s why, had I run faster, he didn’t think he’d have
 been able to put up a fight.</p>
 <h2 id="far-too-much-race-information"><a class="header" href="#far-too-much-race-information">Far too much Race Information</a></h2>
-<h3 id="last-years-race"><a class="header" href="#last-years-race">Last Year's Race</a></h3>
-<p>"Last year" was 2019, because BMDM hadn't been held in person since then.</p>
+<h3 id="last-years-race"><a class="header" href="#last-years-race">Last Year’s Race</a></h3>
+<p>“Last year” was 2019, because BMDM hadn’t been held in person since then.</p>
 <p>I was in the best shape ever and we had perfect weather.
 Unfortunately, I developed debilitating hip pain that was almost
 definitely due to my <a href="https://github.com/ctm/Bataan-Memorial-Death-March/blob/master/2019.md#wah-wah-wah-my-pack-broke">pack
@@ -232,18 +231,18 @@ breaking</a>.
 I did not see or hear my pack break, but my pack was definitely broken
 by the time I picked it up after taking it off and crossing the finish
 line.</p>
-<h3 id="this-years-training"><a class="header" href="#this-years-training">This Year's Training</a></h3>
-<p><a href="https://github.com/ctm/Bataan-Memorial-Death-March/blob/master/2023.md#past">This year's
+<h3 id="this-years-training"><a class="header" href="#this-years-training">This Year’s Training</a></h3>
+<p><a href="https://github.com/ctm/Bataan-Memorial-Death-March/blob/master/2023.md#past">This year’s
 training</a>
 did not go well.  I started out with a hot-spot in my right foot and
 training with a pack made it worse.  Each training year I do one or
 two twenty-four mile trainings and, in general, those are good
-predictors for my performance.  However, in 2019 I didn't do as well
+predictors for my performance.  However, in 2019 I didn’t do as well
 as predicted, presumably due to the broken pack. This year, I did
 *<strong>much</strong> better than predicted, because both of my twenty-four mile
-trainings were marred by foot pain that wasn't present on race day.</p>
+trainings were marred by foot pain that wasn’t present on race day.</p>
 <h3 id="reconnaissance"><a class="header" href="#reconnaissance">Reconnaissance</a></h3>
-<p>I'm a programmer and I had already written some software to <a href="https://github.com/ctm/fantoccini-shiprock#fantoccini-shiprock">scrape
+<p>I’m a programmer and I had already written some software to <a href="https://github.com/ctm/fantoccini-shiprock#fantoccini-shiprock">scrape
 race
 results</a>
 and to <a href="https://github.com/ctm/runs#ctm-runs">compute</a> the <a href="http://www.mttaylor50k.com/mt.-taylor-doubler.html">Mt. Taylor
@@ -256,27 +255,33 @@ Race, so I used my software to scrape the previous results and the
 2023 entrants so I could see who was entered who had previously
 finished in less than six hours.</p>
 <p>There were only five:</p>
-<div class="table-wrapper"><table><thead><tr><th>Age</th><th>Name</th><th>Finishing Time</th></tr></thead><tbody>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Age</th><th>Name</th><th>Finishing Time</th></tr>
+</thead>
+<tbody>
 <tr><td>37</td><td>DAVID TATHAM</td><td>5:28:30.1</td></tr>
 <tr><td>35</td><td>CHRISTOPHER JOHNSON</td><td>5:31:51.7</td></tr>
 <tr><td>47</td><td>Daniel Schuerch</td><td>5:35:42.1</td></tr>
 <tr><td>34</td><td>ZACHARY CARNAHAN</td><td>5:38:27.6</td></tr>
 <tr><td>46</td><td>BRIAN HRONIK</td><td>5:47:21.4</td></tr>
-</tbody></table>
+</tbody>
+</table>
 </div>
 <p>None of these people had run sub five, and the youngest was 34.  Most
 people during the intervening years had probably lost interest,
 although the fact that these people had signed up showed they were at
-least somewhat interested.  I didn't think it likely (but I was
+least somewhat interested.  I didn’t think it likely (but I was
 wrong!) that any of these people would train hard and decrease their
 time by more than a half hour, which made me think that if I finished
-sub-five, I'd either come in first or would be beat by someone new.
+sub-five, I’d either come in first or would be beat by someone new.
 New people usually are surprised by the difficulty of the course.</p>
 <h3 id="drugs"><a class="header" href="#drugs">Drugs</a></h3>
 <p>I broke down and saw a podiatrist on March 10th, the day before the
 King of the Hill Ruck race and only nine days before the Bataan Memorial
 Death March.  I explained what was going on and why I believed it was
-a morton's neuroma and why we could rule out a stress fracture. He
+a morton’s neuroma and why we could rule out a stress fracture. He
 examined my foot, concurred and gave me a shot of cortisone.</p>
 <p>Cortisone is a steroid and I believe its use is a World Anti Doping
 Agency (<a href="https://www.wada-ama.org/en">WADA</a>) violation without a
@@ -284,8 +289,8 @@ Therapeutic Use Exemption
 (<a href="https://www.wada-ama.org/en/athletes-support-personnel/therapeutic-use-exemptions-tues">TUE</a>). As
 far a I know, none of the events I participate in are run using WADA
 rules, so this is an area I know very little about.  I did not seek
-the cortisone to enhance my ability. It's the only steroid I've ever
-used and it certainly wasn't something I turned to lightly.</p>
+the cortisone to enhance my ability. It’s the only steroid I’ve ever
+used and it certainly wasn’t something I turned to lightly.</p>
 <p>In addition to the cortisone, I used caffeine (3 double espressos),
 200mg ibuprofen, 500mg acetaminophen and a bar of 90% dark chocolate
 (contains theobromine) <a href="https://github.com/ctm/diet/blob/master/log/2023.txt#L4101-L4153">on race
@@ -294,12 +299,12 @@ None of those are (AFAIK) WADA violations, although the ibuprofen and
 acetaminophen are barred from
 <a href="https://montblanc.utmb.world/races/utmb">UTMB</a>.</p>
 <h3 id="pre-race"><a class="header" href="#pre-race">Pre-Race</a></h3>
-<p>Almost every day I have a double espresso at 5:15 to "wake me up" (although
-I'm typically awake and doing things around 4:45) and to "get me going". I
-chose not to use wake-up caffeine the morning of BMDM, because I didn't want
-to need to go to the bathroom when stuck in traffic and because I didn't want
+<p>Almost every day I have a double espresso at 5:15 to “wake me up” (although
+I’m typically awake and doing things around 4:45) and to “get me going”. I
+chose not to use wake-up caffeine the morning of BMDM, because I didn’t want
+to need to go to the bathroom when stuck in traffic and because I didn’t want
 the caffeine wearing off too soon.</p>
-<p>Unfortunately, I didn't sleep well. Various noises kept me awake.  So with
+<p>Unfortunately, I didn’t sleep well. Various noises kept me awake.  So with
 less time spent sleeping and with poorer quality of sleep, the lack of caffeine
 contributed to me forgetting my handhelds, losing my keys and
 chewing up time.</p>
@@ -314,9 +319,9 @@ lug-a-loo was in my truck back in Albuquerque. Surprise!</p>
 them—<strong>once</strong>—before heading to our starting positions,
 but would once be enough? No.</p>
 <h3 id="to-mineral-hill"><a class="header" href="#to-mineral-hill">To Mineral Hill</a></h3>
-<p>I rushed to get to the runner's section of the starting line. I wanted
+<p>I rushed to get to the runner’s section of the starting line. I wanted
 to be settled by the time the opening ceremony began. I succeeded, but
-got separated from Iris. We weren't planning on going the same pace, so
+got separated from Iris. We weren’t planning on going the same pace, so
 that was OK.</p>
 <p>They fired the starting (big!) gun. I started <a href="https://www.youtube.com/playlist?list=PLiHB06ix3lYgdhd6NgF-zde9tpLh81wsU">my
 playlist</a>
@@ -325,13 +330,13 @@ and were running. The first six miles are basically downhill and I averaged
 about a 9:20 min/mile pace, getting my heart-rate up to around 150 bpm and
 holding it there.</p>
 <p>I struck up many conversations with fellow runners, typically starting
-out by asking if they had run the course before. If they hadn't, I
+out by asking if they had run the course before. If they hadn’t, I
 explained how it would unfold and more often than not I suggested that
 they wanted to be careful not to burn out early.</p>
 <p>One person mentioned that he knew Ray Pickering, the guy who had
 started the Bataan Memorial Death March. He said that Ray was there
-and I let him know that I'd love to meet Ray. That didn't happen, but
-perhaps some day I'll get that honor.</p>
+and I let him know that I’d love to meet Ray. That didn’t happen, but
+perhaps some day I’ll get that honor.</p>
 <p>One person I chatted with recognized me from <a href="https://bataanmarch.com/register/civilian-individual/">my picture on the
 Civilian Individual Heavy Division registration
 page</a>.</p>
@@ -340,11 +345,11 @@ participants doing the honorary march turn to the left.  The rest of us
 turn to the right and head up Mineral Hill.</p>
 <h3 id="up-mineral-hill"><a class="header" href="#up-mineral-hill">Up Mineral Hill</a></h3>
 <p>My goal was to keep my heart rate around 150 bpm going up Mineral Hill.  I
-wasn't sure if could keep it that low without having to walk here and there,
+wasn’t sure if could keep it that low without having to walk here and there,
 but I was much more concerned with not blowing up than I was to artificially
 force myself to run the entire way up.</p>
 <p>I continued chatting with fellow participants, mostly people who were
-traveling my speed. Since I wasn't always running, that allowed me to chat
+traveling my speed. Since I wasn’t always running, that allowed me to chat
 with some walkers, too.  By this time, I only remember seeing one person
 running with a pack, and he too would walk every now and then. He was ahead
 of me, but I was gaining.</p>
@@ -353,7 +358,7 @@ been a warning, because it meant he knew what he was doing.  I mentioned that
 I had probably chatted with him in previous years, but my memory is shot, and
 2019 was an eternity in the past.  Of course that was Zachary. While we
 were still going up, I passed him.  I (incorrectly!) figured my gap would
-only widen, since I can run the downhill pretty quickly. I didn't see him
+only widen, since I can run the downhill pretty quickly. I didn’t see him
 again until I spotted him at the post event lunch, where I congratulated
 him and picked his brain.</p>
 <h3 id="down-mineral-hill"><a class="header" href="#down-mineral-hill">Down Mineral Hill</a></h3>
@@ -362,43 +367,43 @@ Track</a>, the course peaks
 at mile 13.2. I ran my fifteenth mile in 8:45 and my seventeenth in
 10:27, but my sixteenth took me 12:29.  I had to use the porta potty.
 Once pass before the start was not enough. Not only did I lose a couple
-minutes there, but that's when Zachary passed me.  He knew who I was and
+minutes there, but that’s when Zachary passed me.  He knew who I was and
 he also recognized my unique backpack.</p>
-<p>I didn't know that Zachary had passed me, but I did see a guy with a
+<p>I didn’t know that Zachary had passed me, but I did see a guy with a
 small Osprey backpack that looked like it was designed to hold a metal
-plate, like a small GoRuck pack. I shouted "Do you have a plate in
-there?"  I misinterpreted the smile I got in return and thought that
-he had.  My mind wasn't functioning well the entire day. The cascade
+plate, like a small GoRuck pack. I shouted “Do you have a plate in
+there?”  I misinterpreted the smile I got in return and thought that
+he had.  My mind wasn’t functioning well the entire day. The cascade
 of tiredness induced troubles just getting to the starting line left
 me even further addled. I was actually surprised that Osprey was
 making a plate carrier, but I figured rucking just must be taking off
 more than I had realized.  I was delusional.</p>
 <h3 id="the-sand-pit"><a class="header" href="#the-sand-pit">The Sand Pit</a></h3>
-<p>I don't remember what year they changed the course, but the sand pit
+<p>I don’t remember what year they changed the course, but the sand pit
 now has some uphill to it. According to Strava, mile twenty-one has 95
 feet of gain and mile twenty-two has another 131 feet of gain.  I was
 no longer keeping my heart rate up around 150; it was closer to 140
 and I was wearing down.  From mile 22.4 to 24.2 is downhill and rather
 than using that downhill effectively, I used it to rest.  It took me
 11:08 to run my twenty fourth mile even though it was downhill.  I had
-let me heart-rate drop down to 135.  I had given up.  I wasn't going
+let me heart-rate drop down to 135.  I had given up.  I wasn’t going
 to catch Osprey guy, so I had no chance at first and six days later I
 wanted to run fifty miles (but without a pack!).</p>
 <h3 id="the-home-stretch"><a class="header" href="#the-home-stretch">The Home Stretch</a></h3>
 <p>The twenty-fifth mile was a little up hill and the twenty-sixth a
-little down. I ran them in 12:37 ad 12:31.  My heart wasn't in it in
-part because my head wasn't in it.  Not only was I not thinking
+little down. I ran them in 12:37 ad 12:31.  My heart wasn’t in it in
+part because my head wasn’t in it.  Not only was I not thinking
 straight, but I had never looked at my elapsed time and furthermore, I
 misremembered my PR as 4:35 or 4:36 and not 4:39.  A PR was in my
-grasp, but I didn't even know it.  I spent months training, but not
+grasp, but I didn’t even know it.  I spent months training, but not
 enough time working on a race-day plan.</p>
 <h3 id="second"><a class="header" href="#second">Second</a></h3>
-<p>After finishing, I called my sister Marcia.  She's completed the Bataan
+<p>After finishing, I called my sister Marcia.  She’s completed the Bataan
 Memorial Death March (without a pack) and typically comes out to join us.
-This year, she needed to stay back in Albuquerque.  I couldn't get the
-tracking app to work on my phone, so I didn't know where I had placed.
+This year, she needed to stay back in Albuquerque.  I couldn’t get the
+tracking app to work on my phone, so I didn’t know where I had placed.
 There was a results tent, but it had a sign saying that your results
-wouldn't be available until about a half hour after you crossed the
+wouldn’t be available until about a half hour after you crossed the
 finish line.</p>
 <p>I figured Marcia could use the web to find out how many people had
 finished ahead of me.  My time was roughly 4:40, but Osprey guy
@@ -412,34 +417,36 @@ this year.</p>
 </blockquote>
 <p>I was quite proud that my sister had thought of this way to yank my
 chain<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup>.</p>
-<p>Nope. Oh well, there's always next year.</p>
-<br/>
-<br/>
-<br/>
-<hr/>
+<p>Nope. Oh well, there’s always next year.</p>
+<br />
+<br />
+<br />
+<hr />
 <hr>
-<ol class="footnote-definition"><li id="footnote-1">
+<ol class="footnote-definition">
+<li id="footnote-1">
 <p>I figured she was still upset from when we were young adults
-and I told her matter-of-factly that cat's can't see through glass and
+and I told her matter-of-factly that cat’s can’t see through glass and
 she believed me<sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup>. <a href="#fr-1-1">↩</a></p>
 </li>
 <li id="footnote-2">
 <p>That was payback from when we were both kids.  She
 told me she was learning about exponents and I unskillfully lied that I
 already knew what they were. She offered that they were the king of
-France. "Yeah, I knew that." I lied again. <a href="#fr-2-1">↩</a></p>
+France. “Yeah, I knew that.” I lied again. <a href="#fr-2-1">↩</a></p>
 </li>
 </ol>
+
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                             <a rel="prev" href="../../../../running/past/2023/bmdm.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                                <i class="fa fa-angle-left"></i>
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
                             <a rel="next prefetch" href="../../../../running/past/2023/academy-of-pain.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
                         <div style="clear: both"></div>
@@ -449,16 +456,21 @@ France. "Yeah, I knew that." I lied again. <a href="#fr-2-1">↩</a></p>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                     <a rel="prev" href="../../../../running/past/2023/bmdm.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                        <i class="fa fa-angle-left"></i>
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
                     <a rel="next prefetch" href="../../../../running/past/2023/academy-of-pain.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>
 
         </div>
 
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
 
 
 
@@ -467,13 +479,13 @@ France. "Yeah, I knew that." I lied again. <a href="#fr-2-1">↩</a></p>
         </script>
 
 
-        <script src="../../../../elasticlunr.min.js"></script>
-        <script src="../../../../mark.min.js"></script>
-        <script src="../../../../searcher.js"></script>
+        <script src="../../../../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../../../../mark-09e88c2c.min.js"></script>
+        <script src="../../../../searcher-c2a407aa.js"></script>
 
-        <script src="../../../../clipboard.min.js"></script>
-        <script src="../../../../highlight.js"></script>
-        <script src="../../../../book.js"></script>
+        <script src="../../../../clipboard-1626706a.min.js"></script>
+        <script src="../../../../highlight-abc7f01d.js"></script>
+        <script src="../../../../book-a0b12cfe.js"></script>
 
         <!-- Custom JS scripts -->
 
