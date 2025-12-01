@@ -29,6 +29,14 @@ who read it and appreciated that I made it available, so this book
 continues that tradition. I'll slowly added more info that people may
 or may not find handy. It keeps me off the streets.
 
+### Interviews
+
+* Andy Gray [interviewed me](https://traillove.podbean.com/e/cliff-matthews/) for his March 31st, 2025 [Trail Love](https://traillove.podbean.com/) podcast
+* Mark Vega interviewed me for a to-air-soon episode of his [Run Long After 60](https://www.youtube.com/@RUNLONGAFTER60/podcasts) podcast
+
+I hope to do some interviews concerning [craftpoker.com](https://craftpoker.com) and [Craft Poker Co.](https://ctm.github.io/docs/players_manual/craft-poker-co.html)
+
+
 [^1]: I am exceedingly late to the Facebook game. So far I haven't deliberately
 reached out and asked anyone to be my friend, although I may have been tricked
 into doing so by thinking I was clicking a button or three to accept a friend
