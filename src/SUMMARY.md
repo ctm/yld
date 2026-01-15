@@ -6,6 +6,7 @@
   - [My Beliefs](./life/my-beliefs.md)
     - [Multiple Universes](./life/my-beliefs/multiple-universes.md)
     - [Soy](./life/my-beliefs/soy.md)
+    - [Laziness](life/my-beliefs/laziness.md)
 - [Running](./running.md)
   - [Resources](./resources.md)
     - [Books](./resources/books.md)
