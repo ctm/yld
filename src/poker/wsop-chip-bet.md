@@ -33,7 +33,6 @@ and preventing my r00l.
 <br/>
 <br/>
 <br/>
-<hr/>
 
 [^1]: What I describe here is (attempted) hijinks between friends.
 The goal would have been for the bet amount to be just enough to cause
