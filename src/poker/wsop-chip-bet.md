@@ -41,5 +41,4 @@ the victim to sting from embarrassment, [with an ear full of
 cider](https://www.quotes.net/mquote/39860).
 
 [^2]: Or perhaps it was the prior year's; it's been too long or me
-to remember exactly which BARGE this occurred at, but my guess is
-2004.
+to remember exactly which BARGE this occurred at, but my guess is 2004.
