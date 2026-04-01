@@ -33,6 +33,7 @@ or may not find handy. It keeps me off the streets.
 
 * Andy Gray [interviewed me](https://traillove.podbean.com/e/cliff-matthews/) for his March 31st, 2025 [Trail Love](https://traillove.podbean.com/) podcast
 * Mark Vega interviewed me for [Episode 16: Cliff Matthews](https://www.youtube.com/watch?v=xc7dHMSU4wA) of his [Run Long After 60](https://www.youtube.com/@RUNLONGAFTER60/podcasts) podcast
+* Geoffrey Cain interviewed me for [Steve Jobs in Exile](https://geoffreycain.net/steve-jobs-in-exile/) which will be released on May 19th, 2026. I don't yet know if anything I said made it into his book
 
 I hope to do some interviews concerning [craftpoker.com](https://craftpoker.com) and [Craft Poker Co.](https://ctm.github.io/docs/players_manual/craft-poker-co.html)
 
