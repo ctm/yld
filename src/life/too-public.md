@@ -26,8 +26,9 @@ training](https://github.com/ctm/Bataan-Memorial-Death-March/blob/master/2017.md
 I was planning on doing for the 2017 Bataan Memorial Death March. It
 felt weird having so much info out there, but I did hear from others
 who read it and appreciated that I made it available, so this book
-continues that tradition. I'll slowly added more info that people may
-or may not find handy. It keeps me off the streets.
+continues that tradition. I slowly added more info that people may
+or may not find handy, but most of that ground to a halt when my
+mother had her first stroke (March 27th, 2024).
 
 ### Interviews
 
