@@ -97,3 +97,4 @@
   - [BARGE](./thanks/barge.md)
   - [Team RWB](./thanks/team_rwb.md)
   - [GEORGE](./thanks/george.md)
+  - [Cleve](./thanks/cleve.md)
