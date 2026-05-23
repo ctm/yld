@@ -35,6 +35,16 @@ mother had her first stroke (March 27th, 2024).
 * Andy Gray [interviewed me](https://traillove.podbean.com/e/cliff-matthews/) for his March 31st, 2025 [Trail Love](https://traillove.podbean.com/) podcast
 * Mark Vega interviewed me for [Episode 16: Cliff Matthews](https://www.youtube.com/watch?v=xc7dHMSU4wA) of his [Run Long After 60](https://www.youtube.com/@RUNLONGAFTER60/podcasts) podcast
 
+Back in 1995, a few employees of mine and I were interviewed for the
+PBS series [Triumph of the
+Nerds](https://en.wikipedia.org/wiki/Triumph_of_the_Nerds). None of my
+speaking made the cut, but I can be seen [juggling and riding a
+unicycle](https://www.youtube.com/watch?v=ACt6xsMt5Uk&t=456s) right
+before [our fridge is
+opened](https://www.youtube.com/watch?v=ACt6xsMt5Uk&t=470s) and Mat
+Hostetter talks about how he likes to
+> "&hellip;listen to heavy metal and get caffeinated and hack."
+
 I hope to do some interviews concerning [craftpoker.com](https://craftpoker.com) and [Craft Poker Co.](https://ctm.github.io/docs/players_manual/craft-poker-co.html)
 
 
