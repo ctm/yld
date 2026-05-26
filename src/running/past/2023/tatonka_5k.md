@@ -102,6 +102,13 @@ yet&hellip; it's growing.
 
 Before leaving, I hugged mom McClintock and tried to speak.
 
+## Post Post Race
+
+I also ran the Tatonka 5k in 2024, but have not written a race report due
+to lack of tie due to my mom's situation. In 2025, the Tatonka 5k coincided
+with the Javelina Jundred, which I ran instead. On Memorial Day in 2026,
+[President Trump honored Matthew McClintock](tatonka_5k/MatthewMcClintock.mp4).
+
 <br/>
 <br/>
 <br/>
