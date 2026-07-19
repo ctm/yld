@@ -34,6 +34,14 @@ mother had her first stroke (March 27th, 2024).
 
 * Andy Gray [interviewed me](https://traillove.podbean.com/e/cliff-matthews/) for his March 31st, 2025 [Trail Love](https://traillove.podbean.com/) podcast
 * Mark Vega interviewed me for [Episode 16: Cliff Matthews](https://www.youtube.com/watch?v=xc7dHMSU4wA) of his [Run Long After 60](https://www.youtube.com/@RUNLONGAFTER60/podcasts) podcast
+* Hardrock Chronicals 2026 Episode 6 [caught me](Documents/Diet/log/) and [Peter Livingstone](https://www.youtube.com/watch?v=oDLI2xCXf5s) when I was _extremely_ tired and about to nap
+
+### Clips
+
+* Hardrock Chronicals 2026 Episode 10 caught me [apologizing to Dale](https://www.youtube.com/watch?v=TFqow1K8jp4&t=458s) for shouting out answers during the Hardrock Trivia. I still owe him a beer.
+* My finish led the Trail Runner magazine [Hardrock 100 Golden](https://www.facebook.com/reel/1708429147108986) Hour reel
+* Eric Pope stole my thunder [_and my name_](https://www.youtube.com/watch?v=6PByCZFylF0&t=15370s)!
+* AJW [finally identifies me](https://www.youtube.com/watch?v=6PByCZFylF0&t=15479s)
 
 Back in 1995, a few employees of mine and I were interviewed for the
 PBS series [Triumph of the
